@@ -497,7 +497,7 @@ figure figcaption {
 #daviefolio-hero .slider-text-inner h1 {
   /*#daviefolio-hero .flexslider .slider-text .slider-text-inner h1*/
   margin-bottom: 20px !important;
-  color: #1a3d6d;
+  color: #FFFFFF;/*#1a3d6d;*/
   font-family: "Playfair Display", Georgia, serif;
   font-size: 60px !important;
   line-height: 1.5 !important;
@@ -517,7 +517,7 @@ figure figcaption {
 
 #daviefolio-hero .slider-text-inner h2 {
   display: inline-block;
-  color: #034d57;
+  color: #F5F7FA; /*#034d57;*/
 }
 
 #daviefolio-hero .slider-text-inner .desc .typed-text {
@@ -525,7 +525,7 @@ figure figcaption {
 }
 
 #daviefolio-hero .slider-text-inner .desc .typed-cursor {
-  color: #e2dfdf;
+  color: #4FC3F7; /*#e2dfdf;*/
 }
 
 @media (max-width: 992px) {
