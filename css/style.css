@@ -364,7 +364,51 @@ figure figcaption {
   clear: both;
   background: #fff url(../img/about/loader.gif) no-repeat center;
 }
+/* Slider updated*/
+#daviefolio-hero .flexslider .slides {
+  position: relative;
+  overflow: visible;
+  padding: 0;
+  margin: 0;
+}
 
+#daviefolio-hero .flexslider .slides li {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; /* updated */
+  min-height: 400px;
+  position: relative;
+  list-style: none;
+}
+
+#daviefolio-hero .flexslider .hero-slide {
+  background-image: url(../img/about/hero.jpg);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 15, 30, 0.7); /* darker overlay */
+  z-index: 1;
+}
+
+#daviefolio-hero .hero-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#daviefolio-hero .row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/**
 #daviefolio-hero .flexslider .slides {
   position: relative;
   overflow: visible;
@@ -400,7 +444,7 @@ figure figcaption {
   display: flex;
   justify-content: center;
 }
-
+**/
 @media (max-width: 768px) {
   #daviefolio-hero .row {
     padding: 0 !important;
