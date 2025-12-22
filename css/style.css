@@ -504,24 +504,22 @@ figure figcaption {
   font-weight: 700 !important;
 }
 
-/*#daviefolio-hero .slider-text-inner h2,*/
-/*#daviefolio-hero .flexslider .slider-text .slider-text-inner h2*/
+#daviefolio-hero .slider-text-inner h2,
 #daviefolio-hero .slider-text-inner .desc .typed-cursor {
-  /*#daviefolio-hero .flexslider .slider-text .slider-text-inner .desc .typed-cursor*/
-  font-size: 30px !important;
+  font-size: 35px !important;
   font-weight: 600 !important;
   font-family: "Playfair Display", Georgia, serif;
   margin-bottom: 20px !important;
-  line-height: 1.2 !important;
+  line-height: 1.5 !important;
 }
 
 #daviefolio-hero .slider-text-inner h2 {
   display: inline-block;
   color: #F5F7FA;
-  height: 50px;  /*adjust to match the tallest string */
-  /*min-width: 350px;  optional, prevents shrinking */
-  /*vertical-align: middle;  keeps it aligned */
-  /*overflow: hidden;  hide deleted letters */
+  height: 50px; /* adjust to match tallest string */
+  min-width: 350px; /* optional: prevents shrinking */
+  vertical-align: middle; /* aligns cursor and text */
+  overflow: hidden; /* prevents vibration when deleting letters */
 }
 
 #daviefolio-hero .slider-text-inner .desc .typed-text {
