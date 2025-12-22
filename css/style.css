@@ -523,7 +523,7 @@ figure figcaption {
 #daviefolio-hero .slider-text-inner h2 {
   display: inline-block;
   color: #F5F7FA;
-  height: 50px; /* adjust to match the tallest string */
+  /*height: 50px;  adjust to match the tallest string */
   /*min-width: 350px;  optional, prevents shrinking */
   /*vertical-align: middle;  keeps it aligned */
   /*overflow: hidden;  hide deleted letters */
