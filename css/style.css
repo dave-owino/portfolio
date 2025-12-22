@@ -515,10 +515,20 @@ figure figcaption {
   line-height: 1.5 !important;
 }
 
+/*#daviefolio-hero .slider-text-inner h2 {
+  display: inline-block;
+  color: #F5F7FA; /*#034d57;
+}*/
+
 #daviefolio-hero .slider-text-inner h2 {
   display: inline-block;
-  color: #F5F7FA; /*#034d57;*/
+  color: #F5F7FA;
+  height: 50px; /* adjust to match the tallest string */
+  min-width: 350px; /* optional, prevents shrinking */
+  vertical-align: middle; /* keeps it aligned */
+  overflow: hidden; /* hide deleted letters */
 }
+
 
 #daviefolio-hero .slider-text-inner .desc .typed-text {
   display: none;
