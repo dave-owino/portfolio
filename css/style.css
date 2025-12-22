@@ -554,7 +554,7 @@ figure figcaption {
   line-height: 1.5 !important;
   margin-bottom: 35px !important;
   font-weight: 500;
-  color: #140c01;
+  color: #4FC3F7; /*#140c01;*/
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
   word-wrap: break-word;
   width: 100% !important;
