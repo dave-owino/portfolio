@@ -536,7 +536,7 @@ figure figcaption {
 #daviefolio-hero .slider-text-inner .desc .typed-cursor {
   color: #4FC3F7; /*#e2dfdf;*/
   display: inline-block;
-  vertical-align: middle;
+ /* vertical-align: middle;*/
 }
 
 @media (max-width: 992px) {
