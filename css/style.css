@@ -529,13 +529,14 @@ figure figcaption {
   overflow: hidden; /* hide deleted letters */
 }
 
-
 #daviefolio-hero .slider-text-inner .desc .typed-text {
   display: none;
 }
 
 #daviefolio-hero .slider-text-inner .desc .typed-cursor {
   color: #4FC3F7; /*#e2dfdf;*/
+  display: inline-block;
+  vertical-align: middle;
 }
 
 @media (max-width: 992px) {
