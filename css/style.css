@@ -509,7 +509,7 @@ figure figcaption {
 #daviefolio-hero .slider-text-inner .desc .typed-cursor {
   /*#daviefolio-hero .flexslider .slider-text .slider-text-inner .desc .typed-cursor*/
   font-size: 35px !important;
-  font-weight: 600 !important;
+  font-weight: 100 !important;
   font-family: "Playfair Display", Georgia, serif;
   margin-bottom: 20px !important;
   line-height: 1.5 !important;
