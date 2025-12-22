@@ -528,15 +528,6 @@ figure figcaption {
   /*vertical-align: middle;  keeps it aligned */
   overflow: hidden;  /*hide deleted letters */
 }
-/*added*/
-#daviefolio-hero .slider-text-inner .desc .typed-output {
-  display: inline-block;
-  min-width: 350px; /* adjust to your longest string */
-  height: 40px; /* adjust to tallest string */
-  white-space: nowrap;
-  overflow: hidden;
-  vertical-align: middle;
-}
 
 /*.typed-text {
   display: inline-block;
@@ -544,7 +535,7 @@ figure figcaption {
 }
 */
 #daviefolio-hero .slider-text-inner .desc .typed-text {
-  display: none;
+  display: inline-block;
 }
 
 #daviefolio-hero .slider-text-inner .desc .typed-cursor {
