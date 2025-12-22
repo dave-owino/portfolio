@@ -544,7 +544,6 @@ figure figcaption {
 }
 */
 #daviefolio-hero .slider-text-inner .desc .typed-text {
-  display: inline-block;
   display: none;
 }
 
