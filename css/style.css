@@ -370,13 +370,68 @@ figure figcaption {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45); 
+ /* background: radial-gradient(circle, rgba(10,10,11,0.7) 0%, rgba(10,10,11,0.9) 100%);*/
+  background: radial-gradient(circle, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.9) 100%);
   z-index: 1;
 }
 
 .hero-container {
   position: relative;
   z-index: 2;
+}
+
+.intro-text {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1.2rem;
+    color: #00d4ff; /* Accent color */
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #cccccc;
+    text-align: left;
+}
+/*
+h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+*/
+
+.highlight {
+    color: #00d4ff;
+}
+
+.tech-stack {
+    margin-bottom: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #888;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.tech-stack span {
+    color: #ffffff;
+}
+
+.hero-description {
+    font-size: 1.5rem;
+    color: #cbd5e0;
+    /*color: #cccccc;*/
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 
 /* Button Styling */
