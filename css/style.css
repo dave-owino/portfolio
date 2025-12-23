@@ -618,14 +618,30 @@ padding: 0;: This removes all internal spacing within the element.*/
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+.bio-text {
+  padding: 0.5em 1em !important;
+  background: rgba(243, 242, 242, 0.7); 
+  opacity: 1;
+  border-radius: 0 15px !important;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow to make it pop */
+  
+}
 
 .bio-text p {
+  font-family: "Verdana", Geneva, Tahoma, sans-serif;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  color: #000;
+  text-align: left;
+}
+
+/*.bio-text p {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #a0a0a0;
     margin-bottom: 20px;
 }
-
+*/
 /* Burner Cards Styling */
 .burner-row {
     margin-top: 50px;
@@ -659,16 +675,36 @@ padding: 0;: This removes all internal spacing within the element.*/
     font-size: 22px;
 }
 
+
+
+
+
 /* Tool Tags */
-.tool-list span {
+.tool-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows them to wrap to the next line */
+    gap: 8px;        /* Consistent space between tags */
+    margin-top: 20px;
+}
+
+.skill-pill {
     display: inline-block;
-    background: rgba(0, 162, 255, 0.1);
-    color: #00a2ff;
-    padding: 5px 12px;
-    border-radius: 4px;
-    margin: 5px;
+    padding: 5px 15px;
+    border-radius: 50px; /* Makes them look like modern 'pills' */
     font-size: 14px;
     font-weight: 600;
+    background: rgba(255, 255, 255, 0.05); /* Very subtle transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #a0a0a0;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect to make it feel interactive */
+.skill-pill:hover {
+    color: #00a2ff; /* Your signature blue */
+    border-color: #00a2ff;
+    background: rgba(0, 162, 255, 0.05);
+    transform: translateY(-2px); /* Slight lift effect */
 }
 
 /* Service List */
