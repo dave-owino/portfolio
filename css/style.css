@@ -166,7 +166,7 @@ figure figcaption {
   top: 0;
   width: calc(100% - 365px) !important;
   z-index: 2000;
-  background-color: #393f4d;
+  background-color: transparent; /* #393f4d; */
   height: 52px !important;
   display: flex;
   align-items: center;
@@ -327,7 +327,7 @@ figure figcaption {
 
 /********* MENU *********/
 
-#top-daviefolio-section .col-md-9 {
+/*#top-daviefolio-section .col-md-9 {
   flex: 1;
 }
 
@@ -353,9 +353,127 @@ figure figcaption {
   color: #add8e6;
   background-color: #080707;
   padding: 10px 4px !important;
-}
+}*
 
 /******** HERO ********/
+/* Hero Container */
+.hero-full-screen {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    /* Use your dashboard image here */
+    background: url('your-background.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Darkened overlay for contrast */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(10, 11, 20, 0.7) 0%, rgba(10, 11, 20, 0.9) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    padding: 0 15px;
+}
+
+/* The Glass Effect Box */
+.glass-header {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 60px 40px;
+    border-radius: 24px;
+    display: inline-block;
+    max-width: 800px;
+}
+
+.eyebrow {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.85rem;
+    color: #00a2ff;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.text-blue { color: #00a2ff; }
+
+.expertise-row {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    color: #888;
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    color: #cbd5e0;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Button Styling */
+.hero-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 15px 35px;
+    border-radius: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: #00a2ff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #0081cc;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 162, 255, 0.3);
+}
+
+.btn-outline {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+}
+
+
+
+/*
 #daviefolio-hero {
   min-height: 620px !important;
   width: 100%;
@@ -363,9 +481,9 @@ figure figcaption {
   margin-bottom: 4em !important;
   clear: both;
   background: #fff url(../img/about/loader.gif) no-repeat center;
-}
+}*/
 /* Slider updated*/
-#daviefolio-hero .flexslider .slides {
+/*#daviefolio-hero .flexslider .slides {
   position: relative;
   overflow: visible;
   padding: 0;
@@ -375,7 +493,7 @@ figure figcaption {
 #daviefolio-hero .flexslider .slides li {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center; /* updated */
+  background-position: center center; 
   min-height: 400px;
   position: relative;
   list-style: none;
@@ -391,14 +509,14 @@ figure figcaption {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(10, 15, 30, 0.7); /* darker overlay */
+  background: rgba(10, 15, 30, 0.7); darker overlay 
   z-index: 1;
 }
 
 #daviefolio-hero .hero-text {
   position: relative;
   z-index: 2;
-  text-align: center;
+  text-align: left;
   color: #FFFFFF;
 }
 
@@ -407,7 +525,7 @@ figure figcaption {
   display: flex;
   justify-content: center;
 }
-
+*/
 /**
 #daviefolio-hero .flexslider .slides {
   position: relative;
@@ -445,6 +563,7 @@ figure figcaption {
   justify-content: center;
 }
 **/
+/**
 @media (max-width: 768px) {
   #daviefolio-hero .row {
     padding: 0 !important;
@@ -482,7 +601,7 @@ figure figcaption {
 }
 
 #daviefolio-hero .slider-text-inner .desc {
-  text-align: center !important;
+  text-align: left !important;
   margin-left: -25px !important;
 }
 
@@ -492,12 +611,11 @@ figure figcaption {
     text-align: center !important;
     margin: 0 !important;
   }
-}
+}**/
 
-#daviefolio-hero .slider-text-inner h1 {
-  /*#daviefolio-hero .flexslider .slider-text .slider-text-inner h1*/
+/*#daviefolio-hero .slider-text-inner h1 {
   margin-bottom: 20px !important;
-  color: #FFFFFF;/*#1a3d6d;*/
+  color: #FFFFFF;#1a3d6d;
   font-family: "Playfair Display", Georgia, serif;
   font-size: 60px !important;
   line-height: 1.5 !important;
@@ -516,10 +634,10 @@ figure figcaption {
 #daviefolio-hero .slider-text-inner h2 {
   display: inline-block;
   color: #F5F7FA;
-  height: 50px; /* adjust to match tallest string */
-  min-width: 350px; /* optional: prevents shrinking */
-  vertical-align: middle; /* aligns cursor and text */
-  overflow: hidden; /* prevents vibration when deleting letters */
+  height: 50px; 
+  min-width: 350px;
+  vertical-align: middle; 
+  overflow: hidden; 
 }
 
 #daviefolio-hero .slider-text-inner .desc .typed-text {
@@ -527,7 +645,7 @@ figure figcaption {
 }
 
 #daviefolio-hero .slider-text-inner .desc .typed-cursor {
-  color: #4FC3F7; /*#e2dfdf;*/
+  color: #4FC3F7; #e2dfdf;
   display: inline-block;
   vertical-align: middle;
 }
@@ -553,12 +671,11 @@ figure figcaption {
 }
 
 #daviefolio-hero .slider-text-inner h3 {
-  /*#daviefolio-hero .flexslider .slider-text .slider-text-inner h3*/
   font-size: 20px !important;
   line-height: 1.5 !important;
   margin-bottom: 35px !important;
   font-weight: 500;
-  color: #4FC3F7; /*#140c01;*/
+  color: #4FC3F7; /*#140c01;
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
   word-wrap: break-word;
   width: 100% !important;
@@ -572,24 +689,21 @@ figure figcaption {
 }
 
 #daviefolio-hero .slider-text-inner p {
-  /*#daviefolio-hero .flexslider .slider-text .slider-text-inner p*/
   margin-top: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   gap: 20px;
 }
 
 @media (max-width: 768px) {
   #daviefolio-hero .slider-text-inner p {
-    /*#daviefolio-hero .slider-text-inner .desc p */
     flex-direction: column;
     gap: 10px;
   }
 }
 
 #daviefolio-hero .btn-folio {
-  /*#daviefolio-hero .flexslider .slider-text .slider-text-inner .btn-folio*/
   background-color: #007bff;
   color: #e2dfdf;
   border: 1px solid #007bff !important;
@@ -602,7 +716,6 @@ figure figcaption {
 }
 
 #daviefolio-hero .btn-folio:hover {
-  /*#daviefolio-hero .flexslider .slider-text .slider-text-inner .btn-folio:hover*/
   color: #4169e1;
   background: transparent !important;
   border: 1px solid #000 !important;
@@ -611,11 +724,10 @@ figure figcaption {
 
 @media (max-width: 768px) {
   #daviefolio-hero .btn-folio {
-    /*#daviefolio-hero .flexslider .slider-text .slider-text-inner btn.btn-folio*/
     width: 100%;
     font-size: 0.9em !important;
   }
-}
+}*
 
 /********* OFF CANVAS *********/
 
