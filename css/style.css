@@ -605,6 +605,99 @@ padding: 0;: This removes all internal spacing within the element.*/
 /*************************/
 /********* ABOUT *********/
 /*************************/
+.daviefolio-about-section {
+    padding: 80px 0;
+    background: #0b0d17;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.bio-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #a0a0a0;
+    margin-bottom: 20px;
+}
+
+/* Burner Cards Styling */
+.burner-row {
+    margin-top: 50px;
+}
+
+.burner-card {
+    background: #161a23;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.4s;
+    height: 100%;
+}
+
+.burner-card:hover {
+    border-color: #00a2ff;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 162, 255, 0.1);
+}
+
+.burner-icon i {
+    font-size: 40px;
+    color: #00a2ff;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.burner-card h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* Tool Tags */
+.tool-list span {
+    display: inline-block;
+    background: rgba(0, 162, 255, 0.1);
+    color: #00a2ff;
+    padding: 5px 12px;
+    border-radius: 4px;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Service List */
+.service-list {
+    padding: 0;
+    list-style: none;
+    color: #a0a0a0;
+    text-align: left;
+}
+
+.service-list li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.service-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #00a2ff;
+}
+
+
+
+
+
+
+
 
 /* Row Styling */
 .row-bottom-padded-sm {
@@ -2065,7 +2158,7 @@ canvas {
 /******** DAVIEFOLIO ASIDE ********/
 
 #daviefolio-aside {
-  padding-top: 2.3em !important;
+  padding-top: 2.0em !important;
   padding-bottom: 30px !important;
   right: 35px !important;
   width: 300px !important;
@@ -2087,8 +2180,8 @@ canvas {
 }
 
 #daviefolio-aside .author-img {
-  width: 190px;
-  height: 190px;
+  width: 180px;
+  height: 180px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -2121,8 +2214,8 @@ canvas {
   }
 
   #daviefolio-aside .author-img {
-    width: 190px !important;
-    height: 190px !important;
+    width: 180px !important;
+    height: 180px !important;
     margin-bottom: 5px !important;
   }
 }
@@ -2152,13 +2245,45 @@ font-weight: 700!important;
 #daviefolio-logo a:hover {
 color: #f0a500;
 }
-
+/*
 #daviefolio-aside .position {
 display: block;
 margin-top: 0;
 margin-bottom: 1.7em;
 font-size: 13px;
 text-transform: uppercase;
+}
+*/
+/* Sidebar Social Links Container */
+.side-social-wrap {
+    margin-bottom: 30px; /* Space between links and the Menu below */
+}
+
+.side-social {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between each icon */
+}
+
+.side-social li a {
+    color: #888; /* Subtle grey by default */
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.side-social li a:hover {
+    color: #00a2ff; /* Your accent blue on hover */
+    transform: translateY(-2px);
+    display: inline-block;
+}
+
+/* Specific highlight for your most important engineering links */
+.side-social li a[title="GitHub"]:hover,
+.side-social li a[title="LinkedIn"]:hover {
+    color: #ffffff;
 }
 
 @media screen and (max-width: 768px) {
@@ -2175,11 +2300,11 @@ text-transform: uppercase;
     transition: color 0.3s ease-in-out;
   }
 
-  #daviefolio-aside .position {
+  /*#daviefolio-aside .position {
     margin-bottom: 1.5em !important;
     font-size: 13px !important;
     text-transform: uppercase;
-  }
+  }*/
 }
 
 #daviefolio-aside #daviefolio-main-menu {
@@ -2302,7 +2427,7 @@ text-transform: uppercase;
   display: block !important;
   padding: 0 !important;
 }
-
+/*
 #daviefolio-aside .daviefolio-footer ul {
   padding: 0;
   margin: 0;
@@ -2327,7 +2452,7 @@ text-transform: uppercase;
   outline: none;
   color: #2c98f0;
 }
-
+*/
 #daviefolio-aside .daviefolio-footer p {
   display: block;
   padding: 0 !important;
