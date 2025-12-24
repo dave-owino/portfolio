@@ -487,21 +487,24 @@ h1 {
   font-weight: bold;
 }
 
-
-
-
-.hero-actions .btn-folio:first-child {
-  background: #00d4ff;
-  color: #001018;
-  border-color: #00d4ff;
+#daviefolio-hero .btn-resume {
+  background-color: transparent;
+  color: #e2dfdf;
+  border: 1px solid #007bff !important;
+  padding: 15px 25px !important;
+  font-size: 1em !important;
+  border-radius: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
 }
 
-.hero-actions .btn-folio:last-child {
-  background: transparent;
+#daviefolio-hero .btn-resume:hover {
+  color: #4169e1;
+  background: transparent !important;
+  border: 1px solid #000 !important;
+  font-weight: bold;
 }
-
-
-
 
 /* Small screens (phones) */
 @media (max-width: 576px) {
