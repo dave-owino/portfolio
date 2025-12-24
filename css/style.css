@@ -460,7 +460,7 @@ h1 {
 }
 
 .hero-description {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #cbd5e0;
     line-height: 1.8;
     margin-bottom: 40px;
@@ -482,7 +482,7 @@ h1 {
   background-color: #007bff;
   color: #e2dfdf;
   border: 1px solid #007bff !important;
-  padding: 15px 25px !important;
+  padding: 10px 20px !important;
   font-size: 1em !important;
   border-radius: 35px;
   text-transform: uppercase;
@@ -501,7 +501,7 @@ h1 {
   background-color: transparent;
   color: #e2dfdf;
   border: 1px solid #007bff !important;
-  padding: 15px 25px !important;
+  padding: 10px 20px !important;
   font-size: 1em !important;
   border-radius: 35px;
   text-transform: uppercase;
