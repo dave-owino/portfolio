@@ -2460,7 +2460,10 @@ text-transform: uppercase;
 /* Specific highlight for your most important engineering links */
 .side-social li a[title="GitHub"]:hover,
 .side-social li a[title="LinkedIn"]:hover {
-    color: #ffffff;
+    color: #00a2ff; 
+    filter: brightness(1.2); 
+    text-shadow: 0 0 10px rgba(0, 162, 255, 0.6); 
+    transform: scale(1.15); 
 }
 
 @media screen and (max-width: 768px) {
@@ -2501,7 +2504,7 @@ text-transform: uppercase;
 
 #daviefolio-aside #daviefolio-main-menu ul li {
   margin: 0 0 10px 0;
-  padding: 0;
+  padding: 5px 0;
   list-style: none;
   font-size: 13px;
   font-weight: 500 !important;
