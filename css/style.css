@@ -371,7 +371,8 @@ figure figcaption {
   position: absolute;
   inset: 0;
  /* background: radial-gradient(circle, rgba(10,10,11,0.7) 0%, rgba(10,10,11,0.9) 100%);*/
-  background: radial-gradient(circle, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.9) 100%);
+  /*background: radial-gradient(circle, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.9) 100%);*/
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.2) 100%);
   z-index: 1;
 }
 
@@ -380,6 +381,15 @@ figure figcaption {
   width: 100%;
   z-index: 2;
   margin-left: 100px;
+}
+
+
+
+/* CHECK:This ensures the text stays readable and "pops" */
+.hero-container h1, 
+.hero-container p, 
+.hero-container span {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -2422,9 +2432,11 @@ text-transform: uppercase;
     margin-bottom: 30px; /* Space between links and the Menu below */
 }
 
+/* Target the container for your social icons */
 .side-social {
     padding: 0;
-    margin: 0;
+    margin: 15px 0;
+    /*margin: 0;*/
     list-style: none;
     display: flex;
     justify-content: center;
@@ -2432,14 +2444,16 @@ text-transform: uppercase;
 }
 
 .side-social li a {
-    color: #888; /* Subtle grey by default */
+    color: rgba(255, 255, 255, 0.6); /* Current faint color */
+    /*color: #888;  Subtle grey by default */
     font-size: 18px;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .side-social li a:hover {
     color: #00a2ff; /* Your accent blue on hover */
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    text-shadow: 0 0 8px rgba(0, 162, 255, 0.4);    
     display: inline-block;
 }
 
