@@ -382,6 +382,32 @@ figure figcaption {
   margin-left: 100px;
 }
 
+
+
+
+.hero-container > * {
+  animation: fadeUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.hero-container > *:nth-child(1) { animation-delay: 0.1s; }
+.hero-container > *:nth-child(2) { animation-delay: 0.2s; }
+.hero-container > *:nth-child(3) { animation-delay: 0.3s; }
+.hero-container > *:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
 /*.glass-header {
   width: 100%;
   margin-left: auto;
@@ -438,7 +464,7 @@ h1 {
 .hero-actions {
   margin-top: 6rem;
   display: flex;
-  gap: 10rem;
+  gap: 6rem;
   justify-content: center;
 }
 
@@ -460,6 +486,22 @@ h1 {
   border: 1px solid #000 !important;
   font-weight: bold;
 }
+
+
+
+
+.hero-actions .btn-folio:first-child {
+  background: #00d4ff;
+  color: #001018;
+  border-color: #00d4ff;
+}
+
+.hero-actions .btn-folio:last-child {
+  background: transparent;
+}
+
+
+
 
 /* Small screens (phones) */
 @media (max-width: 576px) {
