@@ -2504,7 +2504,7 @@ text-transform: uppercase;
 
 #daviefolio-aside #daviefolio-main-menu ul li {
   margin: 0 0 10px 0;
-  padding: 5px 0;
+  padding: 0 0 4px 0;
   list-style: none;
   font-size: 13px;
   font-weight: 500 !important;
