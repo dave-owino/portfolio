@@ -452,13 +452,6 @@ h1 {
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
-  #daviefolio-hero .btn-folio {
-    width: 100%;
-    font-size: 0.9em !important;
-  }
-}
-
 /* Small screens (phones) */
 @media (max-width: 576px) {
   .hero-full-screen {
