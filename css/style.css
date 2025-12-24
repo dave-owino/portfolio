@@ -397,14 +397,6 @@ h1 {
     color: #cccccc;
     text-align: left;
 }
-/*
-h1 {
-    font-size: 4rem;
-    font-weight: 800;
-    margin-bottom: 20px;
-    color: #ffffff;
-}
-*/
 
 .highlight {
     color: #00d4ff;
@@ -425,7 +417,6 @@ h1 {
 .hero-description {
     font-size: 1.5rem;
     color: #cbd5e0;
-    /*color: #cccccc;*/
     line-height: 1.8;
     margin-bottom: 40px;
     max-width: 600px;
@@ -465,6 +456,71 @@ h1 {
   #daviefolio-hero .btn-folio {
     width: 100%;
     font-size: 0.9em !important;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 576px) {
+  .hero-full-screen {
+    padding: 20px;
+    align-items: flex-start;
+  }
+
+  .hero-container {
+    text-align: left;
+    margin-top: 25%;
+  }
+
+  .intro-text {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+    line-height: 1.3;
+  }
+
+  .tech-stack {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-description {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .hero-actions {
+    margin-top: 3rem;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: stretch;
+  }
+
+  #daviefolio-hero .btn-folio {
+    width: 100%;
+    padding: 14px;
+    font-size: 0.85rem !important;
+    text-align: center;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .hero-description {
+    font-size: 1.2rem;
+  }
+
+  .hero-actions {
+    margin-top: 4rem;
+    gap: 2rem;
   }
 }
 
