@@ -1264,8 +1264,172 @@ canvas {
 /*********  WORK *********/
 /*************************/
 
+.work-intro-card {
+    background: #ffffff;
+    padding: 15px 25px; /* Increased slightly for better text breathing room */
+    margin-bottom: 25px; /* Gives a small gap before the projects start */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #007bff; 
+    transition: all 0.3s ease;
+}
+
+.work-intro-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transform: translateX(5px);
+}
+
+.work-accent-text {
+    font-family: "Quicksand", Arial, sans-serif;
+    font-size: 1.8rem; 
+    color: #000;
+    line-height: 1.5; 
+    margin: 0;
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* project card */
+.project-card {
+    background: #161618;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+/*
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #00d4ff;
+    box-shadow:
+        0 10px 30px rgba(0, 212, 255, 0.12),
+        inset 0 0 0 1px rgba(0, 212, 255, 0.15);
+}
+*/
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #00d4ff;
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.1);
+}
+
+/* Project Tags */
+.project-tag {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Tag Variants */
+.project-tag.engineering {
+    background: rgba(0, 212, 255, 0.2);
+    color: #00d4ff;
+}
+
+.project-tag.science {
+    background: rgba(191, 85, 236, 0.2);
+    color: #bf55ec;
+}
+
+.project-tag.bi {
+    background: rgba(46, 204, 113, 0.18);
+    color: #2ecc71;
+}
+
+/* Project Card Content */
+.project-card h3 {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #f1f1f1;
+}
+
+.project-card p {
+    font-family: 'Courier New', Courier, monospace;
+    color: #a0a0a0; 
+    font-size: 1.6rem; 
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Displays the technologies used in the project */
+.project-tech {
+    margin-bottom: 25px;
+}
+
+.project-tech span {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 1.4rem;
+    color: #b0b0b0;
+    background: #1f1f21;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-right: 8px;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
+/* View Project Link */
+.view-link {
+    text-decoration: none;
+    color: #00d4ff;
+    font-weight: 600;
+    font-size: 1.4rem;
+    position: relative;
+}
+
+.view-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #00d4ff;
+    transition: width 0.3s ease;
+}
+
+.project-card:hover .view-link::after {
+    width: 100%;
+}
+
+/* ============================
+   Responsive Adjustments
+============================ */
+@media (max-width: 768px) {
+    .projects-section {
+        padding: 70px 6%;
+    }
+
+    .project-card {
+        padding: 24px;
+    }
+
+    .section-header h2 {
+        font-size: 2.1rem;
+    }
+}
+
+
+
+
+
 /*********  MENU *********/
-#workfolio {
+/*#workfolio {
   position: relative;
   padding: 5px 0 20px 0;
 }
@@ -1314,6 +1478,7 @@ canvas {
   border-color: #0056b3;
   color: #fff;
 }
+  */
 
 /***** PROJECTS *****/
 .workfolio-container {
