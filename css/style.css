@@ -2461,29 +2461,28 @@ text-transform: uppercase;
 /* Target the container for your social icons */
 .side-social {
     padding: 0;
-    margin: 15px 0;
-    /*margin: 0;*/
+    margin: 20px 0; /* Slightly more margin to separate from your name */
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 15px; /* Space between each icon */
+    gap: 18px; /* Increased slightly for easier clicking on mobile/tablets */
 }
 
 .side-social li a {
-    color: rgba(255, 255, 255, 0.6); /* Current faint color */
-    /*color: #888;  Subtle grey by default */
-    font-size: 18px;
-    transition: 0.3s ease;
+    color: rgba(255, 255, 255, 0.7); /* Slightly brighter base color for accessibility */
+    font-size: 2rem; /* Bumped up slightly to dominate the sidebar space */
+    transition: all 0.3s ease;
+    display: inline-block; /* Required for the transform effect below */
 }
 
+/* The "Glow" effect to match your hero text highlights */
 .side-social li a:hover {
-    color: #00a2ff; /* Your accent blue on hover */
-    transform: translateY(-3px);
-    text-shadow: 0 0 8px rgba(0, 162, 255, 0.4);    
-    display: inline-block;
+    color: #00d4ff; /* Matches your 'Hi, I'm David' cyan */
+    transform: translateY(-3px); /* Subtle lift effect */
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5); /* Glowing effect */
 }
 
-/* Specific highlight for your most important engineering links */
+/* Specific highlight for your most important engineering links 
 .side-social li a[title="GitHub"]:hover,
 .side-social li a[title="LinkedIn"]:hover {
     color: #00a2ff; 
@@ -2491,7 +2490,7 @@ text-transform: uppercase;
     text-shadow: 0 0 10px rgba(0, 162, 255, 0.6); 
     transform: scale(1.15); 
 }
-
+*/
 @media screen and (max-width: 768px) {
   #daviefolio-logo {
     display: block;
