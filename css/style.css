@@ -752,18 +752,18 @@ padding: 0;: This removes all internal spacing within the element.*/
 /*************************/
 .daviefolio-about-section {
   padding: 80px 0;
-  background: #0b0d17;
+  /* background: #0b0d17; */
 }
 
 .bio-profile-card {
   background: rgba(10, 10, 11, 0.85); /* Dark semi-transparent background */
   border-left: 5px solid #00d4ff; /* Signature cyan vertical accent */
-  padding: 20px;
+  padding: 20px 20px 5px 20px;
   border-radius: 12px;
   -webkit-backdrop-filter: blur(15px); /* Smooth glass effect for Safari */
   backdrop-filter: blur(15px); /* Smooth glass effect */
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 :root {
@@ -782,10 +782,6 @@ padding: 0;: This removes all internal spacing within the element.*/
   font-size: 15px !important;
   line-height: 1.6 !important;
   color: rgba(255, 255, 255, 0.9);
-  /*margin-bottom: 20px;*/
-}
-.bio-text p {
-  color: #000;
   text-align: left;
 }
 
@@ -795,39 +791,16 @@ padding: 0;: This removes all internal spacing within the element.*/
 }
 
 .card-footer-quote {
-  margin-top: 25px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  color: #00d4ff; /* Signature cyan for the quote */
-  text-align: right;
-  font-size: 1.2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #00d4ff; 
+    text-align: center;
+    font-size: 14px; /* Improved readability */
+    margin-top: 20px; /* More space above the line for a cleaner look */
+    padding-top: 15px; /* More space below the line for the quote */
+    font-style: italic;
+    letter-spacing: 0.5px;
 }
 
-/* .section-title {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 30px;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-*/
-/*
-.bio-text {
-  padding: 0.5em 1em !important;
-  background: rgba(243, 242, 242, 0.7); 
-  opacity: 1;
-  border-radius: 0 15px !important;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow to make it pop 
-  
-}*/
-/*
-
-*/
-
-/*
-
-*/
 /* Burner Cards Styling */
 .burner-row {
   margin-top: 5px;
