@@ -1842,7 +1842,94 @@ canvas {
 /*****************************/
 /********* EDUCATION *********/
 /*****************************/
+/* Timeline Label Adjustments */
+.timeline-label {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-left: 5px solid #007bff;
+    margin-bottom: 20px;
+}
 
+.timeline-label h2 {
+    font-family: Verdana, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.badge-ongoing {
+    font-size: 0.7rem;
+    background: #007bff;
+    color: #ffffff;
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/* Certifications Link Styling */
+.cert-heading {
+    font-family: Verdana, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.cert-card {
+    text-decoration: none !important; /* Removes link underline */
+    background: #fcfcfc;
+    border: 1px solid #eee;
+    padding: 18px;
+    border-radius: 6px;
+    display: block;
+    transition: all 0.2s ease-in-out;
+}
+
+.cert-card:hover {
+    border-color: #007bff;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,123,255,0.1);
+    transform: translateY(-2px);
+}
+
+.cert-org {
+    display: block;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #007bff;
+}
+
+.cert-name {
+    display: block;
+    font-family: Verdana, sans-serif;
+    font-size: 0.95rem;
+    color: #333;
+    margin-top: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .daviefolio-education .col-md-12 p {
   padding: 0 1em;
   text-align: left;
@@ -1885,7 +1972,7 @@ canvas {
   clear: both;
 }
 
-/* line down*/
+
 .timeline-centered:before {
   content: "";
   position: absolute;
@@ -1897,7 +1984,7 @@ canvas {
   margin-left: 20px;
 }
 
-/*controls the items of the line*/
+
 .timeline-centered .timeline-entry {
   position: relative;
   margin-top: 5px;
@@ -1985,7 +2072,7 @@ canvas {
   margin-bottom: 0.8rem !important;
 }
 
-/* Education at Datacamp */
+
 .timeline-label > strong {
   display: block;
   font-size: 1.6rem;
@@ -2046,7 +2133,7 @@ canvas {
   opacity: 0.4;
   font-size: 16px;
 }
-
+*/
 /*******************************/
 /********* SERVICES ************/
 /*******************************/
