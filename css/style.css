@@ -668,39 +668,29 @@ padding: 0;: This removes all internal spacing within the element.*/
   display: block !important;
 }
 
-/*.folio-title-box {
-  padding-top: 2rem !important;
-  margin-bottom: 2rem !important;
-}*/
-
 .folio-title-box {
-    display: flex;
-    align-items: center; 
-    gap: 15px; 
-    margin-bottom: 25px;
-}
-
-/* Blog Page*/
-.daviefolio-blog-project .title-box {
-  padding-top: 5rem !important;
-  margin-bottom: 2rem !important;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px !important;
+  margin-top: 25px !important;
 }
 
 .folio-title-line-mf {
-    width: 60px;         /* Length of the horizontal line */
-    height: 15px;         /* Thickness of the line */
-    background-color: #ff4b2b; /* Matches the orange/red accent */
-    display: inline-block;
+  width: 60px; /* Length of the horizontal line */
+  height: 15px; /* Thickness of the line */
+  background-color: #ff4b2b; /* Matches the orange/red accent */
+  display: inline-block;
 }
 
 .daviefolio-heading-meta {
-    font-size: 18px !important;
-    text-transform: uppercase;
-    color: #00d4ff;      
-    font-weight: 600;
-    letter-spacing: 5px !important;
-    white-space: nowrap; /* Prevents the text from wrapping to a new line */
-    line-height: 1.2; /* Adjust line height for better spacing */
+  font-size: 18px !important;
+  text-transform: uppercase;
+  color: #00d4ff;
+  font-weight: 600;
+  letter-spacing: 5px !important;
+  white-space: nowrap; /* Prevents the text from wrapping to a new line */
+  line-height: 1.2; /* Adjust line height for better spacing */
 }
 
 .daviefolio-heading span {
@@ -746,12 +736,12 @@ padding: 0;: This removes all internal spacing within the element.*/
 }
 
 .bio-profile-card {
-  background: rgba(10, 10, 11, 0.85); 
-  border-left: 5px solid #00d4ff; 
+  background: rgba(10, 10, 11, 0.85);
+  border-left: 5px solid #00d4ff;
   padding: 20px 20px 15px 20px; /* Suggested 15px bottom for better corner balance */
   border-radius: 12px;
-    -webkit-backdrop-filter: blur(15px); /* Smooth glass effect for Safari */
-  backdrop-filter: blur(15px); 
+  -webkit-backdrop-filter: blur(15px); /* Smooth glass effect for Safari */
+  backdrop-filter: blur(15px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
   margin-bottom: 10px;
 }
@@ -781,14 +771,14 @@ padding: 0;: This removes all internal spacing within the element.*/
 }
 
 .card-footer-quote {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: #00d4ff; 
-    text-align: center;
-    font-size: 14px; /* Improved readability */
-    margin-top: 20px; /* More space above the line for a cleaner look */
-    padding-top: 15px; /* More space below the line for the quote */
-    font-style: italic;
-    letter-spacing: 0.5px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #00d4ff;
+  text-align: center;
+  font-size: 14px; /* Improved readability */
+  margin-top: 20px; /* More space above the line for a cleaner look */
+  padding-top: 15px; /* More space below the line for the quote */
+  font-style: italic;
+  letter-spacing: 0.5px;
 }
 
 /* Burner Cards Styling */
@@ -2076,6 +2066,98 @@ canvas {
 /********* BLOG CSS *********/
 /*******************************/
 
+.blog-title-box {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5); /* Faded white for a clean dashboard look */
+  letter-spacing: 4px;
+  font-weight: 600;
+  margin-bottom: 30px; /* Creates space before the cards start */
+  padding-left: 2px;
+}
+
+/* Blog Card Container */
+.blog-entry-card {
+  background: rgba(10, 10, 11, 0.85); /* Matches Bio Card */
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  -webkit-backdrop-filter: blur(15px); /* For Safari */
+  backdrop-filter: blur(15px);
+}
+
+.blog-entry-card:hover {
+  transform: translateY(-10px); /* Pro lift effect */
+  border-color: rgba(0, 212, 255, 0.5); /* Cyan glow */
+}
+
+/* Metadata Styling */
+.blog-meta {
+  margin-bottom: 10px;
+  font-size: 14px !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.meta-date {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.meta-cat {
+  color: #00d4ff; /* Professional Cyan */
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+/* Typography */
+.blog-desc {
+  padding: 15px;
+}
+
+.blog-desc h3 a {
+  color: #fff;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.7rem;
+  transition: 0.3s;
+  margin-bottom: 0.5em;
+}
+
+.blog-desc h3 a:hover {
+  color: #00d4ff;
+}
+
+.blog-desc p {
+  font-family: "Quicksand", Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Call to Action */
+.read-more {
+  color: #00d4ff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.read-more i {
+  margin-left: 5px;
+  transition: 0.3s;
+}
+.read-more:hover i {
+  transform: translateX(5px);
+}
+
+/* Blog Page
+
+
 .blog-entry {
   width: 100%;
   background: #fff;
@@ -2108,12 +2190,13 @@ canvas {
     width: 100%;
   }
 
-  /* Reduce hover scale effect for smaller screens */
+  /* Reduce hover scale effect for smaller screens 
   .blog-entry:hover .blog-img img {
     transform: scale(1.02);
   }
 }
-
+*/
+/*
 .blog-entry:hover .blog-img img {
   transform: scale(1.05);
 }
@@ -2169,6 +2252,7 @@ canvas {
     text-align: center;
   }
 }
+*/
 
 /*******************************/
 /********* CONTACT CSS *********/
