@@ -668,9 +668,16 @@ padding: 0;: This removes all internal spacing within the element.*/
   display: block !important;
 }
 
-.folio-title-box {
+/*.folio-title-box {
   padding-top: 2rem !important;
   margin-bottom: 2rem !important;
+}*/
+
+.folio-title-box {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+    margin-bottom: 25px;
 }
 
 /* Blog Page*/
@@ -680,37 +687,20 @@ padding: 0;: This removes all internal spacing within the element.*/
 }
 
 .folio-title-line-mf {
-  top: 0;
-  float: left;
-  width: 100px !important;
-  height: 4px !important;
-  background-color: #ff4800;
-  margin: 0 auto;
-  padding: 0;
-  margin-right: 10px !important;
+    width: 60px;         /* Length of the horizontal line */
+    height: 15px;         /* Thickness of the line */
+    background-color: #ff4b2b; /* Matches the orange/red accent */
+    display: inline-block;
 }
 
 .daviefolio-heading-meta {
-  margin-bottom: 20px !important;
-  display: block;
-  font-size: 20px !important;
-  text-transform: uppercase;
-  color: #ff0;
-  font-weight: 600 !important;
-  letter-spacing: 5px !important;
-  height: 4px !important;
-  line-height: 4px !important;
-}
-
-.daviefolio-heading {
-  font-size: 18px !important;
-  margin-bottom: 2em !important;
-  font-weight: 700 !important;
-  text-transform: uppercase;
-  letter-spacing: 5px !important;
-  line-height: 1.8 !important;
-  position: relative;
-  color: #2c98f0;
+    font-size: 18px !important;
+    text-transform: uppercase;
+    color: #00d4ff;      
+    font-weight: 600;
+    letter-spacing: 5px !important;
+    white-space: nowrap; /* Prevents the text from wrapping to a new line */
+    line-height: 1.2; /* Adjust line height for better spacing */
 }
 
 .daviefolio-heading span {
