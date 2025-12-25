@@ -749,6 +749,44 @@ padding: 0;: This removes all internal spacing within the element.*/
     background: #0b0d17;
 }
 
+.bio-profile-card {
+    background: rgba(10, 10, 11, 0.85); /* Dark semi-transparent background */
+    border-left: 5px solid #00d4ff; /* Signature cyan vertical accent */
+    padding: 40px;
+    border-radius: 12px;
+    -webkit-backdrop-filter: blur(15px); /* Smooth glass effect for Safari */
+    backdrop-filter: blur(15px); /* Smooth glass effect */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    margin-bottom: 40px;
+}
+
+.accent-text {
+    color: #ffffff;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.bio-main-text p {
+    font-size: 1.15rem; /* Slightly larger for better readability */
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+}
+
+.bio-main-text strong {
+    color: #00d4ff; /* Highlights key credentials in cyan */
+    font-weight: 700;
+}
+
+.card-footer-quote {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #00d4ff; /* Signature cyan for the quote */
+    text-align: right;
+    font-size: 1.2rem;
+}
+
 /* .section-title {
     font-size: 32px;
     font-weight: 700;
@@ -758,15 +796,16 @@ padding: 0;: This removes all internal spacing within the element.*/
     letter-spacing: 2px;
 }
 */
+/*
 .bio-text {
   padding: 0.5em 1em !important;
   background: rgba(243, 242, 242, 0.7); 
   opacity: 1;
   border-radius: 0 15px !important;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow to make it pop */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow to make it pop 
   
-}
-
+}*/
+/*
 .bio-text p {
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
   font-size: 15px !important;
@@ -774,29 +813,13 @@ padding: 0;: This removes all internal spacing within the element.*/
   color: #000;
   text-align: left;
 }
-
-
+*/
 
 
 :root {
     --accent: #030303;/*#00a2ff;*/
 }
-/*
-.about-section {
-    padding: 80px 5%;
-    background: #0f172a;
-    color: var(--text-main);
-}
 
-.about-container {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 50px;
-    max-width: 1100px;
-    margin: 0 auto;
-    align-items: center;
-}
-*/
 .accent-text {
     color: var(--accent);
     font-size: 1.2rem;
@@ -1025,13 +1048,13 @@ padding: 0;: This removes all internal spacing within the element.*/
 .col-md-12 p {
   padding: 0.5em 1em !important;
   margin: 0;
-  background: rgba(243, 242, 242, 0.7); 
+  /*background: rgba(243, 242, 242, 0.7); */
   border-radius: 0 15px !important;
   text-align: left;
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
   font-size: 15px !important;
   line-height: 1.6 !important; 
-  color: #000;
+  /*color: #000;*/
   word-wrap: break-word;
 }
 
@@ -1044,9 +1067,10 @@ padding: 0;: This removes all internal spacing within the element.*/
     border: 1px solid rgba(0, 212, 255, 0.2); /* Faint cyan border */
     border-radius: 12px;
     padding: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     -webkit-backdrop-filter: blur(10px); /* Safari support */
     backdrop-filter: blur(10px); /* Glassmorphism effect */
+    color: #e0e3f0;
 }
 
 .expertise-card .cyan-text {
