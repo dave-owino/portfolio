@@ -801,7 +801,7 @@ text-transform: uppercase;
     padding-right: 6%;
     padding-top: 30px;
 
-    min-height: 0;           /* Avoid forcing tall sections on mobile */
+    min-height: 0;           /* auto---Avoid forcing tall sections on mobile */
     justify-content: flex-start;
 
     gap: 8px;
