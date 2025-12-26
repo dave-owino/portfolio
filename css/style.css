@@ -2010,8 +2010,8 @@ canvas {
 @media (max-width: 768px) {
 
   .daviefolio-academics-journey {
-    padding: 16px;
-    margin: 8px 0;
+    padding: 5px;
+    margin-top: 16px;
     border-radius: 10px;
   }
 
@@ -2027,13 +2027,13 @@ canvas {
 
   /* Degree / Title */
   .timeline-label .mb-1 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.4;
   }
 
   /* Institution */
   .edu-institution {
-    font-size: 1.05rem;
+    font-size: 1.4rem;
     display: block; /* stack nicely */
   }
 
@@ -2044,27 +2044,27 @@ canvas {
 
   /* Date */
   .edu-date {
-    font-size: 1rem;
+    font-size: 1.2rem;
     display: block;
     margin-top: 2px;
   }
 
   /* Body text */
   .timeline-label p {
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     line-height: 1.5;
   }
 
   /* Badge */
   .badge-ongoing {
-    font-size: 0.85rem;
+    font-size: 1.2rem;
     padding: 2px 8px;
     margin-left: 6px;
   }
 
   /* Certifications */
   .cert-heading {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-bottom: 12px;
   }
 
@@ -2078,7 +2078,7 @@ canvas {
   }
 
   .cert-org {
-    font-size: 1.05rem;
+    font-size: 1.2rem;
   }
 
   .cert-name {
