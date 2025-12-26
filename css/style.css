@@ -1677,13 +1677,13 @@ canvas {
   padding-left: 15px;
   padding-right: 15px;
 }
-
+/*
 .blog-btn {
   background-color: #007bff;
   padding-left: 35px;
   padding-right: 35px;
 }
-
+*
 .butn:hover {
   background-color: #0c1c2c;
 }
@@ -2103,224 +2103,10 @@ canvas {
   }
 }
 
-
-
-
-
-
-
-
-
-
-/*
-.daviefolio-education .col-md-12 p {
-  padding: 0 1em;
-  text-align: left;
-  font-size: 16px;
-  background: rgba(243, 242, 242, 0.5);
-  opacity: 1;
-  border-radius: 0 15px !important;
-}
-
-.daviefolio-education .col-md-12.animate-box > p {
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: "Verdana", Geneva, Tahoma, sans-serif;
-  color: #000;
-  padding: 0.5em 1em !important;
-}
-
-.timeline-centered {
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.timeline-centered:after,
-.timeline-centered:before {
-  content: " ";
-  display: table;
-}
-
-.timeline-centered:after {
-  clear: both;
-}
-
-.timeline-centered:after,
-.timeline-centered:before {
-  content: " ";
-  display: table;
-}
-
-.timeline-centered:after {
-  clear: both;
-}
-
-
-.timeline-centered:before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 1px;
-  background: #fd0202;
-  top: 20px;
-  bottom: 20px;
-  margin-left: 20px;
-}*/
-/*
-
-.timeline-centered .timeline-entry {
-  position: relative;
-  margin-top: 5px;
-  margin-left: 30px;
-  margin-bottom: 10px;
-  clear: both;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner {
-  position: relative;
-  margin-left: -20px;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
-  display: block;
-  width: 20px;
-  height: 20px;
-  background: #2c98f0;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-  text-align: center;
-  -moz-box-shadow: 0 0 0 5px #f2f3f7;
-  -webkit-box-shadow: 0 0 0 5px #f2f3f7;
-  box-shadow: 0 0 0 5px #f2f3f7;
-  line-height: 40px;
-  float: left;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon i {
-  color: #fff;
-}
-
-.timeline-centered
-  .timeline-entry
-  .timeline-entry-inner
-  .timeline-icon.color-2 {
-  background: #ec5453;
-}
-
-.timeline-centered
-  .timeline-entry
-  .timeline-entry-inner
-  .timeline-icon.color-3 {
-  background: #f9bf3f;
-}
-
-.timeline-centered
-  .timeline-entry
-  .timeline-entry-inner
-  .timeline-icon.color-4 {
-  background: #a84cb8;
-}
-
-.timeline-centered
-  .timeline-entry
-  .timeline-entry-inner
-  .timeline-icon.color-5 {
-  background: #2fa499;
-}
-
-.timeline-centered
-  .timeline-entry
-  .timeline-entry-inner
-  .timeline-icon.color-none {
-  background: #4054b2;
-  width: 20px;
-  height: 20px;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
-  position: relative;
-  background: rgba(243, 242, 242, 0.5);
-  padding: 1.5em;
-  margin-left: 35px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
-  padding-top: 10px;
-}
-
-.mb-1,
-.mt-1 {
-  margin-bottom: 0.8rem !important;
-}
-
-
-.timeline-label > strong {
-  display: block;
-  font-size: 1.6rem;
-  color: #f2f3f7;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  font-family: "Verdana", Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  margin-left: 17px;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 9px 9px 9px 0;
-  border-color: transparent #f2f3f7 transparent transparent;
-  left: 0;
-  top: 10px;
-  margin-left: -9px;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p + p {
-  margin-top: 15px;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
-  font-size: 20px;
-  font-family: "Quicksand", Arial, sans-serif;
-  font-weight: 500;
-}
-
-.timeline-label h2 {
-  color: #2fa499;
-}
-
-.timeline-label li {
-  color: #000;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 a {
-  color: #000;
-}
-
-.timeline-centered
-  .timeline-entry
-  .timeline-entry-inner
-  .timeline-label
-  h2
-  span {
-  -webkit-opacity: 0.4;
-  -moz-opacity: 0.4;
-  opacity: 0.4;
-  font-size: 16px;
-}
-*/
 /*******************************/
 /********* SERVICES ************/
 /*******************************/
-
+/*
 .row-pt-md {
   padding: 2em 1em 0 0.8em;
 }
@@ -2496,7 +2282,7 @@ canvas {
 .iservices.color-6 .icon:after {
   border-color: #4054b2 transparent transparent transparent;
 }
-
+*/
 /*******************************/
 /********* BLOG CSS *********/
 /*******************************/
@@ -2506,34 +2292,41 @@ canvas {
   font-size: 14px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
-  /* Faded white for a clean dashboard look */
   letter-spacing: 4px;
   font-weight: 600;
   margin-bottom: 30px;
-  /* Creates space before the cards start */
   padding-left: 2px;
 }
 
 /* Blog Card Container */
 .blog-entry-card {
   background: rgba(10, 10, 11, 0.85);
-  /* Matches Bio Card */
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 12px;
   overflow: hidden;
   margin-bottom: 30px;
   transition: transform 0.3s ease, border-color 0.3s ease;
   -webkit-backdrop-filter: blur(15px);
-  /* For Safari */
   backdrop-filter: blur(15px);
 }
 
 .blog-entry-card:hover {
   transform: translateY(-10px);
-  /* Pro lift effect */
   border-color: rgba(0, 212, 255, 0.5);
-  /* Cyan glow */
 }
+
+.blog-thumb {
+  padding: 4px;          
+  border-radius: 12px;    
+  display: block;      
+  width: 100%;           
+  box-sizing: border-box; 
+}
+
+
+
+
+
 
 /* Metadata Styling */
 .blog-meta {
@@ -2549,7 +2342,6 @@ canvas {
 
 .meta-cat {
   color: #00d4ff;
-  /* Professional Cyan */
   font-weight: 700;
   margin-left: 10px;
 }
