@@ -2006,7 +2006,102 @@ canvas {
   margin-top: 4px;
 }
 
+/* Small screens: phones & small tablets */
+@media (max-width: 768px) {
 
+  .daviefolio-academics-journey {
+    padding: 16px;
+    margin: 8px 0;
+    border-radius: 10px;
+  }
+
+  /* Disable large hover movement on mobile */
+  .daviefolio-academics-journey:hover {
+    transform: none;
+  }
+
+  .timeline-label {
+    padding: 16px;
+    border-left-width: 4px;
+  }
+
+  /* Degree / Title */
+  .timeline-label .mb-1 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  /* Institution */
+  .edu-institution {
+    font-size: 1.05rem;
+    display: block; /* stack nicely */
+  }
+
+  /* Separator hidden on mobile */
+  .edu-separator {
+    display: none;
+  }
+
+  /* Date */
+  .edu-date {
+    font-size: 1rem;
+    display: block;
+    margin-top: 2px;
+  }
+
+  /* Body text */
+  .timeline-label p {
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+
+  /* Badge */
+  .badge-ongoing {
+    font-size: 0.85rem;
+    padding: 2px 8px;
+    margin-left: 6px;
+  }
+
+  /* Certifications */
+  .cert-heading {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+
+  .cert-grid {
+    grid-template-columns: 1fr; /* single column */
+    gap: 12px;
+  }
+
+  .cert-card {
+    padding: 14px;
+  }
+
+  .cert-org {
+    font-size: 1.05rem;
+  }
+
+  .cert-name {
+    font-size: 1rem;
+  }
+
+  /* Reduce hover effects on mobile */
+  .cert-card:hover {
+    transform: none;
+    box-shadow: none;
+    background: #161a23;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-label {
+    padding: 14px;
+  }
+
+  .timeline-label .mb-1 {
+    font-size: 1.1rem;
+  }
+}
 
 
 
