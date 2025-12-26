@@ -795,6 +795,30 @@ text-transform: uppercase;
   gap: 10px;
 }
 
+@media (max-width: 768px) {
+  .hero-container {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 30px;
+
+    min-height: 0;           /* Avoid forcing tall sections on mobile */
+    justify-content: flex-start;
+
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 24px;
+
+    gap: 6px;
+  }
+}
+
+
 /* CHECK:This ensures the text stays readable and "pops" */
 .hero-container h1,
 .hero-container p,
