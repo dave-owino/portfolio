@@ -103,13 +103,14 @@ figure figcaption {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background-image: url("../img/about/back5.webp");
-  background-repeat: repeat-y;
-  background-position: center center;
-  background-attachment: fixed;
+  background-color: #0f172a;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(210,100%,16%,1) 0, transparent 50%), 
+    radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%);
   padding-left: 30px !important;
   padding-right: 30px !important;
   background-size: 100% auto;
+  color: #f8fafc;
 }
 
 /* Prevents issues with background-attachment on mobile */
@@ -140,44 +141,23 @@ figure figcaption {
   box-sizing: border-box;
 }
 
-/******** DAVIEFOLIO MAIN ********/
-
-#daviefolio-main {
-  position: relative;
-  width: calc(100% - 305px) !important;
-  left: 0;
-  display: block;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  margin-left: 0;
-}
-
-@media screen and (max-width: 768px) {
-  #daviefolio-main {
-    width: 100% !important;
-    position: relative;
-    margin-left: 0;
-    padding: 0 0.5em !important;
-  }
-}
-
+/**************************************/
 /********* TOP SECTION *********/
+/**************************************/
 
 #top-daviefolio-section {
   position: fixed !important;
   top: 0;
-  width: calc(100% - 365px) !important;
+  left: 335px;
+  width: calc(100% - 370px) !important;
   z-index: 2000;
-  background-color: transparent;
-  /* #393f4d; */
+  background-color: transparent !important;
   height: 52px !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  /*box-sizing: border-box; */
 }
 
 @media (max-width: 768px) {
@@ -188,6 +168,137 @@ figure figcaption {
     font-size: 0.8em !important;
   }
 }
+
+/********* LOGO *********/
+/*
+#logo {
+    padding-top: 30px;    
+    padding-left: 30px;   
+    margin-bottom: 25px;  
+    display: flex;        
+    justify-content: flex-start; 
+}
+
+.logo-img {
+    width: 90px;          
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.4));
+    transition: filter 0.3s ease, transform 0.3s ease;
+    cursor: pointer;     
+}
+
+.logo-img:hover {
+    filter: drop-shadow(0 0 15px rgba(0, 212, 255, 0.7));
+    transform: scale(1.05); 
+}
+*/
+/* Logo container */
+#logo {
+    padding-top: 30px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+/* Logo image (single source of truth) */
+#logo img {
+    width: 90px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+    /* Glow effect */
+    filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.4));
+
+    /* Smooth interaction */
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+#logo img:hover {
+    filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.7));
+    transform: scale(1.05);
+}
+
+
+
+/*
+#logo img {
+  width: 90px !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin-top: 0 !important;
+  padding: 0 !important;
+}
+
+
+.logo-img {
+    filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.4));
+    height: auto;       
+    max-width: 120px;     
+    display: block;
+}
+
+#logo {
+    padding-top: 30px;   
+    padding-left: 30px;   
+    margin-bottom: 20px;  
+}
+
+.logo-img {
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.logo-img:hover {
+    filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.7)); 
+    transform: scale(1.05); 
+}
+*/
+
+/* Tablet View (Small Laptops & iPads) */
+@media screen and (max-width: 768px) {
+    #logo {
+        padding-top: 20px;
+        padding-left: 30px; /* Aligns with the reduced margins usually found on tablets */
+    }
+    .logo-img {
+        width: 120px; /* Slightly smaller than desktop */
+    }
+}
+/*
+@media screen and (max-width: 768px) {
+  #logo img {
+    width: 120px !important;
+    height: auto !important;
+    padding-left: 30px !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+*/
+/* Mobile View (Smartphones) */
+@media screen and (max-width: 480px) {
+    #logo {
+        padding-top: 15px;
+        padding-left: 15px; /* Minimal space to maximize screen real estate */
+        justify-content: center; /* Optional: Center the logo on tiny screens */
+    }
+    .logo-img {
+        width: 80px; /* Compact size for mobile headers */
+    }
+}
+
+/*
+@media screen and (max-width: 480px) {
+  #logo img {
+    width: 80px !important;
+    height: auto !important;
+    padding-left: 25px !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+*/
 
 /* Navigation Toggle -three lines*/
 .daviefolio-nav-toggle {
@@ -299,35 +410,427 @@ figure figcaption {
   }
 }
 
-/********* LOGO *********/
 
-#logo img {
-  width: 90px !important;
-  max-width: 100% !important;
-  height: auto !important;
-  margin-top: 0 !important;
-  padding: 0 !important;
+
+/**************************************/
+/********* DAVIEFOLIO ASIDE *********/
+/**************************************/
+
+#daviefolio-aside {
+    position: fixed;
+    top: 0;
+    left: 35px;  
+    width: 300px;
+    height: 100vh;
+    z-index: 1000;
+
+    padding-top: 2em;
+    padding-bottom: 30px;
+
+    /* Dark Glass Effect */
+    background: rgba(2, 6, 23, 0.88); /* #020617 with opacity */
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.45);
+
+    transition: 0.5s;
+    overflow: hidden; 
+}
+/*
+#daviefolio-aside {
+    padding-top: 2em !important;
+    padding-bottom: 30px !important;
+    width: 300px !important;
+    right: 35px !important;
+    position: fixed;
+    z-index: 2001;
+    background: rgba(45, 84, 94, 0.85) !important;
+    -webkit-backdrop-filter: blur(15px); 
+    backdrop-filter: blur(15px);
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.1);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    top: 0;
+    left: 35px;  
+    height: 100vh !important;
+    overflow: hidden;
+}
+*/
+/*
+#daviefolio-aside {
+  
+ 
+  
+
+  
+  z-index: 2001;
+  background: #2d545e;
+
+  background: rgba(45, 84, 94, 0.95); 
+   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+
+  
+
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  margin-right: 0;
+  top: 0;
+  height: 100vh !important;
+  overflow: hidden;
+}
+*/
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+#daviefolio-aside::-webkit-scrollbar {
+  display: none;
 }
 
-@media screen and (max-width: 480px) {
-  #logo img {
-    width: 80px !important;
-    height: auto !important;
-    padding-left: 25px !important;
-    margin-right: 0 !important;
-    padding-right: 0 !important;
-  }
+#daviefolio-aside .author-img {
+  width: 180px;
+  height: 180px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  background-image: url(../img/about/about.jpg);
 }
 
 @media screen and (max-width: 768px) {
-  #logo img {
-    width: 120px !important;
+  #daviefolio-aside {
+    padding-top: 4em !important;
+    position: fixed;
+    float: left;
+    left: 0 !important;
     height: auto !important;
-    padding-left: 30px !important;
-    margin-right: 0 !important;
-    padding-right: 0 !important;
+    bottom: 0;
+    z-index: 2001;
+    width: 300px !important;
+    -moz-transform: translateX(-300px);
+    -webkit-transform: translateX(-300px);
+    -ms-transform: translateX(-300px);
+    -o-transform: translateX(-300px);
+    transform: translateX(-300px);
+    overflow: hidden;
+  }
+
+  #daviefolio-aside .author-img {
+    width: 180px !important;
+    height: 180px !important;
+    margin-bottom: 5px !important;
   }
 }
+
+#daviefolio-aside .text-center {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#daviefolio-logo {
+  display: block;
+  font-family: "Quicksand", Arial, sans-serif;
+  font-size: 26px !important;
+  text-align: center;
+  letter-spacing: 1px !important;
+  width: 100%;
+  margin-bottom: 0.5em !important;
+}
+
+#daviefolio-logo a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease-in-out;
+  font-weight: 700 !important;
+}
+
+#daviefolio-logo a:hover {
+  color: #f0a500;
+}
+
+/*
+#daviefolio-aside .position {
+display: block;
+margin-top: 0;
+margin-bottom: 1.7em;
+font-size: 13px;
+text-transform: uppercase;
+}
+*/
+/* Sidebar Social Links Container */
+.side-social-wrap {
+  margin-bottom: 30px;
+  /* Space between links and the Menu below */
+}
+
+/* Target the container for your social icons */
+.side-social {
+  padding: 0;
+  margin: 20px 0;
+  /* Slightly more margin to separate from your name */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  /* Increased slightly for easier clicking on mobile/tablets */
+}
+
+.side-social li a {
+  color: rgba(255,
+      255,
+      255,
+      0.7);
+  /* Slightly brighter base color for accessibility */
+  font-size: 2rem;
+  /* Bumped up slightly to dominate the sidebar space */
+  transition: all 0.3s ease;
+  display: inline-block;
+  /* Required for the transform effect below */
+}
+
+/* The "Glow" effect to match your hero text highlights */
+.side-social li a:hover {
+  color: #00d4ff;
+  /* Matches your 'Hi, I'm David' cyan */
+  transform: translateY(-3px);
+  /* Subtle lift effect */
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+  /* Glowing effect */
+}
+
+/* Specific highlight for your most important engineering links 
+.side-social li a[title="GitHub"]:hover,
+.side-social li a[title="LinkedIn"]:hover {
+    color: #00a2ff; 
+    filter: brightness(1.2); 
+    text-shadow: 0 0 10px rgba(0, 162, 255, 0.6); 
+    transform: scale(1.15); 
+}
+*/
+@media screen and (max-width: 768px) {
+  #daviefolio-logo {
+    display: block;
+    font-size: 25px !important;
+    letter-spacing: 1px !important;
+    width: 100%;
+    margin-bottom: 0.5em !important;
+  }
+
+  #daviefolio-logo a {
+    font-weight: 700 !important;
+    transition: color 0.3s ease-in-out;
+  }
+
+  /*#daviefolio-aside .position {
+    margin-bottom: 1.5em !important;
+    font-size: 13px !important;
+    text-transform: uppercase;
+  }*/
+}
+
+#daviefolio-aside #daviefolio-main-menu {
+  display: block;
+  width: 100%;
+}
+
+#daviefolio-aside #daviefolio-main-menu .collapse {
+  display: block !important;
+}
+
+#daviefolio-aside #daviefolio-main-menu ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#daviefolio-aside #daviefolio-main-menu ul li {
+  margin: 0 0 10px 0;
+  padding: 0 0 4px 0;
+  /*list-style: none;*/
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#daviefolio-aside #daviefolio-main-menu ul li a {
+  color: #000;
+  /*rgba(0, 0, 0, 0.7);*/
+  text-decoration: none;
+  position: relative;
+  padding: 10px 0;
+  /*font-family: "Quicksand", Arial, sans-serif;*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#daviefolio-aside #daviefolio-main-menu ul li a:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  bottom: 7px;
+  left: 0;
+  right: 0;
+  background-color: #2c98f0;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#daviefolio-aside #daviefolio-main-menu ul li a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+#daviefolio-aside #daviefolio-main-menu ul li a:hover:after {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#daviefolio-aside #daviefolio-main-menu ul li.active a {
+  color: #2c98f0;
+}
+
+#daviefolio-aside #daviefolio-main-menu ul li.active a:after {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 768px) {
+  #daviefolio-aside #daviefolio-main-menu {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  #daviefolio-aside #daviefolio-main-menu ul {
+    margin: 0 0 2em 0;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  #daviefolio-aside #daviefolio-main-menu ul li {
+    margin: 0 0 8px 0;
+    padding: 0;
+    list-style: none;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+/*footer*/
+#daviefolio-aside .daviefolio-footer {
+  position: absolute !important;
+  bottom: 0 !important;
+  font-size: 15px !important;
+  text-align: center !important;
+  font-weight: 400 !important;
+  width: 100% !important;
+  display: block !important;
+  padding: 0 !important;
+}
+
+/*
+#daviefolio-aside .daviefolio-footer ul {
+  padding: 0;
+  margin: 0;
+}
+
+#daviefolio-aside .daviefolio-footer ul li {
+  padding: 0;
+  margin: 0;
+  display: inline;
+  list-style: none;
+}
+
+#daviefolio-aside .daviefolio-footer ul li a {
+  color: rgba(255, 255, 255, 0.3);
+  padding: 4px;
+}
+
+#daviefolio-aside .daviefolio-footer ul li a:active,
+#daviefolio-aside .daviefolio-footer ul li a:focus,
+#daviefolio-aside .daviefolio-footer ul li a:hover {
+  text-decoration: none;
+  outline: none;
+  color: #2c98f0;
+}
+*/
+#daviefolio-aside .daviefolio-footer p {
+  display: block;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 768px) {
+  #daviefolio-aside .daviefolio-footer {
+    font-size: 13px !important;
+    padding: 0 !important;
+  }
+
+  #daviefolio-aside .daviefolio-footer p {
+    font-size: 13px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+/**************************************/
+/********* DAVIEFOLIO MAIN *********/
+/**************************************/
+
+#daviefolio-main {
+  position: relative;
+  width: calc(100% - 305px) !important;
+  display: block;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  margin-left: 300px; /* Push content to the right */
+}
+
+
+
+@media screen and (max-width: 768px) {
+  #daviefolio-main {
+    width: 100% !important;
+    position: relative;
+    margin-left: 0;
+    padding: 0 0.5em !important;
+  }
+}
+
 
 /********* MENU *********/
 
@@ -1046,7 +1549,6 @@ padding: 0;: This removes all internal spacing within the element.*/
   padding: 30px;
   margin-bottom: 20px;
   -webkit-backdrop-filter: blur(10px);
-  /* Safari support */
   backdrop-filter: blur(10px);
   /* Glassmorphism effect */
   color: #e0e3f0;
@@ -2387,16 +2889,6 @@ canvas {
 
 /* Small screens: phones & small tablets */
 @media (max-width: 768px) {
-
-  /* Blog title box 
-  .blog-title-box {
-    font-size: 12px;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
-    padding-left: 0;
-  }*/
-
-  /* Blog Card Container */
   .blog-entry-card {
     margin-bottom: 20px;
     border-radius: 10px;
@@ -2474,7 +2966,67 @@ canvas {
 /********* CONTACT CSS *********/
 /*******************************/
 
-.daviefolio-contact {
+.contact-form-card, 
+.contact-info-card {
+    background: #1e272e; /* The Midnight Navy */
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.05); /* Subtle border for definition */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    color: #e2e8f0;
+}
+
+
+
+/* Ensure headings inside are white */
+.contact-form-card h5, .contact-info-card h4, .contact-info-card .lead {
+    color: #ffffff !important;
+}
+/*
+.custom-input {
+    background: transparent; 
+    border: none;
+    border-bottom: 2px solid #5a6275; 
+    color: #ffffff; 
+    border-radius: 0;
+    padding: 12px 0;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+*/
+.custom-input {
+    background: rgba(255, 255, 255, 0.03); /* Very slight tint */
+    border-bottom: 2px solid #2d545e; /* Matching your sidebar Teal! */
+    color: #ffffff;
+}
+
+.custom-input::placeholder {
+    color: #a0a6b5; /* Lighter grey for placeholder text */
+}
+
+.custom-input:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #007bff; /* Bright blue accent stands out great on dark */
+    color: #ffffff;
+}
+
+.contact-list li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #e0e0e0; /* Off-white for readability */
+}
+
+.contact-list i {
+    color: #007bff; /* Accent blue remains the same */
+    margin-right: 10px;
+}
+
+
+
+
+
+/*.daviefolio-contact {
   padding-top: 2em;
   padding-bottom: 4em;
   clear: both;
@@ -2568,8 +3120,8 @@ canvas {
   width: 100px;
   bottom: -12px;
 }
-
-/* Contact Info Section */
+*/
+/* Contact Info Section 
 .more-info {
   padding-top: 10px;
 }
@@ -2682,350 +3234,9 @@ canvas {
 .success-message {
   display: none;
   font-size: 15px;
-}
+}*/
 
-/**************************************/
-/********* SIDEBAR COLUMN CSS *********/
-/**************************************/
 
-/******** DAVIEFOLIO ASIDE ********/
-
-#daviefolio-aside {
-  padding-top: 2em !important;
-  padding-bottom: 30px !important;
-  right: 35px !important;
-  width: 300px !important;
-  position: fixed;
-  z-index: 2001;
-  background: #2d545e;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  margin-right: 0;
-  top: 0;
-  height: 100vh !important;
-  overflow: hidden;
-}
-
-/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
-#daviefolio-aside::-webkit-scrollbar {
-  display: none;
-}
-
-#daviefolio-aside .author-img {
-  width: 180px;
-  height: 180px;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-  margin: 0 auto;
-  margin-bottom: 15px;
-  background-image: url(../img/about/about.jpg);
-}
-
-@media screen and (max-width: 768px) {
-  #daviefolio-aside {
-    padding-top: 4em !important;
-    position: fixed;
-    float: left;
-    left: 0 !important;
-    height: auto !important;
-    bottom: 0;
-    z-index: 2001;
-    width: 300px !important;
-    -moz-transform: translateX(-300px);
-    -webkit-transform: translateX(-300px);
-    -ms-transform: translateX(-300px);
-    -o-transform: translateX(-300px);
-    transform: translateX(-300px);
-    overflow: hidden;
-  }
-
-  #daviefolio-aside .author-img {
-    width: 180px !important;
-    height: 180px !important;
-    margin-bottom: 5px !important;
-  }
-}
-
-#daviefolio-aside .text-center {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-#daviefolio-logo {
-  display: block;
-  font-family: "Quicksand", Arial, sans-serif;
-  font-size: 26px !important;
-  text-align: center;
-  letter-spacing: 1px !important;
-  width: 100%;
-  margin-bottom: 0.5em !important;
-}
-
-#daviefolio-logo a {
-  text-decoration: none;
-  color: #000;
-  transition: color 0.3s ease-in-out;
-  font-weight: 700 !important;
-}
-
-#daviefolio-logo a:hover {
-  color: #f0a500;
-}
-
-/*
-#daviefolio-aside .position {
-display: block;
-margin-top: 0;
-margin-bottom: 1.7em;
-font-size: 13px;
-text-transform: uppercase;
-}
-*/
-/* Sidebar Social Links Container */
-.side-social-wrap {
-  margin-bottom: 30px;
-  /* Space between links and the Menu below */
-}
-
-/* Target the container for your social icons */
-.side-social {
-  padding: 0;
-  margin: 20px 0;
-  /* Slightly more margin to separate from your name */
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  /* Increased slightly for easier clicking on mobile/tablets */
-}
-
-.side-social li a {
-  color: rgba(255,
-      255,
-      255,
-      0.7);
-  /* Slightly brighter base color for accessibility */
-  font-size: 2rem;
-  /* Bumped up slightly to dominate the sidebar space */
-  transition: all 0.3s ease;
-  display: inline-block;
-  /* Required for the transform effect below */
-}
-
-/* The "Glow" effect to match your hero text highlights */
-.side-social li a:hover {
-  color: #00d4ff;
-  /* Matches your 'Hi, I'm David' cyan */
-  transform: translateY(-3px);
-  /* Subtle lift effect */
-  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
-  /* Glowing effect */
-}
-
-/* Specific highlight for your most important engineering links 
-.side-social li a[title="GitHub"]:hover,
-.side-social li a[title="LinkedIn"]:hover {
-    color: #00a2ff; 
-    filter: brightness(1.2); 
-    text-shadow: 0 0 10px rgba(0, 162, 255, 0.6); 
-    transform: scale(1.15); 
-}
-*/
-@media screen and (max-width: 768px) {
-  #daviefolio-logo {
-    display: block;
-    font-size: 25px !important;
-    letter-spacing: 1px !important;
-    width: 100%;
-    margin-bottom: 0.5em !important;
-  }
-
-  #daviefolio-logo a {
-    font-weight: 700 !important;
-    transition: color 0.3s ease-in-out;
-  }
-
-  /*#daviefolio-aside .position {
-    margin-bottom: 1.5em !important;
-    font-size: 13px !important;
-    text-transform: uppercase;
-  }*/
-}
-
-#daviefolio-aside #daviefolio-main-menu {
-  display: block;
-  width: 100%;
-}
-
-#daviefolio-aside #daviefolio-main-menu .collapse {
-  display: block !important;
-}
-
-#daviefolio-aside #daviefolio-main-menu ul {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-#daviefolio-aside #daviefolio-main-menu ul li {
-  margin: 0 0 10px 0;
-  padding: 0 0 4px 0;
-  /*list-style: none;*/
-  font-size: 13px !important;
-  font-weight: 700 !important;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-#daviefolio-aside #daviefolio-main-menu ul li a {
-  color: #000;
-  /*rgba(0, 0, 0, 0.7);*/
-  text-decoration: none;
-  position: relative;
-  padding: 10px 0;
-  /*font-family: "Quicksand", Arial, sans-serif;*/
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-#daviefolio-aside #daviefolio-main-menu ul li a:after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  bottom: 7px;
-  left: 0;
-  right: 0;
-  background-color: #2c98f0;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  -o-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -moz-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -ms-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-#daviefolio-aside #daviefolio-main-menu ul li a:hover {
-  text-decoration: none;
-  color: #000;
-}
-
-#daviefolio-aside #daviefolio-main-menu ul li a:hover:after {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -o-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-#daviefolio-aside #daviefolio-main-menu ul li.active a {
-  color: #2c98f0;
-}
-
-#daviefolio-aside #daviefolio-main-menu ul li.active a:after {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  -moz-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-  -o-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-@media screen and (max-width: 768px) {
-  #daviefolio-aside #daviefolio-main-menu {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-
-  #daviefolio-aside #daviefolio-main-menu ul {
-    margin: 0 0 2em 0;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  #daviefolio-aside #daviefolio-main-menu ul li {
-    margin: 0 0 8px 0;
-    padding: 0;
-    list-style: none;
-    font-size: 13px !important;
-    font-weight: 500 !important;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-}
-
-/*footer*/
-#daviefolio-aside .daviefolio-footer {
-  position: absolute !important;
-  bottom: 0 !important;
-  font-size: 15px !important;
-  text-align: center !important;
-  font-weight: 400 !important;
-  width: 100% !important;
-  display: block !important;
-  padding: 0 !important;
-}
-
-/*
-#daviefolio-aside .daviefolio-footer ul {
-  padding: 0;
-  margin: 0;
-}
-
-#daviefolio-aside .daviefolio-footer ul li {
-  padding: 0;
-  margin: 0;
-  display: inline;
-  list-style: none;
-}
-
-#daviefolio-aside .daviefolio-footer ul li a {
-  color: rgba(255, 255, 255, 0.3);
-  padding: 4px;
-}
-
-#daviefolio-aside .daviefolio-footer ul li a:active,
-#daviefolio-aside .daviefolio-footer ul li a:focus,
-#daviefolio-aside .daviefolio-footer ul li a:hover {
-  text-decoration: none;
-  outline: none;
-  color: #2c98f0;
-}
-*/
-#daviefolio-aside .daviefolio-footer p {
-  display: block;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-@media (max-width: 768px) {
-  #daviefolio-aside .daviefolio-footer {
-    font-size: 13px !important;
-    padding: 0 !important;
-  }
-
-  #daviefolio-aside .daviefolio-footer p {
-    font-size: 13px !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-}
 
 /*======================================
   MAP
