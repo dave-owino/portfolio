@@ -220,6 +220,7 @@ figure figcaption {
 /* -- Main button container -- */
 .daviefolio-nav-toggle {
   top : 2px !important;
+  left: -8px !important;
   cursor: pointer;
   text-decoration: none;
   border: none;
@@ -227,9 +228,9 @@ figure figcaption {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
+  width: 55px;
   /* Matches header height for a perfect square */
-  height: 50px;
+  height: 55px;
   padding: 0;
   position: relative;
   z-index: 2100;
