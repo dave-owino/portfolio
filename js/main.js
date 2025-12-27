@@ -140,7 +140,8 @@
       if ($('[data-section="' + section + '"]').length) {
         $("html, body").animate(
           {
-            scrollTop: $('[data-section="' + section + '"]').offset().top - 55,
+            // Updated offset to 60 for better spacing with 48px header
+            scrollTop: $('[data-section="' + section + '"]').offset().top - 60,
           },
           500
         );
@@ -191,6 +192,7 @@
       },
       {
         offset: function () {
+          // Syncs the highlighting as you scroll back up past the header
           return -$(this.element).height() + 155;
         },
       }
@@ -225,7 +227,6 @@
   if ($('#daviefolio-hero .typed-output').length) {
     var typed_strings = $('#daviefolio-hero .typed-text').text().trim().split('|');
 
-    // Remove "Loading..." properly before Typed.js starts
     $('.typed-output').text('');
 
     var typed = new Typed('#daviefolio-hero .typed-output', {
@@ -239,30 +240,22 @@
   }
 
   var stickyFunction = function () {
-    var h = $(".image-content").outerHeight(); // Get height of the content
+    var h = $(".image-content").outerHeight(); 
 
-    // Function to apply sticky behavior based on screen width
     function setupSticky() {
       if ($(window).width() <= 992) {
-        // Detach the sticky behavior on small screens
         $("#sticky_item").trigger("sticky_kit:detach");
       } else {
-        // Set the parent container's height
         $(".sticky-parent").css("height", h);
-
-        // Remove any previous detachments and apply sticky behavior
         $("#sticky_item").stick_in_parent();
       }
     }
 
-    // Initial setup when the page loads
     setupSticky();
 
-    // On window resize, check the width again and update sticky behavior
     $(window).resize(function () {
-      var h = $(".image-content").outerHeight(); // Update height dynamically
+      var h = $(".image-content").outerHeight(); 
       $(".sticky-parent").css("height", h);
-
       setupSticky();
     });
   };
@@ -294,9 +287,7 @@
     burgerMenu();
 
     clickMenu();
-    // navActive();
     navigationSection();
-    // windowScroll();
 
     mobileMenuOutsideClick();
     sliderMain();
