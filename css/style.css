@@ -1,7 +1,8 @@
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon/icomoon.eot?mdppn9");
-  src: url("../fonts/icomoon/icomoon.eot?mdppn9#iefix") format("embedded-opentype"),
+  src: url("../fonts/icomoon/icomoon.eot?mdppn9#iefix")
+      format("embedded-opentype"),
     url("../fonts/icomoon/icomoon.ttf?mdppn9") format("truetype"),
     url("../fonts/icomoon/icomoon.woff?mdppn9") format("woff"),
     url("../fonts/icomoon/icomoon.svg?mdppn9#icomoon") format("svg");
@@ -104,9 +105,12 @@ figure figcaption {
   overflow: hidden;
   position: relative;
   background-color: #0f172a;
-  background-image: 
-    radial-gradient(at 0% 0%, hsla(210,100%,16%,1) 0, transparent 50%), 
-    radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%);
+  background-image: radial-gradient(
+      at 0% 0%,
+      hsla(210, 100%, 16%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%);
   padding-left: 30px !important;
   padding-right: 30px !important;
   background-size: 100% auto;
@@ -147,146 +151,172 @@ figure figcaption {
 
 /* --- Header --- */
 #top-daviefolio-section {
-    position: fixed !important;
-    top: 0;
-    left: 335px; 
-    width: calc(100% - 335px) !important; 
-    z-index: 2000;
-    background-color: rgba(15, 23, 42, 0.8) !important; 
-    -webkit-backdrop-filter: blur(10px); 
-    backdrop-filter: blur(10px); 
-    height: 48px !important;
-    display: flex;
-    align-items: center; 
-    justify-content: flex-start; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    overflow: visible;
+  position: fixed !important;
+  top: 0;
+  left: 335px;
+  width: calc(100% - 335px) !important;
+  z-index: 2000;
+  background-color: rgba(15, 23, 42, 0.8) !important;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  height: 48px !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  overflow: visible;
 }
 
-/* --- The Logo Image --- */
+/* --- Logo Image --- */
 #logo img {
-    display: block;
-    width: 80px;
-    max-width: 100%;
-    height: auto;
-    max-height: 48px;
-    filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.4));
-    transition: filter 0.3s ease, transform 0.3s ease;
+  display: block;
+  width: 80px;
+  max-width: 100%;
+  height: auto;
+  max-height: 48px;
+  filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.4));
+  transition: filter 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover effect */
+/* --- Logo Hover Effect --- */
 #logo img:hover {
-    filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.8));
-    transform: scale(1.1);
+  filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.8));
+  transform: scale(1.1);
 }
 
-
-
-
+/* -- Mobile View Adjustments -- */
 @media (max-width: 768px) {
   #top-daviefolio-section {
     position: fixed !important;
     width: 100% !important;
     left: 0 !important;
-    font-size: 0.8em !important;
+    height: 60px !important;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-color: rgba(15, 23, 42, 0.95) !important;
   }
 }
 
-
-
-/* Navigation Toggle -three lines*/
-.daviefolio-nav-toggle {
-  position: fixed;
-  left: -10px !important;
-  top: -10px !important;
-  padding: 20px !important;
-  visibility: hidden;
-  z-index: 10001;
-  cursor: pointer;
-  opacity: 1;
-  transition: 0.5s;
-  text-decoration: none;
+/* -- Tablet View -- */
+@media screen and (max-width: 768px) {
+  #logo img {
+    width: 120px !important;
+    padding-left: 30px !important;
+    max-width: 100%;
+    height: auto;
+    max-height: 60px !important;
+  }
 }
 
-/* Horizontal line -centre*/
-.daviefolio-nav-toggle i {
+/* -- Mobile View -- 
+@media screen and (max-width: 768480px) {
+  #logo img {
+    width: 100px !important;
+    height: auto !important;
+    padding-left: 10px !important;
+  }
+}*/
+
+/* -- Main button container -- */
+.daviefolio-nav-toggle {
+  top : -2px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  /* Matches header height for a perfect square */
+  height: 50px;
+  padding: 0;
   position: relative;
+  z-index: 2100;
+  /* Ensure it stays above the navbar */
+  outline: none !important;
+}
+
+/* The middle line of the hamburger */
+.daviefolio-nav-toggle i {
+  position: fixed;
   display: inline-block;
-  width: 20px !important;
-  height: 2px !important;
-  background: #a04ef6;
+  width: 22px;
+  /* Width of the lines */
+  height: 2px;
+  color: #00d4ff;
+  font: bold 14px/0.4 Helvetica;
+  text-transform: uppercase;
+  text-indent: -55px;
+  background: #00d4ff;
   transition: all 0.2s ease-out;
 }
 
-/* Lines before and after */
-.daviefolio-nav-toggle i::after,
-.daviefolio-nav-toggle i::before {
+/* The top and bottom lines */
+.daviefolio-nav-toggle i::before,
+.daviefolio-nav-toggle i::after {
   content: "";
-  width: 20px !important;
-  height: 2px !important;
-  background: #a04ef6;
+  width: 22px;
+  height: 2px;
+  background: #00d4ff;
   position: absolute;
   left: 0;
-  transition: 0.2s;
+  transition: all 0.2s ease-out;
 }
 
-/* Lines before and after */
 .daviefolio-nav-toggle i::before {
-  top: -7px !important;
+  top: -7px;
+  /* Position of top line */
 }
 
 .daviefolio-nav-toggle i::after {
-  bottom: -7px !important;
+  bottom: -7px;
+  /* Position of bottom line */
 }
 
-/* Hover */
-.daviefolio-nav-toggle:hover i::before {
-  top: -10px !important;
-}
-
+/* Hover effect */
+.daviefolio-nav-toggle:hover i,
+.daviefolio-nav-toggle:hover i::before,
 .daviefolio-nav-toggle:hover i::after {
-  bottom: -10px !important;
+  background: #ffffff;
+  filter: drop-shadow(0 0 5px rgba(0, 212, 255, 0.8));
 }
 
-/* Active state */
-.daviefolio-nav-toggle.active {
-  width: 20px !important;
-  height: 2px !important;
-  position: absolute;
-  top: -10px !important;
-  /*left: 0 !important;  ✅ Adjusted */
-  left: -310px !important;
-}
-
+/* When the menu is active/open */
 .daviefolio-nav-toggle.active i {
   background: transparent;
-}
-
-.daviefolio-nav-toggle.active i::after,
-.daviefolio-nav-toggle.active i::before {
-  display: block;
-  position: absolute;
-  width: 20px !important;
-  height: 2px !important;
-  background: #eb3103;
-  transition: background 0.3s ease;
+  /* Hide the middle line */
 }
 
 .daviefolio-nav-toggle.active i::before {
-  top: 0 !important;
-  transform: rotate(45deg);
+  top: 0;
+  transform: rotateZ(45deg);
+  /* Rotate top line */
 }
 
 .daviefolio-nav-toggle.active i::after {
-  bottom: 0 !important;
-  transform: rotate(-45deg);
+  bottom: 0;
+  transform: rotateZ(-45deg);
+  /* Rotate bottom line */
 }
 
-.daviefolio-nav-toggle:active,
-.daviefolio-nav-toggle:focus,
-.daviefolio-nav-toggle:hover {
-  outline: none;
-  /*border-bottom: none !important;*/
+/* Hide accessibility text visually */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Hide toggle on large screens (Desktop) */
+@media screen and (min-width: 992px) {
+  .daviefolio-nav-toggle {
+    display: none;
+  }
 }
 
 /* Mobile Visibility */
@@ -297,39 +327,40 @@ figure figcaption {
   }
 }
 
+/*
 @media screen and (max-width: 480px) {
   .col-xxs-12 {
     float: none;
     width: 100% !important;
   }
 }
-
-
+*/
 
 /**************************************/
 /********* DAVIEFOLIO ASIDE *********/
 /**************************************/
 
 #daviefolio-aside {
-    position: fixed;
-    top: 0;
-    left: 35px;  
-    width: 300px;
-    height: 100vh;
-    z-index: 1000;
-    padding-top: 2em;
-    padding-bottom: 30px;
+  position: fixed;
+  top: 0;
+  left: 35px;
+  width: 300px;
+  height: 100vh;
+  z-index: 1000;
+  padding-top: 2em;
+  padding-bottom: 30px;
 
-    /* Dark Glass Effect */
-    background: rgba(2, 6, 23, 0.88); /* #020617 with opacity */
-    -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
+  /* Dark Glass Effect */
+  background: rgba(2, 6, 23, 0.88);
+  /* #020617 with opacity */
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
 
-    border-right: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.45);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.45);
 
-    transition: 0.5s;
-    overflow: hidden; 
+  transition: 0.5s;
+  overflow: hidden;
 }
 
 /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
@@ -394,21 +425,24 @@ figure figcaption {
 }
 
 .daviefolio-aside a {
-    color: #94a3b8; /* Muted gray-blue */
-    text-decoration: none;
-    font-weight: 700;
-    transition: all 0.3s ease;
-    display: block;
-    padding: 12px 20px;
-    border-radius: 8px;
-    margin-bottom: 5px;
+  color: #94a3b8;
+  /* Muted gray-blue */
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  display: block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 5px;
 }
 
-
 #daviefolio-logo a:hover {
-    color: #00d4ff; /* Your brand Cyan */
-    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5); /* Subtle data-glow */
-    transition: all 0.3s ease; /* Smooth transition */
+  color: #00d4ff;
+  /* Your brand Cyan */
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+  /* Subtle data-glow */
+  transition: all 0.3s ease;
+  /* Smooth transition */
 }
 
 /* Sidebar Social Links Container */
@@ -480,7 +514,7 @@ figure figcaption {
 #daviefolio-aside #daviefolio-main-menu ul li {
   margin: 0 0 10px 0;
   padding: 0 0 4px 0;
-  /*list-style: none;*/
+  /*list-style  : none;*/
   font-size: 13px !important;
   font-weight: 700 !important;
   text-transform: uppercase;
@@ -493,7 +527,7 @@ figure figcaption {
   text-decoration: none;
   position: relative;
   padding: 10px 0;
-  /*font-family: "Quicksand", Arial, sans-serif;*/
+  /*font-family     : "Quicksand", Arial, sans-serif;*/
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -507,7 +541,8 @@ figure figcaption {
   bottom: 7px;
   left: 0;
   right: 0;
-  background-color: #f8fafc;/* #2c98f0;*/
+  background-color: #f8fafc;
+  /* #2c98f0;*/
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -627,19 +662,19 @@ figure figcaption {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  margin-left: 300px; /* Push content to the right */
+  margin-left: 300px;
+  /* Push content to the right */
 
   padding: 0 0.4em !important;
-  margin-top: 48px; /* Header height (52px) + a small gap */
+  margin-top: 48px;
+  /* Header height (52px) + a small gap */
 }
-
-
 
 @media screen and (max-width: 768px) {
   #daviefolio-main {
     width: 100% !important;
     position: relative;
-    margin-left: 0;
+    margin: 20px 0 0 0 !important;
     padding: 0 0.5em !important;
   }
 }
@@ -660,10 +695,12 @@ figure figcaption {
   position: absolute;
   inset: 0;
   /* Darkest on the left (under text), transparent on the right (over image) */
-  background: linear-gradient(90deg,
-      rgba(10, 10, 11, 0.95) 0%,
-      rgba(10, 10, 11, 0.7) 40%,
-      rgba(10, 10, 11, 0.2) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(10, 10, 11, 0.95) 0%,
+    rgba(10, 10, 11, 0.7) 40%,
+    rgba(10, 10, 11, 0.2) 100%
+  );
   z-index: 1;
 }
 
@@ -692,7 +729,8 @@ figure figcaption {
     padding-right: 6%;
     padding-top: 30px;
 
-    min-height: 0;           /* auto---Avoid forcing tall sections on mobile */
+    min-height: 0;
+    /* auto---Avoid forcing tall sections on mobile */
     justify-content: flex-start;
 
     gap: 8px;
@@ -709,7 +747,6 @@ figure figcaption {
   }
 }
 
-
 /* CHECK:This ensures the text stays readable and "pops" */
 .hero-container h1,
 .hero-container p,
@@ -717,24 +754,24 @@ figure figcaption {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.hero-container>* {
+.hero-container > * {
   animation: fadeUp 0.8s ease forwards;
   opacity: 0;
 }
 
-.hero-container>*:nth-child(1) {
+.hero-container > *:nth-child(1) {
   animation-delay: 0.1s;
 }
 
-.hero-container>*:nth-child(2) {
+.hero-container > *:nth-child(2) {
   animation-delay: 0.2s;
 }
 
-.hero-container>*:nth-child(3) {
+.hero-container > *:nth-child(3) {
   animation-delay: 0.3s;
 }
 
-.hero-container>*:nth-child(4) {
+.hero-container > *:nth-child(4) {
   animation-delay: 0.4s;
 }
 
@@ -1002,21 +1039,21 @@ padding: 0;: This removes all internal spacing within the element.*/
 }
 
 .folio-title-line-mf {
-    width: 60px;
-    height: 13px;
-    background-color: #2c98f0; 
-    display: inline-block;
-    border-radius: 2px;
+  width: 60px;
+  height: 13px;
+  background-color: #2c98f0;
+  display: inline-block;
+  border-radius: 2px;
 }
 
 .daviefolio-heading-meta {
-    font-size: 17px !important;
-    color: #00d4ff;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
-    white-space: nowrap;
+  font-size: 17px !important;
+  color: #00d4ff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+  white-space: nowrap;
 }
 
 .daviefolio-heading span {
@@ -1028,7 +1065,6 @@ padding: 0;: This removes all internal spacing within the element.*/
 }
 
 @media screen and (max-width: 768px) {
-
   .daviefolio-about,
   .daviefolio-blog,
   .daviefolio-contact,
@@ -1164,10 +1200,7 @@ padding: 0;: This removes all internal spacing within the element.*/
   /* Makes them look like modern 'pills' */
   font-size: 14px;
   font-weight: 600;
-  background: rgba(255,
-      255,
-      255,
-      0.05);
+  background: rgba(255, 255, 255, 0.05);
   /* Very subtle transparent background */
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: #a0a0a0;
@@ -1331,13 +1364,13 @@ padding: 0;: This removes all internal spacing within the element.*/
 .daviefolio-skills .col-md-12 p {
   padding: 0.5em 1em !important;
   margin: 0;
-  /*background: rgba(243, 242, 242, 0.7); */
+  /*background : rgba(243, 242, 242, 0.7); */
   border-radius: 0 15px !important;
   text-align: left;
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
   font-size: 15px !important;
   line-height: 1.6 !important;
-  /*color: #000;*/
+  /*color      : #000;*/
   word-wrap: break-word;
 }
 
@@ -1668,7 +1701,7 @@ canvas {
 
 /* Project Tags */
 .project-tag {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -1705,7 +1738,7 @@ canvas {
 }
 
 .project-card p {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   color: #a0a0a0;
   font-size: 1.6rem;
   line-height: 1.6;
@@ -1770,10 +1803,6 @@ canvas {
     font-size: 2.1rem;
   }
 }
-
-
-
-
 
 /*********  MENU *********/
 /*#workfolio {
@@ -1980,6 +2009,7 @@ canvas {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 /*
 .blog-btn {
   background-color: #007bff;
@@ -2031,7 +2061,6 @@ canvas {
 }
 
 @media screen and (max-width: 768px) {
-
   .project-folio,
   .workfolio-item,
   .workfolio-item.filter-1,
@@ -2181,7 +2210,6 @@ canvas {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-
   .col-md-4,
   .col-md-8 {
     width: 100%;
@@ -2227,10 +2255,11 @@ canvas {
 }
 
 .timeline-label .mb-1 {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #F1F5F9;
+  color: #f1f5f9;
   line-height: 1.6;
 }
 
@@ -2238,7 +2267,7 @@ canvas {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
-  color: #A5B4FC;
+  color: #a5b4fc;
 }
 
 .edu-separator {
@@ -2247,9 +2276,9 @@ canvas {
 }
 
 .edu-date {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 1.5rem;
-  color: #94A3B8;
+  color: #94a3b8;
   font-weight: 500;
 }
 
@@ -2257,7 +2286,7 @@ canvas {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.6;
-  color: #CBD5E1;
+  color: #cbd5e1;
   text-align: left;
 }
 
@@ -2267,7 +2296,7 @@ canvas {
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #CBD5E1;
+  color: #cbd5e1;
   margin-bottom: 20px;
 }
 
@@ -2298,20 +2327,19 @@ canvas {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
-  color: #A5B4FC;
+  color: #a5b4fc;
   display: block;
 }
 
 .cert-name {
   display: block;
   font-size: 1.3rem;
-  color: #CBD5E1;
+  color: #cbd5e1;
   margin-top: 4px;
 }
 
 /* Small screens: phones & small tablets */
 @media (max-width: 768px) {
-
   .daviefolio-academics-journey {
     padding: 5px;
     margin-top: 16px;
@@ -2337,7 +2365,8 @@ canvas {
   /* Institution */
   .edu-institution {
     font-size: 1.4rem;
-    display: block; /* stack nicely */
+    display: block;
+    /* stack nicely */
   }
 
   /* Separator hidden on mobile */
@@ -2372,7 +2401,8 @@ canvas {
   }
 
   .cert-grid {
-    grid-template-columns: 1fr; /* single column */
+    grid-template-columns: 1fr;
+    /* single column */
     gap: 12px;
   }
 
@@ -2619,11 +2649,11 @@ canvas {
 }
 
 .blog-thumb {
-  padding: 4px;          
-  border-radius: 12px;    
-  display: block;      
-  width: 100%;           
-  box-sizing: border-box; 
+  padding: 4px;
+  border-radius: 12px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Metadata Styling */
@@ -2693,7 +2723,8 @@ canvas {
   .blog-entry-card {
     margin-bottom: 20px;
     border-radius: 10px;
-    transform: none; /* disable hover transform */
+    transform: none;
+    /* disable hover transform */
   }
 
   .blog-entry-card:hover {
@@ -2743,7 +2774,6 @@ canvas {
 
 /* Extra small screens (phones < 480px) */
 @media (max-width: 480px) {
-
   .blog-title-box {
     font-size: 11px;
     letter-spacing: 1.5px;
@@ -2769,160 +2799,169 @@ canvas {
 
 /* --- General Layout --- */
 .daviefolio-contact {
-    background-color: #0f172a; 
-    padding: 50px 0 30px 0 !important;
-    font-family: 'Inter', sans-serif; /* Use a clean tech font */
+  background-color: #0f172a;
+  padding: 50px 0 30px 0 !important;
+  font-family: "Inter", sans-serif;
+  /* Use a clean tech font */
 }
 
 .contact-row-flex {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch; /* This stretches the columns to match heights */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  /* This stretches the columns to match heights */
 }
 
 /* --- Left Card --- */
 .contact-form-card {
-    background: linear-gradient(90deg, #1e293b 0%, #0f172a 100%);
-    padding: 40px;
-    height: 100%; 
-    border-radius: 8px 0 0 8px; /* Rounded corners only on left */
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
-    border-right: none; /* Merge visual with right card */
+  background: linear-gradient(90deg, #1e293b 0%, #0f172a 100%);
+  padding: 40px;
+  height: 100%;
+  border-radius: 8px 0 0 8px;
+  /* Rounded corners only on left */
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  border-right: none;
+  /* Merge visual with right card */
 }
 
 /* --- Right Card --- */
 .contact-info-card {
-    background: linear-gradient(90deg, #0f172a 0%, #1e293b 100%);
-    color: #ffffff;
-    padding: 40px;
-    border-radius: 0 8px 8px 0; /* Rounded corners only on right */
-    height: 100%; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
-    position: relative;
-    overflow: hidden;
+  background: linear-gradient(90deg, #0f172a 0%, #1e293b 100%);
+  color: #ffffff;
+  padding: 40px;
+  border-radius: 0 8px 8px 0;
+  /* Rounded corners only on right */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
 }
 
 /* -- Subtle to glow behind contact info -- */
 .contact-info-card::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -50%;
-    width: 200px;
-    height: 200px;
-    background: radial-gradient(circle, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
-    z-index: 0;
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 212, 255, 0.1) 0%,
+    transparent 70%
+  );
+  z-index: 0;
 }
 
 /* --- Mobile Responsiveness --- */
 @media screen and (max-width: 768px) {
-    .contact-form-card {
-        border-radius: 8px 8px 0 0; /* Rounded top only */
-        border-bottom: none;
-    }
-    .contact-info-card {
-        border-radius: 0 0 8px 8px; /* Rounded bottom only */
-    }
+  .contact-form-card {
+    border-radius: 8px 8px 0 0;
+    /* Rounded top only */
+    border-bottom: none;
+  }
+
+  .contact-info-card {
+    border-radius: 0 0 8px 8px;
+    /* Rounded bottom only */
+  }
 }
 
 /* --- Inputs --- */
 .custom-input {
-    background: rgba(255, 255, 255, 0.03); 
-    border-bottom: 2px solid #2d545e;
-    color: #ffffff;
-    transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 2px solid #2d545e;
+  color: #ffffff;
+  transition: all 0.3s ease;
 }
 
 /*-- Ensure headings inside are white -- */
-.contact-form-card h5, 
-.contact-info-card h4, 
+.contact-form-card h5,
+.contact-info-card h4,
 .contact-info-card .lead {
-    color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 .custom-input::placeholder {
-    color: #a0a6b5; 
+  color: #a0a6b5;
 }
 
 .custom-input:focus {
-    outline: none;
-    box-shadow: none;
-    border-color: #007bff; 
-    color: #ffffff;
+  outline: none;
+  box-shadow: none;
+  border-color: #007bff;
+  color: #ffffff;
 }
 
 /* --- Button --- */
 .btn-submit-data {
-    background-color: #2563eb; /* Primary Blue */
-    color: #fff;
-    border-radius: 4px;
-    padding: 12px 30px;
-    border: none;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 12px;
-    width: 100%;
-    transition: 0.3s;
+  background-color: #2563eb;
+  /* Primary Blue */
+  color: #fff;
+  border-radius: 4px;
+  padding: 12px 30px;
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  width: 100%;
+  transition: 0.3s;
 }
 
 .btn-submit-data:hover {
-    background-color: #1d4ed8;
-    transform: translateY(-2px);
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
 }
 
 /* --- Text & Links --- */
 .contact-info-card h4 {
-    color: #fff;
-    font-weight: 700;
-    margin-bottom: 20px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .contact-subtext {
-    color: #cbd5e1; /* Light grey text */
-    margin-bottom: 30px;
-    line-height: 1.6;
-    text-align: left;
+  color: #cbd5e1;
+  /* Light grey text */
+  margin-bottom: 30px;
+  line-height: 1.6;
+  text-align: left;
 }
 
 .contact-list {
-    padding: 0;
-    list-style: none;
+  padding: 0;
+  list-style: none;
 }
 
 .contact-list li {
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .contact-list li i {
-    color: #60a5fa; /* Lighter blue for icons */
-    margin-right: 15px;
-    font-size: 18px;
+  color: #60a5fa;
+  /* Lighter blue for icons */
+  margin-right: 15px;
+  font-size: 18px;
 }
 
 .contact-list li a {
-    color: #ffffff;
-    text-decoration: none;
-    opacity: 0.9;
-    transition: 0.3s;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: 0.3s;
 }
 
 .contact-list li a:hover {
-    opacity: 1;
-    color: #60a5fa;
-    text-decoration: none;
+  opacity: 1;
+  color: #60a5fa;
+  text-decoration: none;
 }
-
-
-
-
-
-
 
 /*.daviefolio-contact {
   padding-top: 2em;
@@ -3133,8 +3172,6 @@ canvas {
   display: none;
   font-size: 15px;
 }*/
-
-
 
 /*======================================
   MAP
