@@ -283,6 +283,11 @@ figure figcaption {
   filter: drop-shadow(0 0 5px rgba(0, 212, 255, 0.8));
 }
 
+/* Active state */
+.daviefolio-nav-toggle.active {
+  position: fixed;
+}
+
 /* When the menu is active/open */
 .daviefolio-nav-toggle.active i {
   background: transparent;
@@ -675,7 +680,7 @@ figure figcaption {
   #daviefolio-main {
     width: 100% !important;
     position: relative;
-    margin: 20px 0 0 0 !important;
+    margin: 10px 0 0 0 !important;
     padding: 0 0.5em !important;
   }
 }
