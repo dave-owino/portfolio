@@ -1,3 +1,22 @@
+/* Main JS File */
+/* ------------------------------------------------------------------
+  [Table of Contents]
+
+  1. Mobile Detect
+  2. Full Height
+  3. Counter
+  4. Animations
+  5. Burger Menu
+  6. Click outside of offcanvass
+  7. Smooth Scrolling
+  8. Reflect Scrolling in Navigation
+  9. Slider Main
+ 10. Typed Initiate
+ 11. Sticky Function
+ 12. Owl Crousel Feature Slide
+
+------------------------------------------------------------------- */
+/* start main js */
 (function () {
   "use strict";
 
@@ -295,3 +314,4 @@
     owlCrouselFeatureSlide();
   });
 })();
+/* End of Main JS File */
