@@ -530,15 +530,6 @@ text-transform: uppercase;
   /* Glowing effect */
 }
 
-/* Specific highlight for your most important engineering links 
-.side-social li a[title="GitHub"]:hover,
-.side-social li a[title="LinkedIn"]:hover {
-    color: #00a2ff; 
-    filter: brightness(1.2); 
-    text-shadow: 0 0 10px rgba(0, 162, 255, 0.6); 
-    transform: scale(1.15); 
-}
-*/
 @media screen and (max-width: 768px) {
   #daviefolio-logo {
     display: block;
@@ -552,12 +543,6 @@ text-transform: uppercase;
     font-weight: 700 !important;
     transition: color 0.3s ease-in-out;
   }
-
-  /*#daviefolio-aside .position {
-    margin-bottom: 1.5em !important;
-    font-size: 13px !important;
-    text-transform: uppercase;
-  }*/
 }
 
 #daviefolio-aside #daviefolio-main-menu {
@@ -671,7 +656,16 @@ text-transform: uppercase;
   }
 }
 
-/*footer*/
+/**************************************/
+/********* DAVIEFOLIO FOOTER *********/
+/**************************************/
+
+.daviefolio-footer {
+  background-color: #0f172a;/*#1e293b;*/
+  padding: 2em;
+  max-height: 60px;
+}
+
 #daviefolio-aside .daviefolio-footer {
   position: absolute !important;
   bottom: 0 !important;
@@ -2879,61 +2873,161 @@ canvas {
 /********* CONTACT CSS *********/
 /*******************************/
 
-.contact-form-card, 
+/* --- General Layout --- */
+.daviefolio-contact {
+    background-color: #0f172a; 
+    padding: 60px 0;
+    font-family: 'Inter', sans-serif; /* Use a clean tech font */
+}
+
+.contact-row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; /* This stretches the columns to match heights */
+}
+
+/* --- Left Card --- */
+.contact-form-card {
+    background: linear-gradient(90deg, #1e293b 0%, #0f172a 100%);
+    padding: 40px;
+    height: 100%; 
+    border-radius: 8px 0 0 8px; /* Rounded corners only on left */
+    box-shadow: -5px 5px 20px rgba(0,0,0,0.05); /* Subtle shadow */
+    border-right: none; /* Merge visual with right card */
+}
+
+/* --- Right Card --- */
 .contact-info-card {
-    background: #1e272e; /* The Midnight Navy */
-    padding: 30px;
-    border-radius: 12px;
-    border: 1px solid rgba(255,255,255,0.05); /* Subtle border for definition */
-    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
-    color: #e2e8f0;
-}
-
-
-
-/* Ensure headings inside are white */
-.contact-form-card h5, .contact-info-card h4, .contact-info-card .lead {
-    color: #ffffff !important;
-}
-/*
-.custom-input {
-    background: transparent; 
-    border: none;
-    border-bottom: 2px solid #5a6275; 
-    color: #ffffff; 
-    border-radius: 0;
-    padding: 12px 0;
-    margin-bottom: 20px;
-    transition: border-color 0.3s;
-}
-*/
-.custom-input {
-    background: rgba(255, 255, 255, 0.03); /* Very slight tint */
-    border-bottom: 2px solid #2d545e; /* Matching your sidebar Teal! */
+    background: linear-gradient(90deg, #0f172a 0%, #1e293b 100%);
     color: #ffffff;
+    padding: 40px;
+    border-radius: 0 8px 8px 0; /* Rounded corners only on right */
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    /*box-shadow: 5px 5px 20px rgba(0,0,0,0.1);*/
+    box-shadow: -5px 5px 20px rgba(0,0,0,0.05); /* Subtle shadow */
+    position: relative;
+    overflow: hidden;
+}
+
+/* -- Add a subtle data-like background pattern to the right card -- */
+.contact-info-card::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+}
+
+/* --- Inputs --- */
+.custom-input {
+    background: rgba(255, 255, 255, 0.03); 
+    border-bottom: 2px solid #2d545e;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+/*-- Ensure headings inside are white -- */
+.contact-form-card h5, 
+.contact-info-card h4, 
+.contact-info-card .lead {
+    color: #ffffff !important;
 }
 
 .custom-input::placeholder {
-    color: #a0a6b5; /* Lighter grey for placeholder text */
+    color: #a0a6b5; 
 }
 
 .custom-input:focus {
     outline: none;
     box-shadow: none;
-    border-color: #007bff; /* Bright blue accent stands out great on dark */
+    border-color: #007bff; 
     color: #ffffff;
+}
+
+/* --- Button --- */
+.btn-submit-data {
+    background-color: #2563eb; /* Primary Blue */
+    color: #fff;
+    border-radius: 4px;
+    padding: 12px 30px;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.btn-submit-data:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* --- Text & Links --- */
+.contact-info-card h4 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact-subtext {
+    color: #cbd5e1; /* Light grey text */
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.contact-list {
+    padding: 0;
+    list-style: none;
 }
 
 .contact-list li {
     margin-bottom: 15px;
-    font-size: 1.1rem;
-    color: #e0e0e0; /* Off-white for readability */
+    display: flex;
+    align-items: center;
 }
 
-.contact-list i {
-    color: #007bff; /* Accent blue remains the same */
-    margin-right: 10px;
+.contact-list li i {
+    color: #60a5fa; /* Lighter blue for icons */
+    margin-right: 15px;
+    font-size: 18px;
 }
+
+.contact-list li a {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+.contact-list li a:hover {
+    opacity: 1;
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .contact-form-card {
+        border-radius: 8px 8px 0 0; /* Rounded top */
+        /*border-right: 1px solid #eef2f6;
+        border-bottom: none;*/
+    }
+    .contact-info-card {
+        border-radius: 0 0 8px 8px; /* Rounded bottom */
+    }
+}
+
+
+
 
 
 
@@ -4310,12 +4404,6 @@ height: 700px;: This sets the height of the element to 700 pixels.
 .list-sidebar li a:hover {
   color: #0056b3;
   text-decoration: underline;
-}
-
-/* FOOTER */
-.daviefolio-footer {
-  background-color: #393f4d;
-  padding: 2em;
 }
 
 /* TABLEAU */
