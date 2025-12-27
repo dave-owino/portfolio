@@ -19,17 +19,32 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 1.8;
-  color: rgb(255, 255, 255);
+  background-color: #0f172a;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-@media screen and (max-width: 992px) {
+body.daviefolio-aside-open #daviefolio-main {
+  margin-left: 300px;
+  width: calc(100% - 300px);
+}
+/*
+@media (max-width: 991px) {
+  body.daviefolio-aside-open #daviefolio-main {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+}
+*/
+@media screen and (max-width: 991px) {
   body {
     font-size: 16px;
   }
 }
 
+/* Links: Updated to your Brand Cyan */
 a {
-  color: #2c98f0;
+  color: #00d4ff;
+  text-decoration: none;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -38,62 +53,41 @@ a {
 a:active,
 a:focus,
 a:hover {
-  color: #2c98f0;
+  color: #ffffff;
   outline: none;
   text-decoration: none !important;
+  text-shadow: 0 0 8px rgba(0, 212, 255, 0.5);
 }
 
+/* Paragraphs */
 p {
   margin-bottom: 1.5em !important;
-  text-align: center;
+  text-align: left;
 }
 
+/* Headings */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: #000;
-  font-family: "Playfair Display", Georgia, serif;
-  font-weight: 400 !important;
+  color: #ffffff;
+  font-family: "Quicksand", Arial, sans-serif; /* Consistent font with body */
+  font-weight: 700 !important;
   margin: 0 0 30px 0 !important;
+  letter-spacing: 1px;
 }
 
-figure {
-  margin-bottom: 2.5em !important;
-  float: left;
-  width: 100%;
-}
-
-figure figcaption {
-  font-size: 16px;
-  width: 80%;
-  margin: 20px auto 0 auto;
-  color: #b3b3b3;
-  font-style: italic;
-  font-family: "Quicksand", Arial, sans-serif;
-}
-
-@media screen and (max-width: 480px) {
-  figure figcaption {
-    width: 100%;
-  }
-}
-
+/* Selection: Updated to your brand Cyan */
 ::-webkit-selection {
-  color: #fff;
-  background: #2c98f0;
-}
-
-::-moz-selection {
-  color: #fff;
-  background: #2c98f0;
+  color: #0f172a;
+  background: #00d4ff;
 }
 
 ::selection {
-  color: #fff;
-  background: #2c98f0;
+  color: #0f172a;
+  background: #00d4ff;
 }
 
 /***********************************/
@@ -104,6 +98,7 @@ figure figcaption {
   width: 100%;
   overflow: hidden;
   position: relative;
+  /*
   background-color: #0f172a;
   background-image: radial-gradient(
       at 0% 0%,
@@ -114,10 +109,10 @@ figure figcaption {
   padding-left: 30px !important;
   padding-right: 30px !important;
   background-size: 100% auto;
-  color: #f8fafc;
+  color: #f8fafc;*/
 }
 
-/* Prevents issues with background-attachment on mobile */
+/* Prevents issues with background-attachment on mobile 
 @supports not (-webkit-touch-callout: none) {
   #daviefolio-page {
     background-attachment: scroll;
@@ -133,93 +128,25 @@ figure figcaption {
     align-items: center;
     flex-direction: column;
   }
-}
+}*/
 
 .daviefolio-container-wrap {
-  width: 100%;
-  max-width: 1170px !important;
+  max-width: 1170px;
   margin: 0 auto;
+  /*width: 100%;
   display: flex;
   flex-direction: row;
   position: relative;
-  box-sizing: border-box;
+  box-sizing: border-box;*/
 }
 
 /**************************************/
-/********* TOP SECTION *********/
+/*********     NAV TOGGLE     *********/
 /**************************************/
-
-/* --- Header --- */
-#top-daviefolio-section {
-  position: fixed !important;
-  top: 0;
-  left: 335px;
-  width: calc(100% - 335px) !important;
-  z-index: 2000;
-  background-color: rgba(15, 23, 42, 0.8) !important;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  height: 48px !important;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  overflow: visible;
-}
-
-/* --- Logo Image --- */
-#logo img {
-  display: block;
-  width: 80px;
-  max-width: 100%;
-  height: auto;
-  max-height: 48px;
-  filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.4));
-  transition: filter 0.3s ease, transform 0.3s ease;
-}
-
-/* --- Logo Hover Effect --- */
-#logo img:hover {
-  filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.8));
-  transform: scale(1.1);
-}
-
-/* -- Mobile View Adjustments -- */
-@media (max-width: 768px) {
-  #top-daviefolio-section {
-    position: fixed !important;
-    width: 100% !important;
-    left: 0 !important;
-    height: 60px !important;
-    justify-content: space-between;
-    padding: 0 15px;
-    background-color: rgba(15, 23, 42, 0.95) !important;
-  }
-}
-
-/* -- Tablet View -- */
-@media screen and (max-width: 768px) {
-  #logo img {
-    width: 120px !important;
-    padding-left: 30px !important;
-    max-width: 100%;
-    height: auto;
-    max-height: 60px !important;
-  }
-}
-
-/* -- Mobile View -- 
-@media screen and (max-width: 768480px) {
-  #logo img {
-    width: 100px !important;
-    height: auto !important;
-    padding-left: 10px !important;
-  }
-}*/
 
 /* -- Main button container -- */
 .daviefolio-nav-toggle {
-  top : 2px !important;
+  top: 2px !important;
   left: -8px !important;
   cursor: pointer;
   text-decoration: none;
@@ -319,7 +246,7 @@ figure figcaption {
 }
 
 /* Hide toggle on large screens (Desktop) */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 900px) {
   .daviefolio-nav-toggle {
     display: none;
   }
@@ -346,7 +273,7 @@ figure figcaption {
 /********* DAVIEFOLIO ASIDE *********/
 /**************************************/
 
-#daviefolio-aside {
+/*#daviefolio-aside {
   position: fixed;
   top: 0;
   left: 35px;
@@ -356,9 +283,9 @@ figure figcaption {
   padding-top: 2em;
   padding-bottom: 30px;
 
-  /* Dark Glass Effect */
-  background: rgba(2, 6, 23, 0.88);
-  /* #020617 with opacity */
+  /* Dark Glass Effect 
+  background: rgba(2, 6, 23, 0.88);*/
+  /* #020617 with opacity 
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
 
@@ -366,8 +293,36 @@ figure figcaption {
   box-shadow: 10px 0 30px rgba(0, 0, 0, 0.45);
 
   transition: 0.5s;
-  overflow: hidden;
+  overflow: hidden;*/
+/*}
+*/
+
+#daviefolio-aside {
+  padding-top       : 3em;
+  padding-bottom    : 40px;
+  float             : left;
+  width             : 300px;
+  position          : fixed;
+  overflow-y        : scroll;
+  z-index           : 1001;
+  background        : #f2f3f7;
+  -webkit-transition: 0.5s;
+  -o-transition     : 0.5s;
+  transition        : 0.5s;
 }
+
+@media screen and (max-width: 991px) {
+  #daviefolio-aside {
+    width            : 300px;
+    -moz-transform   : translateX(-300px);
+    -webkit-transform: translateX(-300px);
+    -ms-transform    : translateX(-300px);
+    -o-transform     : translateX(-300px);
+    transform        : translateX(-300px);
+    padding-top      : 4em;
+  }
+}
+
 
 /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
 #daviefolio-aside::-webkit-scrollbar {
@@ -389,7 +344,7 @@ figure figcaption {
   margin-bottom: 15px;
   background-image: url(../img/about/about.jpg);
 }
-
+/*
 @media screen and (max-width: 768px) {
   #daviefolio-aside {
     padding-top: 4em !important;
@@ -413,7 +368,7 @@ figure figcaption {
     height: 170px !important;
     margin-bottom: 5px !important;
   }
-}
+}*/
 
 #daviefolio-aside .text-center {
   margin: 0 !important;
@@ -662,28 +617,118 @@ figure figcaption {
 /**************************************/
 
 #daviefolio-main {
-  position: relative;
-  width: calc(100% - 305px) !important;
-  display: block;
+  /*position: relative;*/
+  width: calc(100% - 300px);
+  float: right;
+  /*display: block;*/
+  -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  margin-left: 300px;
-  /* Push content to the right */
-
-  padding: 0 0.4em !important;
+  /*margin-left: 300px;
+  padding: 0 0.4em !important;*/
   margin-top: 48px;
-  /* Header height (52px) + a small gap */
+}
+/*
+@media (max-width: 991px) {
+  #daviefolio-main {
+    width: 100% !important;
+    margin-left: 0;
+    padding: 0 1em !important;
+    margin-top: 70px;   
+  }
 }
 
 @media screen and (max-width: 768px) {
   #daviefolio-main {
-    width: 100% !important;
-    position: relative;
-    margin: 10px 0 0 0 !important;
-    padding: 0 0.5em !important;
+    padding: 0 1.2em !important;
+    margin-top: 65px;
   }
 }
+
+@media (max-width: 576px) {
+  #daviefolio-main {
+    padding: 0 0.8em !important;
+    margin-top: 60px;
+  }
+}
+*/
+
+
+@media screen and (max-width: 991px) {
+  #daviefolio-main {
+    width  : 100%;
+    padding: 0 1em;
+  }
+}
+
+/* --- Header --- */
+#top-daviefolio-section {
+  position: fixed !important;
+  top: 0;
+  left: 335px;
+  width: calc(100% - 335px) !important;
+  z-index: 2000;
+  background-color: rgba(15, 23, 42, 0.8) !important;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  height: 48px !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  overflow: visible;
+}
+
+/* --- Logo Image --- */
+#logo img {
+  display: block;
+  width: 80px;
+  max-width: 100%;
+  height: auto;
+  max-height: 48px;
+  filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.4));
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* --- Logo Hover Effect --- */
+#logo img:hover {
+  filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.8));
+  transform: scale(1.1);
+}
+
+/* -- Mobile View Adjustments -- */
+@media (max-width: 768px) {
+  #top-daviefolio-section {
+    position: fixed !important;
+    width: 100% !important;
+    left: 0 !important;
+    height: 60px !important;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-color: rgba(15, 23, 42, 0.95) !important;
+  }
+}
+
+/* -- Tablet View -- */
+@media screen and (max-width: 768px) {
+  #logo img {
+    width: 120px !important;
+    padding-left: 30px !important;
+    max-width: 100%;
+    height: auto;
+    max-height: 60px !important;
+  }
+}
+
+/* -- Mobile View -- 
+@media screen and (max-width: 768480px) {
+  #logo img {
+    width: 100px !important;
+    height: auto !important;
+    padding-left: 10px !important;
+  }
+}*/
 
 /******** HERO ********/
 .hero-full-screen {
