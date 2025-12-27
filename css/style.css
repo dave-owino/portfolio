@@ -660,53 +660,30 @@ text-transform: uppercase;
 /********* DAVIEFOLIO FOOTER *********/
 /**************************************/
 
-.daviefolio-footer {
-  background-color: #0f172a;/*#1e293b;*/
-  padding: 2em;
-  max-height: 60px;
-}
-
 #daviefolio-aside .daviefolio-footer {
   position: absolute !important;
   bottom: 0 !important;
-  font-size: 15px !important;
-  text-align: center !important;
-  font-weight: 400 !important;
   width: 100% !important;
   display: block !important;
   padding: 0 !important;
 }
 
-/*
-#daviefolio-aside .daviefolio-footer ul {
-  padding: 0;
-  margin: 0;
-}
-
-#daviefolio-aside .daviefolio-footer ul li {
-  padding: 0;
-  margin: 0;
-  display: inline;
-  list-style: none;
-}
-
-#daviefolio-aside .daviefolio-footer ul li a {
-  color: rgba(255, 255, 255, 0.3);
-  padding: 4px;
-}
-
-#daviefolio-aside .daviefolio-footer ul li a:active,
-#daviefolio-aside .daviefolio-footer ul li a:focus,
-#daviefolio-aside .daviefolio-footer ul li a:hover {
-  text-decoration: none;
-  outline: none;
-  color: #2c98f0;
-}
-*/
 #daviefolio-aside .daviefolio-footer p {
   display: block;
   padding: 0 !important;
   margin: 0 !important;
+  color: #94a3b8 !important;
+  background: rgba(2, 6, 23, 0.88);
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+  box-shadow: #00d4ff 0px 0px 8px !important;
+}
+
+/* other footer styles */
+.daviefolio-footer {
+  background: rgba(2, 6, 23, 0.88);
+  padding: 2em;
 }
 
 @media (max-width: 768px) {
@@ -2876,7 +2853,7 @@ canvas {
 /* --- General Layout --- */
 .daviefolio-contact {
     background-color: #0f172a; 
-    padding: 60px 0;
+    padding: 50px 0 30px 0 !important;
     font-family: 'Inter', sans-serif; /* Use a clean tech font */
 }
 
@@ -2892,7 +2869,7 @@ canvas {
     padding: 40px;
     height: 100%; 
     border-radius: 8px 0 0 8px; /* Rounded corners only on left */
-    box-shadow: -5px 5px 20px rgba(0,0,0,0.05); /* Subtle shadow */
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
     border-right: none; /* Merge visual with right card */
 }
 
@@ -2906,22 +2883,32 @@ canvas {
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    /*box-shadow: 5px 5px 20px rgba(0,0,0,0.1);*/
-    box-shadow: -5px 5px 20px rgba(0,0,0,0.05); /* Subtle shadow */
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
     position: relative;
     overflow: hidden;
 }
 
-/* -- Add a subtle data-like background pattern to the right card -- */
+/* -- Subtle to glow behind contact info -- */
 .contact-info-card::before {
-    content: "";
+    content: '';
     position: absolute;
-    top: -50px;
-    right: -50px;
+    top: -50%;
+    right: -50%;
     width: 200px;
     height: 200px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
+    z-index: 0;
+}
+
+/* --- Mobile Responsiveness --- */
+@media screen and (max-width: 768px) {
+    .contact-form-card {
+        border-radius: 8px 8px 0 0; /* Rounded top only */
+        border-bottom: none;
+    }
+    .contact-info-card {
+        border-radius: 0 0 8px 8px; /* Rounded bottom only */
+    }
 }
 
 /* --- Inputs --- */
@@ -3013,19 +3000,6 @@ canvas {
     color: #60a5fa;
     text-decoration: none;
 }
-
-/* --- Mobile Responsiveness --- */
-@media (max-width: 768px) {
-    .contact-form-card {
-        border-radius: 8px 8px 0 0; /* Rounded top */
-        /*border-right: 1px solid #eef2f6;
-        border-bottom: none;*/
-    }
-    .contact-info-card {
-        border-radius: 0 0 8px 8px; /* Rounded bottom */
-    }
-}
-
 
 
 
