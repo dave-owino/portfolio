@@ -407,8 +407,8 @@ figure figcaption {
 }
 
 #daviefolio-aside .author-img {
-  width: 180px;
-  height: 180px;
+  width: 170px;
+  height: 170px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -441,8 +441,8 @@ figure figcaption {
   }
 
   #daviefolio-aside .author-img {
-    width: 180px !important;
-    height: 180px !important;
+    width: 170px !important;
+    height: 170px !important;
     margin-bottom: 5px !important;
   }
 }
@@ -482,7 +482,9 @@ figure figcaption {
 
 
 #daviefolio-logo a:hover {
-  color: #f0a500;
+    color: #00d4ff; /* Your brand Cyan */
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5); /* Subtle data-glow */
+    transition: all 0.3s ease; /* Smooth transition */
 }
 
 /*
@@ -514,7 +516,7 @@ text-transform: uppercase;
 
 .side-social li a {
   color: rgba(255, 255, 255, 0.7);
-  font-size: 2rem;
+  font-size: 1.6rem;
   transition: all 0.3s ease;
   display: inline-block;
   /* Required for the transform effect below */
@@ -1074,6 +1076,7 @@ padding: 0;: This removes all internal spacing within the element.*/
 
 .folio-title-box {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 15px;
   margin-bottom: 30px !important;
@@ -1081,25 +1084,21 @@ padding: 0;: This removes all internal spacing within the element.*/
 }
 
 .folio-title-line-mf {
-  width: 60px;
-  /* Length of the horizontal line */
-  height: 15px;
-  /* Thickness of the line */
-  background-color: #ff4b2b;
-  /* Matches the orange/red accent */
-  display: inline-block;
+    width: 60px;
+    height: 13px;
+    background-color: #2c98f0; 
+    display: inline-block;
+    border-radius: 2px;
 }
 
 .daviefolio-heading-meta {
-  font-size: 18px !important;
-  text-transform: uppercase;
-  color: #00d4ff;
-  font-weight: 600;
-  letter-spacing: 5px !important;
-  white-space: nowrap;
-  /* Prevents the text from wrapping to a new line */
-  line-height: 1.2;
-  /* Adjust line height for better spacing */
+    font-size: 17px !important;
+    color: #00d4ff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+    white-space: nowrap;
 }
 
 .daviefolio-heading span {
