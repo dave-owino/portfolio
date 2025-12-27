@@ -219,7 +219,7 @@ figure figcaption {
 
 /* -- Main button container -- */
 .daviefolio-nav-toggle {
-  top : -2px;
+  top : 2px !important;
   cursor: pointer;
   text-decoration: none;
   border: none;
