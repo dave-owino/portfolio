@@ -127,7 +127,6 @@
 							</li>
 						</ul>
 					</div>
-					<!--<span class="position"><a href="#">Data Analyst</a></span>-->
 				</div>
 
 				<!--Main Navigation Menu -->
@@ -198,7 +197,9 @@
 								<a href="#work" class="btn btn-folio" aria-label="View portfolio projects">
 									View Projects <i class="icon-briefcase3"></i>
 								</a>
-								<a href="download/DavidOwinoResume.pdf" class="btn btn-resume" download
+								<a href="download/David_Owino_Data_Scientist_Resume.pdf" target="_blank"
+									rel="noopener noreferrer" class="btn btn-resume"
+									download="David_Owino_Data_Scientist_Resume.pdf"
 									aria-label="Download David Owino CV">
 									Download CV <i class="icon-download4"></i>
 								</a>
@@ -1065,10 +1066,13 @@
 							</div>
 						</div>
 
-						<div class="row">
+						<div class="row contact-row-flex">
+
 							<div class="col-md-7 animate-box">
 								<div class="contact-form-card">
+									<!-- Contact Form -->
 									<form action="https://formspree.io/f/mwppwqkr" method="POST" id="contactForm">
+
 										<div class="form-group">
 											<input type="text" name="name" class="form-control custom-input"
 												placeholder="Name" required>
@@ -1082,8 +1086,16 @@
 												placeholder="How can we collaborate on a data project?"
 												required></textarea>
 										</div>
-										<button type="submit" class="btn-submit-data">Send Message</button>
+										<!-- Success Message -->
+										<p id="successMessage" class="success-message"></p>
+										<div class="form-group">
+											<button class="btn btn-submit-data" type="submit" id="sendMessageButton">
+												Send Message
+											</button>
+										</div>
+
 									</form>
+									<!-- End Contact Form -->
 								</div>
 							</div>
 
@@ -1094,16 +1106,39 @@
 										research, or freelance analytics.</p>
 
 									<ul class="contact-list">
-										<li><i class="icon-map"></i> Mombasa, Kenya</li>
-										<li><i class="icon-mail"></i> dave.owino@yahoo.com</li>
-										<li><i class="icon-linkedin"></i> linkedin.com/in/yourprofile</li>
-										<li><i class="icon-github"></i> github.com/yourusername</li>
+										<li>
+											<i class="icon-location1"></i> Mombasa, Kenya
+										</li>
+										<li>
+											<a href="https://github.com/Daviedavie100" target="_blank" rel="noopener"><i
+													class="icon-github"></i> github</a>
+										</li>
+										<li>
+											<a href="https://www.linkedin.com/in/profile-davidowino/" target="_blank"
+												rel="noopener"><i class="icon-linkedin2"></i> LinkedIn</a>
+										</li>
+										<li>
+											<a href="https://x.com/da_owino" target="_blank" rel="noopener"><i
+													class="icon-twitter"></i> Twitter</a>
+										</li>
+										<li>
+											<a href="https://www.instagram.com/owinodavid/" target="_blank"
+												rel="noopener" title="Instagram"><i class="icon-instagram1"></i>
+												Instagram</a>
+										</li>
+										<li>
+											<a href="https://web.facebook.com/Daviedavie/" target="_blank"
+												rel="noopener" title="Facebook"><i class="icon-facebook2"></i>
+												Facebook</a>
+										</li>
 									</ul>
 								</div>
 							</div>
+
 						</div>
 					</div>
 				</section>
+				<!-- End: Contact Section -->
 
 				<!--<section class="daviefolio-contact" data-section="contact">
 					<div class="daviefolio-narrow-content">
@@ -1129,6 +1164,7 @@
 															<div class="title-box-2">
 																<h5 class="title-left">Message Us</h5>
 															</div>
+
 															<form name="sentMessage" id="contactForm"
 																action="https://formspree.io/f/mwppwqkr" method="POST"
 																novalidate="novalidate">
@@ -1171,6 +1207,9 @@
 																	</button>
 																</div>
 															</form>
+
+
+															
 														</div>
 
 														<div class="col-md-4">
