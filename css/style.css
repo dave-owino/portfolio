@@ -145,20 +145,43 @@ figure figcaption {
 /********* TOP SECTION *********/
 /**************************************/
 
+/* --- Header --- */
 #top-daviefolio-section {
-  position: fixed !important;
-  top: 0;
-  left: 335px;
-  width: calc(100% - 370px) !important;
-  z-index: 2000;
-  background-color: transparent !important;
-  height: 52px !important;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed !important;
+    top: 0;
+    left: 335px; 
+    width: calc(100% - 335px) !important; 
+    z-index: 2000;
+    background-color: rgba(15, 23, 42, 0.8) !important; 
+    -webkit-backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px); 
+    height: 48px !important;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    overflow: visible;
 }
+
+/* --- The Logo Image --- */
+#logo img {
+    display: block;
+    width: 80px;
+    max-width: 100%;
+    height: auto;
+    max-height: 48px;
+    filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.4));
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+#logo img:hover {
+    filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.8));
+    transform: scale(1.1);
+}
+
+
+
 
 @media (max-width: 768px) {
   #top-daviefolio-section {
@@ -169,52 +192,7 @@ figure figcaption {
   }
 }
 
-/********* LOGO *********/
 
-#logo {
-    clear: both;
-    display: flex;
-    /*margin-bottom: 20px;*/
-    padding: 30px 0 20px 20px; /* top | right | bottom | left */
-}
-
-/* Logo image (single source of truth) */
-#logo img {
-    width: 90px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.4));
-    transition: filter 0.3s ease, transform 0.3s ease;
-}
-
-/* Hover effect */
-#logo img:hover {
-    filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.7));
-    transform: scale(1.05);
-}
-
-/* Tablet View (Small Laptops & iPads) */
-@media screen and (max-width: 768px) {
-  #logo img {
-    width: 120px !important;
-    height: auto !important;
-    padding-left: 20px !important;
-    /*margin-right: 0 !important;
-    padding-right: 0 !important;*/
-  }
-}
-
-/* Mobile View (Smartphones) */
-@media screen and (max-width: 480px) {
-  #logo img {
-    width: 100px !important;
-    height: auto !important;
-    padding-left: 25px !important;
-    /*margin-right: 0 !important;
-    padding-right: 0 !important;*/
-  }
-}
 
 /* Navigation Toggle -three lines*/
 .daviefolio-nav-toggle {
@@ -353,54 +331,7 @@ figure figcaption {
     transition: 0.5s;
     overflow: hidden; 
 }
-/*
-#daviefolio-aside {
-    padding-top: 2em !important;
-    padding-bottom: 30px !important;
-    width: 300px !important;
-    right: 35px !important;
-    position: fixed;
-    z-index: 2001;
-    background: rgba(45, 84, 94, 0.85) !important;
-    -webkit-backdrop-filter: blur(15px); 
-    backdrop-filter: blur(15px);
-    border-right: 1px solid rgba(255, 255, 255, 0.15);
-    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.1);
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    top: 0;
-    left: 35px;  
-    height: 100vh !important;
-    overflow: hidden;
-}
-*/
-/*
-#daviefolio-aside {
-  
- 
-  
 
-  
-  z-index: 2001;
-  background: #2d545e;
-
-  background: rgba(45, 84, 94, 0.95); 
-   -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-
-  
-
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  margin-right: 0;
-  top: 0;
-  height: 100vh !important;
-  overflow: hidden;
-}
-*/
 /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
 #daviefolio-aside::-webkit-scrollbar {
   display: none;
@@ -462,13 +393,6 @@ figure figcaption {
   margin-bottom: 0.5em !important;
 }
 
-/*#daviefolio-logo a {
-  text-decoration: none;
-  color: #000;
-  transition: color 0.3s ease-in-out;
-  font-weight: 700 !important;
-}
-  */
 .daviefolio-aside a {
     color: #94a3b8; /* Muted gray-blue */
     text-decoration: none;
@@ -487,15 +411,6 @@ figure figcaption {
     transition: all 0.3s ease; /* Smooth transition */
 }
 
-/*
-#daviefolio-aside .position {
-display: block;
-margin-top: 0;
-margin-bottom: 1.7em;
-font-size: 13px;
-text-transform: uppercase;
-}
-*/
 /* Sidebar Social Links Container */
 .side-social-wrap {
   margin-bottom: 30px;
@@ -713,6 +628,9 @@ text-transform: uppercase;
   -o-transition: 0.5s;
   transition: 0.5s;
   margin-left: 300px; /* Push content to the right */
+
+  padding: 0 0.4em !important;
+  margin-top: 48px; /* Header height (52px) + a small gap */
 }
 
 
