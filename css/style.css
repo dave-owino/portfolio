@@ -205,22 +205,19 @@ html {
   position: fixed;
 }
 
-/* When the menu is active/open */
+/* -- When the menu is active/open -- */
 .daviefolio-nav-toggle.active i {
   background: transparent;
-  /* Hide the middle line */
 }
 
 .daviefolio-nav-toggle.active i::before {
   top: 0;
   transform: rotateZ(45deg);
-  /* Rotate top line */
 }
 
 .daviefolio-nav-toggle.active i::after {
   bottom: 0;
   transform: rotateZ(-45deg);
-  /* Rotate bottom line */
 }
 
 /* Hide accessibility text visually */
@@ -236,20 +233,20 @@ html {
 }
 
 /* Hide toggle on large screens (Desktop) */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 991px) {
   .daviefolio-nav-toggle {
     display: none;
   }
 }
 
-/* Mobile Visibility */
+/* Mobile Visibility 
 @media screen and (max-width: 768px) {
   .daviefolio-nav-toggle {
     opacity: 1;
     visibility: visible;
   }
 }
-
+*/
 /*
 @media screen and (max-width: 480px) {
   .col-xxs-12 {
@@ -603,26 +600,13 @@ html {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  transform: translateX(0);
+  /*transform: translateX(0);*/
   transition: transform 0.4s ease-in-out; 
 }
 
 
 
-/* -- Mobile View Adjustments -- 
-@media (max-width: 991px) {
-  #logo {
-    position: fixed !important;
-    width: 100% !important;
-    left: 0 !important;
-    height: 60px !important;
-    justify-content: space-between;
-    padding: 0 40px !important;
-    background-color: rgba(15, 23, 42, 0.95) !important;
-  }
-}*/
-
-
+/* -- Mobile View Adjustments -- */
 @media (max-width: 991px) {
   #logo {
     width: 100% !important;
@@ -631,7 +615,7 @@ html {
     justify-content: space-between;
     padding: 0 40px !important;
     background-color: rgba(15, 23, 42, 0.95) !important;
-    transform: translateX(0); /* no movement on mobile */
+    /*transform: translateX(0);  no movement on mobile */
   }
 }
 
