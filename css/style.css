@@ -118,37 +118,21 @@ html {
   background: transparent;
 }
 
-/* Prevents issues with background-attachment on mobile */
-@supports not (-webkit-touch-callout: none) {
-  #daviefolio-page {
-    background-attachment: scroll;
-  }
-}
-/*
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   #daviefolio-page {
     width: 100%;
-    padding: 0 1px !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding: 0 5px !important;
   }
-}*/
+}
 
 .daviefolio-container-wrap {
   max-width: 1170px;
   margin: 0 auto;
-  /*width: 100%;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  box-sizing: border-box;*/
 }
 
-/**************************************/
-/*********     NAV TOGGLE     *********/
-/**************************************/
+/***********************************/
+/*********  NAV TOGGLE     *********/
+/***********************************/
 
 /* -- Main button container -- */
 .daviefolio-nav-toggle {
@@ -280,52 +264,35 @@ html {
 /**************************************/
 
 #daviefolio-aside {
+  top:0;
   position: fixed;
   float: left;
   width: 300px;
-  height: 100vh;
+  height: 100svh;
   z-index: 1000;
   padding-top: 3em;
   padding-bottom: 40px;
-
-  /* Dark Glass Effect */
   background: rgba(2, 6, 23, 0.88);
-  /* #020617 with opacity */
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-
   border-right: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 10px 0 30px rgba(0, 0, 0, 0.45);
-
   transition: 0.5s;
   overflow: hidden;
 }
 
-/*
-#daviefolio-aside {
-  padding-top       : 3em;
-  padding-bottom    : 40px;
-  float             : left;
-  width             : 300px;
-  position          : fixed;
-  overflow-y        : scroll;
-  z-index           : 1001;
-  background        : #f2f3f7;
-  -webkit-transition: 0.5s;
-  -o-transition     : 0.5s;
-  transition        : 0.5s;
-}
-*/
 
 @media screen and (max-width: 991px) {
   #daviefolio-aside {
-    width            : 300px;
-    -moz-transform   : translateX(-300px);
+    padding-top: 4em !important;
+    left: 0 !important;
+    z-index: 2001;
+    width: 300px !important;
+    -moz-transform: translateX(-300px);
     -webkit-transform: translateX(-300px);
-    -ms-transform    : translateX(-300px);
-    -o-transform     : translateX(-300px);
-    transform        : translateX(-300px);
-    padding-top      : 4em;
+    -ms-transform: translateX(-300px);
+    -o-transform: translateX(-300px);
+    transform: translateX(-300px);
   }
 }
 
@@ -353,20 +320,7 @@ html {
 /*
 @media screen and (max-width: 768px) {
   #daviefolio-aside {
-    padding-top: 4em !important;
-    position: fixed;
-    float: left;
-    left: 0 !important;
-    height: auto !important;
-    bottom: 0;
-    z-index: 2001;
-    width: 300px !important;
-    -moz-transform: translateX(-300px);
-    -webkit-transform: translateX(-300px);
-    -ms-transform: translateX(-300px);
-    -o-transform: translateX(-300px);
-    transform: translateX(-300px);
-    overflow: hidden;
+
   }
 
   #daviefolio-aside .author-img {
@@ -575,10 +529,7 @@ html {
   }
 }
 
-/**************************************/
-/********* DAVIEFOLIO FOOTER *********/
-/**************************************/
-
+/* -- DAVIEFOLIO FOOTER -- */
 #daviefolio-aside .daviefolio-footer {
   position: absolute !important;
   bottom: 0 !important;
@@ -599,7 +550,7 @@ html {
   box-shadow: #00d4ff 0px 0px 8px !important;
 }
 
-/* other footer styles */
+/* -- other footer styles -- */
 .daviefolio-footer {
   background: rgba(2, 6, 23, 0.88);
   padding: 2em;
@@ -618,62 +569,39 @@ html {
   }
 }
 
-/**************************************/
+/***********************************/
 /********* DAVIEFOLIO MAIN *********/
-/**************************************/
+/***********************************/
 
 #daviefolio-main {
-  /*position: relative;*/
-  width: calc(100% - 305px);
+  /**/
+  width: calc(100% - 300px);
   float: right;
+
   /*display: block;*/
+  padding: 0 0.4em !important;
+  position: relative;
+
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  /*margin-left: 300px;
-  padding: 0 0.4em !important;*/
   margin-top: 48px;
 }
-/*
-@media (max-width: 991px) {
-  #daviefolio-main {
-    width: 100% !important;
-    margin-left: 0;
-    padding: 0 1em !important;
-    margin-top: 70px;   
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #daviefolio-main {
-    padding: 0 1.2em !important;
-    margin-top: 65px;
-  }
-}
-
-@media (max-width: 576px) {
-  #daviefolio-main {
-    padding: 0 0.8em !important;
-    margin-top: 60px;
-  }
-}
-*/
-
 
 @media screen and (max-width: 991px) {
   #daviefolio-main {
     width  : 100%;
-    padding: 0 1em;
+    padding: 0 0.5em;
   }
 }
 
-/* --- Header --- 
+/* --- Header --- */
 #top-daviefolio-section {
   position: fixed !important;
   top: 0;
-  left: 335px;
-  width: calc(100% - 335px) !important;
+  float: right;
+  width: calc(100% - 300px) !important;
   z-index: 2000;
   background-color: rgba(15, 23, 42, 0.8) !important;
   -webkit-backdrop-filter: blur(10px);
@@ -684,27 +612,10 @@ html {
   justify-content: flex-start;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   overflow: visible;
-}*/
-
-/* --- Logo Image --- 
-#logo img {
-  display: block;
-  width: 80px;
-  max-width: 100%;
-  height: auto;
-  max-height: 48px;
-  filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.4));
-  transition: filter 0.3s ease, transform 0.3s ease;
-}*/
-
-/* --- Logo Hover Effect --- */
-#logo img:hover {
-  filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.8));
-  transform: scale(1.1);
 }
 
 /* -- Mobile View Adjustments -- */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   #top-daviefolio-section {
     position: fixed !important;
     width: 100% !important;
@@ -716,7 +627,35 @@ html {
   }
 }
 
-/* -- Tablet View -- */
+/* --- Logo Image --- */
+#logo img {
+  display: block;
+  width: 80px;
+  max-width: 100%;
+  height: auto;
+  max-height: 48px;
+  filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.4));
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* -- Mobile View -- */
+@media screen and (max-width: 991px) {
+  #logo img {
+    width: 100px !important;
+    height: auto !important;
+    padding-left: 10px !important;
+  }
+}
+
+/* --- Logo Hover Effect --- */
+#logo img:hover {
+  filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.8));
+  transform: scale(1.1);
+}
+
+
+
+/* -- Tablet View -- 
 @media screen and (max-width: 768px) {
   #logo img {
     width: 120px !important;
@@ -725,16 +664,9 @@ html {
     height: auto;
     max-height: 60px !important;
   }
-}
-
-/* -- Mobile View -- 
-@media screen and (max-width: 768480px) {
-  #logo img {
-    width: 100px !important;
-    height: auto !important;
-    padding-left: 10px !important;
-  }
 }*/
+
+
 
 /******** HERO ********/
 .hero-full-screen {
