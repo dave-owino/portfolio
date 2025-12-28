@@ -594,20 +594,22 @@ html {
 #logo {
   top: 0;
   position: fixed;
-  float: right; 
   z-index: 2000;
-  pointer-events: auto;
   width: calc(100% - 330px - 30px) !important;
-  background-color: rgba(15, 23, 42, 0.8) !important;
+  background-color: rgba(15, 23, 42, 0.8);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   height: 48px !important;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  transform: translateX(0);
+  transition: transform 0.4s ease-in-out; 
 }
 
-/* -- Mobile View Adjustments -- */
+
+
+/* -- Mobile View Adjustments -- 
 @media (max-width: 991px) {
   #logo {
     position: fixed !important;
@@ -618,10 +620,25 @@ html {
     padding: 0 40px !important;
     background-color: rgba(15, 23, 42, 0.95) !important;
   }
+}*/
+
+
+@media (max-width: 991px) {
+  #logo {
+    width: 100% !important;
+    left: 0 !important;
+    height: 60px !important;
+    justify-content: space-between;
+    padding: 0 40px !important;
+    background-color: rgba(15, 23, 42, 0.95) !important;
+    transform: translateX(0); /* no movement on mobile */
+  }
 }
+
 
 /* --- Logo Image --- */
 #logo img {
+  pointer-events: auto;
   display: block;
   width: auto;
   max-width: 100%;
@@ -630,17 +647,6 @@ html {
   filter: drop-shadow(0 0 8px rgba(0, 212, 255, 0.4));
   transition: filter 0.3s ease, transform 0.3s ease;
 }
-
-
-/* -- Mobile View -- 
-@media screen and (max-width: 991px) {
-  #logo img {
-    position: fixed;
-    width: 100px !important;
-    height: auto !important;
-    padding-left: 10px !important;
-  }
-}*/
 
 /* --- Logo Hover Effect --- */
 #logo img:hover {
