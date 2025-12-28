@@ -43,325 +43,347 @@
 </head>
 
 <body>
-	<nav class="custom-navbar">
-		<div class="container d-flex align-items-center justify-content-between">
+	<div id="davieblog-page">
+		<nav class="custom-navbar">
+			<div class="nav-container">
 
-			<div id="logo2" class="logo-wrapper">
-				<a href="index.html">
-					<img src="lib/favicon_io/logo.png" alt="David Portfolio Logo" class="logo-img">
-				</a>
+				<div class="logo-box">
+					<a href="index.html">
+						<img src="lib/favicon_io/logo.png" alt="David Owino Logo" class="logo-img">
+					</a>
+				</div>
+
+				<div class="menu-box">
+					<ul class="nav-links">
+						<li><a class="nav-item" href="index.html">Home</a></li>
+						<li><a class="nav-item" href="project.html">Projects</a></li>
+						<li><a class="nav-item active-link" href="blog.html">Blog</a></li>
+						<li><a class="nav-item btn-contact" href="#contact">Contact</a></li>
+					</ul>
+				</div>
+
 			</div>
+		</nav>
+		<!--/ Nav End /-->
 
-			<a href="#" class="js-daviefolio-nav-toggle daviefolio-nav-toggle" data-toggle="collapse"
-				data-target="#navbarDefault" aria-expanded="false" aria-controls="navbarDefault">
-				<i></i>
-			</a>
+		<div id="blog-content">
+			<div id="container-wrap">
 
-			<div id="navbarDefault" class="nav-menu">
-				<ul class="nav-links list-unstyled d-flex mb-0">
-					<li><a class="nav-item" href="index.html">Home</a></li>
-					<li><a class="nav-item" href="project.html">Projects</a></li>
-					<li><a class="nav-item active-link" href="blog.html">Blog</a></li>
-					<li><a class="nav-item btn-contact" href="#contact">Contact</a></li>
-				</ul>
-			</div>
-
-		</div>
-	</nav>
-	<!--/ Nav End /-->
-
-	<div id="daviefolio-page">
-		<div id="container-wrap">
-			<section class="daviefolio-blog-project" id="blog" data-section="blog">
-				<div class="daviefolio-project-narrow-content">
-					<div class="col-sm-12">
-						<div class="blog_title-box text-center">
-							<h3 class="blog_title-a">BLOG</h3>
-							<div class="blog_title-line-mf"></div>
+				<section class="daviefolio-blog-project" id="blog" data-section="blog">
+					<div class="daviefolio-project-narrow-content">
+						<div class="col-sm-12">
+							<div class="blog_title-box text-center">
+								<h3 class="blog_title-a">BLOG</h3>
+								<div class="blog_title-line-mf"></div>
+							</div>
 						</div>
-					</div>
 
-					<div class="row project-item animate-box" data-animate-effect="fadeInLeft">
-						<div class="col-md-8 col-12">
-							<div class="blogdesc">
-								<h2 class="des-title" style="color: #00d4ff; font-weight: 700;">The Architect’s Guide to
-									Data Visualization: Beyond Pretty Pictures</h2>
-								<p><em>By David Owino | Published: October 2024</em></p>
-								<p>
-									In the modern business landscape, data is often described as the "new oil." But like
-									raw oil, data is useless until it is refined. As a data professional, I’ve found
-									that the most critical stage of this refinement isn't just the complex SQL
-									queries—it’s the <strong>storytelling</strong>.
-								</p>
-							</div>
 
-							<div class="blogdesc">
-								<h3 class="des-title">1. The Foundation: Univariate Analysis</h3>
-								<p>Understanding a single variable is the "diagnostic" phase of data science. It allows
-									us to spot anomalies or "dirty data" early.</p>
+						<div class="daviefolio-blog-project" id="machine-learning" data-section="ml">
+							<div class="container">
+								<div class="row animate-box" data-animate-effect="fadeInLeft">
+									<div class="col-md-8 col-12">
+										<div class="blogdesc main-card">
+											<h3 class="des-title">ALGORITHMS VS. ARCHITECTURE</h3>
+											<p>While most beginners focus on which model to pick, senior data scientists
+												know that <strong>Feature Engineering</strong> is the true
+												differentiator. A simple Linear Regression with high-quality features
+												will almost always outperform a complex Neural Network with "noisy"
+												data.</p>
 
-								<div class="resentproject" style="margin: 20px 0;">
-									<a href="img/blog/univ.png" data-lightbox="gallery-mf">
-										<img src="img/blog/univ.png" alt="Univariate Analysis Example" class="img-fluid"
-											style="border-radius: 8px; border: 1px solid rgba(0,212,255,0.2);">
-									</a>
-									<p style="font-size: 12px; text-align: center; color: #888; margin-top: 5px;">
-										<em>Figure 1: Visualizing distribution and outliers through Univariate
-											techniques.</em>
-									</p>
-								</div>
+											<h4 style="color: #fff; margin-top: 25px;">The Signal in the Noise</h4>
+											<p>Machine Learning is not about feeding a machine more data; it's about
+												feeding it <em>meaningful</em> data. This involves transforming raw
+												inputs into technical "signals" that the algorithm can actually
+												interpret.</p>
 
-								<ul>
-									<li><strong>Histograms:</strong> For continuous data distribution.</li>
-									<li><strong>Box Plots:</strong> Vital for understanding the "spread" and quartiles.
-									</li>
-								</ul>
-							</div>
+											<div class="ml-highlight-box">
+												<p><strong>Perspective:</strong> "In production, model explainability
+													(XAI) is often more valuable than a 1% increase in accuracy."</p>
+											</div>
+										</div>
+									</div>
 
-							<div class="blogdesc">
-								<h3 class="des-title">2. Finding the Pulse: Bivariate Analysis</h3>
-								<p><strong>Bivariate visualization</strong> uncovers how two variables interact, helping
-									us identify correlations and trends that drive decision-making.</p>
-
-								<div class="resentproject" style="margin: 20px 0;">
-									<a href="img/blog/biv.png" data-lightbox="gallery-mf">
-										<img src="img/blog/biv.png" alt="Bivariate Analysis Example" class="img-fluid"
-											style="border-radius: 8px; border: 1px solid rgba(0,212,255,0.2);">
-									</a>
-									<p style="font-size: 12px; text-align: center; color: #888; margin-top: 5px;">
-										<em>Figure 2: Identifying correlations and patterns between variables.</em>
-									</p>
+									<div class="col-md-4 col-12">
+										<div class="blog-sidebar sticky-sidebar">
+											<h5 class="sidebar-title">The ML Workflow</h5>
+											<ul class="list-sidebar">
+												<li>Data Denoising</li>
+												<li>Feature Selection</li>
+												<li>Cross-Validation</li>
+												<li>Explainability (SHAP/LIME)</li>
+											</ul>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="col-md-4 col-12">
-							<div class="blog-sidebar"
-								style="background: rgba(255,255,255,0.05); padding: 25px; border-radius: 12px; border: 1px solid #00d4ff;">
-								<h5 class="sidebar-title">Expertise Stack</h5>
-								<ul class="list-sidebar">
-									<li><strong>Python & R:</strong> For statistical rigor.</li>
-									<li><strong>SQL:</strong> For data architecture.</li>
-									<li><strong>Power BI:</strong> For executive intelligence.</li>
-								</ul>
+						<!--<section class="daviefolio-blog-project" id="machine-learning" data-section="ml">
+					<div class="container">
+						<div class="row animate-box" data-animate-effect="fadeInLeft">
+							<div class="col-md-8 col-12">
+								<div class="blogdesc main-card">
+									<h3 class="des-title">THE ART OF FEATURE ENGINEERING</h3>
+									<p>In the rush to deploy <strong>Random Forests</strong> or <strong>Neural
+											Networks</strong>, many practitioners overlook the most critical step:
+										<em>Feature Engineering</em>. Algorithms are just engines; your data is the
+										fuel. If the fuel is dirty, the engine stalls.</p>
+
+									<h4 style="color: #fff; margin-top: 20px;">Why Feature Engineering Matters</h4>
+									<p>Feature engineering is the process of using domain knowledge to create variables
+										that help machine learning algorithms learn better. It is the difference between
+										a 70% accuracy model and a 99% precision system.</p>
+
+									<div class="ml-highlight-box">
+										<p><strong>Pro-Tip:</strong> "More data beats a clever algorithm, but better
+											data beats more data."</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-12">
+								<div class="blog-sidebar sticky-sidebar">
+									<h5 class="sidebar-title">ML Lifecycle</h5>
+									<ul class="list-sidebar">
+										<li>Data Collection</li>
+										<li>Feature Extraction <code>Scikit-Learn</code></li>
+										<li>Model Selection <code>XGBoost</code></li>
+										<li>Hyperparameter Tuning</li>
+									</ul>
+									<h5 class="sidebar-title">Explainability Tools</h5>
+									<ul class="list-sidebar">
+										<li>SHAP Values</li>
+										<li>LIME</li>
+										<li>Permutation Importance</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
+				</section>-->
 
-					<div class="row project-item animate-box" data-animate-effect="fadeInLeft">
-						<div class="col-md-12">
-							<div class="blogdesc">
-								<h3 class="des-title">3. The Master View: Multivariate Intelligence</h3>
-								<p>Real-world business problems are rarely simple. Multivariate techniques allow us to
-									layer multiple dimensions into a single view.</p>
 
+
+						<div class="row project-item animate-box" data-animate-effect="fadeInLeft">
+							<div class="col-md-8 col-12">
+								<div class="blogdesc">
+									<h2 class="des-title" style="color: #00d4ff; font-weight: 700;">The Architect’s
+										Guide to
+										Data Visualization: Beyond Pretty Pictures</h2>
+									<p><em>By David Owino | Published: October 2024</em></p>
+									<p>
+										In the modern business landscape, data is often described as the "new oil." But
+										like
+										raw oil, data is useless until it is refined. As a data professional, I’ve found
+										that the most critical stage of this refinement isn't just the complex SQL
+										queries—it’s the <strong>storytelling</strong>.
+									</p>
+								</div>
+
+								<div class="blogdesc">
+									<h3 class="des-title">1. The Foundation: Univariate Analysis</h3>
+									<p>Understanding a single variable is the "diagnostic" phase of data science. It
+										allows
+										us to spot anomalies or "dirty data" early.</p>
+
+									<div class="resentproject" style="margin: 20px 0;">
+										<a href="img/blog/univ.png" data-lightbox="gallery-mf">
+											<img src="img/blog/univ.png" alt="Univariate Analysis Example"
+												class="img-fluid"
+												style="border-radius: 8px; border: 1px solid rgba(0,212,255,0.2);">
+										</a>
+										<p style="font-size: 12px; text-align: center; color: #888; margin-top: 5px;">
+											<em>Figure 1: Visualizing distribution and outliers through Univariate
+												techniques.</em>
+										</p>
+									</div>
+
+									<ul>
+										<li><strong>Histograms:</strong> For continuous data distribution.</li>
+										<li><strong>Box Plots:</strong> Vital for understanding the "spread" and
+											quartiles.
+										</li>
+									</ul>
+								</div>
+
+								<div class="blogdesc">
+									<h3 class="des-title">2. Finding the Pulse: Bivariate Analysis</h3>
+									<p><strong>Bivariate visualization</strong> uncovers how two variables interact,
+										helping
+										us identify correlations and trends that drive decision-making.</p>
+
+									<div class="resentproject" style="margin: 20px 0;">
+										<a href="img/blog/biv.png" data-lightbox="gallery-mf">
+											<img src="img/blog/biv.png" alt="Bivariate Analysis Example"
+												class="img-fluid"
+												style="border-radius: 8px; border: 1px solid rgba(0,212,255,0.2);">
+										</a>
+										<p style="font-size: 12px; text-align: center; color: #888; margin-top: 5px;">
+											<em>Figure 2: Identifying correlations and patterns between variables.</em>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-12">
+								<div class="blog-sidebar"
+									style="background: rgba(255,255,255,0.05); padding: 25px; border-radius: 12px; border: 1px solid #00d4ff;">
+									<h5 class="sidebar-title">Expertise Stack</h5>
+									<ul class="list-sidebar">
+										<li><strong>Python & R:</strong> For statistical rigor.</li>
+										<li><strong>SQL:</strong> For data architecture.</li>
+										<li><strong>Power BI:</strong> For executive intelligence.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="row project-item animate-box" data-animate-effect="fadeInLeft">
+							<div class="col-md-12">
+								<div class="blogdesc">
+									<h3 class="des-title">3. The Master View: Multivariate Intelligence</h3>
+									<p>Real-world business problems are rarely simple. Multivariate techniques allow us
+										to
+										layer multiple dimensions into a single view.</p>
+
+									<div class="row">
+										<div class="col-md-6">
+											<div class="resentproject">
+												<a href="img/blog/multiv1.png" data-lightbox="gallery-mf">
+													<img src="img/blog/multiv1.png" alt="Multivariate Insight 1"
+														class="img-fluid" style="border-radius: 8px;">
+												</a>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="resentproject">
+												<a href="img/blog/multiv2.png" data-lightbox="gallery-mf">
+													<img src="img/blog/multiv2.png" alt="Multivariate Insight 2"
+														class="img-fluid" style="border-radius: 8px;">
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<p style="margin-top: 20px;">
+										From <strong>Radar Charts</strong> for performance tracking to <strong>Violin
+											Plots</strong> for probability density, these tools ensure you are prepared
+										to
+										handle the complexity of modern datasets.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--End: Blog-->
+
+				<!-- Start: Insights Section -->
+				<section class="daviefolio-insights" id="insights" data-section="insights">
+					<div class="container">
+						<div class="blogdesc insights-card">
+							<h3 class="des-title text-center"><strong>VISUALIZATION QUICK REFERENCE</strong></h3>
+							<div class="row mt-4">
+
+								<div class="col-md-4">
+									<h5 class="sidebar-title">Univariate (One Variable)</h5>
+									<ul class="list-sidebar">
+										<li>Histogram <code>sns.histplot()</code></li>
+										<li>Box Plot <code>sns.boxplot()</code></li>
+										<li>Density Plot <code>sns.kdeplot()</code></li>
+										<li>Violin Plot <code>sns.violinplot()</code></li>
+										<li>Bar Chart <code>sns.barplot()</code></li>
+									</ul>
+								</div>
+
+								<div class="col-md-4">
+									<h5 class="sidebar-title">Bivariate (Two Variables)</h5>
+									<ul class="list-sidebar">
+										<li>Scatter Plot <code>sns.scatterplot()</code></li>
+										<li>Line Chart <code>plt.plot()</code></li>
+										<li>Heatmap <code>sns.heatmap()</code></li>
+										<li>Bubble Chart <code>plt.scatter()</code></li>
+										<li>Hexbin Plot <code>sns.jointplot()</code></li>
+									</ul>
+								</div>
+
+								<div class="col-md-4">
+									<h5 class="sidebar-title">Multivariate (3+ Variables)</h5>
+									<ul class="list-sidebar">
+										<li>Pair Plot <code>sns.pairplot()</code></li>
+										<li>3D Scatter <code>Axes3D.scatter()</code></li>
+										<li>Treemap <code>squarify.plot()</code></li>
+										<li>Radar Chart <code>plt.plot()</code></li>
+										<li>Facet Grid <code>sns.FacetGrid()</code></li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End: Insights Section -->
+
+				<!-- Start: Contact Section -->
+				<section id="contact" class="contact-section">
+					<div class="container">
+
+						<div class="contact-header mb-5">
+							<h3 class="des-title">Get In Touch</h3>
+							<p>Have a data project or a job opportunity? Let's discuss how I can help.</p>
+						</div>
+
+						<div class="modern-form">
+							<form id="contact-form">
 								<div class="row">
-									<div class="col-md-6">
-										<div class="resentproject">
-											<a href="img/blog/multiv1.png" data-lightbox="gallery-mf">
-												<img src="img/blog/multiv1.png" alt="Multivariate Insight 1"
-													class="img-fluid" style="border-radius: 8px;">
-											</a>
-										</div>
+									<div class="col-md-6 mb-3">
+										<input type="text" name="name" class="form-control" placeholder="Your Name"
+											required>
 									</div>
-									<div class="col-md-6">
-										<div class="resentproject">
-											<a href="img/blog/multiv2.png" data-lightbox="gallery-mf">
-												<img src="img/blog/multiv2.png" alt="Multivariate Insight 2"
-													class="img-fluid" style="border-radius: 8px;">
-											</a>
-										</div>
+									<div class="col-md-6 mb-3">
+										<input type="email" name="email" class="form-control" placeholder="Your Email"
+											required>
 									</div>
 								</div>
+								<div class="mb-3">
+									<textarea class="form-control" name="message" rows="5" placeholder="Your Message"
+										required></textarea>
+								</div>
 
-								<p style="margin-top: 20px;">
-									From <strong>Radar Charts</strong> for performance tracking to <strong>Violin
-										Plots</strong> for probability density, these tools ensure you are prepared to
-									handle the complexity of modern datasets.
+								<div class="form-submit-wrapper">
+									<button type="submit" class="btn-contact-submit">Send Message</button>
+								</div>
+							</form>
+						</div>
+
+					</div>
+				</section>
+				<!-- End: Contact Section -->
+
+				<!-- Start: Footer -->
+				<footer class="daviefolio-footer-modern">
+					<div class="container">
+						<div class="footer-content">
+							<div class="footer-socials">
+								<a href="#" title="LinkedIn"><i class="icon-linkedin2"></i></a>
+								<a href="#" title="GitHub"><i class="icon-github"></i></a>
+								<a href="#" title="Twitter"><i class="icon-twitter2"></i></a>
+							</div>
+
+							<div class="footer-info">
+								<p>&copy;
+									<script>document.write(new Date().getFullYear());</script>
+									<span>David Owino</span>. All rights reserved.
 								</p>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-			<!--End: Blog-->
-
-			<!-- Start: Insights Section -->
-			<section class="daviefolio-insights" data-section="insights">
-				<div class="daviefolio-insights-narrow-content">
-					<div class="col-md-12">
-						<div class="blogdesc">
-							<h3 class="des-title"><strong>VISUAL SUMMARY</strong></h3>
-							<div class="col-md-4">
-								<ul>
-									<li>Histogram <code>sns.histplot()</code></li>
-									<li>Box Plot <code>sns.boxplot()</code></li>
-									<li>Density Plot <code>sns.kdeplot()</code></li>
-									<li>Violin Plot <code>sns.violinplot()</code></li>
-									<li>Bar Chart <code>sns.barplot()</code></li>
-									<li>Pie Chart <code>plt.pie()</code></li>
-									<li>Dot Plot <code>plt.scatter()</code></li>
-									<li>Stem-and-Leaf Plot <code>plt.stem()</code></li>
-								</ul>
-							</div>
-							<div class="col-md-4">
-								<ul>
-									<li>Scatter Plot <code>sns.scatterplot()</code></li>
-									<li>Line Chart <code>plt.plot()</code></li>
-									<li>Heatmap <code>sns.heatmap()</code></li>
-									<li>Bubble Chart <code>plt.scatter()</code></li>
-									<li>Stacked or Grouped Bar Chart <code>plt.bar()</code></li>
-									<li>Hexbin Plot <code>plt.hexbin()</code> or
-										<code>sns.jointplot()</code>
-									</li>
-									<li>2D Density Plot <code>sns.kdeplot()</code></li>
-									<li>Side-by-side Box Plot &amp; Violin Plot <code>sns.boxplot()</code>
-										&amp;
-										<code>sns.violinplot()</code> with <code>hue</code>
-									</li>
-								</ul>
-							</div>
-							<div class="col-md-4">
-								<ul>
-									<li>Pair Plot <code>sns.pairplot()</code></li>
-									<li>3D Scatter Plot <code>Axes3D.scatter()</code> from
-										<code>mpl_toolkits.mplot3d</code>
-									</li>
-									<li>Clustered Bar Chart <code>sns.catplot(kind="bar")</code></li>
-									<li>Treemap <code>squarify.plot()</code> from
-										<code>squarify</code>
-									</li>
-									<li>Radar Chart <code>plt.plot()</code></li>
-									<li>Facet Grid <code>sns.FacetGrid()</code></li>
-									<li>Mosaic Plot <code>mosaic()</code> from
-										<code>statsmodels.graphics.mosaicplot</code>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- End: Insights Section -->
-
-			<!-- Start: Contact Section -->
-			<section class="daviefolio-contact" id="contact" data-section="contact">
-				<div class="daviefolio-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-							data-animate-effect="fadeInLeft">
-							<div class="folio-title-box">
-								<div class="folio-title-line-mf"></div>
-								<span class="daviefolio-heading-meta">Get in Touch</span>
-							</div>
-							<h2 class="daviefolio-heading animate-box">Contact</h2>
-						</div>
-
-						<div class="col-md-12">
-							<div class="contact-area wow fadeInUp" data-wow-delay="0.1s" id="contact-section">
-								<div class="container-fluid">
-									<div class="row align-items-center">
-										<div class="col-md-3"></div>
-
-										<div class="col-md-9">
-											<div class="contact-form">
-												<div class="row">
-													<div class="col-md-8">
-														<div class="title-box-2">
-															<h5 class="title-left">Message Us</h5>
-														</div>
-														<form name="sentMessage" id="contactForm"
-															action="https://formspree.io/f/mwppwqkr" method="POST"
-															novalidate="novalidate">
-
-															<div class="control-group">
-																<label for="name">Your Name</label>
-																<input type="text" class="form-control" id="name"
-																	name="name" placeholder="Please enter your name"
-																	required>
-															</div>
-
-															<div class="control-group">
-																<label for="email">Your Email</label>
-																<input type="email" class="form-control" id="email"
-																	name="email" placeholder="Please enter your email"
-																	required>
-															</div>
-
-															<div class="control-group">
-																<label for="subject">Subject</label>
-																<input type="text" class="form-control" id="subject"
-																	name="subject" placeholder="Please enter a subject"
-																	required>
-															</div>
-
-															<div class="control-group">
-																<label for="message">Message</label>
-																<textarea class="form-control" id="message"
-																	name="message"
-																	placeholder="Please enter your message"
-																	required></textarea>
-															</div>
-
-															<!-- Success Message -->
-															<p id="successMessage" class="success-message"></p>
-															<div>
-																<button class="btn" type="submit"
-																	id="sendMessageButton">Send
-																	Message</button>
-															</div>
-														</form>
-													</div>
-
-													<div class="col-md-4">
-														<div class="title-box-2">
-															<h5 class="title-left">Get in Touch</h5>
-														</div>
-														<div class="more-info">
-															<p class="lead">
-																Thank you for visiting my portfolio! I am always open to
-																new
-																opportunities and collaborations. If you have any
-																questions or
-																would like to discuss a project, feel free to get in
-																touch.
-															</p>
-															<ul class="list-ico">
-																<li><i class="icon-location1"></i> Mombasa, Shika
-																	Adabu, KE 80110</li>
-																<li><i class="icon-phone-call"></i> +254 724438296</li>
-																<li><i class="icon-mail6"></i> dave.owino@yahoo.com</li>
-															</ul>
-														</div>
-													</div>
-												</div> <!-- End row -->
-											</div> <!-- End contact-form -->
-										</div>
-									</div> <!-- End row -->
-								</div> <!-- End container-fluid -->
-							</div> <!-- End contact-area -->
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- End: Contact Section -->
-
-			<!-- Start: Footer -->
-			<div class="daviefolio-footer">
-				<div class="row">
-					<!--Footer Section -->
-					<div class="footer">
-						<p><small>&copy;
-								<script>document.write(new Date().getFullYear());</script> All
-								rights
-								reserved. David Owino
-							</small></p>
-					</div>
-				</div>
+				</footer>
+				<!-- Footer End -->
 			</div>
-			<!-- Footer End -->
+			<!-- container-wrap end-->
 		</div>
-		<!-- container-wrap end-->
 	</div>
 
 	<!-- jQuery -->
