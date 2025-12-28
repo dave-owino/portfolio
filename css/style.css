@@ -574,19 +574,13 @@ html {
 /***********************************/
 
 #daviefolio-main {
-  /**/
-  width: calc(100% - 300px);
-  float: right;
-
-  /*display: block;*/
-  padding: 0 0.4em !important;
   position: relative;
-
+  float:right;
+  width: calc(100% - 300px);   
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  margin-top: 48px;
 }
 
 @media screen and (max-width: 991px) {
@@ -596,13 +590,14 @@ html {
   }
 }
 
-/* --- Header --- */
-#top-daviefolio-section {
-  position: fixed !important;
+/* --- Logo --- */
+#logo {
   top: 0;
-  float: right;
-  width: calc(100% - 300px) !important;
+  position: fixed;
+  float: right; 
   z-index: 2000;
+  pointer-events: auto;
+  width: calc(100% - 330px - 30px) !important;
   background-color: rgba(15, 23, 42, 0.8) !important;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -610,19 +605,17 @@ html {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  overflow: visible;
 }
 
 /* -- Mobile View Adjustments -- */
 @media (max-width: 991px) {
-  #top-daviefolio-section {
+  #logo {
     position: fixed !important;
     width: 100% !important;
     left: 0 !important;
     height: 60px !important;
     justify-content: space-between;
-    padding: 0 15px;
+    padding: 0 40px !important;
     background-color: rgba(15, 23, 42, 0.95) !important;
   }
 }
@@ -630,7 +623,7 @@ html {
 /* --- Logo Image --- */
 #logo img {
   display: block;
-  width: 80px;
+  width: auto;
   max-width: 100%;
   height: auto;
   max-height: 48px;
@@ -638,14 +631,16 @@ html {
   transition: filter 0.3s ease, transform 0.3s ease;
 }
 
-/* -- Mobile View -- */
+
+/* -- Mobile View -- 
 @media screen and (max-width: 991px) {
   #logo img {
+    position: fixed;
     width: 100px !important;
     height: auto !important;
     padding-left: 10px !important;
   }
-}
+}*/
 
 /* --- Logo Hover Effect --- */
 #logo img:hover {
