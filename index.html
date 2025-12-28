@@ -2,1132 +2,930 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8" />
-	<title>David Owino | Data Professional Portfolio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description"
-		content="David Owino is a data analyst specializing in data visualization, business intelligence, and storytelling with data. Explore projects and insights." />
-	<meta name="author" content="David Owino" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<!-- Facebook, Twitter, and LinkedIn Integration -->
-	<meta property="og:title" content="David Owino | Data Analyst Portfolio" />
-	<meta property="og:image" content="https://daviedavie100.github.io/portfolio/img/work/Sql/sql-1.png" />
-	<meta property="og:url" content="https://daviedavie100.github.io/portfolio/" />
-	<meta property="og:site_name" content="David Owino Portfolio" />
-	<meta property="og:description"
-		content="Explore the portfolio of David Owino, showcasing projects in data analysis and visualization." />
-	<meta property="og:type" content="website" />
+    <title>David Owino | Data Professional Portfolio</title>
+    <meta name="description"
+        content="David Owino is a data analyst specializing in data visualization, business intelligence, and storytelling with data. Explore projects and insights." />
+    <meta name="author" content="David Owino" />
+    <meta name="robots" content="index,follow" />
 
-	<!-- Twitter Card -->
-	<meta name="twitter:title" content="David Owino | Data Analyst Portfolio" />
-	<meta name="twitter:image" content="https://daviedavie100.github.io/portfolio/img/work/PowerBI/dash-4.jpg" />
-	<meta name="twitter:url" content="https://daviedavie100.github.io/portfolio/" />
-	<meta name="twitter:card" content="summary_large_image" />
+    <!-- Canonical -->
+    <link rel="canonical" href="https://daviedavie100.github.io/portfolio/" />
 
-	<!-- LinkedIn Open Graph -->
-	<meta property="og:image" content="https://daviedavie100.github.io/portfolio/img/work/Python/pyt6.jpg" />
-	<meta property="og:image:width" content="1200" />
-	<meta property="og:image:height" content="630" />
+    <!-- Open Graph (Facebook/LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="David Owino Portfolio" />
+    <meta property="og:title" content="David Owino | Data Analyst Portfolio" />
+    <meta property="og:description"
+        content="Explore the portfolio of David Owino, showcasing projects in data analysis and visualization." />
+    <meta property="og:url" content="https://daviedavie100.github.io/portfolio/" />
+    <!-- Use ONE primary OG image (multiple og:image tags are allowed, but keep it intentional) -->
+    <meta property="og:image" content="https://daviedavie100.github.io/portfolio/img/work/Sql/sql-1.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Portfolio preview for David Owino" />
 
-	<!-- Favicon and Apple Touch Icons -->
-	<link rel="shortcut icon" href="lib/favicon_io/favicon.ico" />
-	<link rel="icon" type="image/x-icon" href="lib/favicon_io/favicon.ico" />
-	<!-- Extra fallback -->
-	<link rel="apple-touch-icon" sizes="180x180" href="lib/favicon_io/apple-touch-icon.png" />
-	<link rel="icon" type="image/png" sizes="32x32" href="lib/favicon_io/favicon-32x32.png" />
-	<link rel="icon" type="image/png" sizes="16x16" href="lib/favicon_io/favicon-16x16.png" />
-	<link rel="manifest" href="lib/favicon_io/site.webmanifest" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="David Owino | Data Analyst Portfolio" />
+    <meta name="twitter:description"
+        content="Projects in data analysis, visualization, BI dashboards, and data engineering." />
+    <meta name="twitter:image" content="https://dave-owino.github.io/portfolio/img/work/PowerBI/dash-4.jpg" />
+    <meta name="twitter:image:alt" content="Dashboard preview image" />
+    <meta name="twitter:url" content="https://dave-owino.github.io/portfolio/" />
 
-	<!-- Improved Google Fonts with Preconnect -->
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Playfair+Display:wght@400;400i;700&display=swap"
-		rel="stylesheet" />
+    <!-- Favicon and Apple Touch Icons -->
+    <link rel="shortcut icon" href="lib/favicon_io/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="lib/favicon_io/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="lib/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="lib/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="lib/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="lib/favicon_io/site.webmanifest" />
 
-	<!-- Bootstrap CSS File -->
-	<link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
 
-	<!-- Libraries CSS Files -->
-	<link rel="stylesheet" href="css/animate.css" />
-	<link rel="stylesheet" href="css/icomoon.css" />
-	<link rel="stylesheet" href="css/owl.carousel.min.css" />
-	<link rel="stylesheet" href="css/owl.theme.default.min.css" />
-	<link rel="stylesheet" href="lib/lightbox/css/lightbox.min.css" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Playfair+Display:wght@400;400i;700&display=swap"
+        rel="stylesheet" />
 
-	<!-- Main Stylesheet File -->
-	<link rel="stylesheet" href="css/style.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="lib/lightbox/css/lightbox.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-	<!-- Modernizr JS - Library for feature detection -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- Modernizr (kept as-is) -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
 
-	<!-- Chart Js-->
-	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <!-- Chart.js (kept as-is; only useful if you actually render charts on this page) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 
-	<!-- Isotope CDN -->
-	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- Isotope (kept as-is; only useful if you initialize it) -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Optional: basic skip link styling if your CSS doesn't already cover it -->
+    <style>
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            top: 0;
+            background: #fff;
+            color: #000;
+            padding: 10px 12px;
+            z-index: 9999;
+            border-radius: 8px;
+        }
+
+        .skip-link:focus {
+            left: 12px;
+            top: 12px;
+        }
+    </style>
+
+    <!-- Structured data (helps SEO) -->
+    <script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "David Owino",
+		"url": "https://daviedavie100.github.io/portfolio/",
+		"jobTitle": "Data Analyst",
+		"sameAs": [
+			"https://github.com/dave-owino/",
+			"https://www.linkedin.com/in/david-odhiambo-owino/",
+			"https://x.com/DavieOwino/"
+		]
+	}
+	</script>
 </head>
 
 <body>
-	<div id="daviefolio-page">
-		<div id="daviefolio-container-wrap">
-
-			<!--Navigation Toggle -->
-			<button class="js-daviefolio-nav-toggle daviefolio-nav-toggle" type="button" data-toggle="collapse"
-				data-target="#navbar" aria-expanded="false" aria-controls="navbar" title="Toggle Navigation">
-				<i></i>
-				<span class="sr-only hidden-menu">Menu</span>
-			</button>
-
-			<!-- Sidebar Section -->
-			<aside id="daviefolio-aside" class="border js-fullheight">
-				<div class="text-center">
-					<!-- Author Image -->
-					<div class="author-img"></div>
-					<h1 id="daviefolio-logo"><a href="index.html">David Owino</a></h1>
-
-					<div class="side-social-wrap">
-						<ul class="side-social">
-							<li>
-								<a href="https://github.com/dave-owino/" target="_blank" rel="noopener" title="GitHub">
-									<i class="icon-github"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/in/david-odhiambo-owino/" target="_blank"
-									rel="noopener" title="LinkedIn">
-									<i class="icon-linkedin2"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://x.com/DavieOwino/" target="_blank" rel="noopener" title="Twitter">
-									<i class="icon-twitter"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.instagram.com/owinodavid/" target="_blank" rel="noopener"
-									title="Instagram">
-									<i class="icon-instagram1"></i>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.facebook.com/Daviedavie/" target="_blank" rel="noopener"
-									title="Facebook">
-									<i class="icon-facebook2"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<!--Main Navigation Menu -->
-				<nav id="daviefolio-main-menu" class="navbar">
-					<div id="navbar" class="collapse">
-						<ul>
-							<li class="active"><a href="home" data-nav-section="home"><strong>Home</strong></a></li>
-							<li><a href="about" data-nav-section="about"><strong>About</strong></a></li>
-							<li><a href="skills" data-nav-section="skills"><strong>Skills</strong></a></li>
-							<li><a href="work" data-nav-section="work"><strong>Portfolio</strong></a></li>
-							<li><a href="education" data-nav-section="education"><strong>Education</strong></a></li>
-							<li><a href="blog" data-nav-section="blog"><strong>Blog</strong></a></li>
-							<li><a href="contact" data-nav-section="contact"><strong>Contact</strong></a></li>
-						</ul>
-					</div>
-				</nav>
-
-				<!-- Footer Section -->
-				<div class="daviefolio-footer">
-					<p>
-						<small>&copy;
-							<script>
-								document.write(new Date().getFullYear());
-							</script>
-							All rights reserved. David Owino
-						</small>
-					</p>
-				</div>
-			</aside>
-			<!--End: daviefolio-aside-->
-
-			<!-- daviefolio-main -->
-			<div id="daviefolio-main">
-
-				<!-- Fixed Logo -->
-				<div id="logo">
-					<img src="lib/favicon_io/logo.png" alt="David Portfolio Logo" class="logo-img" />
-				</div>
-
-				<!-- Hero Section -->
-				<section id="daviefolio-hero" class="hero-full-screen" data-section="home">
-					<div class="hero-overlay"></div>
-
-					<div class="hero-container">
-						<div class="glass-header">
-							<!-- Hero Content -->
-							<p class="intro-text">Hi, I'm David</p>
-							<h1>
-								Data Analyst | Data scientist<br>
-								<span class="sub-expertise">with Data Engineering expertise</span>
-							</h1>
-							<!-- Tech Stack -->
-							<div class="tech-stack">
-								<span>Python</span> • <span>SQL</span> • <span>ETL</span> • <span>BI</span> •
-								<span>Analytics</span>
-							</div>
-							<!-- Hero Description -->
-							<p class="hero-description">
-								I design <strong>analytical systems</strong> that transform complex data into
-								<strong>reliable insights</strong>, enabling faster, smarter decision-making and
-								<strong>measurable business impact</strong>.
-								<!--I design and build <strong>scalable data pipelines</strong> that turn complex data into
-								<strong>reliable insights</strong> for decision-making, specializing in end-to-end data
-								systems and predictive models that deliver measurable impact.-->
-							</p>
-							<!--<p class="hero-description">
-								I design and build scalable data pipelines that turn complex, high-volume data
-								into <strong>reliable insights for decision-making</strong>.
-								My work focuses on end-to-end data
-								systems, analytics engineering, and production-ready solutions | predictive modeling.
-							</p>-->
-							<!-- Hero Action Buttons -->
-							<div class="hero-actions">
-								<a href="#work" class="btn btn-folio" aria-label="View portfolio projects">
-									View Projects <i class="icon-briefcase3"></i>
-								</a>
-								<a href="download/David_Owino_Data_Scientist_Resume.pdf" target="_blank"
-									rel="noopener noreferrer" class="btn btn-resume"
-									download="David_Owino_Data_Scientist_Resume.pdf"
-									aria-label="Download David Owino CV">
-									Download CV <i class="icon-download4"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<!--<section id="daviefolio-hero" class="js-fullheight" data-section="home">
-						<div class="flexslider js-fullheight">
-							<ul class="slides">-->
-				<!-- Common Slide Content -->
-				<!--<li class="hero-slide">
-									<div class="overlay"></div>
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-6 mx-auto text-center js-fullheight slider-text">
-												<div class="slider-text-inner js-fullheight">
-													<div class="desc">
-														<h1>Hi, <br>I'm David</h1>
-														<h2 class="typed-output">Loading...</h2>
-														<div class="typed-text">Data Analyst | Data Viz Specialist | SQL
-															Expert | Python Developer</div>
-														<h3>Transforming raw data into actionable insights by uncovering
-															trends and building reliable systems that drive smarter
-															decisions.</h3>-->
-				<!-- Transform raw, messy data into meaningful insights by
-															uncovering trends and patterns that drive smarter decisions -->
-				<!--<p>
-															<a class="btn btn-folio slide-btn" href="#work"
-																data-slide="portfolio">
-																View Portfolio <i class="icon-briefcase3"></i>
-															</a>
-															<a class="btn btn-folio slide-btn"
-																href="download/DavidOwinoResume.pdf"
-																download="DavidOwinoResume.pdf" data-slide="resume">
-																Download My CV <i class="icon-download4"></i>
-															</a>
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</section>-->
-
-				<!--<div class="col-md-9">
-						<div class="top-daviefolio-menu">
-							<nav>
-								<ul>
-									<li><a href="#work">Portfolio</a></li>
-									<li><a href="project.html" target="_top">Projects</a></li>
-									<li><a href="blog.html" target="_top">Blog</a></li>
-								</ul>
-							</nav>
-						</div>
-					</div>-->
-
-				<!-- End: Hero Section -->
-
-				<!-- Start: About Section -->
-				<section class="daviefolio-about" data-section="about">
-					<div class="daviefolio-narrow-content">
-						<div class="row">
-							<div class="col-md-6 mx-auto animate-box" data-animate-effect="fadeInLeft">
-								<div class="folio-title-box">
-									<div class="folio-title-line-mf"></div>
-									<span class="daviefolio-heading-meta">About Me</span>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-									<div class="bio-profile-card">
-										<div class="card-header-accent">
-											<h2 class="accent-text"><strong>From Logic to Insights</strong></h2>
-										</div>
-										<div class="bio-main-text">
-											<p>
-												I am a Mathematics Educator turned <strong>Data Professional</strong>,
-												specializing in building analytical systems that transform raw data into
-												strategic intelligence. Over eight years as an Academic Head, I led
-												data-driven initiatives across <strong>19
-													institutions</strong>—optimizing
-												resource allocation and reducing reporting cycles from days to hours.
-											</p>
-											<p>
-												Backed by an <strong>MSc in Data Science</strong> and specialized
-												training
-												in Data Engineering, I bridge the gap between complex analytics and
-												clear
-												communication. I design automated data pipelines using <strong>Python
-													and
-													SQL</strong>, develop interactive dashboards, and apply statistical
-												techniques to build predictive models.
-											</p>
-										</div>
-										<div class="card-footer-quote">
-											<p><em>"I bring technical rigor paired with a teacher's instinct for
-													clarity."</em>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-									<!--<div class="about-tools">
-									</div>-->
-									<div class="row burner-row">
-										<div class="col-md-4">
-											<div class="burner-card">
-												<div class="burner-icon"><i class="icon-params"></i></div>
-												<h3>Technical Toolbox</h3>
-												<div class="tool-list">
-													<span class="skill-pill">Python</span>
-													<span class="skill-pill">R</span>
-
-													<span class="skill-pill">SQL (Postgres/MySQL)</span>
-													<span class="skill-pill">Azure</span>
-													<span class="skill-pill">Git</span>
-
-													<span class="skill-pill">Scikit-Learn</span>
-													<span class="skill-pill">Statsmodels</span>
-
-													<span class="skill-pill">Power BI</span>
-													<span class="skill-pill">Tableau</span>
-													<span class="skill-pill">Excel</span>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-md-8">
-											<div class="burner-card">
-												<div class="burner-icon"><i class="icon-layers"></i></div>
-												<h3>How I Add Value</h3>
-												<ul class="service-list">
-													<li><strong>ETL & Data Wrangling:</strong> Integrating diverse
-														sources (APIs, SQL, Scrapers) into clean, automated, and
-														reliable datasets</li>
-													<li><strong>Diagnostic Analytics:</strong> Uncovering hidden
-														patterns and anomalies to ensure data integrity and drive
-														strategic decisions.</li>
-													<li><strong>BI & Visual Intelligence:</strong> Transforming complex
-														KPIs into interactive dashboards using Power BI, Tableau, and
-														Looker Studio.</li>
-													<li><strong>Statistical Modeling:</strong> Leveraging regression and
-														classification to solve business problems and forecast future
-														trends.</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!--<div class="container">
-								<div class="row">
-									<div class="col-md-12">
-										<h2 class="section-title">About Me</h2>
-										<div class="bio-text">
-
-										</div>
-									</div>
-								</div>
-
-								<div class="row burner-row">
-									<div class="col-md-6">
-										<div class="burner-card">
-											<div class="burner-icon"><i class="icon-params"></i></div>
-											<h3>Technical Toolbox</h3>
-											<div class="tool-list">
-												<span>Python</span> <span>SQL</span> <span>Tableau</span>
-												<span>Power BI</span> <span>Looker</span> <span>Excel</span>
-												<span>R</span> <span>VS Code</span>
-											</div>
-										</div>
-									</div>
-
-									<div class="col-md-6">
-										<div class="burner-card">
-											<div class="burner-icon"><i class="icon-layers"></i></div>
-											<h3>What I Do</h3>
-											<ul class="service-list">
-												<li><strong>ETL & Data Wrangling:</strong> Automating data
-													cleaning
-													and integration.</li>
-												<li><strong>Database Management:</strong> Architecture and SQL
-													optimization.</li>
-												<li><strong>Predictive Analytics:</strong> Statistical modeling
-													and
-													forecasting.</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>-->
-
-							<!--<div class="col-md-12">
-								<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-									<div class="about-desc">
-										<p>
-											I'm a Mathematics educator transitioning into data
-											analysis, bringing over eight years of experience in
-											analytical thinking, problem-solving, and data-driven
-											decision-making. As Head of the Academic Department, I
-											worked extensively with longitudinal student performance
-											data — analyzing trends, managing academic databases,
-											and translating insights into actions that improved
-											outcomes across multiple schools. My transition into
-											data analytics has been shaped by hands-on projects
-											across education, sales, transport, sports, and web
-											analytics, where I apply Python, SQL, and visualization
-											tools to uncover patterns and communicate insights
-											clearly. What sets me apart is my ability to bridge
-											technical analysis with strong communication — a skill
-											developed through years of explaining complex concepts
-											to diverse audiences. I'm passionate about turning
-											complex data into clear, actionable insights that
-											support smarter decisions.
-										</p>
-										<p>
-											I'm a mathematics teacher transitioning into data
-											analysis, leveraging a decade of experience in
-											analytical thinking, problem-solving, and data-driven
-											decision-making. As Head of the Academic Department, I
-											regularly analyzed student performance data, managed
-											academic databases, and implemented insights that
-											improved learning outcomes across multiple schools.
-											<br /><br />
-											My transition into data analytics has been powered by
-											hands-on experience with real-world projects involving
-											educational, sales, transport, soccer, and web traffic
-											datasets. I specialize in data wrangling with SQL and
-											Python, statistical analysis, and developing interactive
-											dashboards using Power BI, Excel, and Google Looker
-											Studio.
-											<br /><br />
-											I'm passionate about uncovering trends in complex
-											datasets and translating them into clear, actionable
-											insights for stakeholders. My strength lies in bridging
-											technical analysis with strong communication skills—a
-											result of years spent explaining complex concepts to
-											diverse audiences.
-											<br /><br />
-											I'm actively deepening my expertise in tools like
-											Tableau and exploring advanced analytics topics
-											including time series forecasting and machine learning.
-											<br /><br />
-											Feel free to explore my portfolio and tools used. You
-											can also
-											<a href="download/DavidOwinoResume.pdf"
-												download="DavidOwinoResume.pdf">Download My CV</a>
-											to see how my blend of educational and analytical
-											experience can add value to your team.
-										</p>
-									</div>
-								</div>
-							</div>-->
-
-							<!--<div class="col-md-12">
-								<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-									<div class="about-tools">
-										<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-											<div class="tools color-1">
-												<span class="icon2">
-													<i class="icon-python"></i>
-												</span>
-												<h2>Python</h2>
-											</div>
-										</div>
-
-										<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-											<div class="tools color-1">
-												<span class="icon2">
-													<i class="icon-jupyter"></i>
-												</span>
-												<h2>Jupyter Notebook</h2>
-											</div>
-										</div>
-
-										<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
-											<div class="tools color-3">
-												<span class="icon2">
-													<img src="lib/toolicon/looker-32.png" alt="Looker Icon"
-														class="tools-image" />
-												</span>
-												<h2>Google Looker</h2>
-											</div>
-										</div>
-
-										<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-											<div class="tools color-2">
-												<span class="icon2">
-													<img src="lib/toolicon/power-bi-32.svg" alt="Power BI Icon"
-														class="tools-image" />
-												</span>
-												<h2>Power BI</h2>
-											</div>
-										</div>
-
-										<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
-											<div class="tools color-3">
-												<span class="icon2">
-													<i class="icon-visualstudiocode"></i>
-												</span>
-												<h2>VS Code</h2>
-											</div>
-										</div>
-
-										<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
-											<div class="tools color-3">
-												<span class="icon2">
-													<i class="icon-tableau"></i>
-												</span>
-												<h2>Tableau</h2>
-											</div>
-										</div>
-
-										<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
-											<div class="tools color-4">
-												<span class="icon2">
-													<i class="icon-microsoftexcel"></i>
-												</span>
-												<h2>Excel</h2>
-											</div>
-										</div>
-
-										<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
-											<div class="tools color-4">
-												<span class="icon2">
-													<i class="icon-r"></i>
-												</span>
-												<h2>R</h2>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>-->
-						</div>
-					</div>
-				</section>
-				<!-- End: About Section -->
-
-				<!-- Start: Skills Section -->
-				<section class="daviefolio-skills" data-section="skills">
-					<div class="daviefolio-narrow-content">
-						<div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<div class="folio-title-box">
-									<div class="folio-title-line-mf"></div>
-									<span class="daviefolio-heading-meta"><strong>SKILLS </strong></span>
-								</div>
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<div class="expertise-card">
-									<div class="card-header">
-										<h3 class="cyan-text">Strategic Value Proposition</h3>
-									</div>
-									<div class="card-body">
-										<p class="intro-p">Bridging the gap between <strong>complex mathematical
-												theory</strong> and <strong>actionable business intelligence</strong>. I
-											specialize in building robust data pipelines and translating raw metrics
-											into strategic narratives.</p>
-
-										<div class="highlight-grid">
-											<div class="highlight-item">
-												<i class="fas fa-microchip"></i>
-												<p><strong>Algorithm Validation:</strong> Applying statistical rigor to
-													validate machine learning model outputs and ensure mathematical
-													integrity.</p>
-											</div>
-											<div class="highlight-item">
-												<i class="fas fa-project-diagram"></i>
-												<p><strong>ETL & Automation:</strong> Architecting automated workflows
-													using SQL and Python to streamline data ingestion and processing.
-												</p>
-											</div>
-											<div class="highlight-item">
-												<i class="fas fa-presentation-screen"></i>
-												<p><strong>Data Storytelling:</strong> Leveraging a background in
-													education to communicate high-level technical findings to
-													non-technical stakeholders.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="row skill-categories-grid">
-
-							<div class="col-md-4 animate-box" data-animate-effect="fadeInUp">
-								<div class="skill-category-box">
-									<div class="category-icon"><i class="fas fa-code"></i></div>
-									<h3>Data Engineering</h3>
-									<div class="skill-tags">
-										<span class="badge">Python</span>
-										<span class="badge">SQL (SQLite/PostgreSQL)</span>
-										<span class="badge">Pandas & NumPy</span>
-										<span class="badge">ETL Pipelines</span>
-										<span class="badge">Web Scraping</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-4 animate-box" data-animate-effect="fadeInUp">
-								<div class="skill-category-box">
-									<div class="category-icon"><i class="fas fa-brain"></i></div>
-									<h3>Analytics & ML</h3>
-									<div class="skill-tags">
-										<span class="badge">Scikit-Learn</span>
-										<span class="badge">Predictive Modeling</span>
-										<span class="badge">Hypothesis Testing</span>
-										<span class="badge">Data Visualization</span>
-										<span class="badge">Power BI / Tableau</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-4 animate-box" data-animate-effect="fadeInUp">
-								<div class="skill-category-box highlight-border">
-									<div class="category-icon"><i class="fas fa-square-root-alt"></i></div>
-									<h3>Mathematics</h3>
-									<div class="skill-tags">
-										<span class="badge highlight">Statistical Inference</span>
-										<span class="badge highlight">Linear Algebra</span>
-										<span class="badge highlight">Calculus</span>
-										<span class="badge highlight">Probability Theory</span>
-										<span class="badge highlight">Optimization</span>
-									</div>
-								</div>
-							</div>
-
-						</div>
-						<div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInUp">
-								<div class="competency-section">
-									<h3>Professional Competencies</h3>
-									<div class="competency-grid">
-										<div class="comp-item"><span>Technical Training</span></div>
-										<div class="comp-item"><span>Stakeholder Management</span></div>
-										<div class="comp-item"><span>Critical Thinking</span></div>
-										<div class="comp-item"><span>Curriculum Design</span></div>
-										<div class="comp-item"><span>Problem Solving</span></div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</section>
-				<!--End: Skills Section -->
-
-
-				<!-- Start: Portfolio Section -->
-				<section class="daviefolio-work" data-section="work" id="portfolio-work">
-					<div class="daviefolio-narrow-content">
-
-						<!-- Section Title -->
-						<div class="row">
-							<div class="col-md-6 mx-auto animate-box" data-animate-effect="fadeInRight">
-								<div class="folio-title-box">
-									<div class="folio-title-line-mf"></div>
-									<span class="daviefolio-heading-meta">
-										<strong>Selected Projects</strong>
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<!-- Section Description -->
-						<div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<div class="work-intro-card">
-									<h2 class="work-accent-text">
-										End-to-end work across analytics, dashboards, and predictive modeling/mix of
-										data analysis, engineering pipelines, and statistical modeling.
-									</h2>
-								</div>
-							</div>
-						</div>
-
-						<!-- Projects Grid -->
-						<div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<div class="project-grid">
-									<!-- project cards go here -->
-
-									<!-- DATA ANALYSIS -->
-									<div class="project-card">
-										<div class="project-tag analytics">Data Analysis</div>
-										<div class="project-info">
-											<h3>Airlines Sales & Operations Insights</h3>
-											<p>
-												Analyzed a Kaggle airline dataset using SQL and Python to uncover
-												revenue
-												drivers,
-												seasonal sales trends, airport performance, and delay patterns.
-												Built interactive dashboards to communicate insights clearly.
-											</p>
-											<div class="project-tech">
-												<span>SQL</span>
-												<span>Python</span>
-												<span>CTEs</span>
-												<span>Looker Studio</span>
-											</div>
-											<a href="project.html#sql" class="view-link">View Case Study →</a>
-										</div>
-									</div>
-
-									<!-- DATA SCIENCE -->
-									<div class="project-card">
-										<div class="project-tag science">Data Science</div>
-										<div class="project-info">
-											<h3>European Soccer Performance Modeling</h3>
-											<p>
-												Explored multi-season soccer data using EDA and machine learning to
-												analyze
-												team
-												performance, player development, peak ages, and tactical playing styles.
-											</p>
-											<div class="project-tech">
-												<span>Python</span>
-												<span>Pandas</span>
-												<span>Scikit-learn</span>
-												<span>Matplotlib</span>
-											</div>
-											<a href="project.html#python" class="view-link">View Notebook →</a>
-										</div>
-									</div>
-
-									<!-- BUSINESS INTELLIGENCE -->
-									<div class="project-card">
-										<div class="project-tag bi">Business Intelligence</div>
-										<div class="project-info">
-											<h3>KCSE Performance Dashboard (Excel)</h3>
-											<p>
-												Built an Excel-based BI dashboard analyzing student performance across
-												19
-												schools,
-												comparing multi-year trends, subject performance, gender gaps, and
-												ranking
-												deviations.
-											</p>
-											<div class="project-tech">
-												<span>Excel</span>
-												<span>Power Pivot</span>
-												<span>Dashboards</span>
-											</div>
-											<a href="project.html#excel" class="view-link">View Dashboard →</a>
-										</div>
-									</div>
-
-									<div class="project-card">
-										<div class="project-tag bi">Business Intelligence</div>
-										<div class="project-info">
-											<h3>Executive Student Performance Dashboard</h3>
-											<p>
-												Designed a Power BI dashboard using DAX and multiple data sources to
-												track
-												academic
-												progress, grade distributions, and KCSE outcome projections for
-												leadership
-												decision-making.
-											</p>
-											<div class="project-tech">
-												<span>Power BI</span>
-												<span>DAX</span>
-												<span>Data Modeling</span>
-											</div>
-											<a href="project.html#power-BI" class="view-link">View Dashboard →</a>
-										</div>
-									</div>
-
-									<!-- DATA ENGINEERING (PLACEHOLDER / FUTURE) -->
-									<div class="project-card">
-										<div class="project-tag engineering">Data Engineering</div>
-										<div class="project-info">
-											<h3>Automated ETL Pipeline (Upcoming)</h3>
-											<p>
-												Planned pipeline to ingest raw data, apply transformations via SQL and
-												Python,
-												and load analytics-ready datasets for downstream BI and ML use cases.
-											</p>
-											<div class="project-tech">
-												<span>SQL</span>
-												<span>Python</span>
-												<span>ETL</span>
-											</div>
-											<a href="#" class="view-link">Coming Soon →</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- End: portfolio section -->
-
-				<!-- Start: Education Section -->
-				<section class="daviefolio-education" data-section="education">
-					<div class="daviefolio-narrow-content">
-
-						<div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<div class="folio-title-box">
-									<div class="folio-title-line-mf"></div>
-									<span class="daviefolio-heading-meta"><strong>Education</strong></span>
-								</div>
-							</div>
-						</div>
-
-						<div class="daviefolio-academics-journey animate-box" data-animate-effect="fadeInLeft">
-							<!-- Education Details -->
-							<div class="row education_details-section animate-box" data-animate-effect="fadeInLeft">
-								<div class="col-md-12">
-									<div class="timeline-centered" role="main">
-										<article class="timeline-entry">
-											<div class="timeline-entry-inner">
-												<div class="timeline-label">
-													<h2 class="mb-1">MSc. Data Science <span class="badge-ongoing">In
-															Progress</span></h2>
-													<p class="edu-meta">
-														<span class="edu-institution">Cooperative University of
-															Kenya</span>
-														<span class="edu-separator"> | </span>
-														<span class="edu-date">Jul 2025 - Dec 2026 (Expected)</span>
-													</p>
-
-													<p>Specializing in advanced machine learning and big data analytics.
-													</p>
-												</div>
-											</div>
-										</article>
-
-										<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-											<div class="timeline-entry-inner">
-												<div class="timeline-label">
-													<h2 class="mb-1">Data Engineering Specialization <span
-															class="badge-ongoing">In Progress</span></h2>
-													<p class="edu-meta">
-														<span class="edu-institution">ALX Africa</span>
-														<span class="edu-separator"> | </span>
-														<span class="edu-date">Sep 2025 - Jul 2026
-															(Expected)</span>
-													</p>
-
-													<p>Mastering data architecture, ETL pipeline construction, and cloud
-														warehousing.</p>
-												</div>
-											</div>
-										</article>
-
-										<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-											<div class="timeline-entry-inner">
-												<div class="timeline-label">
-													<h2 class="mb-1">B.Ed Science (Statistics Major)</h2>
-													<p class="edu-meta">
-														<span class="edu-institution">Kenyatta University</span>
-														<span class="edu-separator"> | </span>
-														<span class="edu-date">Aug 2006 - Dec 2010</span>
-													</p>
-
-													<p>Strong foundation in probability distributions, statistical
-														theory, time series analysis, regression models, quantitative
-														analysis, and hypothesis testing.</p>
-												</div>
-											</div>
-										</article>
-
-									</div>
-								</div>
-							</div>
-							<!-- Professional Certifications -->
-							<div class="row certification_details-section animate-box" data-animate-effect="fadeInLeft">
-								<div class="col-md-12">
-									<div class="certifications-section">
-										<h3 class="cert-heading">Professional Accreditations</h3>
-										<div class="cert-grid">
-
-											<a href="http://www.udacity.com/certificate/KUPXXDDD" target="_blank"
-												rel="noopener" class="cert-card">
-												<span class="cert-org">Udacity</span>
-												<span class="cert-name">Data Analyst Nanodegree</span>
-											</a>
-
-											<a href="https://www.datacamp.com/certificate/DAA0013024805241"
-												target="_blank" rel="noopener" class="cert-card">
-												<span class="cert-org">Datacamp</span>
-												<span class="cert-name">Associate Data Analyst</span>
-											</a>
-
-											<a href="https://www.hackerrank.com/certificates/1d25e6a0581a"
-												target="_blank" rel="noopener" class="cert-card">
-												<span class="cert-org">HackerRank</span>
-												<span class="cert-name">Intermediate SQL skill certification</span>
-											</a>
-
-											<a href="https://www.datacamp.com/certificate/SQA0012607816930"
-												target="_blank" rel="noopener" class="cert-card">
-												<span class="cert-org">Datacamp</span>
-												<span class="cert-name">SQL Associate</span>
-											</a>
-
-											<a href="https://www.coursera.org/verify/AHGJGEZZCGMV" target="_blank"
-												rel="noopener" class="cert-card">
-												<span class="cert-org">Coursera</span>
-												<span class="cert-name">Advanced R programming</span>
-											</a>
-
-											<a href="https://alison.com/verify/7f1b19e378" target="_blank"
-												rel="noopener" class="cert-card">
-												<span class="cert-org">Alison</span>
-												<span class="cert-name">Python Programming</span>
-											</a>
-
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- End: Education Section -->
-
-				<!-- Start: Blog Section -->
-				<section class="daviefolio-blog" data-section="blog">
-					<div class="daviefolio-narrow-content">
-						<div class="row">
-							<div class="col-md-6 mx-auto animate-box" data-animate-effect="fadeInLeft">
-								<div class="folio-title-box">
-									<div class="folio-title-line-mf"></div>
-									<span class="daviefolio-heading-meta"><strong>Blog</strong></span>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<span class="blog-title-box">Latest Articles</span>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="blog-entry-card">
-
-									<img src="img/blog/blog1-thumb.webp" class="img-responsive blog-thumb"
-										alt="Bivariate chart" loading="lazy">
-
-									<div class="blog-desc">
-										<div class="blog-meta">
-											<span class="meta-date">Oct 6, 2024</span>
-											<span class="meta-cat">Data Analysis</span>
-										</div>
-										<h3><a href="blog.html">Unlocking Insights with Bivariate Visualization</a></h3>
-										<p>Explore the power of paired insights and lay the groundwork for deeper
-											analysis.</p>
-										<a href="blog.html" class="read-more">Read Insight <i
-												class="fas fa-arrow-right"></i></a>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="blog-entry-card">
-
-									<img src="img/blog/blog3-thumb.webp" class="img-responsive blog-thumb"
-										alt="Multivariate chart" loading="lazy">
-
-									<div class="blog-desc">
-										<div class="blog-meta">
-											<span class="meta-date">Oct 6, 2024</span>
-											<span class="meta-cat">Data Analysis</span>
-										</div>
-										<h3><a href="blog.html">Exploring the Depth of Multivariate Charts</a></h3>
-										<p>Dive into a gateway to uncovering complex relationships and patterns in
-											data.
-										</p>
-										<a href="blog.html" class="read-more">Read Insight <i
-												class="fas fa-arrow-right"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- End: Blog Section -->
-
-				<!-- Start: Contact Section -->
-				<section class="daviefolio-contact" data-section="contact">
-					<div class="daviefolio-narrow-content">
-						<div class="row">
-							<div class="col-md-12 animate-box">
-								<div class="folio-title-box">
-									<div class="folio-title-line-mf"></div>
-									<span class="daviefolio-heading-meta"><strong>Get In Touch</strong></span>
-								</div>
-							</div>
-						</div>
-
-						<div class="row contact-row-flex">
-
-							<div class="col-md-7 animate-box">
-								<div class="contact-form-card">
-									<!-- Contact Form -->
-									<form action="https://formspree.io/f/mwppwqkr" method="POST" id="contactForm">
-
-										<div class="form-group">
-											<input type="text" id="name" name="name" class="form-control custom-input"
-												placeholder="Name" required>
-										</div>
-										<div class="form-group">
-											<input type="email" id="email" name="email"
-												class="form-control custom-input" placeholder="Email" required>
-										</div>
-										<div class="form-group">
-											<textarea id="message" name="message" class="form-control custom-input"
-												rows="5" placeholder="How can we collaborate on a data project?"
-												required></textarea>
-										</div>
-										<!-- Success Message -->
-										<p id="successMessage" class="success-message"></p>
-										<div class="form-group">
-											<button class="btn btn-submit-data" type="submit" id="sendMessageButton">
-												Send Message
-											</button>
-										</div>
-
-									</form>
-									<!-- End Contact Form -->
-								</div>
-							</div>
-
-							<div class="col-md-5 animate-box">
-								<div class="contact-info-card">
-									<h4>Contact Details</h4>
-									<p class="contact-subtext">Open to discussions on Data Engineering pipelines, ML
-										research, or freelance analytics.</p>
-
-									<ul class="contact-list">
-										<li>
-											<i class="icon-location1"></i> Mombasa, Kenya
-										</li>
-										<li>
-											<a href="https://github.com/dave-owino/" target="_blank"
-												rel="noopener noreferrer">
-												<i class="icon-github"></i> GitHub
-											</a>
-										</li>
-										<li>
-											<a href="https://www.linkedin.com/in/david-odhiambo-owino/" target="_blank"
-												rel="noopener noreferrer">
-												<i class="icon-linkedin2"></i> LinkedIn
-											</a>
-										</li>
-										<li>
-											<a href="https://x.com/da_owino/" target="_blank" rel="noopener noreferrer">
-												<i class="icon-twitter"></i> X (Twitter)
-											</a>
-										</li>
-										<li>
-											<a href="https://www.instagram.com/owinodavid/" target="_blank"
-												rel="noopener noreferrer">
-												<i class="icon-instagram1"></i> Instagram
-											</a>
-										</li>
-										<li>
-											<a href="https://www.facebook.com/Daviedavie/" target="_blank"
-												rel="noopener noreferrer">
-												<i class="icon-facebook2"></i> Facebook
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</section>
-				<!-- End: Contact Section -->
-
-			</div>
-			<!-- End: daviefolio-main-content -->
-
-		</div>
-		<!-- End: daviefolio-container wrap-->
-	</div>
-	<!--End: daviefolio-page-->
-
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- Ensure Sticky Kit is after jQuery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-
-	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Counters -->
-	<script src="js/jquery.countTo.js"></script>
-
-	<!-- lightbox -->
-	<script src="lib/lightbox/js/lightbox.min.js"></script>
-	<script src="lib/loadmore/load-more.js"></script>
-	<script src="lib/height/adjust.js"></script>
-
-	<!-- Typed -->
-	<script src="lib/typed/typed.min.js"></script>
-
-	<!--share-->
-	<script src="lib/share/like-share.js"></script>
-
-	<script src="lib/isotope/isotope.js"></script>
-
-	<!-- Contact Javascript File -->
-	<script src="lib/mail/contact.js"></script>
-	<!--<script src="lib/mail/contact-background.js"></script>-->
-
-	<!-- Template Javascript -->
-	<script src="js/main.js"></script>
+    <a class="skip-link" href="#daviefolio-main">Skip to content</a>
+
+    <noscript>
+        <div style="padding:12px; background:#fff; color:#000;">
+            This site works best with JavaScript enabled. Navigation animations and some interactive features may be
+            limited.
+        </div>
+    </noscript>
+
+    <div id="daviefolio-page">
+        <div id="daviefolio-container-wrap">
+
+            <!-- Navigation Toggle -->
+            <button class="js-daviefolio-nav-toggle daviefolio-nav-toggle" type="button" data-toggle="collapse"
+                data-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation menu"
+                title="Toggle Navigation">
+                <i aria-hidden="true"></i>
+                <span class="sr-only">Menu</span>
+            </button>
+
+            <!-- Sidebar Section -->
+            <aside id="daviefolio-aside" class="border js-fullheight" aria-label="Sidebar">
+                <div class="text-center">
+                    <!-- Author Image (background image likely set in CSS; mark decorative) -->
+                    <div class="author-img" aria-hidden="true"></div>
+
+                    <!-- Keep as H1 for the page title -->
+                    <h1 id="daviefolio-logo"><a href="index.html">David Owino</a></h1>
+
+                    <div class="side-social-wrap" aria-label="Social links">
+                        <ul class="side-social">
+                            <li>
+                                <a href="https://github.com/dave-owino/" target="_blank" rel="noopener noreferrer"
+                                    aria-label="GitHub (opens in a new tab)" title="GitHub">
+                                    <i class="icon-github" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/david-odhiambo-owino/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)"
+                                    title="LinkedIn">
+                                    <i class="icon-linkedin2" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/DavieOwino/" target="_blank" rel="noopener noreferrer"
+                                    aria-label="X (Twitter) (opens in a new tab)" title="X (Twitter)">
+                                    <i class="icon-twitter" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/owinodavid/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Instagram (opens in a new tab)"
+                                    title="Instagram">
+                                    <i class="icon-instagram1" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/Daviedavie/" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Facebook (opens in a new tab)" title="Facebook">
+                                    <i class="icon-facebook2" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Main Navigation Menu -->
+                <nav id="daviefolio-main-menu" class="navbar" aria-label="Primary">
+                    <div id="navbar" class="collapse">
+                        <ul>
+                            <!-- FIX: use real fragment links so the page works even without JS -->
+                            <li class="active">
+                                <a href="#daviefolio-hero" data-nav-section="home"><strong>Home</strong></a>
+                            </li>
+                            <li>
+                                <a href="#about" data-nav-section="about"><strong>About</strong></a>
+                            </li>
+                            <li>
+                                <a href="#skills" data-nav-section="skills"><strong>Skills</strong></a>
+                            </li>
+                            <li>
+                                <a href="#work" data-nav-section="work"><strong>Portfolio</strong></a>
+                            </li>
+                            <li>
+                                <a href="#education" data-nav-section="education"><strong>Education</strong></a>
+                            </li>
+                            <li>
+                                <a href="#blog" data-nav-section="blog"><strong>Blog</strong></a>
+                            </li>
+                            <li>
+                                <a href="#contact" data-nav-section="contact"><strong>Contact</strong></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- Footer Section -->
+                <footer class="daviefolio-footer" aria-label="Sidebar footer">
+                    <p>
+                        <small>
+                            &copy; <span id="year"></span> All rights reserved. David Owino
+                        </small>
+                    </p>
+                </footer>
+            </aside>
+            <!-- End: daviefolio-aside -->
+
+            <!-- Main content landmark -->
+            <main id="daviefolio-main" role="main">
+                <!-- Fixed Logo -->
+                <div id="logo">
+                    <img src="lib/favicon_io/logo.png" alt="David Owino portfolio logo" class="logo-img" />
+                </div>
+
+                <!-- Hero Section -->
+                <section id="daviefolio-hero" class="hero-full-screen" data-section="home">
+                    <div class="hero-overlay" aria-hidden="true"></div>
+
+                    <div class="hero-container">
+                        <div class="glass-header">
+                            <p class="intro-text">Hi, I'm David</p>
+
+                            <!-- Page already has H1 in the sidebar; keep this as H2 to avoid multiple H1s -->
+                            <h2>
+                                Data Analyst | Data Scientist<br />
+                                <span class="sub-expertise">with Data Engineering expertise</span>
+                            </h2>
+
+                            <div class="tech-stack" aria-label="Core tools">
+                                <span>Python</span> • <span>SQL</span> • <span>ETL</span> • <span>BI</span> •
+                                <span>Analytics</span>
+                            </div>
+
+                            <p class="hero-description">
+                                I design <strong>analytical systems</strong> that transform complex data into
+                                <strong>reliable insights</strong>, enabling faster, smarter decision-making and
+                                <strong>measurable business impact</strong>.
+                            </p>
+
+                            <div class="hero-actions">
+                                <!-- FIX: #work must match an element id -->
+                                <a href="#work" class="btn btn-folio" aria-label="View portfolio projects">
+                                    View Projects <i class="icon-briefcase3" aria-hidden="true"></i>
+                                </a>
+
+                                <a href="download/David_Owino_Data_Scientist_Resume.pdf" target="_blank"
+                                    rel="noopener noreferrer" class="btn btn-resume"
+                                    download="David_Owino_Data_Scientist_Resume.pdf"
+                                    aria-label="Download David Owino CV (PDF)">
+                                    Download CV <i class="icon-download4" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End: Hero Section -->
+
+                <!-- Start: About Section -->
+                <section id="about" class="daviefolio-about" data-section="about">
+                    <div class="daviefolio-narrow-content">
+                        <div class="row">
+                            <div class="col-md-6 mx-auto animate-box" data-animate-effect="fadeInLeft">
+                                <div class="folio-title-box">
+                                    <div class="folio-title-line-mf" aria-hidden="true"></div>
+                                    <span class="daviefolio-heading-meta">About Me</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                                    <div class="bio-profile-card">
+                                        <div class="card-header-accent">
+                                            <h3 class="accent-text"><strong>From Logic to Insights</strong></h3>
+                                        </div>
+
+                                        <div class="bio-main-text">
+                                            <p>
+                                                I am a Mathematics Educator turned <strong>Data Professional</strong>,
+                                                specializing in building analytical systems that transform raw data into
+                                                strategic intelligence. Over eight years as an Academic Head, I led
+                                                data-driven initiatives across <strong>19
+                                                    institutions</strong>—optimizing
+                                                resource allocation and reducing reporting cycles from days to hours.
+                                            </p>
+                                            <p>
+                                                Backed by an <strong>MSc in Data Science</strong> and specialized
+                                                training
+                                                in Data Engineering, I bridge the gap between complex analytics and
+                                                clear
+                                                communication. I design automated data pipelines using <strong>Python
+                                                    and SQL</strong>,
+                                                develop interactive dashboards, and apply statistical techniques to
+                                                build predictive models.
+                                            </p>
+                                        </div>
+
+                                        <div class="card-footer-quote">
+                                            <p><em>"I bring technical rigor paired with a teacher's instinct for
+                                                    clarity."</em></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+                                    <div class="row burner-row">
+                                        <div class="col-md-4">
+                                            <div class="burner-card">
+                                                <div class="burner-icon" aria-hidden="true"><i class="icon-params"></i>
+                                                </div>
+                                                <h3>Technical Toolbox</h3>
+                                                <div class="tool-list">
+                                                    <span class="skill-pill">Python</span>
+                                                    <span class="skill-pill">R</span>
+                                                    <span class="skill-pill">SQL (Postgres/MySQL)</span>
+                                                    <span class="skill-pill">Azure</span>
+                                                    <span class="skill-pill">Git</span>
+                                                    <span class="skill-pill">Scikit-Learn</span>
+                                                    <span class="skill-pill">Statsmodels</span>
+                                                    <span class="skill-pill">Power BI</span>
+                                                    <span class="skill-pill">Tableau</span>
+                                                    <span class="skill-pill">Excel</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-8">
+                                            <div class="burner-card">
+                                                <div class="burner-icon" aria-hidden="true"><i class="icon-layers"></i>
+                                                </div>
+                                                <h3>How I Add Value</h3>
+                                                <ul class="service-list">
+                                                    <li><strong>ETL &amp; Data Wrangling:</strong> Integrating diverse
+                                                        sources (APIs, SQL, scrapers) into clean, automated, and
+                                                        reliable datasets</li>
+                                                    <li><strong>Diagnostic Analytics:</strong> Uncovering patterns and
+                                                        anomalies to ensure data integrity and drive strategic decisions
+                                                    </li>
+                                                    <li><strong>BI &amp; Visual Intelligence:</strong> Transforming KPIs
+                                                        into interactive dashboards using Power BI, Tableau, and Looker
+                                                        Studio</li>
+                                                    <li><strong>Statistical Modeling:</strong> Leveraging regression and
+                                                        classification to solve business problems and forecast trends
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <!-- End: About Section -->
+
+                <!-- Start: Skills Section -->
+                <section id="skills" class="daviefolio-skills" data-section="skills">
+                    <div class="daviefolio-narrow-content">
+                        <div class="row">
+                            <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                                <div class="folio-title-box">
+                                    <div class="folio-title-line-mf" aria-hidden="true"></div>
+                                    <span class="daviefolio-heading-meta"><strong>SKILLS</strong></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                                <div class="expertise-card">
+                                    <div class="card-header">
+                                        <h3 class="cyan-text">Strategic Value Proposition</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="intro-p">
+                                            Bridging the gap between <strong>complex mathematical theory</strong> and
+                                            <strong>actionable business intelligence</strong>. I specialize in building
+                                            robust
+                                            data pipelines and translating raw metrics into strategic narratives.
+                                        </p>
+
+                                        <div class="highlight-grid">
+                                            <div class="highlight-item">
+                                                <i class="fas fa-microchip" aria-hidden="true"></i>
+                                                <p><strong>Algorithm Validation:</strong> Applying statistical rigor to
+                                                    validate ML outputs and ensure mathematical integrity.</p>
+                                            </div>
+                                            <div class="highlight-item">
+                                                <i class="fas fa-project-diagram" aria-hidden="true"></i>
+                                                <p><strong>ETL &amp; Automation:</strong> Architecting automated
+                                                    workflows using SQL and Python to streamline ingestion and
+                                                    processing.</p>
+                                            </div>
+                                            <div class="highlight-item">
+                                                <i class="fas fa-presentation-screen" aria-hidden="true"></i>
+                                                <p><strong>Data Storytelling:</strong> Communicating technical findings
+                                                    to non-technical stakeholders with clarity.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row skill-categories-grid">
+                            <div class="col-md-4 animate-box" data-animate-effect="fadeInUp">
+                                <div class="skill-category-box">
+                                    <div class="category-icon" aria-hidden="true"><i class="fas fa-code"></i></div>
+                                    <h3>Data Engineering</h3>
+                                    <div class="skill-tags">
+                                        <span class="badge">Python</span>
+                                        <span class="badge">SQL (SQLite/PostgreSQL)</span>
+                                        <span class="badge">Pandas &amp; NumPy</span>
+                                        <span class="badge">ETL Pipelines</span>
+                                        <span class="badge">Web Scraping</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 animate-box" data-animate-effect="fadeInUp">
+                                <div class="skill-category-box">
+                                    <div class="category-icon" aria-hidden="true"><i class="fas fa-brain"></i></div>
+                                    <h3>Analytics &amp; ML</h3>
+                                    <div class="skill-tags">
+                                        <span class="badge">Scikit-Learn</span>
+                                        <span class="badge">Predictive Modeling</span>
+                                        <span class="badge">Hypothesis Testing</span>
+                                        <span class="badge">Data Visualization</span>
+                                        <span class="badge">Power BI / Tableau</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 animate-box" data-animate-effect="fadeInUp">
+                                <div class="skill-category-box highlight-border">
+                                    <div class="category-icon" aria-hidden="true"><i class="fas fa-square-root-alt"></i>
+                                    </div>
+                                    <h3>Mathematics</h3>
+                                    <div class="skill-tags">
+                                        <span class="badge highlight">Statistical Inference</span>
+                                        <span class="badge highlight">Linear Algebra</span>
+                                        <span class="badge highlight">Calculus</span>
+                                        <span class="badge highlight">Probability Theory</span>
+                                        <span class="badge highlight">Optimization</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 animate-box" data-animate-effect="fadeInUp">
+                                <div class="competency-section">
+                                    <h3>Professional Competencies</h3>
+                                    <div class="competency-grid">
+                                        <div class="comp-item"><span>Technical Training</span></div>
+                                        <div class="comp-item"><span>Stakeholder Management</span></div>
+                                        <div class="comp-item"><span>Critical Thinking</span></div>
+                                        <div class="comp-item"><span>Curriculum Design</span></div>
+                                        <div class="comp-item"><span>Problem Solving</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End: Skills Section -->
+
+                <!-- Start: Portfolio Section -->
+                <section id="work" class="daviefolio-work" data-section="work">
+                    <div class="daviefolio-narrow-content">
+                        <div class="row">
+                            <div class="col-md-6 mx-auto animate-box" data-animate-effect="fadeInRight">
+                                <div class="folio-title-box">
+                                    <div class="folio-title-line-mf" aria-hidden="true"></div>
+                                    <span class="daviefolio-heading-meta"><strong>Selected Projects</strong></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                                <div class="work-intro-card">
+                                    <h2 class="work-accent-text">
+                                        End-to-end work across analytics, dashboards, and predictive modeling: a mix of
+                                        data analysis, engineering pipelines, and statistical modeling.
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                                <div class="project-grid">
+                                    <article class="project-card">
+                                        <div class="project-tag analytics">Data Analysis</div>
+                                        <div class="project-info">
+                                            <h3>Airlines Sales &amp; Operations Insights</h3>
+                                            <p>
+                                                Analyzed a Kaggle airline dataset using SQL and Python to uncover
+                                                revenue drivers,
+                                                seasonal sales trends, airport performance, and delay patterns. Built
+                                                interactive dashboards to communicate insights clearly.
+                                            </p>
+                                            <div class="project-tech">
+                                                <span>SQL</span>
+                                                <span>Python</span>
+                                                <span>CTEs</span>
+                                                <span>Looker Studio</span>
+                                            </div>
+                                            <a href="project.html#sql" class="view-link">View Case Study →</a>
+                                        </div>
+                                    </article>
+
+                                    <article class="project-card">
+                                        <div class="project-tag science">Data Science</div>
+                                        <div class="project-info">
+                                            <h3>European Soccer Performance Modeling</h3>
+                                            <p>
+                                                Explored multi-season soccer data using EDA and machine learning to
+                                                analyze team performance,
+                                                player development, peak ages, and tactical playing styles.
+                                            </p>
+                                            <div class="project-tech">
+                                                <span>Python</span>
+                                                <span>Pandas</span>
+                                                <span>Scikit-learn</span>
+                                                <span>Matplotlib</span>
+                                            </div>
+                                            <a href="project.html#python" class="view-link">View Notebook →</a>
+                                        </div>
+                                    </article>
+
+                                    <article class="project-card">
+                                        <div class="project-tag bi">Business Intelligence</div>
+                                        <div class="project-info">
+                                            <h3>KCSE Performance Dashboard (Excel)</h3>
+                                            <p>
+                                                Built an Excel-based BI dashboard analyzing student performance across
+                                                19 schools,
+                                                comparing multi-year trends, subject performance, gender gaps, and
+                                                ranking deviations.
+                                            </p>
+                                            <div class="project-tech">
+                                                <span>Excel</span>
+                                                <span>Power Pivot</span>
+                                                <span>Dashboards</span>
+                                            </div>
+                                            <a href="project.html#excel" class="view-link">View Dashboard →</a>
+                                        </div>
+                                    </article>
+
+                                    <article class="project-card">
+                                        <div class="project-tag bi">Business Intelligence</div>
+                                        <div class="project-info">
+                                            <h3>Executive Student Performance Dashboard</h3>
+                                            <p>
+                                                Designed a Power BI dashboard using DAX and multiple data sources to
+                                                track academic progress,
+                                                grade distributions, and KCSE outcome projections for leadership
+                                                decision-making.
+                                            </p>
+                                            <div class="project-tech">
+                                                <span>Power BI</span>
+                                                <span>DAX</span>
+                                                <span>Data Modeling</span>
+                                            </div>
+                                            <a href="project.html#power-BI" class="view-link">View Dashboard →</a>
+                                        </div>
+                                    </article>
+
+                                    <article class="project-card">
+                                        <div class="project-tag engineering">Data Engineering</div>
+                                        <div class="project-info">
+                                            <h3>Automated ETL Pipeline (Upcoming)</h3>
+                                            <p>
+                                                Planned pipeline to ingest raw data, apply transformations via SQL and
+                                                Python, and load analytics-ready datasets for downstream BI and ML use
+                                                cases.
+                                            </p>
+                                            <div class="project-tech">
+                                                <span>SQL</span>
+                                                <span>Python</span>
+                                                <span>ETL</span>
+                                            </div>
+                                            <!-- FIX: avoid href="#" because it jumps to top; use a real link or remove -->
+                                            <span class="view-link" aria-label="Project coming soon">Coming Soon
+                                                →</span>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- End: Portfolio Section -->
+
+                <!-- Start: Education Section -->
+                <section id="education" class="daviefolio-education" data-section="education">
+                    <div class="daviefolio-narrow-content">
+                        <div class="row">
+                            <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                                <div class="folio-title-box">
+                                    <div class="folio-title-line-mf" aria-hidden="true"></div>
+                                    <span class="daviefolio-heading-meta"><strong>Education</strong></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="daviefolio-academics-journey animate-box" data-animate-effect="fadeInLeft">
+                            <div class="row education_details-section animate-box" data-animate-effect="fadeInLeft">
+                                <div class="col-md-12">
+                                    <!-- FIX: role="main" removed; you already have a main landmark -->
+                                    <div class="timeline-centered">
+                                        <article class="timeline-entry">
+                                            <div class="timeline-entry-inner">
+                                                <div class="timeline-label">
+                                                    <h2 class="mb-1">
+                                                        MSc. Data Science <span class="badge-ongoing">In Progress</span>
+                                                    </h2>
+                                                    <p class="edu-meta">
+                                                        <span class="edu-institution">Cooperative University of
+                                                            Kenya</span>
+                                                        <span class="edu-separator"> | </span>
+                                                        <span class="edu-date">Jul 2025 - Dec 2026 (Expected)</span>
+                                                    </p>
+                                                    <p>Specializing in advanced machine learning and big data analytics.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </article>
+
+                                        <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                                            <div class="timeline-entry-inner">
+                                                <div class="timeline-label">
+                                                    <h2 class="mb-1">
+                                                        Data Engineering Specialization <span class="badge-ongoing">In
+                                                            Progress</span>
+                                                    </h2>
+                                                    <p class="edu-meta">
+                                                        <span class="edu-institution">ALX Africa</span>
+                                                        <span class="edu-separator"> | </span>
+                                                        <span class="edu-date">Sep 2025 - Jul 2026 (Expected)</span>
+                                                    </p>
+                                                    <p>Mastering data architecture, ETL pipeline construction, and cloud
+                                                        warehousing.</p>
+                                                </div>
+                                            </div>
+                                        </article>
+
+                                        <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                                            <div class="timeline-entry-inner">
+                                                <div class="timeline-label">
+                                                    <h2 class="mb-1">B.Ed Science (Statistics Major)</h2>
+                                                    <p class="edu-meta">
+                                                        <span class="edu-institution">Kenyatta University</span>
+                                                        <span class="edu-separator"> | </span>
+                                                        <span class="edu-date">Aug 2006 - Dec 2010</span>
+                                                    </p>
+                                                    <p>
+                                                        Strong foundation in probability distributions, statistical
+                                                        theory, time series analysis,
+                                                        regression models, quantitative analysis, and hypothesis
+                                                        testing.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row certification_details-section animate-box" data-animate-effect="fadeInLeft">
+                                <div class="col-md-12">
+                                    <div class="certifications-section">
+                                        <h3 class="cert-heading">Professional Accreditations</h3>
+                                        <div class="cert-grid">
+                                            <a href="http://www.udacity.com/certificate/KUPXXDDD" target="_blank"
+                                                rel="noopener noreferrer" class="cert-card">
+                                                <span class="cert-org">Udacity</span>
+                                                <span class="cert-name">Data Analyst Nanodegree</span>
+                                            </a>
+
+                                            <a href="https://www.datacamp.com/certificate/DAA0013024805241"
+                                                target="_blank" rel="noopener noreferrer" class="cert-card">
+                                                <span class="cert-org">Datacamp</span>
+                                                <span class="cert-name">Associate Data Analyst</span>
+                                            </a>
+
+                                            <a href="https://www.hackerrank.com/certificates/1d25e6a0581a"
+                                                target="_blank" rel="noopener noreferrer" class="cert-card">
+                                                <span class="cert-org">HackerRank</span>
+                                                <span class="cert-name">Intermediate SQL skill certification</span>
+                                            </a>
+
+                                            <a href="https://www.datacamp.com/certificate/SQA0012607816930"
+                                                target="_blank" rel="noopener noreferrer" class="cert-card">
+                                                <span class="cert-org">Datacamp</span>
+                                                <span class="cert-name">SQL Associate</span>
+                                            </a>
+
+                                            <a href="https://www.coursera.org/verify/AHGJGEZZCGMV" target="_blank"
+                                                rel="noopener noreferrer" class="cert-card">
+                                                <span class="cert-org">Coursera</span>
+                                                <span class="cert-name">Advanced R programming</span>
+                                            </a>
+
+                                            <a href="https://alison.com/verify/7f1b19e378" target="_blank"
+                                                rel="noopener noreferrer" class="cert-card">
+                                                <span class="cert-org">Alison</span>
+                                                <span class="cert-name">Python Programming</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <!-- End: Education Section -->
+
+                <!-- Start: Blog Section -->
+                <section id="blog" class="daviefolio-blog" data-section="blog">
+                    <div class="daviefolio-narrow-content">
+                        <div class="row">
+                            <div class="col-md-6 mx-auto animate-box" data-animate-effect="fadeInLeft">
+                                <div class="folio-title-box">
+                                    <div class="folio-title-line-mf" aria-hidden="true"></div>
+                                    <span class="daviefolio-heading-meta"><strong>Blog</strong></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                                <span class="blog-title-box">Latest Articles</span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+                                <article class="blog-entry-card">
+                                    <img src="img/blog/blog1-thumb.webp" class="img-responsive blog-thumb"
+                                        alt="Bivariate chart" loading="lazy" decoding="async" />
+                                    <div class="blog-desc">
+                                        <div class="blog-meta">
+                                            <span class="meta-date">Oct 6, 2024</span>
+                                            <span class="meta-cat">Data Analysis</span>
+                                        </div>
+                                        <h3><a href="blog.html">Unlocking Insights with Bivariate Visualization</a></h3>
+                                        <p>Explore the power of paired insights and lay the groundwork for deeper
+                                            analysis.</p>
+                                        <a href="blog.html" class="read-more">Read Article <i class="fas fa-arrow-right"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInRight">
+                                <article class="blog-entry-card">
+                                    <img src="img/blog/blog3-thumb.webp" class="img-responsive blog-thumb"
+                                        alt="Multivariate chart" loading="lazy" decoding="async" />
+                                    <div class="blog-desc">
+                                        <div class="blog-meta">
+                                            <span class="meta-date">Oct 6, 2024</span>
+                                            <span class="meta-cat">Data Analysis</span>
+                                        </div>
+                                        <h3><a href="blog.html">Exploring the Depth of Multivariate Charts</a></h3>
+                                        <p>Dive into a gateway to uncovering complex relationships and patterns in data.
+                                        </p>
+                                        <a href="blog.html" class="read-more">Read Article <i class="fas fa-arrow-right"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End: Blog Section -->
+
+                <!-- Start: Contact Section -->
+                <section id="contact" class="daviefolio-contact" data-section="contact">
+                    <div class="daviefolio-narrow-content">
+                        <div class="row">
+                            <div class="col-md-12 animate-box">
+                                <div class="folio-title-box">
+                                    <div class="folio-title-line-mf" aria-hidden="true"></div>
+                                    <span class="daviefolio-heading-meta"><strong>Get In Touch</strong></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row contact-row-flex">
+                            <div class="col-md-7 animate-box">
+                                <div class="contact-form-card">
+                                    <form action="https://formspree.io/f/mwppwqkr" method="POST" id="contactForm">
+                                        <div class="form-group">
+                                            <label class="sr-only" for="name">Name</label>
+                                            <input type="text" id="name" name="name" class="form-control custom-input"
+                                                placeholder="Name" autocomplete="name" required />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="sr-only" for="email">Email</label>
+                                            <input type="email" id="email" name="email"
+                                                class="form-control custom-input" placeholder="Email"
+                                                autocomplete="email" required />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="sr-only" for="message">Message</label>
+                                            <textarea id="message" name="message" class="form-control custom-input"
+                                                rows="5" placeholder="How can we collaborate on a data project?"
+                                                required></textarea>
+                                        </div>
+
+                                        <!-- Success Message -->
+                                        <p id="successMessage" class="success-message" aria-live="polite"></p>
+
+                                        <div class="form-group">
+                                            <button class="btn btn-submit-data" type="submit" id="sendMessageButton">
+                                                Send Message
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-md-5 animate-box">
+                                <div class="contact-info-card">
+                                    <h4>Contact Details</h4>
+                                    <p class="contact-subtext">
+                                        Open to discussions on Data Engineering pipelines, ML research, or freelance
+                                        analytics.
+                                    </p>
+
+                                    <ul class="contact-list">
+                                        <li><i class="icon-location1" aria-hidden="true"></i> Mombasa, Kenya</li>
+                                        <li>
+                                            <a href="https://github.com/dave-owino/" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <i class="icon-github" aria-hidden="true"></i> GitHub
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/david-odhiambo-owino/" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <i class="icon-linkedin2" aria-hidden="true"></i> LinkedIn
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://x.com/da_owino/" target="_blank" rel="noopener noreferrer">
+                                                <i class="icon-twitter" aria-hidden="true"></i> X (Twitter)
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/owinodavid/" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <i class="icon-instagram1" aria-hidden="true"></i> Instagram
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/Daviedavie/" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <i class="icon-facebook2" aria-hidden="true"></i> Facebook
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- End: Contact Section -->
+            </main>
+            <!-- End: daviefolio-main -->
+
+        </div>
+        <!-- End: daviefolio-container wrap -->
+    </div>
+    <!-- End: daviefolio-page -->
+
+    <!-- JS (order preserved for jQuery plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- Typed -->
+    <script src="lib/typed/typed.min.js"></script>
+
+    <!-- Share -->
+    <script src="lib/share/like-share.js"></script>
+
+    <!-- Contact JS -->
+    <script src="lib/mail/contact.js"></script>
+
+    <!-- Template JS -->
+    <script src="js/main.js"></script>
+
+    <!-- Footer year (replaces document.write) -->
+    <script>
+        (function () {
+            var yearEl = document.getElementById("year");
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
+        })();
+    </script>
 </body>
-<!-- End: Body -->
 
 </html>
