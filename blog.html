@@ -62,7 +62,6 @@
 		<section class="section-padding" id="data-engineering">
 			<div class="container">
 				<div class="blog-grid">
-
 					<!-- Main Content -->
 					<article class="card reveal">
 						<div class="meta-info">
@@ -76,7 +75,7 @@
 							software engineers (producers) and data engineers (consumers) to ensure pipeline stability.
 						</p>
 
-						<h4 style="margin-top: 25px; color: var(--white);">The End of "Silent Failures"</h4>
+						<h4 class="heading-spacing">The End of "Silent Failures"</h4>
 						<p>By implementing a contract layer using <span class="code-block">Protobuf</span> or <span
 								class="code-block">JSON Schema</span>, we prevent breaking changes from ever reaching
 							the Data Lake. If a software service attempts to drop a column or change a data type that
@@ -91,7 +90,7 @@
 					<!-- Sidebar -->
 					<aside class="sidebar-card card reveal">
 						<h5 class="text-accent">The Engineering Stack</h5>
-						<ul style="margin-top: 15px;">
+						<ul class="sidebar-list">
 							<li class="list-item"><strong>Infrastructure:</strong> <span
 									class="code-block">Terraform</span></li>
 							<li class="list-item"><strong>Orchestration:</strong> <span class="code-block">Dagster /
@@ -102,9 +101,9 @@
 									Expectations</span></li>
 						</ul>
 
-						<div style="margin-top: 30px;">
+						<div class="mt-spacing">
 							<h5 class="text-accent">Key Metrics</h5>
-							<ul style="margin-top: 15px;">
+							<ul class="sidebar-list">
 								<li class="list-item"><span class="code-block">Precision/Recall</span> - Classification
 								</li>
 								<li class="list-item"><span class="code-block">RMSE</span> - Regression</li>
@@ -117,10 +116,9 @@
 		</section>
 
 		<!-- Machine Learning Section -->
-		<section class="section-padding" id="machine-learning" style="background: rgba(255,255,255,0.02);">
+		<section class="section-padding bg-overlay" id="machine-learning">
 			<div class="container">
 				<div class="blog-grid">
-
 					<!-- Main Content -->
 					<article class="card reveal">
 						<div class="meta-info">
@@ -135,7 +133,7 @@
 							"noisy" data.
 						</p>
 
-						<h4 style="margin-top: 25px; color: var(--white);">The Signal in the Noise</h4>
+						<h4 class="heading-spacing">The Signal in the Noise</h4>
 						<p>Machine Learning is not about feeding a machine more data; it's about feeding it
 							<em>meaningful</em> data. This involves transforming raw inputs into technical "signals"
 							that the algorithm can actually interpret.
@@ -146,7 +144,7 @@
 							step: <em>Feature Engineering</em>. Algorithms are just engines; your data is the fuel. If
 							the fuel is dirty, the engine stalls.</p>
 
-						<h4 style="margin-top: 20px; color: var(--white);">Why Feature Engineering Matters</h4>
+						<h4 class="heading-spacing">Why Feature Engineering Matters</h4>
 						<p>Feature engineering is the process of using domain knowledge to create variables that help
 							machine learning algorithms learn better. It is the difference between a 70% accuracy model
 							and a 99% precision system.</p>
@@ -160,7 +158,7 @@
 					<!-- Sidebar -->
 					<aside class="sidebar-card card reveal">
 						<h5 class="text-accent">The ML Workflow</h5>
-						<ul style="margin-top: 15px;">
+						<ul class="sidebar-list">
 							<li class="list-item">Data Collection</li>
 							<li class="list-item">Feature Extraction <span class="code-block">Scikit-Learn</span></li>
 							<li class="list-item">Model Selection <span class="code-block">XGBoost</span></li>
@@ -177,7 +175,7 @@
 		<!-- Archive Section with Load More Logic -->
 		<section class="section-padding" id="archive">
 			<div class="container">
-				<h2 class="text-center reveal" style="margin-bottom: 40px;">Technical Archive</h2>
+				<h2 class="text-center reveal mt-spacing">Technical Archive</h2>
 
 				<div id="archive-container">
 					<!-- Visible Item -->
@@ -191,7 +189,7 @@
 							<p>To visualize distributions effectively, we utilize KDE plots for density and Box plots
 								for outliers. High-dimensional data requires FacetGrids to maintain clarity.</p>
 							<img src="https://picsum.photos/seed/viz1/600/300" alt="Visualization Example"
-								style="width:100%; border-radius:4px; margin-top:10px;">
+								class="img-full">
 						</div>
 					</div>
 
@@ -208,11 +206,9 @@
 								<strong>storytelling</strong>. We use Radar Charts for performance tracking and Violin
 								Plots for probability density.
 							</p>
-							<div style="display:flex; gap:10px; margin-top:10px;">
-								<img src="https://picsum.photos/seed/viz2/300/200" alt="Chart 1"
-									style="width:50%; border-radius:4px;">
-								<img src="https://picsum.photos/seed/viz3/300/200" alt="Chart 2"
-									style="width:50%; border-radius:4px;">
+							<div class="img-flex-row">
+								<img src="https://picsum.photos/seed/viz2/300/200" alt="Chart 1" class="img-half">
+								<img src="https://picsum.photos/seed/viz3/300/200" alt="Chart 2" class="img-half">
 							</div>
 						</div>
 					</div>
@@ -230,7 +226,7 @@
 					</div>
 				</div>
 
-				<div class="text-center reveal" style="margin-top: 30px;">
+				<div class="text-center reveal mt-spacing">
 					<a id="load-more-btn" class="btn" onclick="loadMoreArchive()">Load More Articles <i
 							class="fas fa-sync-alt"></i></a>
 				</div>
@@ -238,10 +234,10 @@
 		</section>
 
 		<!-- Insights Section -->
-		<section class="section-padding" id="insights" style="background: rgba(255,255,255,0.02);">
+		<section class="section-padding bg-overlay" id="insights">
 			<div class="container">
-				<h3 class="text-center text-accent reveal" style="margin-bottom: 10px;">Quick Reference</h3>
-				<h2 class="text-center reveal" style="margin-bottom: 40px;">Visualization Library</h2>
+				<h3 class="text-center text-accent reveal mb-small">Quick Reference</h3>
+				<!--<h2 class="text-center reveal mt-spacing">Visualization Library</h2>-->
 
 				<div class="insights-grid reveal">
 					<!-- Univariate -->
@@ -285,12 +281,11 @@
 
 		<!-- Contact Section -->
 		<section class="section-padding" id="contact">
-			<div class="container" style="max-width: 600px;">
+			<div class="container container-limit">
 				<div class="card reveal">
 					<div class="text-center mb-5">
 						<h3 class="card-title">Get In Touch</h3>
-						<p style="color: var(--text-secondary);">Have a data project or a job opportunity? Let's
-							discuss.</p>
+						<p class="text-secondary">Have a data project or a job opportunity? Let's discuss.</p>
 					</div>
 
 					<form id="contact-form">
@@ -304,7 +299,7 @@
 							<textarea class="form-control" name="message" rows="5" placeholder="Your Message"
 								required></textarea>
 						</div>
-						<div style="text-align: center;">
+						<div class="text-center">
 							<button type="submit" class="btn btn-fill">Send Message <i
 									class="fas fa-paper-plane"></i></button>
 						</div>
@@ -335,7 +330,7 @@
 		<span>Message sent successfully!</span>
 	</div>
 
-	<!-- Scripts -->
+	<!-- External JS File -->
 	<script src="highlights/main.js"></script>
 
 </body>
