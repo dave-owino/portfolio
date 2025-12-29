@@ -55,9 +55,6 @@ h5 {
     font-family: var(--font-heading);
 }
 
-h4 {
-    
-}
 /* --- UTILITIES --- */
 .container {
     max-width: 1200px;
@@ -66,11 +63,15 @@ h4 {
 }
 
 .section-padding {
-    padding: 80px 0;
+    padding: 50px 0;
 }
 
 .text-accent {
     color: var(--accent);
+}
+
+.text-secondary {
+    color: var(--text-secondary);
 }
 
 .code-block {
@@ -111,15 +112,15 @@ h4 {
 
 /* --- NAVIGATION --- */
 .navbar {
-    position       : fixed;
-    top            : 0;
-    width          : 100%;
-    background     : rgba(10, 25, 47, 0.95);
+    position               : fixed;
+    top                    : 0;
+    width                  : 100%;
+    background             : rgba(10, 25, 47, 0.95);
     -webkit-backdrop-filter: blur(10px);
-    backdrop-filter         : blur(10px);
-    z-index        : 1000;
-    padding        : 20px 0;
-    border-bottom  : 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter        : blur(10px);
+    z-index                : 1000;
+    padding                : 20px 0;
+    border-bottom          : 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .nav-container {
@@ -174,7 +175,7 @@ h4 {
 
 /* --- HERO SECTION --- */
 .hero {
-    top:4em;
+    top            : 4em;
     position       : relative;
     height         : 60vh;
     display        : flex;
@@ -278,6 +279,10 @@ h4 {
 .sidebar-card {
     position: sticky;
     top     : 100px;
+}
+
+.sidebar-list {
+    margin-top: 15px;
 }
 
 .list-item {
@@ -488,4 +493,48 @@ footer {
     .mobile-toggle {
         display: block;
     }
+}
+
+/* --- UTILITIES FOR REPLACED INLINE STYLES --- */
+.bg-overlay {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.heading-spacing {
+    margin-top: 25px;
+    color     : var(--white);
+}
+
+.mt-spacing {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.mb-5 {
+    margin-bottom: 30px;
+}
+
+.mb-small {
+    margin-bottom: 30px;
+}
+
+.img-flex-row {
+    display   : flex;
+    gap       : 10px;
+    margin-top: 10px;
+}
+
+.img-half {
+    width        : 50%;
+    border-radius: 4px;
+}
+
+.img-full {
+    width        : 100%;
+    border-radius: 4px;
+    margin-top   : 10px;
+}
+
+.container-limit {
+    max-width: 600px;
 }
