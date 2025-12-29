@@ -731,3 +731,57 @@ html {
 .fa-microchip, .fa-lightbulb {
     color: #f2c811;
 }
+
+
+
+/* --- Tableau Specific Styling --- */
+.tableau-theme {
+    border-left: 5px solid #e97627; /* Tableau Orange or Blue #1f77b4 */
+    background: #f8f9fa;
+}
+
+.tableau-theme .insight-stat {
+    color: #1f77b4; /* Classic Tableau Blue */
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.tableau-embed-container {
+    position: relative;
+    background: #000;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    min-height: 450px;
+}
+
+.tableau-overlay-hint {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+}
+
+.btn-tableau-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    background-color: #1f77b4;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-tableau-view:hover {
+    background-color: #e97627;
+    color: white;
+    transform: translateY(-2px);
+}
+
