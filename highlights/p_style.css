@@ -1,3 +1,41 @@
+/* =========================================
+   1. RESETS & VARIABLES
+   ========================================= */
+
+/* Universal Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* --- Colors & Branding --- */
+    --primary-color: #007bff;
+    --primary-blue: #2563eb;
+    --secondary-color: #00d4ff;
+    --accent-dark: #0f172a;
+
+    /* --- Text Colors --- */
+    --text-dark: #333333;
+    --text-light: #666666;
+    --text-white: #ffffff;
+
+    /* --- Spacing & Layout --- */
+    --navbar-height: 80px;
+    --container-max-width: 1170px;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --transition-speed: 0.3s;
+}
+
+/* =========================================
+   2. FONTS
+   ========================================= */
+
 @font-face {
     font-family: "icomoon";
     src: url("../fonts/icomoon/icomoon.eot?mdppn9");
@@ -9,26 +47,33 @@
     font-style: normal;
 }
 
-/************************/
-/********* BODY *********/
-/************************/
+/* =========================================
+   3. GLOBAL STYLES (BODY)
+   ========================================= */
 
 body {
-    font-family: "Quicksand", Arial, sans-serif;
+    font-family: "Quicksand", "Segoe UI", Arial, sans-serif;
+    /* Consolidated font stack */
     font-weight: 400;
     font-size: 15px;
     line-height: 1.8;
+
+    /* Background & Theme */
     color: rgba(255, 255, 255, 0.8);
-    background-color: #0f172a;
-    background-image: radial-gradient(at 0% 0%,
-            hsla(210, 100%, 16%, 1) 0,
-            transparent 50%),
+    background-color: var(--accent-dark);
+    background-image: radial-gradient(at 0% 0%, hsla(210, 100%, 16%, 1) 0, transparent 50%),
         radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%);
     background-attachment: fixed;
     background-size: cover;
+
+    /* Layout Fixes */
+    padding-top: var(--navbar-height);
+    /* Prevents content hiding behind fixed nav */
+    overflow-x: hidden;
+    /* Prevents horizontal scroll */
 }
 
-/* -- iOS Fix: Body where the background lives -- */
+/* iOS Fix: Body where the background lives */
 @supports (-webkit-touch-callout: none) {
     body {
         background-attachment: scroll !important;
@@ -41,54 +86,70 @@ body {
     }
 }
 
-/* -- Links -- */
+/* Selection */
+::selection,
+::-moz-selection {
+    color: var(--accent-dark);
+    background: var(--secondary-color);
+}
+
+/* =========================================
+   4. TYPOGRAPHY & LINKS
+   ========================================= */
+
 a {
-    color: #00d4ff;
+    color: var(--secondary-color);
     text-decoration: none;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
+    transition: color 0.5s ease;
 }
 
 a:active,
-a:focus,
+a:focus {
+    outline: 2px solid var(--secondary-color);
+    /* Accessibility fix */
+    outline-offset: 2px;
+}
+
 a:hover {
-    color: #ffffff;
-    outline: none;
-    text-decoration: none !important;
+    color: var(--text-white);
     text-shadow: 0 0 8px rgba(0, 212, 255, 0.5);
 }
 
-/* -- Paragraphs -- */
-p {
-    margin-bottom: 1.5em !important;
-    text-align: left;
-}
-
-/* -- Headings -- */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    color: #ffffff;
+    color: var(--text-white);
     font-family: "Quicksand", Arial, sans-serif;
-    /* Consistent font with body */
-    font-weight: 700 !important;
-    margin: 0 0 30px 0 !important;
+    font-weight: 700;
+    margin: 0 0 30px 0;
     letter-spacing: 1px;
 }
 
-/* -- Selection -- */
-::selection {
-    color: #0f172a;
-    background: #00d4ff;
+p {
+    margin-bottom: 1.5em;
+    text-align: left;
 }
 
-::-moz-selection {
-    color: #0f172a;
-    background: #00d4ff;
+ul {
+    list-style: none;
+}
+
+/* =========================================
+   5. LAYOUT CONTAINERS
+   ========================================= */
+
+#daviefolio-page {
+    position: relative;
+    padding: 0 30px;
+    /* width: 100% is default for block */
+}
+
+.daviefolio-container-wrap {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
 }
 
 section {
@@ -100,61 +161,30 @@ section {
 }
 
 section:nth-of-type(even) {
-    background-color: rgba(0, 0, 0, 0.15) !important;
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
-/* -- Smooth transition -- */
-html {
-    scroll-behavior: smooth;
+@media screen and (max-width: 991px) {
+    #daviefolio-page {
+        padding: 0 5px;
+    }
 }
 
 /* =========================================
-   PROJECT PAGE SPECIFIC STYLES
+   6. NAVIGATION
    ========================================= */
 
-/* --- Variables for easy changes --- */
-:root {
-    --primary-color: #007bff; /* Change this to your brand color */
-    --text-dark: #333333;
-    --text-light: #666666;
-    --white: #ffffff;
-    --navbar-height: 80px;
-    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-
-/* --- Base Setup --- */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    padding-top: var(--navbar-height); /* Prevents content hiding behind fixed nav */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* --- Navbar Container --- */
 .navbar-header {
-    position: fixed; /* Stick to top */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: var(--navbar-height);
-    background-color: rgba(255, 255, 255, 0.95); /* Slight transparency */
-    backdrop-filter: blur(10px); /* Glass effect */
+    background-color: rgba(255, 255, 255, 0.95);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     box-shadow: var(--shadow);
     z-index: 1000;
-    transition: all 0.3s ease;
 }
 
 .nav-container {
@@ -167,13 +197,12 @@ a {
     align-items: center;
 }
 
-/* --- Logo --- */
 .brand-logo img {
-    height: 45px; /* Adjust based on your logo */
+    height: 45px;
     width: auto;
 }
 
-/* --- Desktop Navigation --- */
+/* Desktop Menu */
 .nav-list {
     display: flex;
     align-items: center;
@@ -184,14 +213,15 @@ a {
     font-size: 16px;
     font-weight: 500;
     color: var(--text-dark);
-    transition: color 0.3s ease;
+    transition: color var(--transition-speed) ease;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: var(--primary-color);
 }
 
-/* --- Dropdown Styling --- */
+/* Dropdown */
 .dropdown {
     position: relative;
     cursor: pointer;
@@ -202,17 +232,16 @@ a {
     top: 100%;
     left: 50%;
     transform: translateX(-50%) translateY(10px);
-    background: var(--white);
+    background: var(--text-white);
     min-width: 200px;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     padding: 10px 0;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s ease;
+    transition: all var(--transition-speed) ease;
 }
 
-/* Show dropdown on hover */
 .dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
@@ -232,10 +261,10 @@ a {
     color: var(--primary-color);
 }
 
-/* --- Contact Button Style --- */
+/* Contact Button */
 .btn-contact {
     background-color: var(--primary-color);
-    color: var(--white) !important;
+    color: var(--text-white);
     padding: 10px 25px;
     border-radius: 50px;
     font-weight: 600;
@@ -248,12 +277,13 @@ a {
     box-shadow: 0 6px 8px rgba(0, 123, 255, 0.4);
 }
 
-/* --- Mobile Toggle (Hidden on Desktop) --- */
+/* Mobile Toggle */
 .mobile-toggle {
     display: none;
     background: none;
     border: none;
     cursor: pointer;
+    z-index: 1001;
 }
 
 .bar {
@@ -265,17 +295,22 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
-/* --- Mobile Responsiveness (Tablets & Phones) --- */
 @media (max-width: 768px) {
     .mobile-toggle {
         display: block;
-        z-index: 1001;
     }
 
-    /* Transform hamburger to X when active */
-    .mobile-toggle.is-active .bar:nth-child(2) { opacity: 0; }
-    .mobile-toggle.is-active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
-    .mobile-toggle.is-active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+    .mobile-toggle.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-toggle.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .mobile-toggle.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 
     .nav-menu {
         position: fixed;
@@ -283,9 +318,9 @@ a {
         right: -100%;
         width: 75%;
         height: 100vh;
-        background-color: var(--white);
+        background-color: var(--text-white);
         padding-top: 100px;
-        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
         transition: 0.4s ease-in-out;
         display: flex;
         flex-direction: column;
@@ -302,9 +337,8 @@ a {
         text-align: center;
     }
 
-    /* Mobile Dropdown adjustment */
     .dropdown:hover .dropdown-menu {
-        position: static; /* Stack naturally on mobile */
+        position: static;
         box-shadow: none;
         transform: none;
         opacity: 1;
@@ -314,43 +348,45 @@ a {
     }
 }
 
-/* --- Project Hero Section Variables --- */
-:root {
-    --hero-bg: #f8f9fa; /* Light grey background for contrast */
-    --primary-blue: #2563eb;
-    --text-main: #2c3e50;
-    --text-sub: #636e72;
-    --spacing-section: 4rem 0;
-}
+/* =========================================
+   7. PROJECT HERO SECTION
+   ========================================= */
 
-/* --- Section Layout --- */
 .project-hero-section {
-    padding: var(--spacing-section);
-    background-color: var(--hero-bg);
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+    /* Light grey background */
     display: flex;
     align-items: center;
-    min-height: 60vh; /* Ensures it takes up good screen space */
+    min-height: 60vh;
 }
 
 .hero-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 4rem; /* Space between text and image */
+    gap: 4rem;
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
 }
 
-/* --- Text Styling --- */
 .hero-content {
-    flex: 1; /* Takes up 50% width */
+    flex: 1;
+}
+
+.hero-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 .hero-title {
     font-size: 3rem;
     font-weight: 700;
-    color: var(--text-main);
+    color: var(--text-dark);
+    /* Dark text for light bg */
     margin-bottom: 1rem;
     line-height: 1.2;
 }
@@ -365,12 +401,12 @@ a {
 .hero-description {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: var(--text-sub);
+    color: var(--text-light);
     margin-bottom: 2rem;
-    max-width: 500px; /* Prevents text from stretching too wide */
+    max-width: 500px;
 }
 
-/* --- Back Button --- */
+/* Back Button */
 .btn-back {
     display: inline-flex;
     align-items: center;
@@ -388,15 +424,7 @@ a {
 .btn-back:hover {
     background-color: var(--primary-blue);
     color: #fff;
-    transform: translateX(-5px); /* Subtle slide effect */
-}
-
-/* --- Image Styling --- */
-.hero-image-wrapper {
-    flex: 1; /* Takes up 50% width */
-    display: flex;
-    justify-content: center;
-    position: relative;
+    transform: translateX(-5px);
 }
 
 .hero-img {
@@ -404,7 +432,7 @@ a {
     max-width: 550px;
     height: auto;
     border-radius: 12px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Nice soft shadow */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -412,10 +440,9 @@ a {
     transform: translateY(-5px);
 }
 
-/* --- Mobile Responsiveness --- */
 @media (max-width: 992px) {
     .hero-container {
-        flex-direction: column-reverse; /* Puts image on top, text below on mobile */
+        flex-direction: column-reverse;
         text-align: center;
         gap: 2rem;
     }
@@ -425,7 +452,7 @@ a {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .hero-title {
         font-size: 2.2rem;
     }
@@ -439,9 +466,10 @@ a {
     }
 }
 
+/* =========================================
+   8. PROJECT DETAILS & GRID
+   ========================================= */
 
-
-/* --- Project 1 Detail Styles --- */
 .project-detail-section {
     padding: 80px 0;
     background-color: #ffffff;
@@ -449,10 +477,11 @@ a {
 
 .section-header {
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .category-tag {
-    color: #2563eb;
+    color: var(--primary-blue);
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
@@ -465,27 +494,20 @@ a {
     margin-top: 10px;
 }
 
-.title-underline {
-    width: 80px;
-    height: 4px;
-    background: #2563eb;
-    margin: 20px auto;
-}
-
-/* --- The Grid Layout --- */
+/* Grid */
 .project-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* 8 cols vs 4 cols */
+    grid-template-columns: 2fr 1fr;
     gap: 40px;
     align-items: start;
 }
 
-/* --- Project Card --- */
+/* Card */
 .project-card {
     background: #fff;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     border: 1px solid #f1f5f9;
 }
 
@@ -501,7 +523,10 @@ a {
 
 .img-overlay {
     position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: rgba(37, 99, 235, 0.8);
     color: white;
     display: flex;
@@ -512,12 +537,22 @@ a {
     font-weight: 600;
 }
 
-.project-image-holder:hover .img-overlay { opacity: 1; }
-.project-image-holder:hover img { transform: scale(1.05); }
+.project-image-holder:hover .img-overlay {
+    opacity: 1;
+}
 
-.project-body { padding: 40px; }
+.project-image-holder:hover img {
+    transform: scale(1.05);
+}
 
-.content-block { margin-bottom: 30px; }
+.project-body {
+    padding: 40px;
+}
+
+.content-block {
+    margin-bottom: 30px;
+}
+
 .content-block h3 {
     font-size: 1.25rem;
     color: #1e293b;
@@ -526,33 +561,42 @@ a {
     align-items: center;
     gap: 10px;
 }
-.content-block h3 i { color: #2563eb; }
-.content-block p { color: #64748b; line-height: 1.7; }
+
+.content-block h3 i {
+    color: var(--primary-blue);
+}
+
+.content-block p {
+    color: #64748b;
+    line-height: 1.7;
+}
 
 .method-list {
     list-style: none;
     padding-left: 0;
 }
+
 .method-list li {
     padding-bottom: 10px;
     color: #64748b;
     position: relative;
     padding-left: 25px;
 }
+
 .method-list li::before {
     content: "→";
     position: absolute;
     left: 0;
-    color: #2563eb;
+    color: var(--primary-blue);
     font-weight: bold;
 }
 
-/* --- Sidebar & Insights --- */
+/* Sidebar */
 .insights-card {
     background: #f8fafc;
     padding: 30px;
     border-radius: 15px;
-    border-left: 5px solid #2563eb;
+    border-left: 5px solid var(--primary-blue);
     position: sticky;
     top: 100px;
 }
@@ -569,13 +613,15 @@ a {
     padding-bottom: 15px;
 }
 
-.insight-item:last-child { border: none; }
+.insight-item:last-child {
+    border: none;
+}
 
 .insight-stat {
     display: block;
     font-size: 2rem;
     font-weight: 800;
-    color: #2563eb;
+    color: var(--primary-blue);
     line-height: 1;
     margin-bottom: 5px;
 }
@@ -590,8 +636,8 @@ a {
     display: block;
     text-align: center;
     padding: 12px;
-    border: 2px solid #2563eb;
-    color: #2563eb;
+    border: 2px solid var(--primary-blue);
+    color: var(--primary-blue);
     border-radius: 8px;
     font-weight: 600;
     margin-top: 20px;
@@ -599,26 +645,23 @@ a {
 }
 
 .btn-primary-outline:hover {
-    background: #2563eb;
+    background: var(--primary-blue);
     color: #fff;
 }
 
-/* --- Responsive --- */
 @media (max-width: 992px) {
     .project-grid {
         grid-template-columns: 1fr;
     }
 }
 
+/* =========================================
+   9. THEME SPECIFIC STYLES
+   ========================================= */
 
-
-/* --- Python Specific Styling --- */
-.alternate-bg {
-    background-color: #f1f5f9; /* Light slate background to separate from SQL section */
-}
-
+/* Python */
 .python-theme {
-    border-left: 5px solid #3776ab; /* Official Python Blue */
+    border-left: 5px solid #3776ab;
 }
 
 .python-theme .insight-stat i {
@@ -636,29 +679,18 @@ a {
     color: #ffffff;
     border-radius: 8px;
     font-weight: 600;
-    transition: 0.3s ease;
     text-decoration: none;
     margin-top: 20px;
 }
 
 .btn-python-github:hover {
     background-color: #3776ab;
-    transform: translateY(-2px);
     color: white;
 }
 
-.text-link {
-    color: #2563eb;
-    font-weight: 600;
-    text-decoration: underline;
-}
-
-
-
-
-/* --- Excel Specific Styling --- */
+/* Excel */
 .excel-theme {
-    border-left: 5px solid #107c41; /* Official Excel Green */
+    border-left: 5px solid #107c41;
 }
 
 .excel-theme .insight-stat {
@@ -675,32 +707,21 @@ a {
     color: #ffffff;
     border-radius: 8px;
     font-weight: 600;
-    transition: 0.3s ease;
     text-decoration: none;
 }
 
 .btn-excel-view:hover {
     background-color: #0a5c30;
-    transform: scale(1.02);
-    color: white;
 }
 
-/* For smooth scrolling to sections */
-html {
-    scroll-behavior: smooth;
-}
-
-
-
-/* --- Power BI & ML Specific Styling --- */
+/* Power BI */
 .pbi-theme {
-    border-left: 5px solid #f2c811; /* Power BI Yellow/Gold */
-    background: #ffffff;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border-left: 5px solid #f2c811;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
 .pbi-theme .insight-stat {
-    color: #b89500; /* Darker gold for readability */
+    color: #b89500;
 }
 
 .btn-pbi-view {
@@ -713,7 +734,6 @@ html {
     color: #000000;
     border-radius: 8px;
     font-weight: 700;
-    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.85rem;
@@ -722,47 +742,16 @@ html {
 
 .btn-pbi-view:hover {
     background-color: #d4af37;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(242, 200, 17, 0.4);
-    color: #000;
 }
 
-/* Icon style for ML concepts */
-.fa-microchip, .fa-lightbulb {
-    color: #f2c811;
-}
-
-
-
-/* --- Tableau Specific Styling --- */
+/* Tableau */
 .tableau-theme {
-    border-left: 5px solid #e97627; /* Tableau Orange or Blue #1f77b4 */
+    border-left: 5px solid #e97627;
     background: #f8f9fa;
 }
 
 .tableau-theme .insight-stat {
-    color: #1f77b4; /* Classic Tableau Blue */
-    font-size: 2rem;
-    font-weight: 800;
-}
-
-.tableau-embed-container {
-    position: relative;
-    background: #000;
-    border-radius: 8px 8px 0 0;
-    overflow: hidden;
-    min-height: 450px;
-}
-
-.tableau-overlay-hint {
-    position: absolute;
-    bottom: 10px;
-    right: 15px;
-    background: rgba(0,0,0,0.6);
-    color: #fff;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.75rem;
+    color: #1f77b4;
 }
 
 .btn-tableau-view {
@@ -775,13 +764,206 @@ html {
     color: #ffffff;
     border-radius: 8px;
     font-weight: 600;
-    transition: 0.3s ease;
     text-decoration: none;
 }
 
 .btn-tableau-view:hover {
     background-color: #e97627;
     color: white;
+}
+
+/* Airlines / Looker */
+.airlines-theme {
+    border-left: 5px solid #4285f4;
+}
+
+.airlines-theme .insight-stat {
+    color: #1a73e8;
+}
+
+.btn-looker-view,
+.btn-kaggle-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.btn-looker-view {
+    background-color: #4285f4;
+}
+
+.btn-kaggle-view {
+    background-color: #20beff;
+}
+
+.btn-looker-view:hover,
+.btn-kaggle-view:hover {
+    filter: brightness(1.1);
     transform: translateY(-2px);
 }
 
+/* Engineering */
+.engineering-theme {
+    border-left: 5px solid #008080;
+    background: #f4f7f6;
+}
+
+.engineering-theme .insight-stat {
+    color: #008080;
+}
+
+.btn-eng-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-eng-view:hover {
+    background-color: #008080;
+}
+
+/* =========================================
+   10. CONTACT & FOOTER
+   ========================================= */
+
+.daviefolio-contact {
+    padding: 100px 0;
+    background-color: #fcfcfc;
+}
+
+.contact-row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contact-form-card,
+.contact-info-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.contact-form-card:hover {
+    transform: translateY(-5px);
+}
+
+.custom-input {
+    border: 2px solid #eef0f2;
+    border-radius: 8px;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.custom-input:focus {
+    border-color: #008080;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(0, 128, 128, 0.1);
+    outline: none;
+}
+
+.btn-submit-data {
+    background: linear-gradient(135deg, #008080 0%, #1a73e8 100%);
+    color: #fff;
+    border: none;
+    padding: 15px 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn-submit-data:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 8px 20px rgba(26, 115, 232, 0.3);
+}
+
+.contact-info-card h4 {
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-subtext {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+}
+
+.contact-list a {
+    color: #444;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-list a:hover {
+    color: #1a73e8;
+}
+
+.contact-list i {
+    font-size: 1.2rem;
+    color: #008080;
+}
+
+.daviefolio-footer {
+    padding: 40px 0;
+    background-color: #1a1a1a;
+    color: #888;
+    text-align: center;
+}
+
+.daviefolio-footer small {
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.success-message {
+    color: #28a745;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+
+    .contact-form-card,
+    .contact-info-card {
+        padding: 25px;
+    }
+}
