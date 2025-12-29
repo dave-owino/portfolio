@@ -112,307 +112,622 @@ html {
    PROJECT PAGE SPECIFIC STYLES
    ========================================= */
 
-/* 1. Layout & Container */
-.daviefolio-project-narrow-content {
-    position: relative;
-    z-index: 10;
-    background: #fff;
-    margin: 0 auto;
-    padding: 3.5em 1.5em;
-    width: 85%;
-    /* Adjust based on your main theme */
+/* --- Variables for easy changes --- */
+:root {
+    --primary-color: #007bff; /* Change this to your brand color */
+    --text-dark: #333333;
+    --text-light: #666666;
+    --white: #ffffff;
+    --navbar-height: 80px;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 768px) {
-    .daviefolio-project-narrow-content {
-        width: 100%;
-        padding: 3.5em 1em;
-    }
+/* --- Base Setup --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-/* 2. Titles */
-.title-box {
-    margin-bottom: 3em;
+body {
+    padding-top: var(--navbar-height); /* Prevents content hiding behind fixed nav */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.title-box h3 {
-    font-family: "Playfair Display", serif;
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+ul {
+    list-style: none;
 }
 
-.title-line-mf {
-    width: 50px;
-    height: 3px;
-    background: #007bff;
-    /* Adjust to your theme color */
-    margin: 0 auto;
-}
-
-/* 3. Project Cards (Split Layout) */
-.project-work-box {
-    background: #fff;
-    margin-bottom: 30px;
-    box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.project-work-img {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    position: relative;
-}
-
-.project-work-img img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: all 0.3s ease;
-}
-
-.project-work-box:hover .project-work-img img {
-    transform: scale(1.02);
-}
-
-.project-work-content {
-    padding: 30px;
-}
-
-.project-work-contento {
-    padding: 30px;
-}
-
-/* 4. Sidebar / Insights */
-.insights-row-bottom-padded-sm {
-    margin-bottom: 30px;
-}
-
-.insignts-desc {
-    background: #f8f9fa;
-    padding: 30px;
-    border-radius: 4px;
-    height: 100%;
-    border-left: 4px solid #007bff;
-}
-
-.insignts-desc h2 {
-    font-size: 24px;
-    font-family: "Playfair Display", serif;
-    margin-bottom: 15px;
-}
-
-.insignts-desc ul {
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
-
-.insignts-desc ul li {
-    margin-bottom: 10px;
-    font-size: 0.95rem;
-    color: #555;
-    line-height: 1.5;
-}
-
-/* 5. Button Container & Buttons */
-.button-container {
-    margin-top: 20px;
-    /* Moved from inline HTML */
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.butn {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-    transition: all 0.3s ease;
+a {
     text-decoration: none;
+    color: inherit;
+}
+
+/* --- Navbar Container --- */
+.navbar-header {
+    position: fixed; /* Stick to top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--navbar-height);
+    background-color: rgba(255, 255, 255, 0.95); /* Slight transparency */
+    backdrop-filter: blur(10px); /* Glass effect */
+    box-shadow: var(--shadow);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* --- Logo --- */
+.brand-logo img {
+    height: 45px; /* Adjust based on your logo */
+    width: auto;
+}
+
+/* --- Desktop Navigation --- */
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-dark);
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color);
+}
+
+/* --- Dropdown Styling --- */
+.dropdown {
+    position: relative;
     cursor: pointer;
 }
 
-.repo-btn {
-    background-color: #007bff;
-    color: #fff;
-    border: 2px solid #007bff;
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: var(--white);
+    min-width: 200px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
 }
 
-.repo-btn:hover {
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: var(--text-light);
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f3f4f6;
+    color: var(--primary-color);
+}
+
+/* --- Contact Button Style --- */
+.btn-contact {
+    background-color: var(--primary-color);
+    color: var(--white) !important;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.btn-contact:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 123, 255, 0.4);
+}
+
+/* --- Mobile Toggle (Hidden on Desktop) --- */
+.mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-dark);
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+/* --- Mobile Responsiveness (Tablets & Phones) --- */
+@media (max-width: 768px) {
+    .mobile-toggle {
+        display: block;
+        z-index: 1001;
+    }
+
+    /* Transform hamburger to X when active */
+    .mobile-toggle.is-active .bar:nth-child(2) { opacity: 0; }
+    .mobile-toggle.is-active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .mobile-toggle.is-active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
+        background-color: var(--white);
+        padding-top: 100px;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        transition: 0.4s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+    /* Mobile Dropdown adjustment */
+    .dropdown:hover .dropdown-menu {
+        position: static; /* Stack naturally on mobile */
+        box-shadow: none;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        background-color: #f9fafb;
+        margin-top: 10px;
+    }
+}
+
+/* --- Project Hero Section Variables --- */
+:root {
+    --hero-bg: #f8f9fa; /* Light grey background for contrast */
+    --primary-blue: #2563eb;
+    --text-main: #2c3e50;
+    --text-sub: #636e72;
+    --spacing-section: 4rem 0;
+}
+
+/* --- Section Layout --- */
+.project-hero-section {
+    padding: var(--spacing-section);
+    background-color: var(--hero-bg);
+    display: flex;
+    align-items: center;
+    min-height: 60vh; /* Ensures it takes up good screen space */
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem; /* Space between text and image */
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* --- Text Styling --- */
+.hero-content {
+    flex: 1; /* Takes up 50% width */
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-divider {
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-blue);
+    margin-bottom: 1.5rem;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-sub);
+    margin-bottom: 2rem;
+    max-width: 500px; /* Prevents text from stretching too wide */
+}
+
+/* --- Back Button --- */
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
     background-color: transparent;
-    color: #007bff;
+    border: 2px solid var(--primary-blue);
+    color: var(--primary-blue);
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-decoration: none;
 }
 
-.blog-btn {
-    background-color: transparent;
-    color: #333;
-    border: 2px solid #333;
-}
-
-.blog-btn:hover {
-    background-color: #333;
+.btn-back:hover {
+    background-color: var(--primary-blue);
     color: #fff;
+    transform: translateX(-5px); /* Subtle slide effect */
 }
 
-/* 6. Tableau Embed Specifics */
-.tableau-embed-container {
-    min-height: 450px;
-    background: #eee;
+/* --- Image Styling --- */
+.hero-image-wrapper {
+    flex: 1; /* Takes up 50% width */
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Nice soft shadow */
+    transition: transform 0.3s ease;
+}
+
+.hero-img:hover {
+    transform: translateY(-5px);
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 992px) {
+    .hero-container {
+        flex-direction: column-reverse; /* Puts image on top, text below on mobile */
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-img {
+        max-width: 100%;
+    }
+}
+
+
+
+/* --- Project 1 Detail Styles --- */
+.project-detail-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.section-header {
+    margin-bottom: 50px;
+}
+
+.category-tag {
+    color: #2563eb;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+}
+
+.project-main-title {
+    font-size: 2.5rem;
+    color: #1e293b;
+    margin-top: 10px;
+}
+
+.title-underline {
+    width: 80px;
+    height: 4px;
+    background: #2563eb;
+    margin: 20px auto;
+}
+
+/* --- The Grid Layout --- */
+.project-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 8 cols vs 4 cols */
+    gap: 40px;
+    align-items: start;
+}
+
+/* --- Project Card --- */
+.project-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid #f1f5f9;
+}
+
+.project-image-holder {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image-holder img {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(37, 99, 235, 0.8);
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #ddd;
-    position: relative;
+    opacity: 0;
+    transition: 0.3s;
+    font-weight: 600;
 }
 
-.tableau-placeholder {
-    width: 100%;
-    height: 100%;
-}
+.project-image-holder:hover .img-overlay { opacity: 1; }
+.project-image-holder:hover img { transform: scale(1.05); }
 
-.tableau-caption {
-    position: absolute;
-    color: #777;
-    font-size: 0.9rem;
-    pointer-events: none;
-    z-index: 1;
-}
+.project-body { padding: 40px; }
 
-/* 7. Coming Soon Card */
-.project-card-placeholder {
-    background: #f8f9fa;
-    padding: 50px;
-    border: 2px dashed #ccc;
-    border-radius: 8px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.project-card-placeholder h3 {
-    font-family: "Playfair Display", serif;
+.content-block { margin-bottom: 30px; }
+.content-block h3 {
+    font-size: 1.25rem;
+    color: #1e293b;
     margin-bottom: 15px;
-}
-
-.coming-soon {
-    color: #999;
-    font-weight: bold;
-    font-size: 0.9rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-/* 8. Contact Section Fixes */
-.contact-row-flex {
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
+    align-items: center;
+    gap: 10px;
 }
+.content-block h3 i { color: #2563eb; }
+.content-block p { color: #64748b; line-height: 1.7; }
 
-.contact-form-card {
-    padding: 30px;
-    background: #fff;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    border-radius: 5px;
-}
-
-.contact-info-card {
-    padding: 30px;
-    background: #f8f9fa;
-    border-radius: 5px;
-    margin-left: 20px;
-    /* Spacing between form and info */
-}
-
-@media (max-width: 991px) {
-    .contact-info-card {
-        margin-left: 0;
-        margin-top: 20px;
-    }
-}
-
-.custom-input {
-    width: 100%;
-    padding: 12px 15px;
-    margin-bottom: 20px;
-    border: 1px solid #e1e1e1;
-    border-radius: 4px;
-    font-family: "Quicksand", sans-serif;
-    font-size: 16px;
-}
-
-.btn-submit-data {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 30px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.btn-submit-data:hover {
-    background-color: #0056b3;
-}
-
-.success-message {
-    color: #28a745;
-    font-weight: 600;
-    margin-bottom: 15px;
-    display: none;
-}
-
-.contact-list {
+.method-list {
     list-style: none;
-    padding: 0;
-    margin-top: 20px;
+    padding-left: 0;
+}
+.method-list li {
+    padding-bottom: 10px;
+    color: #64748b;
+    position: relative;
+    padding-left: 25px;
+}
+.method-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-weight: bold;
 }
 
-.contact-list li {
-    margin-bottom: 15px;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
+/* --- Sidebar & Insights --- */
+.insights-card {
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 5px solid #2563eb;
+    position: sticky;
+    top: 100px;
 }
 
-.contact-list li a {
-    color: #333;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
+.sidebar-title {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: #1e293b;
 }
 
-.contact-list li a:hover {
-    color: #007bff;
+.insight-item {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 15px;
 }
 
-.contact-list i {
-    margin-right: 15px;
-    font-size: 20px;
-    color: #007bff;
+.insight-item:last-child { border: none; }
+
+.insight-stat {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #2563eb;
+    line-height: 1;
+    margin-bottom: 5px;
 }
 
-/* Footer */
-.daviefolio-footer {
-    background: #222;
-    color: #888;
-    padding: 30px 0;
-    margin-top: 50px;
-    text-align: center;
-}
-
-.daviefolio-footer p {
+.insight-item p {
+    font-size: 0.95rem;
+    color: #475569;
     margin: 0;
 }
 
-/* Animation Helpers */
-.animate-box {
-    opacity: 0;
+.btn-primary-outline {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    border: 2px solid #2563eb;
+    color: #2563eb;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-primary-outline:hover {
+    background: #2563eb;
+    color: #fff;
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* --- Python Specific Styling --- */
+.alternate-bg {
+    background-color: #f1f5f9; /* Light slate background to separate from SQL section */
+}
+
+.python-theme {
+    border-left: 5px solid #3776ab; /* Official Python Blue */
+}
+
+.python-theme .insight-stat i {
+    color: #3776ab;
+    font-size: 1.8rem;
+}
+
+.btn-python-github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    background-color: #1e293b;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.btn-python-github:hover {
+    background-color: #3776ab;
+    transform: translateY(-2px);
+    color: white;
+}
+
+.text-link {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+
+
+/* --- Excel Specific Styling --- */
+.excel-theme {
+    border-left: 5px solid #107c41; /* Official Excel Green */
+}
+
+.excel-theme .insight-stat {
+    color: #107c41;
+}
+
+.btn-excel-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    background-color: #107c41;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-excel-view:hover {
+    background-color: #0a5c30;
+    transform: scale(1.02);
+    color: white;
+}
+
+/* For smooth scrolling to sections */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* --- Power BI & ML Specific Styling --- */
+.pbi-theme {
+    border-left: 5px solid #f2c811; /* Power BI Yellow/Gold */
+    background: #ffffff;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.pbi-theme .insight-stat {
+    color: #b89500; /* Darker gold for readability */
+}
+
+.btn-pbi-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px;
+    background-color: #f2c811;
+    color: #000000;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    margin-top: 20px;
+}
+
+.btn-pbi-view:hover {
+    background-color: #d4af37;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(242, 200, 17, 0.4);
+    color: #000;
+}
+
+/* Icon style for ML concepts */
+.fa-microchip, .fa-lightbulb {
+    color: #f2c811;
 }
