@@ -2,162 +2,214 @@
 // Main JavaScript for DavieFolio Project Page
 // ----------------------------------------------------
 
-(function () {
-  "use strict";
+document.addEventListener('DOMContentLoaded', () => {
 
-  // 1. Navbar Toggle Logic for Mobile
-  const menuToggle = document.querySelector('.js-daviefolio-nav-toggle');
-  const nav = document.querySelector('#navbarDefault');
+  // =========================================
+  // 1. UNIFY BACKGROUND COLORS
+  // =========================================
+  // This ensures all sections share the same professional dark gradient,
+  // removing the white/grey variations from specific project themes.
 
-  if (menuToggle) {
-    menuToggle.addEventListener('click', function (e) {
-      e.preventDefault();
-      const isExpanded = this.getAttribute('aria-expanded') === 'true';
-      this.setAttribute('aria-expanded', !isExpanded);
+  const sectionsToUnify = document.querySelectorAll('.project-hero-section, .project-detail-section, .daviefolio-contact');
+  const bodyStyle = window.getComputedStyle(document.body);
 
-      // Toggle class to show/hide menu (Bootstrap-like behavior)
-      nav.classList.toggle('show');
-      this.classList.toggle('active');
+  sectionsToUnify.forEach(section => {
+    // Apply the same gradient as the body for consistency
+    section.style.background = 'transparent';
+    // Optional: Add a subtle glassmorphism effect to project containers
+    section.style.position = 'relative';
+    section.style.zIndex = '1';
+  });
+
+
+  // =========================================
+  // 2. MOBILE MENU TOGGLE
+  // =========================================
+
+  const mobileToggle = document.querySelector('.mobile-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  if (mobileToggle) {
+    mobileToggle.addEventListener('click', () => {
+      mobileToggle.classList.toggle('is-active');
+      navMenu.classList.toggle('active');
+
+      // Prevent scrolling when menu is open
+      if (navMenu.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
+      }
+    });
+
+    // Close menu when a link is clicked
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileToggle.classList.remove('is-active');
+        navMenu.classList.remove('active');
+        document.body.style.overflow = '';
+      });
     });
   }
 
-  // 2. Smooth Scrolling for Anchor Links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href');
 
-      // Only scroll if it's a valid ID on this page
-      if (targetId.length > 1 && document.querySelector(targetId)) {
-        document.querySelector(targetId).scrollIntoView({
-          behavior: 'smooth'
-        });
-
-        // Close mobile menu if open
-        if (nav.classList.contains('show')) {
-          nav.classList.remove('show');
-          if (menuToggle) menuToggle.classList.remove('active');
-        }
-      }
-    });
-  });
-
-  // 3. Scroll Animations (Intersection Observer)
-  const animateBoxes = document.querySelectorAll('.animate-box');
+  // =========================================
+  // 3. SCROLL REVEAL ANIMATION
+  // =========================================
+  // Adds a 'visible' class to elements when they scroll into view
 
   const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.1
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
   };
 
-  const observer = new IntersectionObserver((entries, observer) => {
+  const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const effect = entry.target.getAttribute('data-animate-effect');
-
-        if (effect === 'fadeInLeft') {
-          entry.target.classList.add('fadeInLeft');
-          entry.target.style.opacity = '1';
-        } else if (effect === 'fadeInRight') {
-          entry.target.classList.add('fadeInRight');
-          entry.target.style.opacity = '1';
-        } else if (effect === 'fadeInUp') {
-          entry.target.classList.add('fadeInUp');
-          entry.target.style.opacity = '1';
-        }
-
-        // Stop observing once animated
-        observer.unobserve(entry.target);
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // Only animate once
       }
     });
   }, observerOptions);
 
-  animateBoxes.forEach(box => {
-    observer.observe(box);
+  // Select elements to animate
+  const animatedElements = document.querySelectorAll(
+    '.hero-content, .project-card, .insights-card, .contact-form-card, .section-header, .hero-img'
+  );
+
+  animatedElements.forEach(el => observer.observe(el));
+
+
+  // =========================================
+  // 4. SMART NAVBAR SCROLL EFFECT
+  // =========================================
+  // Changes navbar transparency/color based on scroll position
+
+  const navbar = document.querySelector('.navbar-header');
+  const brandLogoImg = document.querySelector('.brand-logo img');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add('navbar-scrolled');
+      // Optional: Shrink logo slightly on scroll
+      if (brandLogoImg) brandLogoImg.style.height = '40px';
+    } else {
+      navbar.classList.remove('navbar-scrolled');
+      if (brandLogoImg) brandLogoImg.style.height = '45px';
+    }
   });
 
-  // 4. Form Submission Handling (AJAX)
-  const contactForm = document.getElementById('contactForm');
-  const successMessage = document.getElementById('successMessage');
-  const submitBtn = document.getElementById('sendMessageButton');
 
-  if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
+  // =========================================
+  // 5. ACTIVE LINK HIGHLIGHTER
+  // =========================================
+  // Highlights the navbar link corresponding to the current section
+
+  const sections = document.querySelectorAll('section');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      // 150px offset to account for navbar height and buffer
+      if (pageYOffset >= (sectionTop - 150)) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').includes(current)) {
+        link.classList.add('active');
+      }
+    });
+  });
+
+
+  // =========================================
+  // 6. SMOOTH SCROLL FOR ANCHOR LINKS
+  // =========================================
+  // Handles the offset for the fixed header
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+
+      const targetSection = document.querySelector(targetId);
+      if (targetSection) {
+        const headerOffset = 80; // Matches CSS variable --navbar-height
+        const elementPosition = targetSection.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
+    });
+  });
+
+
+  // =========================================
+  // 7. CONTACT FORM INTERACTION
+  // =========================================
+  // Simulates form submission with UI feedback
+
+  const contactForm = document.querySelector('.contact-form-card');
+  const submitBtn = document.querySelector('.btn-submit-data');
+
+  if (contactForm && submitBtn) {
+    contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      // Basic validation visual feedback
-      submitBtn.innerText = "Sending...";
+      const originalText = submitBtn.innerText;
+
+      // Loading state
+      submitBtn.innerText = 'Sending...';
+      submitBtn.style.opacity = '0.7';
       submitBtn.disabled = true;
 
-      const formData = new FormData(contactForm);
-      const object = Object.fromEntries(formData);
-      const json = JSON.stringify(object);
+      // Simulate server delay
+      setTimeout(() => {
+        submitBtn.innerText = 'Message Sent!';
+        submitBtn.style.background = '#28a745'; // Success Green
 
-      fetch('https://formspree.io/f/mwppwqkr', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: json
-      })
-        .then(response => {
-          if (response.ok) {
-            // Success
-            successMessage.style.display = 'block';
-            successMessage.innerText = "Thanks! I'll get back to you shortly.";
-            contactForm.reset();
-            submitBtn.innerText = "Message Sent";
-          } else {
-            // Error
-            response.json().then(data => {
-              if (Object.hasOwn(data, 'errors')) {
-                successMessage.style.display = 'block';
-                successMessage.style.color = '#dc3545'; // Red
-                successMessage.innerText = data["errors"].map(error => error["message"]).join(", ");
-              } else {
-                successMessage.style.display = 'block';
-                successMessage.style.color = '#dc3545';
-                successMessage.innerText = "Oops! There was a problem submitting your form";
-              }
-            })
-          }
-        })
-        .catch(error => {
-          successMessage.style.display = 'block';
-          successMessage.style.color = '#dc3545';
-          successMessage.innerText = "Oops! There was a problem submitting your form";
-        })
-        .finally(() => {
-          setTimeout(() => {
-            submitBtn.innerText = "Send Message";
-            submitBtn.disabled = false;
-            // Hide success message after 5 seconds
-            setTimeout(() => {
-              successMessage.style.display = 'none';
-            }, 5000);
-          }, 2000);
-        });
+        // Show success message
+        const successMsg = document.createElement('div');
+        successMsg.classList.add('success-message');
+        successMsg.innerText = 'Thank you! I will get back to you soon.';
+        contactForm.insertBefore(successMsg, contactForm.firstChild);
+
+        // Reset form
+        contactForm.reset();
+
+        // Reset button after 3 seconds
+        setTimeout(() => {
+          submitBtn.innerText = originalText;
+          submitBtn.style.background = ''; // Revert to gradient
+          submitBtn.style.opacity = '1';
+          submitBtn.disabled = false;
+          successMsg.remove();
+        }, 4000);
+
+      }, 1500);
     });
   }
 
-})();
-
-
-// added
-
-const mobileBtn = document.querySelector('.mobile-toggle');
-const navMenu = document.querySelector('.nav-menu');
-
-mobileBtn.addEventListener('click', () => {
-  mobileBtn.classList.toggle('is-active');
-  navMenu.classList.toggle('active');
+  // =========================================
+  // 8. DYNAMIC FOOTER YEAR
+  // =========================================
+  const yearSpan = document.querySelector('.daviefolio-footer small');
+  if (yearSpan) {
+    const currentYear = new Date().getFullYear();
+    // Keeps the text but updates the year if found, or appends if not
+    if (!yearSpan.innerText.includes(currentYear)) {
+      yearSpan.innerText = `© ${currentYear} DavieFolio. All Rights Reserved.`;
+    }
+  }
 });
-
-// Close menu when a link is clicked
-document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
-  mobileBtn.classList.remove('is-active');
-  navMenu.classList.remove('active');
-}));
-
