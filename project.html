@@ -24,13 +24,13 @@
 		href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Playfair+Display:wght@400;400i;700&display=swap"
 		rel="stylesheet">
 
-	<!-- Libraries CSS Files -->
+	<!-- Libraries CSS Files 
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="lib/lightbox/css/lightbox.min.css">
+	<link rel="stylesheet" href="lib/lightbox/css/lightbox.min.css">-->
 
 	<!-- Main Stylesheet File -->
 	<link rel="stylesheet" href="highlights/p_style.css">
@@ -43,75 +43,74 @@
 </head>
 
 <body>
-	<!-- Mobile Navigation Overlay -->
+
 	<div id="daviefolio-page">
 		<div id="container-wrap">
 
 			<!-- Navigation -->
-			<div class="container">
-				<div id="logo2">
-					<img src="lib/favicon_io/logo.png" alt="David Portfolio Logo" class="logo-img">
-				</div>
-				<a href="#" class="js-daviefolio-nav-toggle daviefolio-nav-toggle" data-toggle="collapse"
-					data-target="#navbarDefault" aria-expanded="false" aria-controls="navbarDefault"
-					title="Toggle navigation"><i></i>
-				</a>
+			<header class="navbar-header" id="navbar">
+				<div class="container nav-container">
 
-				<div id="navbarDefault">
-					<ul class="navbar-nav">
-						<li><a class="nav-link" href="index.html">Home</a></li>
-						<li class="dropdown">
-							<a class="nav-link dropdown-toggle" href="#projects">Projects <span
-									class="arrow">&#9662;</span></a>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#sql">Data Analysis</a></li>
-								<li><a class="dropdown-item" href="#python">Data Science</a></li>
-								<li><a class="dropdown-item" href="#excel">Business Intelligence</a></li>
-								<li><a class="dropdown-item" href="#power-BI">Business Intelligence</a></li>
-								<li><a class="dropdown-item" href="#tableau">Data Analysis</a></li>
-								<li><a class="dropdown-item" href="#airlines">Data Analysis</a></li>
-							</ul>
-						</li>
-						<li><a class="nav-link" href="blog.html">Blog</a></li>
-						<li><a class="nav-link js-scroll" href="#contact">Contact</a></li>
-					</ul>
+					<a href="index.html" class="brand-logo">
+						<img src="lib/favicon_io/logo.png" alt="David Portfolio Logo">
+					</a>
+
+					<button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</button>
+
+					<nav class="nav-menu">
+						<ul class="nav-list">
+							<li><a href="index.html" class="nav-link active">Home</a></li>
+
+							<li class="dropdown">
+								<a href="#projects" class="nav-link dropdown-toggle">
+									Projects <span class="arrow">▾</span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#sql">SQL Analysis</a></li>
+									<li><a href="#python">Python Data Science</a></li>
+									<li><a href="#excel">Excel & BI</a></li>
+									<li><a href="#power-BI">Power BI Dashboards</a></li>
+									<li><a href="#tableau">Tableau Visualization</a></li>
+									<li><a href="#airlines">Case Study: Airlines</a></li>
+								</ul>
+							</li>
+
+							<li><a href="blog.html" class="nav-link">Blog</a></li>
+
+							<li><a href="#contact" class="nav-link btn-contact">Contact Me</a></li>
+						</ul>
+					</nav>
 				</div>
-			</div>
+			</header>
 			<!--/ Nav End /-->
 
-			<!-- Project Page Header -->
-			<section class="daviefolio-project-folio portfolio-mf sect-pt4 route">
-				<div class="daviefolio-narrow-content">
-					<h1>Projects Deep Dive</h1>
-					<div class="project-folio-container">
-						<div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<div class="project-work-box">
-									<a href="img/blog/projectop3.webp" data-lightbox="gallery-mf">
-										<div class="project-work-img">
-											<img src="img/blog/projectop3.webp"
-												alt="Display image showcasing data insights" class="img-fluid"
-												loading="lazy">
-										</div>
-									</a>
-									<div class="project-work-contento">
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="project-content-line-mfo"></div>
-												<p>
-													Hi, I invite you to explore my work. I showcase a range of
-													data-driven projects created using Excel, Python, and Power BI.
-													Each project details problem statement, data, methodology,
-													and key insights derived from analysis.
-												</p>
-												<p><a href="index.html#work">&larr; Back to Portfolio Summary</a></p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+			<section id="project-hero" class="project-hero-section">
+				<div class="container hero-container">
+
+					<div class="hero-content" data-animate="fade-up">
+						<h1 class="hero-title">Projects Deep Dive</h1>
+						<div class="hero-divider"></div>
+						<p class="hero-description">
+							Welcome to my technical showcase. Here, I break down complex data problems into actionable
+							insights using <strong>Excel, Python, and Power BI</strong>.
+							<br><br>
+							Explore the methodology, data structures, and the story behind every analysis.
+						</p>
+
+						<a href="index.html#work" class="btn-back">
+							<i class="fas fa-arrow-left"></i> Back to Portfolio
+						</a>
 					</div>
+
+					<div class="hero-image-wrapper" data-animate="fade-left">
+						<img src="img/blog/projectop3.webp" alt="Data Analytics Dashboard Preview" class="hero-img"
+							loading="lazy">
+					</div>
+
 				</div>
 			</section>
 
@@ -119,100 +118,85 @@
 			<!-- ========================================== -->
 			<!-- PROJECT 1: SQL - NZ THEFT ANALYSIS         -->
 			<!-- ========================================== -->
-			<section class="daviefolio-project-resent" id="sql" data-section="sql">
-				<div class="daviefolio-project-narrow-content">
-					<div class="col-sm-12">
-						<div class="title-box text-center">
-							<h3 class="title-a">SQL: NZ POLICE THEFT ANALYSIS</h3>
-							<div class="title-line-mf"></div>
-						</div>
+			<section class="project-detail-section" id="sql">
+				<div class="container">
+
+					<div class="section-header text-center">
+						<span class="category-tag">SQL & Data Exploration</span>
+						<h2 class="project-main-title">NZ Police Vehicle Theft Analysis</h2>
+						<div class="title-underline"></div>
 					</div>
 
-					<div class="daviefolio-project-folio portfolio-mf sect-pt4 route">
-						<div class="project-folio-container">
-							<div class="row">
-								<!-- Main Content (8 Cols) -->
-								<div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
-									<div class="project-work-box">
-										<a href="img/work/Sql/g_studio_1.jpg" data-lightbox="gallery-mf">
-											<div class="project-work-img">
-												<img src="img/work/Sql/g_studio_1.jpg"
-													alt="SQL project image showcasing data insights" class="img-fluid"
-													loading="lazy">
-											</div>
-										</a>
-										<div class="project-work-content">
-											<div class="row">
-												<div class="col-sm-8">
-													<div class="project-title-container">
-														<div class="project-content-line-mf"></div>
-														<h2 class="p-w-title">Motor Vehicle Theft Analysis</h2>
-													</div>
-												</div>
-												<div class="col-sm-12">
-													<h4>The Problem</h4>
-													<p>
-														This project analyzes motor vehicle theft data from the New
-														Zealand police department and focuses on SQL-based
-														exploration.
-														Using SQL statements, I conduct exploratory data analysis
-														(EDA), perform table joins, and apply aggregations to
-														uncover meaningful patterns.
-														Key findings are visualized in a Google Looker Studio
-														dashboard, aiding law enforcement and policymakers in
-														enhancing community safety.
-													</p>
-
-													<h4>The Data</h4>
-													<p>
-														<strong>Source:</strong> NZ Police Dept (Kaggle).<br>
-														<strong>Scope:</strong> Six-month dataset including details
-														like vehicle type, make, year, color, date stolen, and
-														region.
-													</p>
-
-													<h4>Methodology</h4>
-													<ul>
-														<li>SQL Joins & Subqueries to link theft incidents with
-															vehicle attributes.</li>
-														<li>Aggregations to identify top stolen makes, models, and
-															theft hotspots.</li>
-														<li>Google Looker Studio for final dashboard visualization.
-														</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
+					<div class="project-grid">
+						<div class="project-main-content">
+							<div class="project-card">
+								<div class="project-image-holder">
+									<a href="img/work/Sql/g_studio_1.jpg" data-lightbox="gallery-sql">
+										<img src="img/work/Sql/g_studio_1.jpg" alt="NZ Police Data Dashboard"
+											class="img-responsive">
+										<div class="img-overlay"><i class="fas fa-search-plus"></i> View Dashboard</div>
+									</a>
 								</div>
 
-								<!-- Insights Sidebar (4 Cols) -->
-								<div class="col-md-4">
-									<div class="row insights-row-bottom-padded-sm animate-box"
-										data-animate-effect="fadeInLeft">
-										<div class="insignts-desc">
-											<h2 class="insights-heading-meta">Insights</h2>
-											<p>These findings provide valuable insights into vehicle theft trends.
-											</p>
-											<ul>
-												<li><strong>Luxury vs Standard:</strong> Luxury vehicles accounted
-													for only 4% of stolen cars, while 95% were standard vehicles.
-												</li>
-												<li><strong>Regions:</strong> Auckland had the highest proportion of
-													thefts at 36%, followed by Canterbury at 14.5%.</li>
-												<li><strong>Makes:</strong> Toyota (15.7%), Trailer (11.9%), and
-													Nissan (10.6%) were the most targeted.</li>
-												<li><strong>Timing:</strong> Thefts peaked on April 4, with Mondays
-													and Tuesdays being the most common days.</li>
-											</ul>
-											<div class="button-container">
-												<a href="#" class="butn repo-btn">Looker Dashboard</a>
-											</div>
-										</div>
+								<div class="project-body">
+									<div class="content-block">
+										<h3><i class="fas fa-exclamation-circle"></i> The Problem</h3>
+										<p>
+											Identifying patterns in criminal activity is essential for resource
+											allocation. This project explores a 6-month dataset from the New Zealand
+											Police Department to uncover high-risk theft profiles and hotspots.
+										</p>
+									</div>
+
+									<div class="content-block">
+										<h3><i class="fas fa-database"></i> The Data</h3>
+										<p>
+											<strong>Source:</strong> NZ Police Dept (via Kaggle).<br>
+											<strong>Attributes:</strong> Vehicle type, make, year, color, date stolen,
+											and geographic region.
+										</p>
+									</div>
+
+									<div class="content-block">
+										<h3><i class="fas fa-tools"></i> Methodology</h3>
+										<ul class="method-list">
+											<li><strong>SQL Joins & CTEs:</strong> Linking theft incidents with granular
+												vehicle attributes.</li>
+											<li><strong>Advanced Aggregations:</strong> Calculating frequency across
+												regions and timeframes.</li>
+											<li><strong>Looker Studio:</strong> Transforming raw SQL outputs into an
+												executive-level dashboard.</li>
+										</ul>
 									</div>
 								</div>
 							</div>
 						</div>
+
+						<aside class="project-sidebar">
+							<div class="insights-card">
+								<h3 class="sidebar-title">Key Insights</h3>
+								<div class="insight-item">
+									<span class="insight-stat">95%</span>
+									<p>of stolen vehicles were <strong>Standard</strong> models, while Luxury cars
+										accounted for only 4%.</p>
+								</div>
+								<div class="insight-item">
+									<span class="insight-stat">36%</span>
+									<p>Total thefts occurred in <strong>Auckland</strong>, identifying it as the primary
+										hotspot.</p>
+								</div>
+								<div class="insight-item">
+									<span class="insight-stat">M/T</span>
+									<p>Thefts peaked on <strong>Mondays and Tuesdays</strong>, suggesting higher
+										vulnerability after weekends.</p>
+								</div>
+
+								<div class="sidebar-footer">
+									<p><strong>Top Makes:</strong> Toyota (15.7%), Nissan (10.6%).</p>
+									<a href="#" class="btn-primary-outline btn-block">View Looker Dashboard</a>
+								</div>
+							</div>
+						</aside>
 					</div>
 				</div>
 			</section>
@@ -221,7 +205,102 @@
 			<!-- ========================================== -->
 			<!-- PROJECT 2: PYTHON - PISA 2012              -->
 			<!-- ========================================== -->
-			<section class="daviefolio-project-resent" id="python" data-section="python">
+			<section class="project-detail-section alternate-bg" id="python">
+				<div class="container">
+
+					<div class="section-header text-center">
+						<span class="category-tag">Python & Exploratory Data Analysis</span>
+						<h2 class="project-main-title">PISA 2012: Global Student Performance</h2>
+						<div class="title-underline"></div>
+					</div>
+
+					<div class="project-grid">
+						<div class="project-main-content">
+							<div class="project-card">
+								<div class="project-image-holder">
+									<a href="img/work/Python/project/1py_display.jpg" data-lightbox="gallery-python">
+										<img src="img/work/Python/project/1py_display.jpg"
+											alt="Python Data Visualization Dashboard" class="img-responsive">
+										<div class="img-overlay"><i class="fab fa-python"></i> View Analysis</div>
+									</a>
+								</div>
+
+								<div class="project-body">
+									<div class="content-block">
+										<h3><i class="fas fa-search"></i> The Problem</h3>
+										<p>
+											As part of the <strong>Udacity Data Analyst Nanodegree</strong>, this
+											project investigates the PISA 2012 dataset. The goal was to identify which
+											variables—ranging from gender and geography to teacher practices—most
+											significantly impact the academic success of 15-year-old students globally.
+										</p>
+									</div>
+
+									<div class="content-block">
+										<h3><i class="fas fa-server"></i> The Data</h3>
+										<p>
+											<strong>Volume:</strong> 510,000 student records with 636 unique
+											features.<br>
+											<strong>Focus:</strong> Socio-economic status, school resources, and
+											regional disparities (OECD vs. Non-OECD).<br>
+											<a href="https://s3.amazonaws.com/udacity-hosted-downloads/ud507/pisa2012.csv.zip"
+												class="text-link"><i class="fas fa-download"></i> Download Raw
+												Dataset</a>
+										</p>
+									</div>
+
+									<div class="content-block">
+										<h3><i class="fas fa-code"></i> Methodology</h3>
+										<ul class="method-list">
+											<li><strong>Data Wrangling:</strong> Cleaning a massive 600+ column dataset
+												using <strong>Pandas</strong>.</li>
+											<li><strong>Multivariate Visualization:</strong> Using
+												<strong>Seaborn</strong> and <strong>Matplotlib</strong> to find
+												correlations between wealth and test scores.</li>
+											<li><strong>Hypothesis Testing:</strong> Statistical validation of
+												performance gaps between genders and regions.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<aside class="project-sidebar">
+							<div class="insights-card python-theme">
+								<h3 class="sidebar-title">Global Insights</h3>
+
+								<div class="insight-item">
+									<span class="insight-stat"><i class="fas fa-user-graduate"></i></span>
+									<p><strong>Parental Influence:</strong> High parental education levels proved to be
+										the strongest predictor of student success across all tested regions.</p>
+								</div>
+
+								<div class="insight-item">
+									<span class="insight-stat"><i class="fas fa-laptop"></i></span>
+									<p><strong>Digital Divide:</strong> Access to school computers improved scores, yet
+										students in tech-equipped schools who *never* used them scored the lowest.</p>
+								</div>
+
+								<div class="insight-item">
+									<span class="insight-stat"><i class="fas fa-globe-americas"></i></span>
+									<p><strong>Regional Excellence:</strong> Students in East Asia and Western Europe
+										significantly outperformed the global average in Mathematics.</p>
+								</div>
+
+								<div class="sidebar-footer">
+									<a href="https://github.com/Daviedavie100/Investigating_dataset_project/blob/main/README.md"
+										target="_blank" class="btn-python-github">
+										<i class="fab fa-github"></i> View Repository
+									</a>
+								</div>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</section>
+
+
+			<!--<section class="daviefolio-project-resent" id="python" data-section="python">
 				<div class="daviefolio-project-narrow-content">
 					<div class="col-sm-12">
 						<div class="title-box text-center">
@@ -311,13 +390,92 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section>-->
 
 			<!-- BUSINESS INTELLIGENCE -->
 			<!-- ========================================== -->
 			<!-- PROJECT 3: EXCEL - KCSE RESULTS              -->
 			<!-- ========================================== -->
-			<section class="daviefolio-project-resent" id="excel" data-section="excel">
+			 <section class="project-detail-section" id="excel">
+    <div class="container">
+        
+        <div class="section-header text-center">
+            <span class="category-tag">Excel & Business Intelligence</span>
+            <h2 class="project-main-title">KCSE 2023: Sub-County Performance Analysis</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="project-grid">
+            <div class="project-main-content">
+                <div class="project-card">
+                    <div class="project-image-holder">
+                        <a href="img/work/Excel/excel-1.JPG" data-lightbox="gallery-excel">
+                            <img src="img/work/Excel/excel-1.JPG" alt="KCSE Results Excel Dashboard" class="img-responsive">
+                            <div class="img-overlay"><i class="fas fa-file-excel"></i> View Full Report</div>
+                        </a>
+                    </div>
+                    
+                    <div class="project-body">
+                        <div class="content-block">
+                            <h3><i class="fas fa-bullseye"></i> The Problem</h3>
+                            <p>
+                                Commissioned by the Sub-County Director of Education, this project required a comprehensive performance audit of 19 local schools. The objective was to compare 2023 KCSE results against historical data (2021-2022) to identify which institutions were improving and where urgent intervention was needed.
+                            </p>
+                        </div>
+
+                        <div class="content-block">
+                            <h3><i class="fas fa-table"></i> The Data</h3>
+                            <p>
+                                <strong>Source:</strong> Official Sub-County Education Records.<br>
+                                <strong>Volume:</strong> Records for 2,400 students across 19 institutions.<br>
+                                <strong>Key Metrics:</strong> Mean grade trends, Subject-specific performance, and Gender-based achievement gaps.
+                            </p>
+                        </div>
+
+                        <div class="content-block">
+                            <h3><i class="fas fa-layer-group"></i> Methodology</h3>
+                            <ul class="method-list">
+                                <li><strong>Power Pivot & DAX:</strong> Built a relational data model to handle multi-year comparisons efficiently.</li>
+                                <li><strong>Improvement Indexing:</strong> Developed custom formulas to calculate year-over-year growth per school.</li>
+                                <li><strong>Stakeholder Reporting:</strong> Created a clean, interactive dashboard for non-technical education officials to track school rankings.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="project-sidebar">
+                <div class="insights-card excel-theme">
+                    <h3 class="sidebar-title">Performance Metrics</h3>
+                    
+                    <div class="insight-item">
+                        <span class="insight-stat">+13%</span>
+                        <p>Increase in students attaining <strong>University Entry Grades (C+)</strong> compared to the previous cycle.</p>
+                    </div>
+
+                    <div class="insight-item">
+                        <span class="insight-stat">17%</span>
+                        <p>Performance lead by <strong>Female Students</strong>, who consistently outperformed males in high-tier grade categories.</p>
+                    </div>
+
+                    <div class="insight-item">
+                        <span class="insight-stat">Critical</span>
+                        <p>Identified a <strong>50% surge in Grade E results</strong>, signaling a widening achievement gap that requires policy intervention.</p>
+                    </div>
+                    
+                    <div class="sidebar-footer">
+                        <p><strong>Top Schools:</strong> Ribe Boys & Kombeni Girls.</p>
+                        <a href="https://1drv.ms/p/c/3256cae941195214/EYnsYazmsY5NitK4rx4-NZkBjStDOTLmEorAtXW6knofOQ" target="_blank" class="btn-excel-view">
+                            <i class="fas fa-external-link-alt"></i> Interactive Dashboard
+                        </a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
+
+			<!--<section class="daviefolio-project-resent" id="excel" data-section="excel">
 				<div class="daviefolio-project-narrow-content">
 					<div class="col-sm-12">
 						<div class="title-box text-center">
@@ -406,7 +564,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section>-->
 
 			<!-- BUSINESS INTELLIGENCE -->
 			<!-- ========================================== -->
@@ -701,21 +859,6 @@
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- Footer -->
-			<section id="project-footer" data-section="footer">
-				<div class="daviefolio-narrow-content">
-					<div class="row animate-box" data-animate-effect="fadeInUp">
-						<div class="col-md-12 text-center">
-							<p><a href="#daviefolio-page">Back to Top &uarr;</a></p>
-							<p>&copy;
-								<script>document.write(new Date().getFullYear());</script> DavieFolio. All Rights
-								Reserved.
-							</p>
 						</div>
 					</div>
 				</div>
