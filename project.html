@@ -24,13 +24,13 @@
 		href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Playfair+Display:wght@400;400i;700&display=swap"
 		rel="stylesheet">
 
-	<!-- Libraries CSS Files 
+	<!-- Libraries CSS Files -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="lib/lightbox/css/lightbox.min.css">-->
+	<link rel="stylesheet" href="lib/lightbox/css/lightbox.min.css">
 
 	<!-- Main Stylesheet File -->
 	<link rel="stylesheet" href="highlights/p_style.css">
@@ -290,7 +290,7 @@
 
 								<div class="sidebar-footer">
 									<a href="https://github.com/Daviedavie100/Investigating_dataset_project/blob/main/README.md"
-										target="_blank" class="btn-python-github">
+										rel="noopener" target="_blank" class="btn-python-github">
 										<i class="fab fa-github"></i> View Repository
 									</a>
 								</div>
@@ -481,7 +481,7 @@
 								<div class="sidebar-footer">
 									<p><strong>Top Schools:</strong> Ribe Boys & Kombeni Girls.</p>
 									<a href="https://1drv.ms/p/c/3256cae941195214/EYnsYazmsY5NitK4rx4-NZkBjStDOTLmEorAtXW6knofOQ"
-										target="_blank" class="btn-excel-view">
+										rel="noopener" target="_blank" class="btn-excel-view">
 										<i class="fas fa-external-link-alt"></i> Interactive Dashboard
 									</a>
 								</div>
@@ -944,7 +944,108 @@
 			<!-- ========================================== -->
 			<!-- PROJECT 6: SQL/LOOKER - AIRLINES ANALYSIS   -->
 			<!-- ========================================== -->
-			<section class="daviefolio-project-resent" id="airlines" data-section="airlines">
+			<section class="project-detail-section alternate-bg" id="airlines">
+				<div class="container">
+
+					<div class="section-header text-center">
+						<span class="category-tag">Full-Stack Data Analysis</span>
+						<h2 class="project-main-title">Aviation Intelligence: Revenue & Operations Optimization</h2>
+						<div class="title-underline"></div>
+					</div>
+
+					<div class="project-grid">
+						<div class="project-main-content">
+							<div class="project-card">
+								<div class="project-image-holder">
+									<a href="img/work/Sql/dis/sql.png" data-lightbox="gallery-airlines">
+										<img src="img/work/Sql/dis/sql.png" alt="Airlines Data Pipeline Visualization"
+											class="img-responsive">
+										<div class="img-overlay"><i class="fab fa-python"></i> View Notebook & SQL</div>
+									</a>
+								</div>
+
+								<div class="project-body">
+									<div class="content-block">
+										<h3><i class="fas fa-plane-departure"></i> The Mission</h3>
+										<p>
+											This project delivers a 360-degree view of airline operations by merging
+											financial ticket data with flight schedules. The objective was to identify
+											revenue leakage, optimize hub performance, and predict operational
+											bottlenecks using a hybrid SQL-Python workflow.
+										</p>
+									</div>
+
+									<div class="content-block">
+										<h3><i class="fas fa-tools"></i> The Tech Stack & Methodology</h3>
+										<ul class="method-list">
+											<li><strong>Advanced SQL (SQLite):</strong> Leveraged <strong>Common Table
+													Expressions (CTEs)</strong> and <strong>Window Functions</strong>
+												(RANK, LEAD/LAG) to perform complex revenue attribution across multi-leg
+												flights.</li>
+											<li><strong>Python EDA:</strong> Utilized <strong>Pandas</strong> for data
+												cleaning and <strong>Seaborn/Matplotlib</strong> for statistical
+												distribution analysis and identifying correlation between aircraft types
+												and fuel efficiency.</li>
+											<li><strong>Predictive Analysis:</strong> Analyzed delay patterns to
+												identify high-risk routes, enabling proactive scheduling adjustments.
+											</li>
+											<li><strong>Looker Studio:</strong> Engineered a dynamic executive dashboard
+												for real-time monitoring of KPI trends.</li>
+										</ul>
+									</div>
+
+									<div class="content-block">
+										<h3><i class="fas fa-code-branch"></i> Data Sources</h3>
+										<p>
+											<strong>Repository:</strong> Kaggle Airlines Dataset.<br>
+											<strong>Architecture:</strong> Relational schema including ticket sales,
+											flight schedules, delay codes, and airport geolocation data.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<aside class="project-sidebar">
+							<div class="insights-card airlines-theme">
+								<h3 class="sidebar-title">Strategic Insights</h3>
+
+								<div class="insight-item">
+									<span class="insight-stat">1.9B</span>
+									<p><strong>Top Revenue Hub:</strong> Domodedovo Airport emerged as the primary
+										financial driver, significantly outperforming Sheremetyevo (1.5B).</p>
+								</div>
+
+								<div class="insight-item">
+									<span class="insight-stat">63%</span>
+									<p><strong>Peak Seasonality:</strong> Identified July as the critical sales window,
+										allowing for optimized dynamic pricing strategies.</p>
+								</div>
+
+								<div class="insight-item">
+									<span class="insight-stat">&gt;3 <small>hrs</small></span>
+									<p><strong>Operational Risk:</strong> Routes to Moscow and Kazan showed recurring
+										long-tail delays, pinpointed through predictive pattern matching.</p>
+								</div>
+
+								<div class="sidebar-footer">
+									<a href="https://lookerstudio.google.com/s/vh4fXn-b0DA" rel="noopener"
+										target="_blank" class="btn-looker-view">
+										<i class="fas fa-chart-pie"></i> Interactive Dashboard
+									</a>
+									<a href="https://www.kaggle.com/code/davies10/airlines-dataset-eda-and-viz-using-sql-python"
+										rel="noopener" target="_blank" class="btn-kaggle-view">
+										<i class="fab fa-kaggle"></i> Read Technical Article
+									</a>
+								</div>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</section>
+
+
+			<!--<section class="daviefolio-project-resent" id="airlines" data-section="airlines">
 				<div class="daviefolio-project-narrow-content">
 					<div class="col-sm-12">
 						<div class="title-box text-center">
@@ -1029,13 +1130,81 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section>-->
 
 			<!-- DATA ENGINEERING -->
 			<!-- ========================================== -->
 			<!-- PROJECT 7: PLACEHOLDER / FUTURE             -->
 			<!-- ========================================== -->
-			<section class="daviefolio-project-resent" id="engineering" data-section="engineering">
+			<section class="project-detail-section" id="engineering">
+				<div class="container">
+					<div class="section-header text-center">
+						<span class="category-tag">Infrastructure & Automation</span>
+						<h2 class="project-main-title">Automated ETL: Real-Time Weather Data Pipeline</h2>
+						<div class="title-underline"></div>
+					</div>
+
+					<div class="project-grid">
+						<div class="project-main-content">
+							<div class="project-card">
+								<div class="project-image-holder">
+									<img src="img/work/engineering/etl-flow.png" alt="ETL Pipeline Architecture"
+										class="img-responsive">
+								</div>
+
+								<div class="project-body">
+									<div class="content-block">
+										<h3><i class="fas fa-cogs"></i> The Engineering Challenge</h3>
+										<p>
+											Manual data collection is inefficient for high-velocity analytics. This
+											project automates the end-to-end flow of meteorological data, transforming
+											raw JSON responses from the OpenWeather API into a structured SQL database
+											for downstream BI analysis.
+										</p>
+									</div>
+
+									<div class="content-block">
+										<h3><i class="fas fa-stream"></i> Pipeline Architecture (ETL)</h3>
+										<ul class="method-list">
+											<li><strong>Extraction:</strong> Developed a Python script to ingest live
+												data via REST API, handling authentication and rate-limiting.</li>
+											<li><strong>Transformation:</strong> Used <strong>Pandas</strong> to
+												normalize nested JSON objects, convert Unix timestamps to UTC, and
+												calculate temperature deltas (Celsius to Fahrenheit).</li>
+											<li><strong>Loading:</strong> Automated the upload process into a
+												<strong>PostgreSQL/SQLite</strong> database using SQLAlchemy,
+												implementing a "schema-on-write" approach.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<aside class="project-sidebar">
+							<div class="insights-card engineering-theme">
+								<h3 class="sidebar-title">Pipeline Specs</h3>
+								<div class="insight-item">
+									<span class="insight-stat"><i class="fas fa-code"></i></span>
+									<p><strong>Automation:</strong> Scripted in Python with error-handling logic for API
+										downtime.</p>
+								</div>
+								<div class="insight-item">
+									<span class="insight-stat">JSON</span>
+									<p><strong>Parsing:</strong> Efficiently handled semi-structured data formats into
+										tabular relations.</p>
+								</div>
+								<div class="sidebar-footer">
+									<a href="https://github.com/yourusername/weather-etl-pipeline" rel="noopener"
+										target="_blank" class="btn-eng-view">
+										<i class="fab fa-github"></i> View Source Code
+									</a>
+								</div>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</section>
+			<!--<section class="daviefolio-project-resent" id="engineering" data-section="engineering">
 				<div class="daviefolio-project-narrow-content">
 					<div class="col-sm-12">
 						<div class="title-box text-center">
@@ -1062,7 +1231,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section>-->
 
 			<!-- Start: Contact Section -->
 			<section id="contact" class="daviefolio-contact" data-section="contact">
@@ -1173,6 +1342,40 @@
 
 		</div>
 	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Ensure Sticky Kit is after jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+
+	<!-- lightbox-->
+	<script src="lib/lightbox/js/lightbox.min.js"></script>
+	<!--<script src="lib/loadmore/load-more.js"></script>-->
+	<!--<script src="lib/height/adjust.js"></script>-->
+
+	<!-- Typed -->
+	<script src="lib/typed/typed.min.js"></script>
+
+	<!--share-->
+	<script src="lib/share/like-share.js"></script>
+
+	<!--<script src="lib/isotope/isotope.js"></script>-->
+
+	<!-- Contact Javascript File -->
+	<script src="lib/mail/contact.js"></script>
+	<!--<script src="lib/mail/contact-background.js"></script>-->
+
 
 	<!-- Javascript -->
 	<script src="highlights/p_main.js"></script>
