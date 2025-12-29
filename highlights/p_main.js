@@ -143,3 +143,21 @@
   }
 
 })();
+
+
+// added
+
+const mobileBtn = document.querySelector('.mobile-toggle');
+const navMenu = document.querySelector('.nav-menu');
+
+mobileBtn.addEventListener('click', () => {
+  mobileBtn.classList.toggle('is-active');
+  navMenu.classList.toggle('active');
+});
+
+// Close menu when a link is clicked
+document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+  mobileBtn.classList.remove('is-active');
+  navMenu.classList.remove('active');
+}));
+
