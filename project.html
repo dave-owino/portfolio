@@ -1136,7 +1136,149 @@
 			<!-- ========================================== -->
 			<!-- PROJECT 7: PLACEHOLDER / FUTURE             -->
 			<!-- ========================================== -->
-			<section class="project-detail-section" id="engineering">
+			<section class="project-detail-section alternate-bg" id="engineering">
+				<div class="container">
+					<div class="section-header text-center">
+						<span class="category-tag">Data Infrastructure & ETL</span>
+						<h2 class="project-main-title">Multi-Source Ingestion: API & Unstructured Data Pipeline</h2>
+						<div class="title-underline"></div>
+					</div>
+
+					<div class="project-grid">
+						<div class="project-main-content">
+							<div class="project-card">
+								<div class="project-body">
+									<div class="content-block">
+										<h3><i class="fas fa-cogs"></i> Engineering Architecture</h3>
+										<p>
+											Successfully engineered an ETL pipeline that synchronizes fragmented data
+											from three distinct sources: <strong>Twitter’s REST API (Tweepy)</strong>,
+											cloud-hosted <strong>TSV files</strong>, and archival <strong>CSV
+												datasets</strong>. This project demonstrates the ability to manage
+											complex "Schema-on-Read" challenges by merging disparate data formats into a
+											unified, analytics-ready master file.
+										</p>
+									</div>
+
+									<div class="content-block">
+										<h3><i class="fas fa-stream"></i> Technical Implementation</h3>
+										<ul class="method-list">
+											<li><strong>Ingestion Layer:</strong> Developed a programmatic retriever
+												using the <code>Requests</code> library and integrated
+												<strong>Tweepy</strong> to handle authentication and rate-limited JSON
+												metadata extraction.</li>
+											<li><strong>Transformation Engine:</strong> Utilized <strong>Regular
+													Expressions (RegEx)</strong> to parse unstructured tweet text and
+												resolve tidiness issues across 5,000+ observations, specifically
+												normalizing dog stage variables.</li>
+											<li><strong>Quality Framework:</strong> Built a programmatic validation
+												suite to assess data across four quality dimensions:
+												<strong>Completeness, Validity, Accuracy, and Consistency</strong>.</li>
+											<li><strong>Storage:</strong> Automated the final merge and export of
+												cleaned data into a <code>twitter_archive_master.csv</code> storage
+												file.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<aside class="project-sidebar">
+							<div class="insights-card engineering-theme">
+								<h3 class="sidebar-title">System Specs</h3>
+								<div class="insight-item">
+									<span class="insight-stat">API</span>
+									<p><strong>Tweepy Integration:</strong> Handled JSON parsing to extract missing
+										retweet and favorite metadata directly from Twitter.</p>
+								</div>
+								<div class="insight-item">
+									<span class="insight-stat">ETL</span>
+									<p><strong>Process:</strong> Implemented a rigorous "Assess-Clean-Test" workflow to
+										improve both data quality and structural tidiness.</p>
+								</div>
+								<div class="sidebar-footer">
+									<a href="https://github.com/dave-owino/" target="_blank" class="btn-eng-view">
+										<i class="fab fa-github"></i> View Data Pipeline Source
+									</a>
+								</div>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</section>
+			<!--<section class="project-detail-section alternate-bg" id="engineering">
+				<div class="container">
+					<div class="section-header text-center">
+						<span class="category-tag">Data Infrastructure & ETL</span>
+						<h2 class="project-main-title">Multi-Source Ingestion: API & Unstructured Data Pipeline</h2>
+						<div class="title-underline"></div>
+					</div>
+
+					<div class="project-grid">
+						<div class="project-main-content">
+							<div class="project-card">
+								<div class="project-image-holder">
+
+								</div>
+
+								<div class="project-body">
+									<div class="content-block">
+										<h3><i class="fas fa-cogs"></i> Engineering Architecture</h3>
+										<p>
+											Successfully engineered a data pipeline that synchronizes fragmented data
+											from three distinct sources: <strong>Twitter’s REST API (Tweepy)</strong>,
+											cloud-hosted <strong>TSV files</strong>, and archival <strong>CSV
+												datasets</strong>. This project showcases the ability to manage complex
+											"Schema-on-Read" challenges.
+										</p>
+									</div>
+
+									<div class="content-block">
+										<h3><i class="fas fa-stream"></i> Technical Implementation</h3>
+										<ul class="method-list">
+											<li><strong>Ingestion Layer:</strong> Developed a programmatic retriever
+												using the <code>Requests</code> library and integrated
+												<strong>Tweepy</strong> to handle authentication and rate-limited JSON
+												metadata extraction.</li>
+											<li><strong>Transformation Engine:</strong> Utilized <strong>Regular
+													Expressions (RegEx)</strong> to parse unstructured tweet text into
+												structured variables, resolving data tidiness issues across 5,000+
+												observations.</li>
+											<li><strong>Quality Framework:</strong> Built a validation suite to enforce
+												data integrity (Completeness, Validity, Accuracy, and Consistency)
+												before loading into a unified Master Dataset.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<aside class="project-sidebar">
+							<div class="insights-card engineering-theme">
+								<h3 class="sidebar-title">System Specs</h3>
+								<div class="insight-item">
+									<span class="insight-stat">API</span>
+									<p><strong>Tweepy Integration:</strong> Handled nested JSON responses to extract
+										retweet and favorite metadata.</p>
+								</div>
+								<div class="insight-item">
+									<span class="insight-stat">ETL</span>
+									<p><strong>Workflow:</strong> Automated the merge of three disparate schemas into
+										one analytics-ready "Gold" table.</p>
+								</div>
+								<div class="sidebar-footer">
+									<a href="https://github.com/dave-owino/" rel="noopener" target="_blank"
+										class="btn-eng-view">
+										<i class="fab fa-github"></i> View Data Pipeline Source
+									</a>
+								</div>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</section>-->
+
+			<!--<section class="project-detail-section" id="engineering">
 				<div class="container">
 					<div class="section-header text-center">
 						<span class="category-tag">Infrastructure & Automation</span>
@@ -1203,7 +1345,7 @@
 						</aside>
 					</div>
 				</div>
-			</section>
+			</section>-->
 			<!--<section class="daviefolio-project-resent" id="engineering" data-section="engineering">
 				<div class="daviefolio-project-narrow-content">
 					<div class="col-sm-12">
