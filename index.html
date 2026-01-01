@@ -61,19 +61,19 @@
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="lib/lightbox/css/lightbox.min.css" />
+    <!--<link rel="stylesheet" href="css/owl.theme.default.min.css" />-->
+    <link rel="stylesheet" href="lib/lightbox/css/lightbox.css" />
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Modernizr (kept as-is) -->
     <script src="js/modernizr-2.6.2.min.js"></script>
 
-    <!-- Chart.js (kept as-is; only useful if you actually render charts on this page) -->
+    <!-- Chart.js (kept as-is; only useful if you actually render charts on this page) 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>-->
 
-    <!-- Isotope (kept as-is; only useful if you initialize it) -->
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- Isotope (kept as-is; only useful if you initialize it) 
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>-->
 
     <!-- Optional: basic skip link styling if your CSS doesn't already cover it -->
     <style>
@@ -513,26 +513,72 @@
                             <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
                                 <div class="project-grid">
 
-                                    <!-- DATA ANALYSIS -->
+                                    <!-- A) DATA ANALYSIS -->
                                     <article class="project-card">
+
+                                        <!-- 1. project Category Area -->
                                         <div class="project-tag analytics">Data Analysis</div>
+
+                                        <!-- 2. Image Area -->
+                                        <a href="img/work/Sql/dis/sql.png" data-lightbox="gallery-airlines">
+                                            <img src="img/work/Sql/dis/sql.png"
+                                                alt="Airlines Data Pipeline Visualization" class="img-responsive"
+                                                loading="lazy">
+                                        </a>
+
                                         <div class="project-info">
-                                            <h3>Airlines Sales &amp; Operations Insights</h3>
-                                            <p>
-                                                Analyzed a Kaggle airline dataset using SQL and Python to uncover
-                                                revenue drivers,
-                                                seasonal sales trends, airport performance, and delay patterns. Built
-                                                interactive dashboards to communicate insights clearly.
+                                            <!-- 3. Title -->
+                                            <h3 class="card-title">Airlines Sales & Operations</h3>
+
+                                            <!-- 4. Objective (Brief) -->
+                                            <p class="card-objective">
+                                                Analyzed 10k+ flight records to identify revenue leakage and optimize
+                                                route scheduling based on delay patterns.
                                             </p>
-                                            <div class="project-tech">
-                                                <span>SQL</span>
-                                                <span>Python</span>
-                                                <span>CTEs</span>
-                                                <span>Looker Studio</span>
+
+                                            <!-- 5. KEY INSIGHT (The "Hook") -->
+                                            <div class="card-insight-box">
+                                                <i class="fas fa-chart-line"></i>
+                                                <div>
+                                                    <strong>Key Finding:</strong> Identified July as the peak revenue
+                                                    window (63% of sales) and flagged Moscow-Kazan routes for high delay
+                                                    risks.
+                                                </div>
                                             </div>
-                                            <a href="highlights/project.html#sql" class="view-link">View Case Study →</a>
+
+                                            <!-- 6. Footer: Tools & Source -->
+                                            <div class="card-meta">
+                                                <div class="meta-group">
+                                                    <span class="meta-label">Data Source:</span>
+                                                    <span class="meta-value">Kaggle</span>
+                                                </div>
+
+                                                <div class="project-tech">
+                                                    <span>SQL</span>
+                                                    <span>Python</span>
+                                                    <span>CTEs</span>
+                                                    <span>Looker Studio</span>
+                                                </div>
+                                            </div>
+
+                                            <!-- 7. Action Link -->
+                                            <a href="highlights/project.html#sql" class="view-link">View Case Study→</a>
                                         </div>
                                     </article>
+
+
+
+                                    <article class="project-card">
+
+
+                                        <div class="card-content">
+
+
+
+
+                                        </div>
+                                    </article>
+
 
                                     <!-- DATA SCIENCE -->
                                     <article class="project-card">
@@ -550,7 +596,8 @@
                                                 <span>Scikit-learn</span>
                                                 <span>Matplotlib</span>
                                             </div>
-                                            <a href="highlights/project.html#python" class="view-link">View Notebook →</a>
+                                            <a href="highlights/project.html#python" class="view-link">View Notebook
+                                                →</a>
                                         </div>
                                     </article>
 
@@ -570,7 +617,8 @@
                                                 <span>Power Pivot</span>
                                                 <span>Dashboards</span>
                                             </div>
-                                            <a href="highlights/project.html#excel" class="view-link">View Dashboard →</a>
+                                            <a href="highlights/project.html#excel" class="view-link">View Dashboard
+                                                →</a>
                                         </div>
                                     </article>
 
@@ -775,11 +823,12 @@
                                             <span class="meta-date">Oct 6, 2024</span>
                                             <span class="meta-cat">Data Analysis</span>
                                         </div>
-                                        <h3><a href="highlights/blog.html">Unlocking Insights with Bivariate Visualization</a></h3>
+                                        <h3><a href="highlights/blog.html">Unlocking Insights with Bivariate
+                                                Visualization</a></h3>
                                         <p>Explore the power of paired insights and lay the groundwork for deeper
                                             analysis.</p>
-                                        <a href="highlights/blog.html" class="read-more">Read Article <i class="fas fa-arrow-right"
-                                                aria-hidden="true"></i></a>
+                                        <a href="highlights/blog.html" class="read-more">Read Article <i
+                                                class="fas fa-arrow-right" aria-hidden="true"></i></a>
                                     </div>
                                 </article>
                             </div>
@@ -916,6 +965,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.js"></script>
 
     <!-- Typed -->
     <script src="lib/typed/typed.min.js"></script>
@@ -927,7 +977,7 @@
     <script src="lib/mail/contact.js"></script>
 
     <!-- Counters -->
-	<script src="js/jquery.countTo.js"></script>
+    <script src="js/jquery.countTo.js"></script>
 
     <!-- Template JS -->
     <script src="js/main.js"></script>
