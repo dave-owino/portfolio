@@ -2,1522 +2,914 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Projects | David Owino - Data Analyst</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description"
-		content="Explore the data analysis projects of David Owino, showcasing skills in visualization, SQL, Python, Excel, and Power BI.">
-	<meta name="author" content="David Owino">
 
-	<!-- Favicon and Apple Touch Icons -->
-	<link rel="shortcut icon" href="lib/favicon_io/favicon.ico">
-	<link rel="icon" type="image/x-icon" href="lib/favicon_io/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="lib/favicon_io/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="lib/favicon_io/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="lib/favicon_io/favicon-16x16.png">
-	<link rel="manifest" href="lib/favicon_io/site.webmanifest">
+	<head>
+		<!-- ================= BASIC META ================= -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Google Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Playfair+Display:wght@400;400i;700&display=swap"
-		rel="stylesheet">
+		<title>Data Analytics & Data Science Projects (SQL, Python, Power BI) | David Owino</title>
 
-	<!-- Libraries CSS Files -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="lib/lightbox/css/lightbox.min.css">
+		<meta name="description"
+			content="Explore real-world data analytics and data science projects by David Owino. Featuring SQL analysis, Python machine learning, Power BI dashboards, Excel reporting, and end-to-end business insights.">
 
-	<!-- Main Stylesheet File -->
-	<link rel="stylesheet" href="highlights/p_style.css">
+		<meta name="author" content="David Owino">
+		<meta name="robots" content="index, follow">
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- Tableau JS API -->
-	<script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+		<link rel="canonical" href="https://dave-owino.github.io/projects.html">
+
+		<!-- ================= OPEN GRAPH (SOCIAL SEO) ================= -->
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Data Analytics & Data Science Projects | SQL, Python, Power BI">
+		<meta property="og:description"
+			content="A curated portfolio of SQL, Python, Power BI, and machine learning projects by David Owino.">
+		<meta property="og:url" content="https://dave-owino.github.io/projects.html">
+		<meta property="og:image" content="https://dave-owino.github.io/img/seo/projects-preview.jpg">
+
+		<!-- ================= TWITTER CARD ================= -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Data Analytics & Data Science Projects | David Owino">
+		<meta name="twitter:description" content="Explore SQL, Python, Power BI, and ML portfolio projects.">
+		<meta name="twitter:image" content="https://dave-owino.github.io/img/seo/projects-preview.jpg">
+
+		<!-- ================= FONTS ================= -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+			rel="stylesheet">
+
+		<!-- ================= ICONS ================= -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-pb/...YOUR_HASH..." crossorigin="anonymous" referrerpolicy="no-referrer">
+
+		<!-- ================= LIGHTBOX ================= -->
+		<link rel="stylesheet" href="lib/lightbox/css/lightbox.css">
+
+		<!-- ================= MAIN CSS ================= -->
+		<link rel="stylesheet" href="highlights/p_style.css">
+
+		<!-- ================= FEATURE DETECTION ================= -->
+		<script src="js/modernizr-2.6.2.min.js" defer></script>
+
+		<!-- ================= STRUCTURED DATA ================= -->
+		<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "David Owino",
+    "jobTitle": "Data Analyst & Data Scientist",
+    "url": "https://dave-owino.github.io",
+    "knowsAbout": [
+      "SQL",
+      "Python",
+      "Power BI",
+      "Machine Learning",
+      "Data Analysis"
+    ]
+  }
+  </script>
+	</head>
 
 </head>
 
 <body>
 
-	<div id="daviefolio-page">
-		<div id="container-wrap">
+	<!-- Navigation -->
+	<header class="navbar-header" id="navbar">
+		<div class="container nav-container">
 
-			<!-- Navigation -->
-			<header class="navbar-header" id="navbar">
-				<div class="container nav-container">
+			<a href="index.html" class="brand-logo">
+				<img src="lib/favicon_io/logo.png" alt="David Portfolio Logo">
+			</a>
 
-					<a href="index.html" class="brand-logo">
-						<img src="lib/favicon_io/logo.png" alt="David Portfolio Logo">
-					</a>
+			<button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</button>
 
-					<button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
-						<span class="bar"></span>
-						<span class="bar"></span>
-						<span class="bar"></span>
-					</button>
+			<nav class="nav-menu">
+				<ul class="nav-list">
+					<li><a href="index.html" class="nav-link active">Home</a></li>
 
-					<nav class="nav-menu">
-						<ul class="nav-list">
-							<li><a href="index.html" class="nav-link active">Home</a></li>
-
-							<li class="dropdown">
-								<a href="#projects" class="nav-link dropdown-toggle">
-									Projects <span class="arrow">▾</span>
-								</a>
-								<ul class="dropdown-menu">
-									<li><a href="#sql">SQL Analysis</a></li>
-									<li><a href="#python">Python Data Science</a></li>
-									<li><a href="#excel">Excel & BI</a></li>
-									<li><a href="#power-BI">Power BI Dashboards</a></li>
-									<li><a href="#tableau">Tableau Visualization</a></li>
-									<li><a href="#airlines">Case Study: Airlines</a></li>
-								</ul>
-							</li>
-
-							<li><a href="blog.html" class="nav-link">Blog</a></li>
-
-							<li><a href="#contact" class="nav-link btn-contact">Contact Me</a></li>
-						</ul>
-					</nav>
-				</div>
-			</header>
-			<!--/ Nav End /-->
-
-			<section id="project-hero" class="project-hero-section">
-				<div class="container hero-container">
-
-					<div class="hero-content" data-animate="fade-up">
-						<h1 class="hero-title">Projects Deep Dive</h1>
-						<div class="hero-divider"></div>
-						<p class="hero-description">
-							Welcome to my technical showcase. Here, I break down complex data problems into actionable
-							insights using <strong>Excel, Python, and Power BI</strong>.
-							<br><br>
-							Explore the methodology, data structures, and the story behind every analysis.
-						</p>
-
-						<a href="index.html#work" class="btn-back">
-							<i class="fas fa-arrow-left"></i> Back to Portfolio
+					<li class="dropdown">
+						<a href="#projects" class="nav-link dropdown-toggle">
+							Projects <span class="arrow">▾</span>
 						</a>
-					</div>
+						<ul class="dropdown-menu">
+							<li><a href="#sql">SQL Analysis</a></li>
+							<li><a href="#python">Python Data Science</a></li>
+							<li><a href="#excel">Excel & BI</a></li>
+							<li><a href="#power-BI">Power BI Dashboards</a></li>
+							<li><a href="#tableau">Tableau Visualization</a></li>
+							<li><a href="#airlines">Case Study: Airlines</a></li>
+						</ul>
+					</li>
 
-					<div class="hero-image-wrapper" data-animate="fade-left">
-						<img src="img/blog/projectop3.webp" alt="Data Analytics Dashboard Preview" class="hero-img"
-							loading="lazy">
-					</div>
+					<li><a href="blog.html" class="nav-link">Blog</a></li>
 
-				</div>
-			</section>
+					<li><a href="#contact" class="nav-link btn-contact">Contact Me</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
-			<!-- DATA ANALYSIS -->
-			<!-- ========================================== -->
-			<!-- PROJECT 1: SQL - NZ THEFT ANALYSIS         -->
-			<!-- ========================================== -->
-			<section class="project-detail-section" id="sql">
-				<div class="container">
+	<section id="project-hero" class="project-hero-section">
+		<div class="container hero-container">
 
-					<div class="section-header text-center">
-						<span class="category-tag">SQL & Data Exploration</span>
-						<h2 class="project-main-title">NZ Police Vehicle Theft Analysis</h2>
-						<div class="title-underline"></div>
-					</div>
+			<div class="hero-content reveal-on-scroll">
+				<h1 class="hero-title">Projects Deep Dive</h1>
+				<div class="hero-divider"></div>
+				<p class="hero-description">
+					Welcome to my technical showcase. Here, I break down complex data problems into actionable
+					insights using <strong>Python, SQL, Power BI, Excel, and Tableau</strong>.
+					<br><br>
+					Explore the methodology, data structures, and the story behind every analysis.
+				</p>
 
-					<div class="project-grid">
-						<div class="project-main-content">
-							<div class="project-card">
-								<div class="project-image-holder">
-									<a href="img/work/Sql/g_studio_1.jpg" data-lightbox="gallery-sql">
-										<img src="img/work/Sql/g_studio_1.jpg" alt="NZ Police Data Dashboard"
-											class="img-responsive">
-										<div class="img-overlay"><i class="fas fa-search-plus"></i> View Dashboard</div>
-									</a>
-								</div>
+				<a href="index.html#work" class="btn btn-outline btn-back">
+					<i class="fas fa-arrow-left"></i> Back to Portfolio
+				</a>
+			</div>
 
-								<div class="project-body">
-									<div class="content-block">
-										<h3><i class="fas fa-exclamation-circle"></i> The Problem</h3>
-										<p>
-											Identifying patterns in criminal activity is essential for resource
-											allocation. This project explores a 6-month dataset from the New Zealand
-											Police Department to uncover high-risk theft profiles and hotspots.
-										</p>
-									</div>
+			<div class="hero-image-wrapper reveal-on-scroll">
+				<img src="img/blog/projectop3.webp" alt="Data Analytics Dashboard Preview" class="hero-img"
+					loading="lazy">
+			</div>
 
-									<div class="content-block">
-										<h3><i class="fas fa-database"></i> The Data</h3>
-										<p>
-											<strong>Source:</strong> NZ Police Dept (via Kaggle).<br>
-											<strong>Attributes:</strong> Vehicle type, make, year, color, date stolen,
-											and geographic region.
-										</p>
-									</div>
+		</div>
+	</section>
 
-									<div class="content-block">
-										<h3><i class="fas fa-tools"></i> Methodology</h3>
-										<ul class="method-list">
-											<li><strong>SQL Joins & CTEs:</strong> Linking theft incidents with granular
-												vehicle attributes.</li>
-											<li><strong>Advanced Aggregations:</strong> Calculating frequency across
-												regions and timeframes.</li>
-											<li><strong>Looker Studio:</strong> Transforming raw SQL outputs into an
-												executive-level dashboard.</li>
-										</ul>
-									</div>
-								</div>
-							</div>
+	<!-- ========================================== -->
+	<!-- PROJECT 1: SQL - NZ THEFT ANALYSIS         -->
+	<!-- ========================================== -->
+	<section class="project-detail-section" id="sql">
+		<div class="container">
+
+			<div class="section-header text-center reveal-on-scroll">
+				<span class="category-tag">SQL & Data Exploration</span>
+				<h2 class="project-main-title">NZ Police Vehicle Theft Analysis</h2>
+				<div class="title-underline"></div>
+			</div>
+
+			<div class="project-grid">
+				<div class="project-main-content reveal-on-scroll">
+					<div class="project-card">
+						<div class="project-image-holder">
+							<a href="img/work/Sql/g_studio_1.jpg" data-lightbox="gallery-sql">
+								<img src="img/work/Sql/g_studio_1.jpg" alt="NZ Police Data Dashboard"
+									class="img-responsive" loading="lazy">
+								<div class="img-overlay"><i class="fas fa-search-plus"></i> View Dashboard</div>
+							</a>
 						</div>
 
-						<aside class="project-sidebar">
-							<div class="insights-card">
-								<h3 class="sidebar-title">Key Insights</h3>
-								<div class="insight-item">
-									<span class="insight-stat">95%</span>
-									<p>of stolen vehicles were <strong>Standard</strong> models, while Luxury cars
-										accounted for only 4%.</p>
-								</div>
-								<div class="insight-item">
-									<span class="insight-stat">36%</span>
-									<p>Total thefts occurred in <strong>Auckland</strong>, identifying it as the primary
-										hotspot.</p>
-								</div>
-								<div class="insight-item">
-									<span class="insight-stat">M/T</span>
-									<p>Thefts peaked on <strong>Mondays and Tuesdays</strong>, suggesting higher
-										vulnerability after weekends.</p>
-								</div>
-
-								<div class="sidebar-footer">
-									<p><strong>Top Makes:</strong> Toyota (15.7%), Nissan (10.6%).</p>
-									<a href="#" class="btn-primary-outline btn-block">View Looker Dashboard</a>
-								</div>
-							</div>
-						</aside>
-					</div>
-				</div>
-			</section>
-
-			<!-- DATA SCIENCE -->
-			<!-- ========================================== -->
-			<!-- PROJECT 2: PYTHON - PISA 2012              -->
-			<!-- ========================================== -->
-			<section class="project-detail-section alternate-bg" id="python">
-				<div class="container">
-
-					<div class="section-header text-center">
-						<span class="category-tag">Python & Exploratory Data Analysis</span>
-						<h2 class="project-main-title">PISA 2012: Global Student Performance</h2>
-						<div class="title-underline"></div>
-					</div>
-
-					<div class="project-grid">
-						<div class="project-main-content">
-							<div class="project-card">
-								<div class="project-image-holder">
-									<a href="img/work/Python/project/1py_display.jpg" data-lightbox="gallery-python">
-										<img src="img/work/Python/project/1py_display.jpg"
-											alt="Python Data Visualization Dashboard" class="img-responsive">
-										<div class="img-overlay"><i class="fab fa-python"></i> View Analysis</div>
-									</a>
-								</div>
-
-								<div class="project-body">
-									<div class="content-block">
-										<h3><i class="fas fa-search"></i> The Problem</h3>
-										<p>
-											As part of the <strong>Udacity Data Analyst Nanodegree</strong>, this
-											project investigates the PISA 2012 dataset. The goal was to identify which
-											variables—ranging from gender and geography to teacher practices—most
-											significantly impact the academic success of 15-year-old students globally.
-										</p>
-									</div>
-
-									<div class="content-block">
-										<h3><i class="fas fa-server"></i> The Data</h3>
-										<p>
-											<strong>Volume:</strong> 510,000 student records with 636 unique
-											features.<br>
-											<strong>Focus:</strong> Socio-economic status, school resources, and
-											regional disparities (OECD vs. Non-OECD).<br>
-											<a href="https://s3.amazonaws.com/udacity-hosted-downloads/ud507/pisa2012.csv.zip"
-												class="text-link"><i class="fas fa-download"></i> Download Raw
-												Dataset</a>
-										</p>
-									</div>
-
-									<div class="content-block">
-										<h3><i class="fas fa-code"></i> Methodology</h3>
-										<ul class="method-list">
-											<li><strong>Data Wrangling:</strong> Cleaning a massive 600+ column dataset
-												using <strong>Pandas</strong>.</li>
-											<li><strong>Multivariate Visualization:</strong> Using
-												<strong>Seaborn</strong> and <strong>Matplotlib</strong> to find
-												correlations between wealth and test scores.
-											</li>
-											<li><strong>Hypothesis Testing:</strong> Statistical validation of
-												performance gaps between genders and regions.</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<aside class="project-sidebar">
-							<div class="insights-card python-theme">
-								<h3 class="sidebar-title">Global Insights</h3>
-
-								<div class="insight-item">
-									<span class="insight-stat"><i class="fas fa-user-graduate"></i></span>
-									<p><strong>Parental Influence:</strong> High parental education levels proved to be
-										the strongest predictor of student success across all tested regions.</p>
-								</div>
-
-								<div class="insight-item">
-									<span class="insight-stat"><i class="fas fa-laptop"></i></span>
-									<p><strong>Digital Divide:</strong> Access to school computers improved scores, yet
-										students in tech-equipped schools who *never* used them scored the lowest.</p>
-								</div>
-
-								<div class="insight-item">
-									<span class="insight-stat"><i class="fas fa-globe-americas"></i></span>
-									<p><strong>Regional Excellence:</strong> Students in East Asia and Western Europe
-										significantly outperformed the global average in Mathematics.</p>
-								</div>
-
-								<div class="sidebar-footer">
-									<a href="https://github.com/Daviedavie100/Investigating_dataset_project/blob/main/README.md"
-										rel="noopener" target="_blank" class="btn-python-github">
-										<i class="fab fa-github"></i> View Repository
-									</a>
-								</div>
-							</div>
-						</aside>
-					</div>
-				</div>
-			</section>
-
-
-			<!--<section class="daviefolio-project-resent" id="python" data-section="python">
-				<div class="daviefolio-project-narrow-content">
-					<div class="col-sm-12">
-						<div class="title-box text-center">
-							<h3 class="title-a">PYTHON: PISA STUDENT PERFORMANCE</h3>
-							<div class="title-line-mf"></div>
-						</div>
-					</div>
-
-					<div class="daviefolio-project-folio portfolio-mf sect-pt4 route">
-						<div class="project-folio-container">
-							<div class="row">
-								<div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
-									<div class="project-work-box">
-										<a href="img/work/Python/project/1py_display.jpg" data-lightbox="gallery-mf">
-											<div class="project-work-img">
-												<img src="img/work/Python/project/1py_display.jpg"
-													alt="Python project image showcasing data insights"
-													class="img-fluid" loading="lazy">
-											</div>
-										</a>
-										<div class="project-work-content">
-											<div class="row">
-												<div class="col-sm-8">
-													<div class="project-title-container">
-														<div class="project-content-line-mf"></div>
-														<h2 class="p-w-title">PISA2012 Analysis</h2>
-													</div>
-												</div>
-												<div class="col-sm-12">
-													<h4>The Problem</h4>
-													<p>
-														Part of the Udacity Nanodegree, this project analyzes the
-														PISA2012 dataset to explore factors influencing the academic
-														performance of 15-year-old students.
-														It investigates school choice, gender, location, and teacher
-														practices on scores.
-													</p>
-
-													<h4>The Data</h4>
-													<p>
-														<strong>Source:</strong> PISA2012 Dataset.<br>
-														<strong>Volume:</strong> 510,000 students, 636 features.<br>
-														<a href="https://s3.amazonaws.com/udacity-hosted-downloads/ud507/pisa2012.csv.zip"
-															download>Download Dataset</a>
-													</p>
-
-													<h4>Methodology</h4>
-													<ul>
-														<li>Correlation analysis between socio-economic status and
-															scores.</li>
-														<li>Hypothesis testing on gender performance gaps.</li>
-														<li>Visualization of regional disparities (OECD vs
-															Non-OECD).</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-md-4">
-									<div class="row insights-row-bottom-padded-sm animate-box"
-										data-animate-effect="fadeInLeft">
-										<div class="insignts-desc">
-											<h2 class="insights-heading-meta">Insights</h2>
-											<p>Impact of parental education, gender, and technology access.</p>
-											<ul>
-												<li><strong>Parental Education:</strong> Higher levels correlate
-													strongly with better scores. Females outperform males at most
-													levels.</li>
-												<li><strong>Socio-Economics:</strong> Wealth impacts performance
-													significantly in OECD countries.</li>
-												<li><strong>Tech Access:</strong> Access to desktops at school
-													improves performance, but non-users in computer-equipped schools
-													score lowest.</li>
-												<li><strong>Regional:</strong> Non-OECD students excelled in East
-													Asia and Western Europe despite lower global averages.</li>
-											</ul>
-											<div class="button-container">
-												<a href="https://github.com/Daviedavie100/Investigating_dataset_project/blob/main/README.md"
-													class="butn blog-btn">Github Article</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>-->
-
-			<!-- BUSINESS INTELLIGENCE -->
-			<!-- ========================================== -->
-			<!-- PROJECT 3: EXCEL - KCSE RESULTS              -->
-			<!-- ========================================== -->
-			<section class="project-detail-section" id="excel">
-				<div class="container">
-
-					<div class="section-header text-center">
-						<span class="category-tag">Excel & Business Intelligence</span>
-						<h2 class="project-main-title">KCSE 2023: Sub-County Performance Analysis</h2>
-						<div class="title-underline"></div>
-					</div>
-
-					<div class="project-grid">
-						<div class="project-main-content">
-							<div class="project-card">
-								<div class="project-image-holder">
-									<a href="img/work/Excel/dis/excel.JPG" data-lightbox="gallery-excel">
-										<img src="img/work/Excel/dis/excel.JPG" alt="KCSE Results Excel Dashboard"
-											class="img-responsive">
-										<div class="img-overlay"><i class="fas fa-file-excel"></i> View Full Report
-										</div>
-									</a>
-								</div>
-
-								<div class="project-body">
-									<div class="content-block">
-										<h3><i class="fas fa-bullseye"></i> The Problem</h3>
-										<p>
-											Commissioned by the Sub-County Director of Education, this project required
-											a comprehensive performance audit of 19 local schools. The objective was to
-											compare 2023 KCSE results against historical data (2021-2022) to identify
-											which institutions were improving and where urgent intervention was needed.
-										</p>
-									</div>
-
-									<div class="content-block">
-										<h3><i class="fas fa-table"></i> The Data</h3>
-										<p>
-											<strong>Source:</strong> Official Sub-County Education Records.<br>
-											<strong>Volume:</strong> Records for 2,400 students across 19
-											institutions.<br>
-											<strong>Key Metrics:</strong> Mean grade trends, Subject-specific
-											performance, and Gender-based achievement gaps.
-										</p>
-									</div>
-
-									<div class="content-block">
-										<h3><i class="fas fa-layer-group"></i> Methodology</h3>
-										<ul class="method-list">
-											<li><strong>Power Pivot & DAX:</strong> Built a relational data model to
-												handle multi-year comparisons efficiently.</li>
-											<li><strong>Improvement Indexing:</strong> Developed custom formulas to
-												calculate year-over-year growth per school.</li>
-											<li><strong>Stakeholder Reporting:</strong> Created a clean, interactive
-												dashboard for non-technical education officials to track school
-												rankings.</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<aside class="project-sidebar">
-							<div class="insights-card excel-theme">
-								<h3 class="sidebar-title">Performance Metrics</h3>
-
-								<div class="insight-item">
-									<span class="insight-stat">+13%</span>
-									<p>Increase in students attaining <strong>University Entry Grades (C+)</strong>
-										compared to the previous cycle.</p>
-								</div>
-
-								<div class="insight-item">
-									<span class="insight-stat">17%</span>
-									<p>Performance lead by <strong>Female Students</strong>, who consistently
-										outperformed males in high-tier grade categories.</p>
-								</div>
-
-								<div class="insight-item">
-									<span class="insight-stat">Critical</span>
-									<p>Identified a <strong>50% surge in Grade E results</strong>, signaling a widening
-										achievement gap that requires policy intervention.</p>
-								</div>
-
-								<div class="sidebar-footer">
-									<p><strong>Top Schools:</strong> Ribe Boys & Kombeni Girls.</p>
-									<a href="https://1drv.ms/p/c/3256cae941195214/EYnsYazmsY5NitK4rx4-NZkBjStDOTLmEorAtXW6knofOQ"
-										rel="noopener" target="_blank" class="btn-excel-view">
-										<i class="fas fa-external-link-alt"></i> Interactive Dashboard
-									</a>
-								</div>
-							</div>
-						</aside>
-					</div>
-				</div>
-			</section>
-
-			<!--<section class="daviefolio-project-resent" id="excel" data-section="excel">
-				<div class="daviefolio-project-narrow-content">
-					<div class="col-sm-12">
-						<div class="title-box text-center">
-							<h3 class="title-a">EXCEL: KCSE RESULTS DASHBOARD</h3>
-							<div class="title-line-mf"></div>
-						</div>
-					</div>
-
-					<div class="daviefolio-project-folio portfolio-mf sect-pt4 route">
-						<div class="project-folio-container">
-							<div class="row">
-								<div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
-									<div class="project-work-box">
-										<a href="img/work/Excel/excel-1.JPG" data-lightbox="gallery-mf">
-											<div class="project-work-img">
-												<img src="img/work/Excel/excel-1.JPG"
-													alt="Excel project image showcasing data insights" class="img-fluid"
-													loading="lazy">
-											</div>
-										</a>
-										<div class="project-work-content">
-											<div class="row">
-												<div class="col-sm-8">
-													<div class="project-title-container">
-														<div class="project-content-line-mf"></div>
-														<h2 class="p-w-title">KCSE 2023 Analysis</h2>
-													</div>
-												</div>
-												<div class="col-sm-12">
-													<h4>The Problem</h4>
-													<p>
-														Initiated by the sub-county director of education, this task
-														involves analyzing KCSE 2023 results for 19 schools.
-														The analysis compares 2023 results with 2022 and 2021 to
-														identify trends, gender performance gaps, and school
-														rankings.
-													</p>
-
-													<h4>The Data</h4>
-													<p>
-														<strong>Source:</strong> Sub-county education records.<br>
-														<strong>Volume:</strong> 2,400 students across 19
-														schools.<br>
-														<strong>Scope:</strong> Grades, gender, subjects, and
-														year-over-year comparison.
-													</p>
-
-													<h4>Methodology</h4>
-													<ul>
-														<li>Excel Data Modeling using Power Pivot.</li>
-														<li>Advanced formulas for Improvement Index calculation.
-														</li>
-														<li>Interactive Dashboards for stakeholder reporting.</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-md-4">
-									<div class="row insights-row-bottom-padded-sm animate-box"
-										data-animate-effect="fadeInLeft">
-										<div class="insignts-desc">
-											<h2 class="insights-heading-meta">Insights</h2>
-											<p>Grade trends and school performance analysis.</p>
-											<ul>
-												<li><strong>Improvement:</strong> 13% improvement in students
-													scoring C+ and above in 2023.</li>
-												<li><strong>Decline:</strong> 50% increase in students scoring grade
-													E, highlighting a widening achievement gap at bottom.</li>
-												<li><strong>Gender:</strong> 15% overall attained C+ or higher.
-													Girls (17%) outperformed Boys (13%).</li>
-												<li><strong>Schools:</strong> Ribe Boys, Kombeni Girls, and Ribe
-													Girls topped rankings. Bwagamoyo showed the highest decline.
-												</li>
-											</ul>
-											<div class="button-container">
-												<a href="https://1drv.ms/p/c/3256cae941195214/EYnsYazmsY5NitK4rx4-NZkBjStDOTLmEorAtXW6knofOQ"
-													class="butn repo-btn">View Dashboard</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>-->
-
-			<!-- BUSINESS INTELLIGENCE -->
-			<!-- ========================================== -->
-			<!-- PROJECT 4: POWER BI - SPROCKET CENTRAL      -->
-			<!-- ========================================== -->
-			<section class="project-detail-section alternate-bg" id="power-BI">
-				<div class="container">
-
-					<div class="section-header text-center">
-						<span class="category-tag">Strategic Analytics & Predictive Modeling</span>
-						<h2 class="project-main-title">Sprocket Central: Customer Growth Strategy</h2>
-						<div class="title-underline"></div>
-					</div>
-
-					<div class="project-grid">
-						<div class="project-main-content">
-							<div class="project-card">
-								<div class="project-image-holder">
-									<a href="img/work/PowerBI/dash-1.jpg" data-lightbox="gallery-pbi">
-										<img src="img/work/PowerBI/dash-1.jpg" alt="Sprocket Central Power BI Dashboard"
-											class="img-responsive">
-										<div class="img-overlay"><i class="fas fa-chart-line"></i> Open Interactive
-											Dashboard</div>
-									</a>
-								</div>
-
-								<div class="project-body">
-									<div class="content-block">
-										<h3><i class="fas fa-lightbulb"></i> The Business Challenge</h3>
-										<p>
-											Sprocket Central Pty Ltd needed to identify which of their 1,000 new
-											potential customers would yield the highest <strong>Customer Lifetime Value
-												(CLV)</strong>. This project transitions from descriptive analytics to
-											predictive strategy, ensuring marketing budgets are spent only on
-											high-conversion prospects.
-										</p>
-									</div>
-
-									<div class="content-block">
-										<h3><i class="fas fa-microchip"></i> Integrated ML & BI Methodology</h3>
-										<ul class="method-list">
-											<li><strong>RFM Segmentation:</strong> Engineered Recency, Frequency, and
-												Monetary features to categorize existing customers into "Platinum,"
-												"Gold," and "At Risk" segments.</li>
-											<li><strong>Predictive Scoring:</strong> Applied a propensity model to
-												project purchase likelihood across 1,000 new prospects based on
-												demographic and geographic indicators.</li>
-											<li><strong>Advanced DAX Modeling:</strong> Developed complex measures for
-												Gross Profit margins and dynamic ranking to visualize segment
-												performance in real-time.</li>
-										</ul>
-									</div>
-
-									<div class="content-block">
-										<h3><i class="fas fa-database"></i> Data Architecture</h3>
-										<p>
-											<strong>Integration:</strong> Combined 3 disparate tables (Demographics,
-											Addresses, and Transactions) into a unified Star Schema for optimized Power
-											BI performance.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<aside class="project-sidebar">
-							<div class="insights-card pbi-theme">
-								<h3 class="sidebar-title">Strategic Outcomes</h3>
-
-								<div class="insight-item">
-									<span class="insight-stat">382</span>
-									<p><strong>High-Value Targets:</strong> Identified a core group of prospects
-										projected to drive 29,000+ unit sales.</p>
-								</div>
-
-								<div class="insight-item">
-									<span class="insight-stat">56%</span>
-									<p><strong>Regional Dominance:</strong> NSW remains the primary market, followed by
-										VIC (26%) and QLD (21%).</p>
-								</div>
-
-								<div class="insight-item">
-									<span class="insight-stat"><i class="fas fa-users"></i></span>
-									<p><strong>The "Gold" Persona:</strong> Females aged 40-50 and Males in the
-										20-30/60-70 brackets showed the highest propensity for premium brand loyalty.
-									</p>
-								</div>
-
-								<div class="sidebar-footer">
-									<p><strong>Top Brands:</strong> Solex (20%), Giant (17%).</p>
-									<a href="#" class="btn-pbi-view">
-										<i class="fas fa-eye"></i> View Executive Report
-									</a>
-								</div>
-							</div>
-						</aside>
-					</div>
-				</div>
-			</section>
-			<!--<section class="daviefolio-project-resent" id="power-BI" data-section="power-BI">
-				<div class="daviefolio-project-narrow-content">
-					<div class="col-sm-12">
-						<div class="title-box text-center">
-							<h3 class="title-a">POWER BI: SPROCKET CENTRAL ANALYTICS</h3>
-							<div class="title-line-mf"></div>
-						</div>
-					</div>
-
-					<div class="daviefolio-project-folio portfolio-mf sect-pt4 route">
-						<div class="project-folio-container">
-							<div class="row">
-								<div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
-									<div class="project-work-box">
-										<a href="img/work/PowerBI/dash-1.jpg" data-lightbox="gallery-mf">
-											<div class="project-work-img">
-												<img src="img/work/PowerBI/dash-1.jpg"
-													alt="power BI project image showcasing data insights"
-													class="img-fluid" loading="lazy">
-											</div>
-										</a>
-										<div class="project-work-content">
-											<div class="row">
-												<div class="col-sm-8">
-													<div class="project-title-container">
-														<div class="project-content-line-mf"></div>
-														<h2 class="p-w-title">Sprocket Central Marketing</h2>
-													</div>
-												</div>
-												<div class="col-sm-12">
-													<h4>The Problem</h4>
-													<p>
-														The project involves analyzing Sprocket Central Pty Ltd's
-														datasets (demographics, addresses, transactions) to optimize
-														marketing strategies.
-														The goal is to identify trends and high-value customers
-														among 1,000 new prospects to drive business growth.
-													</p>
-
-													<h4>The Data</h4>
-													<p>
-														<strong>Source:</strong> Sprocket Central Pty Ltd.<br>
-														<strong>Tables:</strong> Customer Demographics, Addresses, 3
-														Months Transactions.
-													</p>
-
-													<h4>Methodology</h4>
-													<ul>
-														<li>Feature Engineering to create customer segments.</li>
-														<li>Predictive modeling for purchase likelihood.</li>
-														<li>DAX measures for Gross Profit and RFM analysis.</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-md-4">
-									<div class="row insights-row-bottom-padded-sm animate-box"
-										data-animate-effect="fadeInLeft">
-										<div class="insignts-desc">
-											<h2 class="insights-heading-meta">Insights</h2>
-											<p>Customer demographics and purchasing behavior.</p>
-											<ul>
-												<li><strong>Target Pool:</strong> 382 customers projected to drive
-													29K bike purchases.</li>
-												<li><strong>Demographics:</strong> Key targets are Females (40-50)
-													and Males (20-30 & 60-70).</li>
-												<li><strong>Location:</strong> NSW (56%), VIC (26%), QLD (21%) are
-													top regions.</li>
-												<li><strong>Brands:</strong> Solex (20%), Giant Bicycles (17%),
-													WeareA2B (16.8%) lead preferences.</li>
-											</ul>
-											<div class="button-container">
-												<a href="#" class="butn repo-btn">View Report</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>-->
-
-			<!-- DATA ANALYSIS -->
-			<!-- ========================================== -->
-			<!-- PROJECT 5: TABLEAU - EUROPEAN SOCCER        -->
-			<!-- ========================================== -->
-			<section class="project-detail-section" id="tableau">
-				<div class="container">
-
-					<div class="section-header text-center">
-						<span class="category-tag">Advanced BI & Predictive Analytics</span>
-						<h2 class="project-main-title">European Soccer: Performance & Trend Forecasting</h2>
-						<div class="title-underline"></div>
-					</div>
-
-					<div class="project-grid">
-						<div class="project-main-content">
-							<div class="project-card">
-								<div class="project-work-img tableau-embed-container">
-									<div id="vizContainer" class="tableau-placeholder"></div>
-									<script src="./lib/tableau/tableauProject_1.js"></script>
-									<div class="tableau-overlay-hint"><i class="fas fa-mouse-pointer"></i> Interact with
-										the Data</div>
-								</div>
-
-								<div class="project-body">
-									<div class="content-block">
-										<h3><i class="fas fa-running"></i> The Objective</h3>
-										<p>
-											This analysis explores the "Ultimate Soccer Database," covering 8 seasons of
-											European football. The goal was to build a comprehensive BI tool that tracks
-											league standings while using <strong>predictive modeling</strong> to
-											identify teams with the highest trajectory for future seasons.
-										</p>
-									</div>
-
-									<div class="content-block">
-										<h3><i class="fas fa-vial"></i> Predictive Methodology</h3>
-										<ul class="method-list">
-											<li><strong>YoY Growth Modeling:</strong> Calculated Year-over-Year (YoY)
-												improvement indices to identify "rising stars" like Napoli and PSG.</li>
-											<li><strong>Match Outcome Analysis:</strong> Aggregated 25,000+ matches to
-												determine home-field advantage correlations and scoring trends.</li>
-											<li><strong>Forecasting:</strong> Utilized Tableau’s built-in exponential
-												smoothing models to project point totals based on historical
-												consistency.</li>
-										</ul>
-									</div>
-
-									<div class="content-block">
-										<h3><i class="fas fa-database"></i> Data Structure</h3>
-										<p>
-											<strong>Source:</strong> Kaggle Ultimate Soccer Database (SQLite).<br>
-											<strong>Scope:</strong> 7 Relational Tables, 25,000+ matches, 10,000+
-											players across major European leagues.<br>
-											<a href="https://www.kaggle.com/datasets/hugomathien/soccer?select=database.sqlite"
-												class="text-link"><i class="fas fa-download"></i> Download Source</a>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<aside class="project-sidebar">
-							<div class="insights-card tableau-theme">
-								<h3 class="sidebar-title">Historical Trends</h3>
-
-								<div class="insight-item">
-									<span class="insight-stat">81 <small>pts</small></span>
-									<p><strong>Leicester City (2016):</strong> Visualized the statistical anomaly of
-										Leicester's historic title win through outlier analysis.</p>
-								</div>
-
-								<div class="insight-item">
-									<span class="insight-stat">+0.95</span>
-									<p><strong>Growth Leader:</strong> <strong>Napoli</strong> showed the highest YoY
-										performance improvement index across all 8 seasons.</p>
-								</div>
-
-								<div class="insight-item">
-									<span class="insight-stat"><i class="fas fa-chart-area"></i></span>
-									<p><strong>Consistency Factor:</strong> While Arsenal maintained a "Top 4" plateau,
-										teams like Liverpool and Spurs showed higher volatility in point distribution.
-									</p>
-								</div>
-
-								<div class="sidebar-footer">
-									<a href="#" target="_blank" class="btn-tableau-view">
-										<i class="fas fa-external-link-alt"></i> View on Tableau Public
-									</a>
-								</div>
-							</div>
-						</aside>
-					</div>
-				</div>
-			</section>
-			<!--<section class="daviefolio-project-resent" id="tableau" data-section="tableau">
-				<div class="daviefolio-project-narrow-content">
-					<div class="col-sm-12">
-						<div class="title-box text-center">
-							<h3 class="title-a">TABLEAU: EUROPEAN SOCCER LEAGUE</h3>
-							<div class="title-line-mf"></div>
-						</div>
-					</div>
-
-					<div class="daviefolio-project-folio portfolio-mf sect-pt4 route">
-						<div class="project-folio-container">
-							<div class="row">
-								<div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
-									<div class="project-work-box">
-										 Tableau Embed Container 
-										<div class="project-work-img tableau-embed-container">
-											<div id="vizContainer" class="tableau-placeholder"></div>
-											<script src="./lib/tableau/tableauProject_1.js"></script>
-											<p class="tableau-caption">Interactive Tableau Dashboard (JS Loaded)</p>
-										</div>
-
-										<div class="project-work-content">
-											<div class="row">
-												<div class="col-sm-8">
-													<div class="project-title-container">
-														<div class="project-content-line-mf"></div>
-														<h2 class="p-w-title">Soccer Database (2008-2016)</h2>
-													</div>
-												</div>
-												<div class="col-sm-12">
-													<h4>The Problem</h4>
-													<p>
-														Exploring a soccer database from Kaggle to reveal key
-														insights into Europe's major leagues (2008-09 to 2015-16).
-														The project presents interactive league tables in Tableau,
-														showcasing team performances and year-to-year improvements.
-													</p>
-
-													<h4>The Data</h4>
-													<p>
-														<strong>Source:</strong> Kaggle Ultimate Soccer
-														Database.<br>
-														<strong>Structure:</strong> 7 tables, 25,000+ matches,
-														10,000+ players.<br>
-														<a href="https://www.kaggle.com/datasets/hugomathien/soccer?select=database.sqlite"
-															download>Download Database</a>
-													</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-md-4">
-									<div class="row insights-row-bottom-padded-sm animate-box"
-										data-animate-effect="fadeInLeft">
-										<div class="insignts-desc">
-											<h2 class="insights-heading-meta">Premier League Trends</h2>
-											<p>Performance trends from 2008-2016.</p>
-											<ul>
-												<li><strong>Winners:</strong> Chelsea, Man Utd, Man City, and
-													Leicester City. Leicester's 2016 win was historic (81 pts).</li>
-												<li><strong>Top 4:</strong> Arsenal consistently top 4 but no title.
-													Spurs and Liverpool fluctuated.</li>
-												<li><strong>YoY Improvement:</strong> Napoli (+0.95) and PSG (+0.84)
-													showed most growth. Aston Villa and FC Zürich had biggest
-													declines.</li>
-											</ul>
-											<div class="button-container">
-												<a href="#" class="butn repo-btn">Tableau Public</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>-->
-
-			<!-- DATA ANALYSIS -->
-			<!-- ========================================== -->
-			<!-- PROJECT 6: SQL/LOOKER - AIRLINES ANALYSIS   -->
-			<!-- ========================================== -->
-			<section class="project-detail-section alternate-bg" id="airlines">
-				<div class="container">
-
-					<div class="section-header text-center">
-						<span class="category-tag">Full-Stack Data Analysis</span>
-						<h2 class="project-main-title">Aviation Intelligence: Revenue & Operations Optimization</h2>
-						<div class="title-underline"></div>
-					</div>
-
-					<div class="project-grid">
-						<div class="project-main-content">
-							<div class="project-card">
-								<div class="project-image-holder">
-									<a href="img/work/Sql/dis/sql.png" data-lightbox="gallery-airlines">
-										<img src="img/work/Sql/dis/sql.png" alt="Airlines Data Pipeline Visualization"
-											class="img-responsive">
-										<div class="img-overlay"><i class="fab fa-python"></i> View Notebook & SQL</div>
-									</a>
-								</div>
-
-								<div class="project-body">
-									<div class="content-block">
-										<h3><i class="fas fa-plane-departure"></i> The Mission</h3>
-										<p>
-											This project delivers a 360-degree view of airline operations by merging
-											financial ticket data with flight schedules. The objective was to identify
-											revenue leakage, optimize hub performance, and predict operational
-											bottlenecks using a hybrid SQL-Python workflow.
-										</p>
-									</div>
-
-									<div class="content-block">
-										<h3><i class="fas fa-tools"></i> The Tech Stack & Methodology</h3>
-										<ul class="method-list">
-											<li><strong>Advanced SQL (SQLite):</strong> Leveraged <strong>Common Table
-													Expressions (CTEs)</strong> and <strong>Window Functions</strong>
-												(RANK, LEAD/LAG) to perform complex revenue attribution across multi-leg
-												flights.</li>
-											<li><strong>Python EDA:</strong> Utilized <strong>Pandas</strong> for data
-												cleaning and <strong>Seaborn/Matplotlib</strong> for statistical
-												distribution analysis and identifying correlation between aircraft types
-												and fuel efficiency.</li>
-											<li><strong>Predictive Analysis:</strong> Analyzed delay patterns to
-												identify high-risk routes, enabling proactive scheduling adjustments.
-											</li>
-											<li><strong>Looker Studio:</strong> Engineered a dynamic executive dashboard
-												for real-time monitoring of KPI trends.</li>
-										</ul>
-									</div>
-
-									<div class="content-block">
-										<h3><i class="fas fa-code-branch"></i> Data Sources</h3>
-										<p>
-											<strong>Repository:</strong> Kaggle Airlines Dataset.<br>
-											<strong>Architecture:</strong> Relational schema including ticket sales,
-											flight schedules, delay codes, and airport geolocation data.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<aside class="project-sidebar">
-							<div class="insights-card airlines-theme">
-								<h3 class="sidebar-title">Strategic Insights</h3>
-
-								<div class="insight-item">
-									<span class="insight-stat">1.9B</span>
-									<p><strong>Top Revenue Hub:</strong> Domodedovo Airport emerged as the primary
-										financial driver, significantly outperforming Sheremetyevo (1.5B).</p>
-								</div>
-
-								<div class="insight-item">
-									<span class="insight-stat">63%</span>
-									<p><strong>Peak Seasonality:</strong> Identified July as the critical sales window,
-										allowing for optimized dynamic pricing strategies.</p>
-								</div>
-
-								<div class="insight-item">
-									<span class="insight-stat">&gt;3 <small>hrs</small></span>
-									<p><strong>Operational Risk:</strong> Routes to Moscow and Kazan showed recurring
-										long-tail delays, pinpointed through predictive pattern matching.</p>
-								</div>
-
-								<div class="sidebar-footer">
-									<a href="https://lookerstudio.google.com/s/vh4fXn-b0DA" rel="noopener"
-										target="_blank" class="btn-looker-view">
-										<i class="fas fa-chart-pie"></i> Interactive Dashboard
-									</a>
-									<a href="https://www.kaggle.com/code/davies10/airlines-dataset-eda-and-viz-using-sql-python"
-										rel="noopener" target="_blank" class="btn-kaggle-view">
-										<i class="fab fa-kaggle"></i> Read Technical Article
-									</a>
-								</div>
-							</div>
-						</aside>
-					</div>
-				</div>
-			</section>
-
-
-			<!--<section class="daviefolio-project-resent" id="airlines" data-section="airlines">
-				<div class="daviefolio-project-narrow-content">
-					<div class="col-sm-12">
-						<div class="title-box text-center">
-							<h3 class="title-a">SQL: AIRLINES SALES & OPERATIONS</h3>
-							<div class="title-line-mf"></div>
-						</div>
-					</div>
-
-					<div class="daviefolio-project-folio portfolio-mf sect-pt4 route">
-						<div class="project-folio-container">
-							<div class="row">
-								<div class="col-md-8 animate-box" data-animate-effect="fadeInLeft">
-									<div class="project-work-box">
-										<a href="img/work/Sql/dis/sql.png" data-lightbox="gallery-mf">
-											<div class="project-work-img">
-												<img src="img/work/Sql/dis/sql.png" alt="Airlines project image"
-													class="img-fluid" />
-											</div>
-										</a>
-										<div class="project-work-content">
-											<div class="row">
-												<div class="col-sm-8">
-													<div class="project-title-container">
-														<div class="project-content-line-mf"></div>
-														<h2 class="p-w-title">Airlines Insights</h2>
-													</div>
-												</div>
-												<div class="col-sm-12">
-													<h4>The Problem</h4>
-													<p>
-														Analysis of a Kaggle SQLite dataset to uncover revenue
-														drivers, seasonal trends, and delay patterns.
-														Built interactive dashboards to communicate operational
-														insights clearly.
-													</p>
-
-													<h4>The Data</h4>
-													<p>
-														<strong>Source:</strong> Kaggle Airlines Dataset.<br>
-														<strong>Scope:</strong> Ticket sales, flight schedules,
-														delay codes, airport info.
-													</p>
-
-													<h4>Methodology</h4>
-													<ul>
-														<li>Complex SQL queries using CTEs and Window Functions.
-														</li>
-														<li>Python (Pandas) for initial EDA.</li>
-														<li>Looker Studio for final visualization.</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-md-4">
-									<div class="row insights-row-bottom-padded-sm animate-box"
-										data-animate-effect="fadeInLeft">
-										<div class="insignts-desc">
-											<h2 class="insights-heading-meta">Insights</h2>
-											<p>Revenue and operational efficiency findings.</p>
-											<ul>
-												<li><strong>Airports:</strong> Domodedovo (1,986M), Sheremetyevo
-													(1,579M), Tolmachevo (799M) are top revenue hubs.</li>
-												<li><strong>Seasonality:</strong> July (63%) and August (34%) had
-													highest sales.</li>
-												<li><strong>Delays:</strong> Ulyanovsk East Airport had most delays.
-													Flights to Moscow City and Kazan City experienced >3hr delays.
-												</li>
-											</ul>
-											<div class="button-container">
-												<a href="https://lookerstudio.google.com/s/vh4fXn-b0DA"
-													class="butn repo-btn">Looker Dashboard</a>
-												<a href="https://www.kaggle.com/code/davies10/airlines-dataset-eda-and-viz-using-sql-python"
-													class="butn blog-btn">Kaggle Article</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>-->
-
-			<!-- DATA ENGINEERING -->
-			<!-- ========================================== -->
-			<!-- PROJECT 7: PLACEHOLDER / FUTURE             -->
-			<!-- ========================================== -->
-			<section class="project-detail-section alternate-bg" id="engineering">
-				<div class="container">
-					<div class="section-header text-center">
-						<span class="category-tag">Data Infrastructure & ETL</span>
-						<h2 class="project-main-title">Multi-Source Ingestion: API & Unstructured Data Pipeline</h2>
-						<div class="title-underline"></div>
-					</div>
-
-					<div class="project-grid">
-						<div class="project-main-content">
-							<div class="project-card">
-								<div class="project-body">
-									<div class="content-block">
-										<h3><i class="fas fa-cogs"></i> Engineering Architecture</h3>
-										<p>
-											Successfully engineered an ETL pipeline that synchronizes fragmented data
-											from three distinct sources: <strong>Twitter’s REST API (Tweepy)</strong>,
-											cloud-hosted <strong>TSV files</strong>, and archival <strong>CSV
-												datasets</strong>. This project demonstrates the ability to manage
-											complex "Schema-on-Read" challenges by merging disparate data formats into a
-											unified, analytics-ready master file.
-										</p>
-									</div>
-
-									<div class="content-block">
-										<h3><i class="fas fa-stream"></i> Technical Implementation</h3>
-										<ul class="method-list">
-											<li><strong>Ingestion Layer:</strong> Developed a programmatic retriever
-												using the <code>Requests</code> library and integrated
-												<strong>Tweepy</strong> to handle authentication and rate-limited JSON
-												metadata extraction.</li>
-											<li><strong>Transformation Engine:</strong> Utilized <strong>Regular
-													Expressions (RegEx)</strong> to parse unstructured tweet text and
-												resolve tidiness issues across 5,000+ observations, specifically
-												normalizing dog stage variables.</li>
-											<li><strong>Quality Framework:</strong> Built a programmatic validation
-												suite to assess data across four quality dimensions:
-												<strong>Completeness, Validity, Accuracy, and Consistency</strong>.</li>
-											<li><strong>Storage:</strong> Automated the final merge and export of
-												cleaned data into a <code>twitter_archive_master.csv</code> storage
-												file.</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<aside class="project-sidebar">
-							<div class="insights-card engineering-theme">
-								<h3 class="sidebar-title">System Specs</h3>
-								<div class="insight-item">
-									<span class="insight-stat">API</span>
-									<p><strong>Tweepy Integration:</strong> Handled JSON parsing to extract missing
-										retweet and favorite metadata directly from Twitter.</p>
-								</div>
-								<div class="insight-item">
-									<span class="insight-stat">ETL</span>
-									<p><strong>Process:</strong> Implemented a rigorous "Assess-Clean-Test" workflow to
-										improve both data quality and structural tidiness.</p>
-								</div>
-								<div class="sidebar-footer">
-									<a href="https://github.com/dave-owino/" rel="noopener" target="_blank" class="btn-eng-view">
-										<i class="fab fa-github"></i> View Data Pipeline Source
-									</a>
-								</div>
-							</div>
-						</aside>
-					</div>
-				</div>
-			</section>
-			<!--<section class="project-detail-section alternate-bg" id="engineering">
-				<div class="container">
-					<div class="section-header text-center">
-						<span class="category-tag">Data Infrastructure & ETL</span>
-						<h2 class="project-main-title">Multi-Source Ingestion: API & Unstructured Data Pipeline</h2>
-						<div class="title-underline"></div>
-					</div>
-
-					<div class="project-grid">
-						<div class="project-main-content">
-							<div class="project-card">
-								<div class="project-image-holder">
-
-								</div>
-
-								<div class="project-body">
-									<div class="content-block">
-										<h3><i class="fas fa-cogs"></i> Engineering Architecture</h3>
-										<p>
-											Successfully engineered a data pipeline that synchronizes fragmented data
-											from three distinct sources: <strong>Twitter’s REST API (Tweepy)</strong>,
-											cloud-hosted <strong>TSV files</strong>, and archival <strong>CSV
-												datasets</strong>. This project showcases the ability to manage complex
-											"Schema-on-Read" challenges.
-										</p>
-									</div>
-
-									<div class="content-block">
-										<h3><i class="fas fa-stream"></i> Technical Implementation</h3>
-										<ul class="method-list">
-											<li><strong>Ingestion Layer:</strong> Developed a programmatic retriever
-												using the <code>Requests</code> library and integrated
-												<strong>Tweepy</strong> to handle authentication and rate-limited JSON
-												metadata extraction.</li>
-											<li><strong>Transformation Engine:</strong> Utilized <strong>Regular
-													Expressions (RegEx)</strong> to parse unstructured tweet text into
-												structured variables, resolving data tidiness issues across 5,000+
-												observations.</li>
-											<li><strong>Quality Framework:</strong> Built a validation suite to enforce
-												data integrity (Completeness, Validity, Accuracy, and Consistency)
-												before loading into a unified Master Dataset.</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<aside class="project-sidebar">
-							<div class="insights-card engineering-theme">
-								<h3 class="sidebar-title">System Specs</h3>
-								<div class="insight-item">
-									<span class="insight-stat">API</span>
-									<p><strong>Tweepy Integration:</strong> Handled nested JSON responses to extract
-										retweet and favorite metadata.</p>
-								</div>
-								<div class="insight-item">
-									<span class="insight-stat">ETL</span>
-									<p><strong>Workflow:</strong> Automated the merge of three disparate schemas into
-										one analytics-ready "Gold" table.</p>
-								</div>
-								<div class="sidebar-footer">
-									<a href="https://github.com/dave-owino/" rel="noopener" target="_blank"
-										class="btn-eng-view">
-										<i class="fab fa-github"></i> View Data Pipeline Source
-									</a>
-								</div>
-							</div>
-						</aside>
-					</div>
-				</div>
-			</section>-->
-
-			<!--<section class="project-detail-section" id="engineering">
-				<div class="container">
-					<div class="section-header text-center">
-						<span class="category-tag">Infrastructure & Automation</span>
-						<h2 class="project-main-title">Automated ETL: Real-Time Weather Data Pipeline</h2>
-						<div class="title-underline"></div>
-					</div>
-
-					<div class="project-grid">
-						<div class="project-main-content">
-							<div class="project-card">
-								<div class="project-image-holder">
-									<img src="img/work/engineering/etl-flow.png" alt="ETL Pipeline Architecture"
-										class="img-responsive">
-								</div>
-
-								<div class="project-body">
-									<div class="content-block">
-										<h3><i class="fas fa-cogs"></i> The Engineering Challenge</h3>
-										<p>
-											Manual data collection is inefficient for high-velocity analytics. This
-											project automates the end-to-end flow of meteorological data, transforming
-											raw JSON responses from the OpenWeather API into a structured SQL database
-											for downstream BI analysis.
-										</p>
-									</div>
-
-									<div class="content-block">
-										<h3><i class="fas fa-stream"></i> Pipeline Architecture (ETL)</h3>
-										<ul class="method-list">
-											<li><strong>Extraction:</strong> Developed a Python script to ingest live
-												data via REST API, handling authentication and rate-limiting.</li>
-											<li><strong>Transformation:</strong> Used <strong>Pandas</strong> to
-												normalize nested JSON objects, convert Unix timestamps to UTC, and
-												calculate temperature deltas (Celsius to Fahrenheit).</li>
-											<li><strong>Loading:</strong> Automated the upload process into a
-												<strong>PostgreSQL/SQLite</strong> database using SQLAlchemy,
-												implementing a "schema-on-write" approach.</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<aside class="project-sidebar">
-							<div class="insights-card engineering-theme">
-								<h3 class="sidebar-title">Pipeline Specs</h3>
-								<div class="insight-item">
-									<span class="insight-stat"><i class="fas fa-code"></i></span>
-									<p><strong>Automation:</strong> Scripted in Python with error-handling logic for API
-										downtime.</p>
-								</div>
-								<div class="insight-item">
-									<span class="insight-stat">JSON</span>
-									<p><strong>Parsing:</strong> Efficiently handled semi-structured data formats into
-										tabular relations.</p>
-								</div>
-								<div class="sidebar-footer">
-									<a href="https://github.com/yourusername/weather-etl-pipeline" rel="noopener"
-										target="_blank" class="btn-eng-view">
-										<i class="fab fa-github"></i> View Source Code
-									</a>
-								</div>
-							</div>
-						</aside>
-					</div>
-				</div>
-			</section>-->
-			<!--<section class="daviefolio-project-resent" id="engineering" data-section="engineering">
-				<div class="daviefolio-project-narrow-content">
-					<div class="col-sm-12">
-						<div class="title-box text-center">
-							<h3 class="title-a">DATA ENGINEERING</h3>
-							<div class="title-line-mf"></div>
-						</div>
-					</div>
-
-					<div class="daviefolio-project-folio portfolio-mf sect-pt4 route">
-						<div class="project-folio-container">
-							<div class="row">
-								<div class="col-md-12 text-center animate-box" data-animate-effect="fadeInLeft">
-									<div class="project-card-placeholder">
-										<h3>Upcoming Pipeline Projects</h3>
-										<p>
-											Currently designing an automated ETL pipeline to ingest raw data, apply
-											transformations via SQL and Python, and load analytics-ready datasets for
-											downstream BI and ML use cases.
-										</p>
-										<span class="view-link coming-soon">Coming Soon &rarr;</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>-->
-
-			<!-- Start: Contact Section -->
-			<section id="contact" class="daviefolio-contact" data-section="contact">
-				<div class="daviefolio-narrow-content">
-					<div class="row">
-						<div class="col-md-12 animate-box">
-							<div class="folio-title-box">
-								<div class="folio-title-line-mf" aria-hidden="true"></div>
-								<span class="daviefolio-heading-meta"><strong>Get In Touch</strong></span>
-							</div>
-						</div>
-					</div>
-
-					<div class="row contact-row-flex">
-						<div class="col-md-7 animate-box">
-							<div class="contact-form-card">
-								<form action="https://formspree.io/f/mwppwqkr" method="POST" id="contactForm">
-									<div class="form-group">
-										<label class="sr-only" for="name">Name</label>
-										<input type="text" id="name" name="name" class="form-control custom-input"
-											placeholder="Name" autocomplete="name" required />
-									</div>
-
-									<div class="form-group">
-										<label class="sr-only" for="email">Email</label>
-										<input type="email" id="email" name="email" class="form-control custom-input"
-											placeholder="Email" autocomplete="email" required />
-									</div>
-
-									<div class="form-group">
-										<label class="sr-only" for="message">Message</label>
-										<textarea id="message" name="message" class="form-control custom-input" rows="5"
-											placeholder="How can we collaborate on a data project?" required></textarea>
-									</div>
-
-									<!-- Success Message -->
-									<p id="successMessage" class="success-message" aria-live="polite"></p>
-
-									<div class="form-group">
-										<button class="btn btn-submit-data" type="submit" id="sendMessageButton">
-											Send Message
-										</button>
-									</div>
-								</form>
-							</div>
-						</div>
-
-						<div class="col-md-5 animate-box">
-							<div class="contact-info-card">
-								<h4>Contact Details</h4>
-								<p class="contact-subtext">
-									Open to discussions on Data Engineering pipelines, ML research, or freelance
-									analytics.
+						<div class="project-body">
+							<div class="content-block">
+								<h3><i class="fas fa-exclamation-circle"></i> The Problem</h3>
+								<p>
+									Identifying patterns in criminal activity is essential for resource
+									allocation. This project explores a 6-month dataset from the New Zealand
+									Police Department to uncover high-risk theft profiles and hotspots.
 								</p>
+							</div>
 
-								<ul class="contact-list">
-									<li><i class="icon-location1" aria-hidden="true"></i> Mombasa, Kenya</li>
-									<li>
-										<a href="https://github.com/dave-owino/" target="_blank"
-											rel="noopener noreferrer">
-											<i class="icon-github" aria-hidden="true"></i> GitHub
-										</a>
+							<div class="content-block">
+								<h3><i class="fas fa-database"></i> The Data</h3>
+								<p>
+									<strong>Source:</strong> NZ Police Dept (via Kaggle).<br>
+									<strong>Attributes:</strong> Vehicle type, make, year, color, date stolen,
+									and geographic region.
+								</p>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-tools"></i> Methodology</h3>
+								<ul class="method-list">
+									<li><strong>SQL Joins & CTEs:</strong> Linking theft incidents with granular vehicle
+										attributes.</li>
+									<li><strong>Advanced Aggregations:</strong> Calculating frequency across regions and
+										timeframes.</li>
+									<li><strong>Looker Studio:</strong> Transforming raw SQL outputs into an
+										executive-level dashboard.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<aside class="project-sidebar reveal-on-scroll">
+					<div class="insights-card">
+						<h3 class="sidebar-title">Key Insights</h3>
+						<div class="insight-item">
+							<span class="insight-stat">95%</span>
+							<p>of stolen vehicles were <strong>Standard</strong> models, while Luxury cars accounted for
+								only 4%.</p>
+						</div>
+						<div class="insight-item">
+							<span class="insight-stat">36%</span>
+							<p>Total thefts occurred in <strong>Auckland</strong>, identifying it as the primary
+								hotspot.</p>
+						</div>
+						<div class="insight-item">
+							<span class="insight-stat">M/T</span>
+							<p>Thefts peaked on <strong>Mondays and Tuesdays</strong>, suggesting higher vulnerability
+								after weekends.</p>
+						</div>
+
+						<div class="sidebar-footer">
+							<p><strong>Top Makes:</strong> Toyota (15.7%), Nissan (10.6%).</p>
+							<!--change-->
+							<a href="#" class="btn btn-outline btn-block">View Looker Dashboard</a>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</section>
+
+	<!-- ========================================== -->
+	<!-- PROJECT 2: PYTHON - PISA 2012              -->
+	<!-- ========================================== -->
+	<section class="project-detail-section alternate-bg" id="python">
+		<div class="container">
+
+			<div class="section-header text-center reveal-on-scroll">
+				<span class="category-tag">Python & Exploratory Data Analysis</span>
+				<h2 class="project-main-title">PISA 2012: Global Student Performance</h2>
+				<div class="title-underline"></div>
+			</div>
+
+			<div class="project-grid">
+				<div class="project-main-content reveal-on-scroll">
+					<div class="project-card">
+						<div class="project-image-holder">
+							<a href="img/work/Python/project/1py_display.jpg" data-lightbox="gallery-python">
+								<img src="img/work/Python/project/1py_display.jpg"
+									alt="Python Data Visualization Dashboard" class="img-responsive" loading="lazy">
+								<div class="img-overlay"><i class="fab fa-python"></i> View Analysis</div>
+							</a>
+						</div>
+
+						<div class="project-body">
+							<div class="content-block">
+								<h3><i class="fas fa-search"></i> The Problem</h3>
+								<p>
+									As part of the <strong>Udacity Data Analyst Nanodegree</strong>, this
+									project investigates the PISA 2012 dataset. The goal was to identify which
+									variables—ranging from gender and geography to teacher practices—most
+									significantly impact the academic success of 15-year-old students globally.
+								</p>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-server"></i> The Data</h3>
+								<p>
+									<strong>Volume:</strong> 510,000 student records with 636 unique features.<br>
+									<strong>Focus:</strong> Socio-economic status, school resources, and regional
+									disparities (OECD vs. Non-OECD).<br>
+									<a href="https://s3.amazonaws.com/udacity-hosted-downloads/ud507/pisa2012.csv.zip"
+										class="text-link"><i class="fas fa-download"></i> Download Raw Dataset</a>
+								</p>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-code"></i> Methodology</h3>
+								<ul class="method-list">
+									<li><strong>Data Wrangling:</strong> Cleaning a massive 600+ column dataset using
+										<strong>Pandas</strong>.
 									</li>
-									<li>
-										<a href="https://www.linkedin.com/in/david-odhiambo-owino/" target="_blank"
-											rel="noopener noreferrer">
-											<i class="icon-linkedin2" aria-hidden="true"></i> LinkedIn
-										</a>
+									<li><strong>Multivariate Visualization:</strong> Using <strong>Seaborn</strong> and
+										<strong>Matplotlib</strong> to find correlations.
 									</li>
-									<li>
-										<a href="https://x.com/da_owino/" target="_blank" rel="noopener noreferrer">
-											<i class="icon-twitter" aria-hidden="true"></i> X (Twitter)
-										</a>
-									</li>
-									<li>
-										<a href="https://www.instagram.com/owinodavid/" target="_blank"
-											rel="noopener noreferrer">
-											<i class="icon-instagram1" aria-hidden="true"></i> Instagram
-										</a>
-									</li>
-									<li>
-										<a href="https://www.facebook.com/Daviedavie/" target="_blank"
-											rel="noopener noreferrer">
-											<i class="icon-facebook2" aria-hidden="true"></i> Facebook
-										</a>
+									<li><strong>Hypothesis Testing:</strong> Statistical validation of performance gaps.
 									</li>
 								</ul>
 							</div>
 						</div>
 					</div>
-
 				</div>
-			</section>
-			<!-- End: Contact Section -->
 
-			<!-- Start: Footer -->
-			<div class="daviefolio-footer">
-				<div class="row">
-					<div class="footer">
-						<p><small>&copy;
-								<script>document.write(new Date().getFullYear());</script> All
-								rights
-								reserved. David Owino
-							</small></p>
+				<aside class="project-sidebar reveal-on-scroll">
+					<div class="insights-card python-theme">
+						<h3 class="sidebar-title">Global Insights</h3>
+
+						<div class="insight-item">
+							<span class="insight-stat"><i class="fas fa-user-graduate"></i></span>
+							<p><strong>Parental Influence:</strong> High parental education levels proved to be the
+								strongest predictor of student success.</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat"><i class="fas fa-laptop"></i></span>
+							<p><strong>Digital Divide:</strong> Access to school computers improved scores, yet students
+								who *never* used them scored lowest.</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat"><i class="fas fa-globe-americas"></i></span>
+							<p><strong>Regional Excellence:</strong> Students in East Asia and Western Europe
+								significantly outperformed the global average.</p>
+						</div>
+
+						<div class="sidebar-footer">
+							<a href="https://github.com/Daviedavie100/Investigating_dataset_project/blob/main/README.md"
+								rel="noopener" target="_blank" class="btn btn-outline btn-block">
+								<i class="fab fa-github"></i> View Repository
+							</a>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</section>
+
+	<!-- ========================================== -->
+	<!-- PROJECT 3: EXCEL - KCSE RESULTS              -->
+	<!-- ========================================== -->
+	<section class="project-detail-section" id="excel">
+		<div class="container">
+
+			<div class="section-header text-center reveal-on-scroll">
+				<span class="category-tag">Excel & Business Intelligence</span>
+				<h2 class="project-main-title">KCSE 2023: Sub-County Performance Analysis</h2>
+				<div class="title-underline"></div>
+			</div>
+
+			<div class="project-grid">
+				<div class="project-main-content reveal-on-scroll">
+					<div class="project-card">
+						<div class="project-image-holder">
+							<a href="img/work/Excel/dis/excel.JPG" data-lightbox="gallery-excel">
+								<img src="img/work/Excel/dis/excel.JPG" alt="KCSE Results Excel Dashboard"
+									class="img-responsive" loading="lazy">
+								<div class="img-overlay"><i class="fas fa-file-excel"></i> View Full Report</div>
+							</a>
+						</div>
+
+						<div class="project-body">
+							<div class="content-block">
+								<h3><i class="fas fa-bullseye"></i> The Problem</h3>
+								<p>
+									Commissioned by the Sub-County Director of Education, this project required
+									a comprehensive performance audit of 19 local schools. The objective was to
+									compare 2023 KCSE results against historical data (2021-2022) to identify
+									which institutions were improving.
+								</p>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-table"></i> The Data</h3>
+								<p>
+									<strong>Source:</strong> Official Sub-County Education Records.<br>
+									<strong>Volume:</strong> Records for 2,400 students across 19 institutions.<br>
+									<strong>Key Metrics:</strong> Mean grade trends, Subject-specific performance,
+									Gender gaps.
+								</p>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-layer-group"></i> Methodology</h3>
+								<ul class="method-list">
+									<li><strong>Power Pivot & DAX:</strong> Built a relational data model.</li>
+									<li><strong>Improvement Indexing:</strong> Developed custom formulas for YoY growth.
+									</li>
+									<li><strong>Stakeholder Reporting:</strong> Created a clean, interactive dashboard.
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<aside class="project-sidebar reveal-on-scroll">
+					<div class="insights-card excel-theme">
+						<h3 class="sidebar-title">Performance Metrics</h3>
+
+						<div class="insight-item">
+							<span class="insight-stat">+13%</span>
+							<p>Increase in students attaining <strong>University Entry Grades (C+)</strong>.</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat">17%</span>
+							<p>Performance lead by <strong>Female Students</strong> in high-tier grade categories.</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat">Critical</span>
+							<p>Identified a <strong>50% surge in Grade E results</strong>, signaling widening
+								achievement gaps.</p>
+						</div>
+
+						<div class="sidebar-footer">
+							<p><strong>Top Schools:</strong> Ribe Boys & Kombeni Girls.</p>
+							<a href="https://1drv.ms/p/c/3256cae941195214/EYnsYazmsY5NitK4rx4-NZkBjStDOTLmEorAtXW6knofOQ"
+								rel="noopener" target="_blank" class="btn btn-outline btn-block">
+								<i class="fas fa-external-link-alt"></i> Interactive Dashboard
+							</a>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</section>
+
+	<!-- ========================================== -->
+	<!-- PROJECT 4: POWER BI - SPROCKET CENTRAL      -->
+	<!-- ========================================== -->
+	<section class="project-detail-section alternate-bg" id="power-BI">
+		<div class="container">
+
+			<div class="section-header text-center reveal-on-scroll">
+				<span class="category-tag">Strategic Analytics & Predictive Modeling</span>
+				<h2 class="project-main-title">Sprocket Central: Customer Growth Strategy</h2>
+				<div class="title-underline"></div>
+			</div>
+
+			<div class="project-grid">
+				<div class="project-main-content reveal-on-scroll">
+					<div class="project-card">
+						<div class="project-image-holder">
+							<a href="img/work/PowerBI/dash-1.jpg" data-lightbox="gallery-pbi">
+								<img src="img/work/PowerBI/dash-1.jpg" alt="Sprocket Central Power BI Dashboard"
+									class="img-responsive" loading="lazy">
+								<div class="img-overlay"><i class="fas fa-chart-line"></i> Open Interactive Dashboard
+								</div>
+							</a>
+						</div>
+
+						<div class="project-body">
+							<div class="content-block">
+								<h3><i class="fas fa-lightbulb"></i> The Business Challenge</h3>
+								<p>
+									Sprocket Central Pty Ltd needed to identify which of their 1,000 new
+									potential customers would yield the highest <strong>Customer Lifetime Value
+										(CLV)</strong>. This project transitions from descriptive analytics to
+									predictive strategy.
+								</p>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-microchip"></i> Integrated ML & BI Methodology</h3>
+								<ul class="method-list">
+									<li><strong>RFM Segmentation:</strong> Engineered Recency, Frequency, and Monetary
+										features.</li>
+									<li><strong>Predictive Scoring:</strong> Applied a propensity model to project
+										purchase likelihood.</li>
+									<li><strong>Advanced DAX Modeling:</strong> Developed complex measures for Gross
+										Profit margins.</li>
+								</ul>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-database"></i> Data Architecture</h3>
+								<p>
+									<strong>Integration:</strong> Combined 3 disparate tables (Demographics, Addresses,
+									Transactions) into a unified Star Schema.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<aside class="project-sidebar reveal-on-scroll">
+					<div class="insights-card pbi-theme">
+						<h3 class="sidebar-title">Strategic Outcomes</h3>
+
+						<div class="insight-item">
+							<span class="insight-stat">382</span>
+							<p><strong>High-Value Targets:</strong> Identified a core group projected to drive 29,000+
+								unit sales.</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat">56%</span>
+							<p><strong>Regional Dominance:</strong> NSW remains the primary market, followed by VIC
+								(26%).</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat"><i class="fas fa-users"></i></span>
+							<p><strong>The "Gold" Persona:</strong> Females 40-50 and Males 20-30 showed highest brand
+								loyalty.</p>
+						</div>
+
+						<div class="sidebar-footer">
+							<p><strong>Top Brands:</strong> Solex (20%), Giant (17%).</p>
+							<!--Change-->
+							<a href="#" class="btn btn-outline btn-block">
+								<i class="fas fa-eye"></i> View Executive Report
+							</a>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</section>
+
+	<!-- ========================================== -->
+	<!-- PROJECT 5: TABLEAU - EUROPEAN SOCCER        -->
+	<!-- ========================================== -->
+	<section class="project-detail-section" id="tableau">
+		<div class="container">
+
+			<div class="section-header text-center reveal-on-scroll">
+				<span class="category-tag">Advanced BI & Predictive Analytics</span>
+				<h2 class="project-main-title">European Soccer: Performance & Trend Forecasting</h2>
+				<div class="title-underline"></div>
+			</div>
+
+			<div class="project-grid">
+				<div class="project-main-content reveal-on-scroll">
+					<div class="project-card">
+						<!-- Tableau Placeholder -->
+						<div class="project-work-img tableau-embed-container">
+							<div id="vizContainer" class="tableau-placeholder"></div>
+							<script src="./lib/tableau/tableauProject_1.js"></script>
+							<div class="tableau-overlay-hint"><i class="fas fa-mouse-pointer"></i> Interact with
+								the Data</div>
+						</div>
+
+						<div class="project-body">
+							<div class="content-block">
+								<h3><i class="fas fa-running"></i> The Objective</h3>
+								<p>
+									This analysis explores the "Ultimate Soccer Database," covering 8 seasons of
+									European football. The goal was to build a comprehensive BI tool that tracks
+									league standings while using <strong>predictive modeling</strong> to
+									identify teams with the highest trajectory for future seasons.
+								</p>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-vial"></i> Predictive Methodology</h3>
+								<ul class="method-list">
+									<li><strong>YoY Growth Modeling:</strong> Calculated Year-over-Year (YoY)
+										improvement indices.</li>
+									<li><strong>Match Outcome Analysis:</strong> Aggregated 25,000+ matches to determine
+										correlations.</li>
+									<li><strong>Forecasting:</strong> Utilized Tableau's built-in exponential smoothing
+										models.</li>
+								</ul>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-database"></i> Data Structure</h3>
+								<p>
+									<strong>Source:</strong> Kaggle Ultimate Soccer Database (SQLite).<br>
+									<strong>Scope:</strong> 7 Relational Tables, 25,000+ matches, 10,000+ players.<br>
+									<a href="https://www.kaggle.com/datasets/hugomathien/soccer?select=database.sqlite"
+										class="text-link"><i class="fas fa-download"></i> Download Source</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<aside class="project-sidebar reveal-on-scroll">
+					<div class="insights-card tableau-theme">
+						<h3 class="sidebar-title">Historical Trends</h3>
+
+						<div class="insight-item">
+							<span class="insight-stat">81 <small>pts</small></span>
+							<p><strong>Leicester City (2016):</strong> Visualized the statistical anomaly of Leicester's
+								historic title win.</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat">+0.95</span>
+							<p><strong>Growth Leader:</strong> <strong>Napoli</strong> showed the highest YoY
+								performance improvement index.</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat"><i class="fas fa-chart-area"></i></span>
+							<p><strong>Consistency Factor:</strong> While Arsenal maintained a "Top 4" plateau,
+								Liverpool showed higher volatility.</p>
+						</div>
+
+						<div class="sidebar-footer">
+							<!--Change-->
+							<a href="#" target="_blank" class="btn btn-outline btn-block">
+								<i class="fas fa-external-link-alt"></i> View on Tableau Public
+							</a>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</section>
+
+	<!-- ========================================== -->
+	<!-- PROJECT 6: SQL/LOOKER - AIRLINES ANALYSIS   -->
+	<!-- ========================================== -->
+	<section class="project-detail-section alternate-bg" id="airlines">
+		<div class="container">
+
+			<div class="section-header text-center reveal-on-scroll">
+				<span class="category-tag">Full-Stack Data Analysis</span>
+				<h2 class="project-main-title">Aviation Intelligence: Revenue & Operations</h2>
+				<div class="title-underline"></div>
+			</div>
+
+			<div class="project-grid">
+				<div class="project-main-content reveal-on-scroll">
+					<div class="project-card">
+						<div class="project-image-holder">
+							<a href="img/work/Sql/dis/sql.png" data-lightbox="gallery-airlines">
+								<img src="img/work/Sql/dis/sql.png" alt="Airlines Data Pipeline Visualization"
+									class="img-responsive" loading="lazy">
+								<div class="img-overlay"><i class="fab fa-python"></i> View Notebook & SQL</div>
+							</a>
+						</div>
+
+						<div class="project-body">
+							<div class="content-block">
+								<h3><i class="fas fa-plane-departure"></i> The Mission</h3>
+								<p>
+									This project delivers a 360-degree view of airline operations by merging
+									financial ticket data with flight schedules. The objective was to identify
+									revenue leakage, optimize hub performance, and predict operational
+									bottlenecks.
+								</p>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-tools"></i> The Tech Stack & Methodology</h3>
+								<ul class="method-list">
+									<li><strong>Advanced SQL (SQLite):</strong> Leveraged <strong>CTEs</strong> and
+										<strong>Window Functions</strong>.
+									</li>
+									<li><strong>Python EDA:</strong> Utilized <strong>Pandas</strong> for cleaning and
+										<strong>Seaborn</strong> for stats.
+									</li>
+									<li><strong>Predictive Analysis:</strong> Analyzed delay patterns for proactive
+										scheduling.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<aside class="project-sidebar reveal-on-scroll">
+					<div class="insights-card airlines-theme">
+						<h3 class="sidebar-title">Strategic Insights</h3>
+
+						<div class="insight-item">
+							<span class="insight-stat">1.9B</span>
+							<p><strong>Top Revenue Hub:</strong> Domodedovo Airport emerged as the primary financial
+								driver.</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat">63%</span>
+							<p><strong>Peak Seasonality:</strong> Identified July as the critical sales window.</p>
+						</div>
+						<!--Change-->
+						<div class="sidebar-footer">
+							<a href="https://lookerstudio.google.com/s/vh4fXn-b0DA" rel="noopener" target="_blank"
+								class="btn btn-outline btn-block" style="margin-bottom:10px;">
+								<i class="fas fa-chart-pie"></i> Dashboard
+							</a>
+							<a href="https://www.kaggle.com/code/davies10/airlines-dataset-eda-and-viz-using-sql-python"
+								rel="noopener" target="_blank" class="btn btn-outline btn-block">
+								<i class="fab fa-kaggle"></i> Article
+							</a>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</section>
+
+	<!-- ========================================== -->
+	<!-- PROJECT 7: DATA ENGINEERING             -->
+	<!-- ========================================== -->
+	<section class="project-detail-section alternate-bg" id="engineering">
+		<div class="container">
+			<div class="section-header text-center reveal-on-scroll">
+				<span class="category-tag">Data Infrastructure & ETL</span>
+				<h2 class="project-main-title">Multi-Source Ingestion: API & Unstructured Data</h2>
+				<div class="title-underline"></div>
+			</div>
+
+			<div class="project-grid">
+				<div class="project-main-content reveal-on-scroll">
+					<div class="project-card">
+						<div class="project-body">
+							<div class="content-block">
+								<h3><i class="fas fa-cogs"></i> Engineering Architecture</h3>
+								<p>
+									Successfully engineered an ETL pipeline that synchronizes fragmented data
+									from three distinct sources: <strong>Twitter's REST API (Tweepy)</strong>,
+									cloud-hosted <strong>TSV files</strong>, and archival <strong>CSV
+										datasets</strong>. This project demonstrates the ability to manage
+									complex "Schema-on-Read" challenges.
+								</p>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-stream"></i> Technical Implementation</h3>
+								<ul class="method-list">
+									<li><strong>Ingestion Layer:</strong> Developed programmatic retriever using
+										<code>Requests</code> and <strong>Tweepy</strong>.
+									</li>
+									<li><strong>Transformation Engine:</strong> Utilized <strong>RegEx</strong> to parse
+										unstructured text.</li>
+									<li><strong>Quality Framework:</strong> Built a validation suite for Completeness,
+										Validity, Accuracy, and Consistency.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<aside class="project-sidebar reveal-on-scroll">
+					<div class="insights-card engineering-theme">
+						<h3 class="sidebar-title">System Specs</h3>
+						<div class="insight-item">
+							<span class="insight-stat">API</span>
+							<p><strong>Tweepy Integration:</strong> Handled JSON parsing for missing metadata.</p>
+						</div>
+						<div class="insight-item">
+							<span class="insight-stat">ETL</span>
+							<p><strong>Process:</strong> Implemented rigorous "Assess-Clean-Test" workflow.</p>
+						</div>
+						<!--Change-->
+						<div class="sidebar-footer">
+							<a href="https://github.com/dave-owino/" rel="noopener" target="_blank"
+								class="btn btn-outline btn-block">
+								<i class="fab fa-github"></i> View Data Pipeline Source
+							</a>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</section>
+
+	<!-- ========================================== -->
+	<!-- PROJECT 8: DATA SCIENCE             -->
+	<!-- ========================================== -->
+	<section class="project-detail-section" id="recommender">
+		<div class="container">
+			<div class="section-header text-center reveal-on-scroll">
+				<span class="category-tag">Machine Learning & Personalization</span>
+				<h2 class="project-main-title">E-Commerce Neural Recommendation Engine</h2>
+				<div class="title-underline"></div>
+			</div>
+
+			<div class="project-grid">
+				<div class="project-main-content reveal-on-scroll">
+					<div class="project-card">
+						<div class="project-body">
+							<div class="content-block">
+								<h3><i class="fas fa-brain"></i> System Architecture</h3>
+								<p>
+									Engineered an end-to-end recommendation system using the <strong>Olist
+										Brazilian E-Commerce dataset</strong>. The project transforms raw
+									transactional data from 100k+ orders into a personalized discovery engine.
+									By leveraging a <strong>Hybrid Collaborative Filtering</strong> approach,
+									the system predicts user preferences.
+								</p>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-microchip"></i> Technical Implementation</h3>
+								<ul class="method-list">
+									<li><strong>Data Orchestration:</strong> Ingested 9 interconnected datasets directly
+										from Kaggle.</li>
+									<li><strong>Integrity Engineering:</strong> Custom validation suite to detect
+										anomalies (e.g. delivery timestamps predating approval).</li>
+									<li><strong>Neural Feature Engineering:</strong> Implemented label encoding and
+										MinMaxScaler.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<aside class="project-sidebar reveal-on-scroll">
+					<div class="insights-card ml-theme">
+						<h3 class="sidebar-title">Model Specs</h3>
+						<div class="insight-item">
+							<span class="insight-stat">Scale</span>
+							<p><strong>Dataset:</strong> Processed 95,000+ clean orders across 3,000+ categories.</p>
+						</div>
+						<div class="insight-item">
+							<span class="insight-stat">Hybrid</span>
+							<p><strong>Features:</strong> Integrated price sensitivity and category affinity.</p>
+						</div>
+						<!--Change-->
+						<div class="sidebar-footer">
+							<a href="https://github.com/dave-owino/" rel="noopener" target="_blank"
+								class="btn btn-outline btn-block">
+								<i class="fab fa-github"></i> View Model Source
+							</a>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</section>
+
+	<!-- Start: Contact Section -->
+	<section id="contact" class="daviefolio-contact">
+		<div class="daviefolio-narrow-content">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="folio-title-box">
+						<span class="daviefolio-heading-meta"><strong>Get In Touch</strong></span>
 					</div>
 				</div>
 			</div>
 
+			<div class="contact-row-flex">
+				<div class="contact-form-card">
+					<form action="https://formspree.io/f/mwppwqkr" method="POST" id="contactForm">
+						<div class="form-group">
+							<label class="sr-only" for="name">Name</label>
+							<input type="text" id="name" name="name" class="custom-input" placeholder="Name"
+								autocomplete="name" required />
+						</div>
+
+						<div class="form-group">
+							<label class="sr-only" for="email">Email</label>
+							<input type="email" id="email" name="email" class="custom-input" placeholder="Email"
+								autocomplete="email" required />
+						</div>
+
+						<div class="form-group">
+							<label class="sr-only" for="message">Message</label>
+							<textarea id="message" name="message" class="custom-input" rows="5"
+								placeholder="How can we collaborate on a data project?" required></textarea>
+						</div>
+
+						<!-- Success Message -->
+						<p id="successMessage" class="success-message">Message sent successfully!</p>
+
+						<div class="form-group">
+							<button class="btn btn-primary" type="submit" id="sendMessageButton">
+								Send Message
+							</button>
+						</div>
+					</form>
+				</div>
+				<!--Change-->
+				<div class="contact-info-card">
+					<h4>Contact Details</h4>
+					<p class="contact-subtext" style="margin-bottom: 2rem; opacity: 0.8;">
+						Open to discussions on Data Engineering pipelines, ML research, or freelance analytics.
+					</p>
+
+					<ul class="contact-list">
+						<li><i class="fas fa-map-marker-alt"></i> Mombasa, Kenya</li>
+						<li>
+							<a href="https://github.com/dave-owino/" target="_blank" rel="noopener noreferrer">
+								<i class="fab fa-github"></i> GitHub
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/david-odhiambo-owino/" target="_blank"
+								rel="noopener noreferrer">
+								<i class="fab fa-linkedin"></i> LinkedIn
+							</a>
+						</li>
+						<li>
+							<a href="https://x.com/da_owino/" target="_blank" rel="noopener noreferrer">
+								<i class="fab fa-twitter"></i> X (Twitter)
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- End: Contact Section -->
+
+	<!-- Start: Footer -->
+	<div class="daviefolio-footer">
+		<div class="row">
+			<div class="footer">
+				<p><small>&copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved. David Owino
+					</small></p>
+			</div>
 		</div>
 	</div>
 
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- Ensure Sticky Kit is after jQuery -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- js -->
+	 <script src="js/jquery.min.js"></script>
 
-	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Counters -->
-	<script src="js/jquery.countTo.js"></script>
+	<!--<script src="js/jquery.easing.1.3.js"></script>-->
 
-	<!-- lightbox-->
-	<script src="lib/lightbox/js/lightbox.min.js"></script>
-	<!--<script src="lib/loadmore/load-more.js"></script>-->
-	<!--<script src="lib/height/adjust.js"></script>-->
-
-	<!-- Typed -->
-	<script src="lib/typed/typed.min.js"></script>
-
-	<!--share-->
-	<script src="lib/share/like-share.js"></script>
-
-	<!--<script src="lib/isotope/isotope.js"></script>-->
+	<!-- Lightbox JS -->
+	<script src="lib/lightbox/js/lightbox.js"></script>
 
 	<!-- Contact Javascript File -->
 	<script src="lib/mail/contact.js"></script>
-	<!--<script src="lib/mail/contact-background.js"></script>-->
-
 
 	<!-- Javascript -->
 	<script src="highlights/p_main.js"></script>
