@@ -1085,8 +1085,8 @@
 			<div class="project-grid">
 				<div class="project-main-content reveal-on-scroll">
 					<div class="project-card">-->
-						<!-- Tableau Placeholder -->
-						<!--<div class="project-work-img tableau-embed-container">
+	<!-- Tableau Placeholder -->
+	<!--<div class="project-work-img tableau-embed-container">
 							<div id="vizContainer" class="tableau-placeholder"></div>
 							<script src="./lib/tableau/tableauProject_1.js"></script>
 							<div class="tableau-overlay-hint"><i class="fas fa-mouse-pointer"></i> Interact with
@@ -1402,6 +1402,130 @@
 	</section>
 
 	<!-- ========================================== -->
+	<!-- PROJECT 6: SQL/LOOKER - AIRLINES ANALYSIS   -->
+	<!-- ========================================== -->
+	<section class="project-detail-section alternate-bg" id="airlines">
+		<div class="container">
+
+			<div class="section-header text-center reveal-on-scroll">
+				<span class="category-tag">Full-Stack Data Analysis</span>
+				<h2 class="project-main-title">Aviation Intelligence: Revenue & Operations</h2>
+				<div class="title-underline"></div>
+			</div>
+
+			<div class="project-grid">
+				<div class="project-main-content reveal-on-scroll">
+					<div class="project-card">
+						<div class="project-image-holder">
+							<a href="img/work/Sql/dis/sql.png" data-lightbox="gallery-airlines">
+								<img src="img/work/Sql/dis/sql.png" alt="Airlines Data Pipeline Visualization"
+									class="img-responsive" loading="lazy">
+								<div class="img-overlay"><i class="fab fa-python"></i> View Notebook & SQL</div>
+							</a>
+						</div>
+
+						<div class="project-body">
+							<div class="content-block">
+								<h3><i class="fas fa-plane-departure"></i> The Mission</h3>
+								<p>
+									This project analyzes a relational <strong>SQLite airline dataset from
+										Kaggle</strong>
+									using <strong>SQL and Python</strong> to deliver a 360-degree view of airline
+									operations.
+									The mission was to uncover <strong>revenue drivers, seasonal demand
+										patterns</strong>,
+									and <strong>operational inefficiencies</strong> across airports, routes, and flight
+									schedules.
+									<!-- ENRICHED: Added dataset source, tools, and analytical focus -->
+								</p>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-tools"></i> The Tech Stack & Methodology</h3>
+								<ul class="method-list">
+									<li>
+										<strong>Advanced SQL (SQLite):</strong> Applied <strong>JOINs, subqueries, and
+											CTEs</strong>
+										for data cleaning, exploratory data analysis (EDA), and multi-level
+										aggregations.
+										<!-- ENRICHED: Explicit mention of joins, subqueries, and EDA -->
+									</li>
+									<li>
+										<strong>Python Analytics:</strong> Used <strong>Pandas</strong> to validate SQL
+										outputs
+										and explore trends, supporting reproducible insights.
+										<!-- ENRICHED: Clarified Python’s analytical role -->
+									</li>
+									<li>
+										<strong>Operational Intelligence:</strong> Evaluated delay distributions and
+										peak
+										travel behavior to identify scheduling bottlenecks and congestion risks.
+										<!-- ENRICHED: Linked delays to operational decision-making -->
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<aside class="project-sidebar reveal-on-scroll">
+					<div class="insights-card airlines-theme">
+						<h3 class="sidebar-title">Strategic Insights</h3>
+
+						<div class="insight-item">
+							<span class="insight-stat">1.99B</span>
+							<p>
+								<strong>Revenue Concentration:</strong> Domodedovo Airport led all hubs with
+								<strong>1,986M</strong> in ticket revenue, followed by Sheremetyevo (1,579M) and
+								Tolmachevo (799M), highlighting critical revenue-generating destinations.
+								<!-- ENRICHED: Added ranking and precise figures -->
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat">63%</span>
+							<p>
+								<strong>Sales Seasonality:</strong> July recorded the highest ticket sales volume,
+								maximizing revenue across <strong>economy, business, and comfort classes</strong>,
+								with August contributing an additional 34%.
+								<!-- ENRICHED: Added cabin class insight -->
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat">20+ min</span>
+							<p>
+								<strong>Operational Delays:</strong> Ulyanovsk East Airport experienced the longest
+								average departure delays, with Ignatyevo and Lipetsk also exceeding 20-minute
+								thresholds, signaling persistent operational bottlenecks.
+								<!-- ENRICHED: Added delay benchmarking -->
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat"><i class="fas fa-calendar-alt"></i></span>
+							<p>
+								<strong>Peak Travel Behavior:</strong> Highest bookings aligned with peak travel days,
+								popular flight hours, and high-demand routes—directly correlating demand surges
+								with congestion risk.
+								<!-- ENRICHED: Connected demand to capacity planning -->
+							</p>
+						</div>
+
+						<div class="sidebar-footer">
+							<a href="https://www.kaggle.com/code/davies10/airlines-dataset-eda-and-viz-using-sql-python"
+								rel="noopener" target="_blank" class="btn btn-outline btn-block">
+								<i class="fab fa-kaggle"></i> Article
+							</a>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- ========================================== -->
 	<!-- PROJECT 7: DATA ENGINEERING             -->
 	<!-- ========================================== -->
 	<section class="project-detail-section alternate-bg" id="engineering">
@@ -1468,9 +1592,142 @@
 	</section>
 
 	<!-- ========================================== -->
+	<!-- PROJECT 7: DATA ENGINEERING               -->
+	<!-- ========================================== -->
+	<section class="project-detail-section alternate-bg" id="engineering">
+		<div class="container">
+
+			<div class="section-header text-center reveal-on-scroll">
+				<span class="category-tag">Data Infrastructure & ETL</span>
+				<h2 class="project-main-title">Multi-Source Ingestion: API & Unstructured Data</h2>
+				<div class="title-underline"></div>
+			</div>
+
+			<div class="project-grid">
+
+				<div class="project-main-content reveal-on-scroll">
+					<div class="project-card">
+						<div class="project-body">
+
+							<div class="content-block">
+								<h3><i class="fas fa-cogs"></i> Engineering Architecture</h3>
+								<p>
+									This project implements a robust <strong>end-to-end ETL pipeline</strong> to
+									ingest, transform, and consolidate fragmented Twitter data into a single,
+									high-integrity analytical dataset. Focusing on the
+									<strong>@dog_rates (WeRateDogs)</strong> account, the pipeline synchronizes
+									data from <strong>live API streams</strong>, cloud-hosted flat files, and
+									archival datasets—addressing real-world <strong>schema-on-read</strong> and
+									data consistency challenges.
+									<!-- UPDATED: Aligned with README project overview and objective -->
+								</p>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-stream"></i> Data Pipeline & ETL Implementation</h3>
+								<ul class="method-list">
+									<li>
+										<strong>Multi-Source Ingestion:</strong> Combined three heterogeneous streams:
+										archival CSV data (<code>twitter_archive_enhanced.csv</code>),
+										cloud-hosted TSV files (<code>image-predictions.tsv</code>),
+										and live Twitter metadata queried via <strong>Tweepy (REST API)</strong>.
+										<!-- UPDATED: Explicitly listed the three ingestion streams -->
+									</li>
+									<li>
+										<strong>API Engineering:</strong> Designed a resilient Tweepy-based extractor
+										to handle rate limiting while retrieving retweet and favorite counts,
+										initially persisted as raw <code>tweet_json.txt</code>.
+										<!-- UPDATED: Added API rate-limit handling -->
+									</li>
+									<li>
+										<strong>Transformation Engine:</strong> Used <strong>Pandas, NumPy, JSON
+											normalization</strong>, and advanced <strong>RegEx</strong> to parse
+										unstructured tweet text and extract dog names and growth stages.
+										<!-- UPDATED: Strengthened transformation detail -->
+									</li>
+									<li>
+										<strong>Schema Denormalization:</strong> Merged all sources into a unified,
+										cleaned <strong>Gold dataset</strong>
+										(<code>twitter_archive_master.csv</code>) suitable for analysis and
+										visualization.
+										<!-- UPDATED: Added Gold dataset outcome -->
+									</li>
+								</ul>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-check-circle"></i> Data Quality & Validation Framework</h3>
+								<ul class="method-list">
+									<li>
+										<strong>Assess–Clean–Test Workflow:</strong> Applied a systematic quality
+										framework aligned with MSc-level data engineering standards.
+									</li>
+									<li>
+										<strong>Quality Dimensions:</strong> Enforced checks for
+										<strong>Completeness, Validity, Accuracy, and Consistency</strong> across
+										all merged attributes.
+									</li>
+									<li>
+										<strong>Anomaly Resolution:</strong> Removed retweets, filtered invalid image
+										URLs, and corrected inconsistent rating and naming patterns.
+									</li>
+									<!-- UPDATED: Added explicit data quality dimensions -->
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<aside class="project-sidebar reveal-on-scroll">
+					<div class="insights-card engineering-theme">
+						<h3 class="sidebar-title">System Insights</h3>
+
+						<div class="insight-item">
+							<span class="insight-stat">3</span>
+							<p>
+								<strong>Data Streams:</strong> Successfully synchronized archival files,
+								cloud-hosted data, and live API responses into one analytical model.
+								<!-- UPDATED: Quantified pipeline complexity -->
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat">139</span>
+							<p>
+								<strong>Top Breed Insight:</strong> Golden Retriever emerged as the most
+								frequent dog breed across valid image predictions.
+								<!-- UPDATED: Pulled directly from notebook findings -->
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat"><i class="fas fa-chart-line"></i></span>
+							<p>
+								<strong>Engagement Pattern:</strong> Strong linear correlation observed between
+								retweet counts and favorite counts across all dog stages.
+								<!-- UPDATED: Added analytical insight -->
+							</p>
+						</div>
+
+						<div class="sidebar-footer">
+							<a href="https://github.com/dave-owino/" rel="noopener" target="_blank"
+								class="btn btn-outline btn-block">
+								<i class="fab fa-github"></i> View Data Pipeline Source
+							</a>
+						</div>
+
+					</div>
+				</aside>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- ========================================== -->
 	<!-- PROJECT 8: DATA SCIENCE             -->
 	<!-- ========================================== -->
-	<section class="project-detail-section" id="recommender">
+	<section class="project-detail-section" id="recommenderr">
 		<div class="container">
 			<div class="section-header text-center reveal-on-scroll">
 				<span class="category-tag">Machine Learning & Personalization</span>
@@ -1531,6 +1788,131 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- ========================================== -->
+	<!-- PROJECT 8: DATA SCIENCE                    -->
+	<!-- ========================================== -->
+	<section class="project-detail-section" id="recommender">
+		<div class="container">
+
+			<div class="section-header text-center reveal-on-scroll">
+				<span class="category-tag">Machine Learning & Personalization</span>
+				<h2 class="project-main-title">E-Commerce Recommendation Engine</h2>
+				<div class="title-underline"></div>
+			</div>
+
+			<div class="project-grid">
+
+				<div class="project-main-content reveal-on-scroll">
+					<div class="project-card">
+						<div class="project-body">
+
+							<div class="content-block">
+								<h3><i class="fas fa-brain"></i> Problem & System Design</h3>
+								<p>
+									This project addresses the <strong>product discovery challenge</strong> in
+									large-scale
+									e-commerce platforms. Using the <strong>Olist Brazilian E-Commerce dataset</strong>
+									(100,000+ orders), I designed a recommendation engine that learns from historical
+									purchase behavior to surface the most relevant products for each customer.
+									The solution focuses on scalable personalization rather than rule-based filtering.
+								</p>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-cogs"></i> Data Engineering & Feature Pipeline</h3>
+								<ul class="method-list">
+									<li>
+										<strong>Multi-Table ETL:</strong> Integrated <strong>9 relational
+											datasets</strong>
+										(customers, orders, products, payments, reviews, sellers) using consistent
+										primary and foreign keys.
+									</li>
+									<li>
+										<strong>Data Integrity Validation:</strong> Built a custom anomaly detection
+										process to flag logical inconsistencies (e.g. deliveries occurring before
+										order approval).
+									</li>
+									<li>
+										<strong>High-Quality Modeling Set:</strong> Reduced ~99K raw orders to
+										<strong>95,088 validated transactions</strong> suitable for ML modeling.
+									</li>
+									<li>
+										<strong>Customer Persistence:</strong> Leveraged <code>customer_unique_id</code>
+										to track repeat behavior across multiple order sessions.
+									</li>
+								</ul>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-microchip"></i> Recommendation Logic</h3>
+								<ul class="method-list">
+									<li>
+										<strong>Hybrid Collaborative Filtering:</strong> Combined user–item interaction
+										history with product attributes to infer preference patterns.
+									</li>
+									<li>
+										<strong>Encoding Strategy:</strong> Applied label encoding for high-cardinality
+										user and product identifiers.
+									</li>
+									<li>
+										<strong>Feature Scaling:</strong> Normalized price-related features using
+										<code>MinMaxScaler</code> to stabilize similarity scoring.
+									</li>
+									<li>
+										<strong>Ranking Engine:</strong> Scored all candidate items per user and
+										returned
+										a ranked <strong>Top-N recommendation list</strong> based on affinity.
+									</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<aside class="project-sidebar reveal-on-scroll">
+					<div class="insights-card ml-theme">
+						<h3 class="sidebar-title">Key Outcomes</h3>
+
+						<div class="insight-item">
+							<span class="insight-stat">95K+</span>
+							<p>
+								<strong>Clean Orders:</strong> High-integrity transaction set used for
+								recommendation modeling after validation.
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat">9</span>
+							<p>
+								<strong>Unified Tables:</strong> End-to-end ETL across customer, product,
+								and transaction domains.
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat">Top-N</span>
+							<p>
+								<strong>Personalization:</strong> Ranked product recommendations generated
+								per customer based on behavioral similarity.
+							</p>
+						</div>
+
+						<div class="sidebar-footer">
+							<a href="https://github.com/dave-owino/" rel="noopener" target="_blank"
+								class="btn btn-outline btn-block">
+								<i class="fab fa-github"></i> View Model & Notebook
+							</a>
+						</div>
+
+					</div>
+				</aside>
+
+			</div>
+		</div>
+	</section>
+
 
 	<!-- Start: Contact Section -->
 	<section id="contact" class="daviefolio-contact">
