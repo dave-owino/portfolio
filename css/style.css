@@ -1556,15 +1556,18 @@ padding: 0;: This removes all internal spacing within the element.*/
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  background: rgba(255, 255, 255, 0.05);
   padding: 5px 12px;
   border-radius: 4px;
   display: inline-block;
   margin-bottom: 20px;
-  color: #ffffff;
 }
 
 /* Tag Variants - Using your specific logic */
+.project-tag.analytics {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
 .project-tag.engineering {
   background: rgba(0, 212, 255, 0.2);
   color: #00d4ff;
