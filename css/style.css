@@ -1527,9 +1527,9 @@ padding: 0;: This removes all internal spacing within the element.*/
   padding: 20px 0;
 }
 
-/* Project Card - Matched to your "Zebra" logic */
+/* Project Card  */
 .project-card {
-  background: #161e31; /* Lighter navy to pop against the #0f172a background */
+  background: #161e31; 
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 12px;
   padding: 25px;
@@ -1545,14 +1545,14 @@ padding: 0;: This removes all internal spacing within the element.*/
 /* -- Project Hover Effect -- */
 .project-card:hover {
   transform: translateY(-8px);
-  border-color: #00d4ff; /* Your Brand Cyan */
+  border-color: #00d4ff; 
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
 
-/* Project Tags - Fixed from Times New Roman to modern Sans-Serif */
+/* Project Tags */
 .project-tag {
   font-family: "Quicksand", Arial, sans-serif;
-  font-size: 0.75rem; 
+  font-size: 1.4rem; 
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -1599,7 +1599,7 @@ padding: 0;: This removes all internal spacing within the element.*/
 
 .card-title {
   color: #00d4ff;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-family: "Quicksand", sans-serif;
   font-weight: 700 !important;
   margin-bottom: 1rem !important;
@@ -1607,20 +1607,20 @@ padding: 0;: This removes all internal spacing within the element.*/
 
 /* Objective Text */
 .card-objective {
-  font-size: 1rem;
-  color: #94a3b8; /* Slate gray for better readability on dark */
+  font-size: 1.3rem;
+  color: #94a3b8; 
   margin-bottom: 1.2rem;
   line-height: 1.6;
 }
 
-/* The Insight Box - Refined for Dark Mode */
+/* The Insight Box */
 .card-insight-box {
   background-color: rgba(0, 212, 255, 0.07); /* Subtle Cyan glow */
   border-left: 4px solid #00d4ff;
   padding: 1rem;
   border-radius: 0 8px 8px 0;
   margin-bottom: 1.5rem;
-  font-size: 0.85rem;
+  font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.9);
   display: flex;
   align-items: flex-start;
@@ -1630,23 +1630,6 @@ padding: 0;: This removes all internal spacing within the element.*/
 .card-insight-box i {
   color: #00d4ff;
   font-size: 1.1rem;
-}
-
-/* Technologies Used */
-.project-tech {
-  margin-bottom: 20px;
-}
-
-.project-tech span {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 0.85rem;
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 3px 8px;
-  border-radius: 4px;
-  margin-right: 6px;
-  margin-bottom: 6px;
-  display: inline-block;
 }
 
 /* Meta Labels (Tools/Sources) */
@@ -1665,13 +1648,32 @@ padding: 0;: This removes all internal spacing within the element.*/
   gap: 10px;
   color: #94a3b8;
   font-size: 0.9rem;
+  padding: 5px 0;
 }
 
 .meta-label {
   color: #00d4ff;
-  font-weight: 700;
-  font-size: 0.7rem;
+  /*font-weight: 700;*/
+  /*font-size: 0.7rem;*/
   text-transform: uppercase;
+}
+
+/* Technologies Used */
+.project-tech {
+  margin-bottom: 20px;
+}
+
+.project-tech span {
+  /*font-family: "Courier New", Courier, monospace;*/
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  display: inline-block;
 }
 
 /* View Link - Interactive underline */
@@ -1679,7 +1681,7 @@ padding: 0;: This removes all internal spacing within the element.*/
   text-decoration: none;
   color: #00d4ff;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.4rem;
   position: relative;
   display: inline-block;
   margin-top: 10px;
