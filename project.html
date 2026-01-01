@@ -49,6 +49,9 @@
 		<!-- ================= MAIN CSS ================= -->
 		<link rel="stylesheet" href="highlights/p_style.css">
 
+		<!-- Tableau JS API Library -->
+		<script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+
 		<!-- ================= FEATURE DETECTION ================= -->
 		<script src="js/modernizr-2.6.2.min.js" defer></script>
 
@@ -229,6 +232,137 @@
 	</section>
 
 	<!-- ========================================== -->
+	<!-- PROJECT 1: SQL - NZ THEFT ANALYSIS         -->
+	<!-- ========================================== -->
+	<section class="project-detail-section" id="sql">
+		<div class="container">
+
+			<div class="section-header text-center reveal-on-scroll">
+				<span class="category-tag">SQL & Data Exploration</span>
+				<h2 class="project-main-title">NZ Police Vehicle Theft Analysis</h2>
+				<div class="title-underline"></div>
+			</div>
+
+			<div class="project-grid">
+				<div class="project-main-content reveal-on-scroll">
+					<div class="project-card">
+						<div class="project-image-holder">
+							<a href="img/work/Sql/g_studio_1.jpg" data-lightbox="gallery-sql">
+								<img src="img/work/Sql/g_studio_1.jpg" alt="NZ Police Data Dashboard"
+									class="img-responsive" loading="lazy">
+								<div class="img-overlay"><i class="fas fa-search-plus"></i> View Dashboard</div>
+							</a>
+						</div>
+
+						<div class="project-body">
+							<div class="content-block">
+								<h3><i class="fas fa-exclamation-circle"></i> The Problem</h3>
+								<p>
+									Identifying patterns in criminal activity is essential for evidence-based
+									resource allocation and proactive policing. This project analyzes a
+									six-month stolen vehicle dataset from the New Zealand Police Department
+									to uncover high-risk vehicle profiles, temporal trends, and geographic
+									hotspots that can inform targeted prevention strategies.
+									<!-- UPDATED: Expanded problem statement with policy relevance -->
+								</p>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-database"></i> The Data</h3>
+								<p>
+									<strong>Source:</strong> New Zealand Police Department (via Kaggle).<br>
+									<strong>Scope:</strong> Six months of reported vehicle theft incidents across
+									New Zealand regions.<br>
+									<strong>Attributes:</strong> Vehicle type, make, model, year, color, date
+									stolen, and geographic region.
+									<!-- UPDATED: Clarified scope and added model-level detail -->
+								</p>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-tools"></i> Methodology</h3>
+								<ul class="method-list">
+									<li><strong>SQL Joins & CTEs:</strong> Integrating six relational tables to connect
+										theft events with detailed vehicle characteristics.
+										<!-- UPDATED: Emphasized multi-table structure -->
+									</li>
+									<li><strong>Exploratory Data Analysis (EDA):</strong> Identifying dominant vehicle
+										types, makes, model years, and regional theft distributions.
+										<!-- UPDATED: Explicitly mentioned EDA -->
+									</li>
+									<li><strong>Advanced Aggregations:</strong> Analyzing theft frequency by date,
+										weekday, region, and vehicle attributes to surface hidden patterns.
+										<!-- UPDATED: Added temporal analysis -->
+									</li>
+									<li><strong>Google Looker Studio:</strong> Translating SQL outputs into an
+										interactive, executive-ready dashboard for decision-makers.
+										<!-- UPDATED: Strengthened business impact -->
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<aside class="project-sidebar reveal-on-scroll">
+					<div class="insights-card">
+						<h3 class="sidebar-title">Key Insights</h3>
+
+						<div class="insight-item">
+							<span class="insight-stat">95%</span>
+							<p>
+								of stolen vehicles were <strong>Standard</strong> models, while
+								<strong>Luxury vehicles accounted for just 4%</strong>, indicating that
+								opportunistic theft outweighs high-end targeting.
+								<!-- UPDATED: Added analytical interpretation -->
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat">36%</span>
+							<p>
+								of all vehicle thefts occurred in <strong>Auckland</strong>, followed by
+								<strong>Canterbury (14.5%)</strong>, highlighting clear regional concentration.
+								<!-- UPDATED: Added Canterbury comparison -->
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat">M/T</span>
+							<p>
+								Thefts peaked on <strong>Mondays and Tuesdays</strong>, with the single
+								highest spike recorded on <strong>April 4, 2022</strong>.
+								<!-- UPDATED: Added specific peak date -->
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat">2003–08</span>
+							<p>
+								Vehicles manufactured between <strong>2003 and 2008</strong> were most
+								frequently stolen, suggesting older models with weaker security features
+								are more vulnerable.
+								<!-- UPDATED: New insight added -->
+							</p>
+						</div>
+
+						<div class="sidebar-footer">
+							<p>
+								<strong>Most Targeted:</strong> Station wagons, sedans, and hatchbacks.<br>
+								<strong>Top Makes:</strong> Toyota (15.7%), Trailer (11.9%), Nissan (10.6%).<br>
+								<strong>Least Stolen:</strong> Subaru, Suzuki, boat trailers, and heavy trailers.
+								<!-- UPDATED: Consolidated and expanded summary -->
+							</p>
+							<a href="#" class="btn btn-outline btn-block">View Looker Dashboard</a>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- ========================================== -->
 	<!-- PROJECT 2: PYTHON - PISA 2012              -->
 	<!-- ========================================== -->
 	<section class="project-detail-section alternate-bg" id="python">
@@ -325,6 +459,148 @@
 	</section>
 
 	<!-- ========================================== -->
+	<!-- PROJECT 2: PYTHON - PISA 2012              -->
+	<!-- ========================================== -->
+	<section class="project-detail-section alternate-bg" id="python">
+		<div class="container">
+
+			<div class="section-header text-center reveal-on-scroll">
+				<span class="category-tag">Python & Exploratory Data Analysis</span>
+				<h2 class="project-main-title">PISA 2012: Global Student Performance</h2>
+				<div class="title-underline"></div>
+			</div>
+
+			<div class="project-grid">
+				<div class="project-main-content reveal-on-scroll">
+					<div class="project-card">
+						<div class="project-image-holder">
+							<a href="img/work/Python/project/1py_display.jpg" data-lightbox="gallery-python">
+								<img src="img/work/Python/project/1py_display.jpg"
+									alt="Python Data Visualization Dashboard" class="img-responsive" loading="lazy">
+								<div class="img-overlay"><i class="fab fa-python"></i> View Analysis</div>
+							</a>
+						</div>
+
+						<div class="project-body">
+							<div class="content-block">
+								<h3><i class="fas fa-search"></i> The Problem</h3>
+								<p>
+									As part of the <strong>Udacity Data Analyst Nanodegree</strong>, this project
+									explores the PISA 2012 dataset to understand the factors that influence
+									academic performance among 15-year-old students worldwide. The analysis
+									investigates how gender, school choice, location, student attitudes, and
+									teacher practices interact with socio-economic conditions to shape outcomes
+									in mathematics, science, and literacy across OECD and non-OECD countries.
+									<!-- UPDATED: Expanded scope and clarified analytical focus -->
+								</p>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-server"></i> The Data</h3>
+								<p>
+									<strong>Source:</strong> OECD Programme for International Student Assessment
+									(PISA).<br>
+									<strong>Scale:</strong> ~510,000 students, 485,490 observations, and 636
+									features.<br>
+									<strong>Coverage:</strong> Academic scores, socio-economic background, school
+									resources,
+									teacher-student relations, and technology access.
+									<!-- UPDATED: Added OECD context and clarified dataset richness -->
+									<br>
+									<a href="https://s3.amazonaws.com/udacity-hosted-downloads/ud507/pisa2012.csv.zip"
+										class="text-link"><i class="fas fa-download"></i> Download Raw Dataset</a>
+								</p>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-code"></i> Methodology</h3>
+								<ul class="method-list">
+									<li>
+										<strong>Data Wrangling:</strong> Cleaning and restructuring a high-dimensional
+										dataset (600+ variables) using <strong>Pandas</strong> for efficient analysis.
+										<!-- UPDATED: Emphasized scale and complexity -->
+									</li>
+									<li>
+										<strong>Exploratory & Multivariate Analysis:</strong> Leveraging
+										<strong>Matplotlib</strong> and <strong>Seaborn</strong> to uncover
+										relationships
+										between gender, socio-economic status, and academic outcomes.
+										<!-- UPDATED: Clarified analytical intent -->
+									</li>
+									<li>
+										<strong>KPI-Driven Evaluation:</strong> Measuring the impact of
+										teacher-student relations on gender-based performance differences.
+										<!-- UPDATED: Explicit KPI added -->
+									</li>
+									<li>
+										<strong>Statistical Reasoning:</strong> Validating observed trends through
+										distributional comparisons across OECD and non-OECD groups.
+										<!-- UPDATED: Strengthened analytical rigor -->
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<aside class="project-sidebar reveal-on-scroll">
+					<div class="insights-card python-theme">
+						<h3 class="sidebar-title">Global Insights</h3>
+
+						<div class="insight-item">
+							<span class="insight-stat"><i class="fas fa-user-graduate"></i></span>
+							<p>
+								<strong>Parental Education:</strong> Higher parental education levels are strongly
+								associated with improved student performance across mathematics, science,
+								and literacy, with female students outperforming males at most education levels.
+								<!-- UPDATED: Added gender interaction -->
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat"><i class="fas fa-laptop"></i></span>
+							<p>
+								<strong>Technology Access:</strong> Access to desktop computers at school
+								correlates with higher scores; however, students who never used available
+								computers consistently performed worse.
+								<!-- UPDATED: Clarified non-user disadvantage -->
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat"><i class="fas fa-chalkboard-teacher"></i></span>
+							<p>
+								<strong>Teacher–Student Relations (KPI):</strong> Positive teacher-student
+								relationships significantly improve performance for both genders, with
+								female students benefiting more strongly from supportive classroom dynamics.
+								<!-- UPDATED: KPI insight added -->
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat"><i class="fas fa-venus-mars"></i></span>
+							<p>
+								<strong>Gender Representation:</strong> PISA participation was nearly balanced,
+								with <strong>50.5% female</strong> and <strong>49.5% male</strong> students,
+								primarily from Grades 10 (58%) and 9 (34%).
+								<!-- UPDATED: Participation KPI added and checked -->
+							</p>
+						</div>
+
+						<div class="sidebar-footer">
+							<a href="https://github.com/Daviedavie100/Investigating_dataset_project/blob/main/README.md"
+								rel="noopener" target="_blank" class="btn btn-outline btn-block">
+								<i class="fab fa-github"></i> View Repository
+							</a>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- ========================================== -->
 	<!-- PROJECT 3: EXCEL - KCSE RESULTS              -->
 	<!-- ========================================== -->
 	<section class="project-detail-section" id="excel">
@@ -404,6 +680,148 @@
 
 						<div class="sidebar-footer">
 							<p><strong>Top Schools:</strong> Ribe Boys & Kombeni Girls.</p>
+							<a href="https://1drv.ms/p/c/3256cae941195214/EYnsYazmsY5NitK4rx4-NZkBjStDOTLmEorAtXW6knofOQ"
+								rel="noopener" target="_blank" class="btn btn-outline btn-block">
+								<i class="fas fa-external-link-alt"></i> Interactive Dashboard
+							</a>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- ========================================== -->
+	<!-- PROJECT 3: EXCEL - KCSE RESULTS             -->
+	<!-- ========================================== -->
+	<section class="project-detail-section" id="excel">
+		<div class="container">
+
+			<div class="section-header text-center reveal-on-scroll">
+				<span class="category-tag">Excel & Business Intelligence</span>
+				<h2 class="project-main-title">KCSE 2023: Sub-County Performance Analysis</h2>
+				<div class="title-underline"></div>
+			</div>
+
+			<div class="project-grid">
+				<div class="project-main-content reveal-on-scroll">
+					<div class="project-card">
+						<div class="project-image-holder">
+							<a href="img/work/Excel/dis/excel.JPG" data-lightbox="gallery-excel">
+								<img src="img/work/Excel/dis/excel.JPG" alt="KCSE Results Excel Dashboard"
+									class="img-responsive" loading="lazy">
+								<div class="img-overlay"><i class="fas fa-file-excel"></i> View Full Report</div>
+							</a>
+						</div>
+
+						<div class="project-body">
+							<div class="content-block">
+								<h3><i class="fas fa-bullseye"></i> The Problem</h3>
+								<p>
+									Commissioned by the <strong>Sub-County Director of Education</strong>, this project
+									delivered a comprehensive performance audit of 19 secondary schools, covering
+									approximately 2,400 KCSE candidates. The primary objective was to compare
+									<strong>KCSE 2023 results against 2022 and 2021 outcomes</strong> to evaluate
+									academic progress, identify declining institutions, and provide data-driven
+									recommendations to guide future intervention strategies.
+									<!-- UPDATED: Clarified mandate, scale, and decision-making purpose -->
+								</p>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-table"></i> The Data</h3>
+								<p>
+									<strong>Source:</strong> Official Sub-County Education performance records.<br>
+									<strong>Coverage:</strong> 19 schools and ~2,400 students sitting KCSE 2023,
+									augmented with 2021–2022 historical results for year-on-year comparison.<br>
+									<strong>Dimensions:</strong> Grade distribution, subject-level performance,
+									gender outcomes, and school rankings.
+									<!-- UPDATED: Expanded data scope and dimensions -->
+								</p>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-layer-group"></i> Methodology</h3>
+								<ul class="method-list">
+									<li>
+										<strong>Excel Data Modeling:</strong> Consolidated multi-year school datasets
+										into a structured analytical model using Power Pivot.
+										<!-- UPDATED: Clarified modeling step -->
+									</li>
+									<li>
+										<strong>Improvement Indexing:</strong> Designed custom formulas to quantify
+										year-on-year school performance changes and rank institutions objectively.
+										<!-- UPDATED: Strengthened KPI logic -->
+									</li>
+									<li>
+										<strong>Gender & Subject Analysis:</strong> Assessed performance gaps across
+										gender and subjects to highlight areas requiring targeted support.
+										<!-- UPDATED: Added analytical depth -->
+									</li>
+									<li>
+										<strong>Stakeholder Reporting:</strong> Delivered an interactive Excel
+										dashboard to support planning, policy formulation, and accountability.
+										<!-- UPDATED: Emphasized stakeholder impact -->
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<aside class="project-sidebar reveal-on-scroll">
+					<div class="insights-card excel-theme">
+						<h3 class="sidebar-title">Performance Metrics</h3>
+
+						<div class="insight-item">
+							<span class="insight-stat">+13%</span>
+							<p>
+								Improvement in students attaining <strong>C+ and above</strong> in 2023,
+								signaling progress in higher-grade achievement across the sub-county.
+								<!-- UPDATED: Added interpretation -->
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat">15%</span>
+							<p>
+								Overall proportion of candidates achieving <strong>C+ or higher</strong>,
+								with girls at <strong>17%</strong> and boys at <strong>13%</strong>, indicating
+								a modest performance advantage among female students.
+								<!-- UPDATED: KPI explicitly stated -->
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat">Critical</span>
+							<p>
+								A <strong>50% increase in Grade E results</strong> compared to 2022 highlights
+								an urgent need for targeted academic support and remedial interventions.
+								<!-- UPDATED: Strengthened policy implication -->
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat">±</span>
+							<p>
+								<strong>School Improvement Index:</strong> Kombeni Girls (+0.6) and Mbararani (+0.4)
+								showed the strongest gains, while Bwagamoyo (-0.8) and Mikahani (-0.9) recorded
+								significant declines.
+								<!-- UPDATED: Added improvement/decline comparison -->
+							</p>
+						</div>
+
+						<div class="sidebar-footer">
+							<p>
+								<strong>Top Schools:</strong> Ribe Boys, Kombeni Girls, Ribe Girls.<br>
+								<strong>Lowest Ranked:</strong> Bwagamoyo, Rev Canon Kuri, Mikahani.<br>
+								<strong>Top Subjects:</strong> Computer Studies (8.51), Home Science (8.32),
+								Kiswahili (6.54).<br>
+								<strong>Lowest Subjects:</strong> Chemistry (2.57), Mathematics (2.55),
+								Agriculture (2.49).
+								<!-- UPDATED: Consolidated rankings and subject performance -->
+							</p>
 							<a href="https://1drv.ms/p/c/3256cae941195214/EYnsYazmsY5NitK4rx4-NZkBjStDOTLmEorAtXW6knofOQ"
 								rel="noopener" target="_blank" class="btn btn-outline btn-block">
 								<i class="fas fa-external-link-alt"></i> Interactive Dashboard
@@ -509,9 +927,153 @@
 	</section>
 
 	<!-- ========================================== -->
+	<!-- PROJECT 4: POWER BI - SPROCKET CENTRAL      -->
+	<!-- ========================================== -->
+	<section class="project-detail-section alternate-bg" id="power-BI">
+		<div class="container">
+
+			<div class="section-header text-center reveal-on-scroll">
+				<span class="category-tag">Strategic Analytics & Predictive Modeling</span>
+				<h2 class="project-main-title">Sprocket Central: Customer Growth Strategy</h2>
+				<div class="title-underline"></div>
+			</div>
+
+			<div class="project-grid">
+				<div class="project-main-content reveal-on-scroll">
+					<div class="project-card">
+						<div class="project-image-holder">
+							<a href="img/work/PowerBI/dash-1.jpg" data-lightbox="gallery-pbi">
+								<img src="img/work/PowerBI/dash-1.jpg" alt="Sprocket Central Power BI Dashboard"
+									class="img-responsive" loading="lazy">
+								<div class="img-overlay"><i class="fas fa-chart-line"></i> Open Interactive Dashboard
+								</div>
+							</a>
+						</div>
+
+						<div class="project-body">
+							<div class="content-block">
+								<h3><i class="fas fa-lightbulb"></i> The Business Challenge</h3>
+								<p>
+									Sprocket Central Pty Ltd sought to optimize its marketing strategy by identifying
+									which of <strong>1,000 newly acquired customer prospects</strong> were most likely
+									to generate high <strong>Customer Lifetime Value (CLV)</strong>. The challenge
+									required moving beyond descriptive reporting toward predictive, insight-driven
+									decision-making that could directly support targeted marketing and revenue growth.
+									<!-- UPDATED: Clarified business objective and strategic shift -->
+								</p>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-microchip"></i> Integrated ML & BI Methodology</h3>
+								<ul class="method-list">
+									<li>
+										<strong>Data Exploration & Quality Assessment:</strong> Audited customer
+										demographics, address records, and transaction history to ensure analytical
+										reliability.
+										<!-- UPDATED: Added data quality emphasis -->
+									</li>
+									<li>
+										<strong>Feature Engineering & Segmentation:</strong> Applied
+										<strong>RFM (Recency, Frequency, Monetary)</strong> logic to segment customers
+										and uncover behavioral patterns.
+										<!-- UPDATED: Clarified segmentation logic -->
+									</li>
+									<li>
+										<strong>Predictive Scoring:</strong> Modeled purchase propensity to estimate
+										future bicycle demand and prioritize high-impact prospects.
+										<!-- UPDATED: Strengthened predictive focus -->
+									</li>
+									<li>
+										<strong>Advanced DAX Modeling:</strong> Built dynamic measures to analyze
+										projected sales volume, brand preference, and profitability.
+										<!-- UPDATED: Expanded analytical outputs -->
+									</li>
+								</ul>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-database"></i> Data Architecture</h3>
+								<p>
+									<strong>Sources:</strong> Customer demographics, customer addresses, and three
+									months of transaction data.<br>
+									<strong>Design:</strong> Integrated the datasets into a unified
+									<strong>Star Schema</strong> to support scalable Power BI modeling, customer
+									segmentation, and predictive analysis.
+									<!-- UPDATED: Expanded data description and modeling intent -->
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<aside class="project-sidebar reveal-on-scroll">
+					<div class="insights-card pbi-theme">
+						<h3 class="sidebar-title">Strategic Outcomes</h3>
+
+						<div class="insight-item">
+							<span class="insight-stat">382</span>
+							<p>
+								<strong>High-Value Target Pool:</strong> A refined segment of 382 customers is
+								projected to drive <strong>29,000 bicycle purchases</strong>, highlighting the
+								impact of precision marketing.
+								<!-- UPDATED: Added projected business impact -->
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat">56%</span>
+							<p>
+								<strong>Regional Concentration:</strong> NSW hosts the majority of high-value
+								customers (56%), followed by VIC (26%) and QLD (21%), guiding regional
+								marketing prioritization.
+								<!-- UPDATED: Added QLD and strategic implication -->
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat"><i class="fas fa-users"></i></span>
+							<p>
+								<strong>Key Demographics:</strong> Female customers aged <strong>40–50</strong>
+								and male customers aged <strong>20–30</strong> and <strong>60–70</strong> emerged
+								as the most responsive segments for targeted promotions.
+								<!-- UPDATED: Refined demographic insight -->
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat"><i class="fas fa-industry"></i></span>
+							<p>
+								<strong>Industry Opportunity:</strong> Manufacturing, financial services, and
+								health sectors show strong purchase potential, particularly among customers
+								without car ownership.
+								<!-- UPDATED: New industry-level insight -->
+							</p>
+						</div>
+
+						<div class="sidebar-footer">
+							<p>
+								<strong>Brand Preference:</strong> Solex (20%), Giant Bicycles (17%), and
+								WeareA2B (16.8%) dominate projected purchases.<br>
+								<strong>Growth Outlook:</strong> Total projected demand increases from
+								<strong>20K to 29K units</strong>, led by customers aged 40–50 and those with
+								10–15 years of tenure.
+								<!-- UPDATED: Consolidated brand and growth insights -->
+							</p>
+							<a href="#" class="btn btn-outline btn-block">
+								<i class="fas fa-eye"></i> View Executive Report
+							</a>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- ========================================== -->
 	<!-- PROJECT 5: TABLEAU - EUROPEAN SOCCER        -->
 	<!-- ========================================== -->
-	<section class="project-detail-section" id="tableau">
+	<!--<section class="project-detail-section" id="tableau">
 		<div class="container">
 
 			<div class="section-header text-center reveal-on-scroll">
@@ -522,9 +1084,9 @@
 
 			<div class="project-grid">
 				<div class="project-main-content reveal-on-scroll">
-					<div class="project-card">
+					<div class="project-card">-->
 						<!-- Tableau Placeholder -->
-						<div class="project-work-img tableau-embed-container">
+						<!--<div class="project-work-img tableau-embed-container">
 							<div id="vizContainer" class="tableau-placeholder"></div>
 							<script src="./lib/tableau/tableauProject_1.js"></script>
 							<div class="tableau-overlay-hint"><i class="fas fa-mouse-pointer"></i> Interact with
@@ -590,7 +1152,162 @@
 						</div>
 
 						<div class="sidebar-footer">
-							<!--Change-->
+							-Change-
+							<a href="#" target="_blank" class="btn btn-outline btn-block">
+								<i class="fas fa-external-link-alt"></i> View on Tableau Public
+							</a>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</section>-->
+
+	<!-- ========================================== -->
+	<!-- PROJECT 5: TABLEAU - EUROPEAN SOCCER        -->
+	<!-- ========================================== -->
+	<section class="project-detail-section" id="tableau">
+		<div class="container">
+
+			<div class="section-header text-center reveal-on-scroll">
+				<span class="category-tag">Advanced BI & Predictive Analytics</span>
+				<h2 class="project-main-title">European Soccer: Performance & Trend Forecasting</h2>
+				<div class="title-underline"></div>
+			</div>
+
+			<div class="project-grid">
+				<div class="project-main-content reveal-on-scroll">
+					<div class="project-card">
+						<!-- Tableau Placeholder -->
+						<div class="project-work-img tableau-embed-container">
+							<div id="vizContainer" class="tableau-placeholder"></div>
+							<script src="./lib/tableau/tableauProject_1.js"></script>
+							<div class="tableau-overlay-hint"><i class="fas fa-mouse-pointer"></i> Interact with
+								the Data</div>
+						</div>
+
+						<div class="project-body">
+							<div class="content-block">
+								<h3><i class="fas fa-running"></i> The Objective</h3>
+								<p>
+									This project explores the <strong>Ultimate Soccer Database</strong> to uncover
+									performance trends across Europe’s major football leagues from the
+									<strong>2008/09 to 2015/16 seasons</strong>. The objective was to deliver a
+									data-driven story through interactive Tableau league tables, highlighting
+									team dominance, promotion and relegation dynamics, and
+									<strong>year-over-year (YoY) performance trajectories</strong> across all
+									competing clubs.
+									<!-- UPDATED: Clarified storytelling focus, timeframe, and BI objective -->
+								</p>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-vial"></i> Analytical & Predictive Methodology</h3>
+								<ul class="method-list">
+									<li>
+										<strong>YoY Performance Indexing:</strong> Computed club-level YoY change
+										scores (ranging from -1.3 to +0.95) to identify long-term decline and
+										sustained improvement across leagues.
+										<!-- UPDATED: Added KPI range and interpretation -->
+									</li>
+									<li>
+										<strong>Match Outcome Aggregation:</strong> Analyzed <strong>25,000+</strong>
+										matches to examine win rates, points accumulation, and competitive balance
+										over multiple seasons.
+										<!-- UPDATED: Expanded match-level analysis -->
+									</li>
+									<li>
+										<strong>League Table Visualization:</strong> Built interactive standings in
+										Tableau to track title races, top-four volatility, and relegation risk.
+										<!-- UPDATED: Emphasized interactivity -->
+									</li>
+									<li>
+										<strong>Trend Forecasting:</strong> Applied Tableau’s built-in
+										exponential smoothing models to assess momentum and future performance
+										trajectories.
+										<!-- UPDATED: Clarified forecasting intent -->
+									</li>
+								</ul>
+							</div>
+
+							<div class="content-block">
+								<h3><i class="fas fa-database"></i> Data Structure</h3>
+								<p>
+									<strong>Source:</strong> Kaggle – Ultimate Soccer Database (SQLite).<br>
+									<strong>Composition:</strong> 7 interrelated tables including Country (11 nations),
+									League, Match, Player, and Team Attributes.<br>
+									<strong>Scale:</strong> 25,000+ matches and 10,000+ players across Europe’s
+									top divisions.
+									<!-- UPDATED: Expanded dataset structure and scale -->
+									<br>
+									<a href="https://www.kaggle.com/datasets/hugomathien/soccer?select=database.sqlite"
+										class="text-link"><i class="fas fa-download"></i> Download Source</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<aside class="project-sidebar reveal-on-scroll">
+					<div class="insights-card tableau-theme">
+						<h3 class="sidebar-title">Historical Trends & Insights</h3>
+
+						<div class="insight-item">
+							<span class="insight-stat">81 <small>pts</small></span>
+							<p>
+								<strong>Leicester City (2016):</strong> Visualized one of football’s greatest
+								anomalies—Leicester winning the Premier League with 81 points after finishing
+								14th the previous season.
+								<!-- UPDATED: Added historical context -->
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat">80–90</span>
+							<p>
+								<strong>Title Benchmark:</strong> League-winning point totals consistently
+								fell between <strong>80 and 90 points</strong>, reflecting sustained dominance
+								by top clubs.
+								<!-- UPDATED: New benchmark insight -->
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat">+0.95</span>
+							<p>
+								<strong>YoY Growth Leaders:</strong> <strong>Napoli</strong> (+0.95),
+								<strong>PSG</strong> (+0.84), and <strong>Borussia Mönchengladbach</strong>
+								emerged as the most improved clubs across Europe.
+								<!-- UPDATED: Expanded YoY improvement insight -->
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat">-1.3</span>
+							<p>
+								<strong>Performance Declines:</strong> FC Zürich (-1.3), Aston Villa (-1.2),
+								and VfB Stuttgart recorded the sharpest YoY drops, signaling periods of
+								instability and regression.
+								<!-- UPDATED: Added decline KPI -->
+							</p>
+						</div>
+
+						<div class="insight-item">
+							<span class="insight-stat"><i class="fas fa-chart-area"></i></span>
+							<p>
+								<strong>Consistency vs Volatility:</strong> Arsenal consistently finished
+								in the top four without winning the league, while clubs like Liverpool and
+								Tottenham fluctuated in and out of Champions League qualification.
+								<!-- UPDATED: Refined top-four trend -->
+							</p>
+						</div>
+
+						<div class="sidebar-footer">
+							<p>
+								<strong>Relegation Insight:</strong> At least one newly promoted team was
+								relegated each season, highlighting the difficulty of top-flight survival.
+								<!-- UPDATED: Added relegation pattern -->
+							</p>
 							<a href="#" target="_blank" class="btn btn-outline btn-block">
 								<i class="fas fa-external-link-alt"></i> View on Tableau Public
 							</a>
@@ -600,6 +1317,7 @@
 			</div>
 		</div>
 	</section>
+
 
 	<!-- ========================================== -->
 	<!-- PROJECT 6: SQL/LOOKER - AIRLINES ANALYSIS   -->
@@ -900,10 +1618,8 @@
 		</div>
 	</div>
 
-	<!-- js -->
-	 <script src="js/jquery.min.js"></script>
-
-	<!--<script src="js/jquery.easing.1.3.js"></script>-->
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
 
 	<!-- Lightbox JS -->
 	<script src="lib/lightbox/js/lightbox.js"></script>
