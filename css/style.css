@@ -1943,7 +1943,7 @@ padding: 0;: This removes all internal spacing within the element.*/
    TECHNICAL ARTICLES (BLOG) SECTION
    ========================================================================== */
 
-/* --- Section Headers --- */
+/* --- Section Headers --- 
 .blog-title-box {
   display: block;
   font-size: 1.6rem;
@@ -1951,8 +1951,15 @@ padding: 0;: This removes all internal spacing within the element.*/
   color: rgba(255, 255, 255, 0.5);
   letter-spacing: 4px;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   padding-left: 2px;
+}*/
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
 }
 
 /* --- Blog Entry Card --- */
@@ -1960,13 +1967,12 @@ padding: 0;: This removes all internal spacing within the element.*/
     background: #161e31; /* Matched to Project Cards */
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 12px;
-    padding: 30px;
-    /*height: 100%;*/
-    height: auto;
+    padding: 25px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
 }
 
 .blog-entry-card:hover {
@@ -2035,7 +2041,6 @@ padding: 0;: This removes all internal spacing within the element.*/
     color: #ffffff;
 }
 
-
 /* --- Workflow/Stack Card --- */
 .workflow-card {
     background: rgba(0, 0, 0, 0.2);
@@ -2085,10 +2090,10 @@ padding: 0;: This removes all internal spacing within the element.*/
 
 .workflow-list .list-item {
     position: relative;
-    padding: 8px 10px;
+    padding: 6px 10px;
     background: rgba(0, 212, 255, 0.03); /* Subtle brand tint */
     border: 1px solid rgba(0, 212, 255, 0.15);
-    border-radius: 8px;
+    border-radius: 6px;
     display: flex;
     justify-content: space-between;
     align-items: center;
