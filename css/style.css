@@ -1727,158 +1727,206 @@ padding: 0;: This removes all internal spacing within the element.*/
    ========================================================================== */
 
 .daviefolio-education {
-    padding: 100px 0;
-    background: #0b1120; /* Deepest blue for contrast */
+  padding   : 100px 0;
+  background: #0b1120;
+  /* Deepest blue for contrast */
 }
 
 /* --- Timeline Styling (Left Side) --- */
 .timeline-centered {
-    position: relative;
-    margin-bottom: 30px;
+  position     : relative;
+  margin-bottom: 30px;
 }
 
 /* The vertical line connecting entries */
 .timeline-centered::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: linear-gradient(to bottom, #00d4ff 0%, rgba(0, 212, 255, 0) 100%);
+  content   : '';
+  position  : absolute;
+  left      : 0;
+  top       : 0;
+  bottom    : 0;
+  width     : 2px;
+  background: linear-gradient(to bottom, #00d4ff 0%, rgba(0, 212, 255, 0) 100%);
 }
 
 .timeline-entry-card {
-    position: relative;
-    margin-bottom: 40px;
-    padding-left: 30px;
+  position     : relative;
+  margin-bottom: 40px;
+  padding-left : 30px;
 }
 
 /* Timeline Bullet */
 .timeline-entry-card::before {
-    content: '';
-    position: absolute;
-    left: -6px;
-    top: 5px;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background: #0b1120;
-    border: 3px solid #00d4ff;
-    z-index: 1;
+  content      : '';
+  position     : absolute;
+  left         : -6px;
+  top          : 5px;
+  width        : 14px;
+  height       : 14px;
+  border-radius: 50%;
+  background   : #0b1120;
+  border       : 3px solid #00d4ff;
+  z-index      : 1;
 }
 
 .timeline-label h2 {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  font-size  : 1.5rem;
+  font-weight: 700;
+  color      : #ffffff;
+  display    : flex;
+  align-items: center;
+  gap        : 15px;
 }
 
 .badge-ongoing {
-    font-size: 0.7rem;
-    background: rgba(0, 212, 255, 0.1);
-    color: #00d4ff;
-    padding: 4px 10px;
-    border-radius: 20px;
-    border: 1px solid rgba(0, 212, 255, 0.3);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  font-size     : 0.8rem;
+  background    : rgba(0, 212, 255, 0.1);
+  color         : #00d4ff;
+  padding       : 4px 10px;
+  border-radius : 20px;
+  border        : 1px solid rgba(0, 212, 255, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .edu-meta {
-    font-size: 0.9rem;
-    color: #94a3b8;
-    margin-bottom: 15px;
+  font-size    : 1rem;
+  color        : #94a3b8;
+  margin-bottom: 15px;
 }
 
 .edu-institution {
-    color: #00d4ff;
-    font-weight: 600;
+  color      : #00d4ff;
+  font-weight: 600;
 }
 
 .timeline-label p {
-    color: rgba(255, 255, 255, 0.7);
-    line-height: 1.6;
+  color      : rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
 }
 
 /* --- Certification Card (Right Side) --- */
 .cert-wrapper-card {
-    background: #161e31;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
-    padding: 30px;
-    height: 100%;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  background   : #161e31;
+  border       : 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding      : 30px;
+  height       : 100%;
+  box-shadow   : 0 20px 50px rgba(0, 0, 0, 0.3);
 }
 
 .cert-heading {
-    color: #ffffff;
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 25px;
-    position: relative;
-    padding-bottom: 10px;
+  color         : #ffffff;
+  font-size     : 1.35rem;
+  font-weight   : 700;
+  margin-bottom : 25px;
+  position      : relative;
+  padding-bottom: 10px;
 }
 
 .cert-heading::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 40px;
-    height: 3px;
-    background: #00d4ff;
+  content   : '';
+  position  : absolute;
+  left      : 0;
+  bottom    : 0;
+  width     : 40px;
+  height    : 3px;
+  background: #00d4ff;
 }
 
-/* Individual Cert Item */
+/* Individual Cert Item 
 .cert-card {
-    display: grid;
-    grid-template-columns: 30px 1fr;
-    align-items: center;
+  display              : grid;
+  grid-template-columns: 30px 1fr;
+  align-items          : center;
+  padding              : 15px;
+  margin-bottom        : 12px;
+  background           : rgba(255, 255, 255, 0.02);
+  border               : 1px solid rgba(255, 255, 255, 0.05);
+  border-radius        : 10px;
+  text-decoration      : none !important;
+  transition           : all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  gap                  : 12px;
+}*/
+
+.cert-card:hover {
+  background  : rgba(0, 212, 255, 0.05);
+  border-color: rgba(0, 212, 255, 0.4);
+  transform   : translateX(8px);
+}
+
+
+
+
+/* Ensure the card layout handles the icon and text group */
+.cert-card {
+    display: flex;
+    align-items: center; /* Vertically centers the icon with the text block */
+    gap: 15px;
     padding: 15px;
-    margin-bottom: 12px;
+    text-decoration: none !important;
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 10px;
-    text-decoration: none !important;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
 }
 
-.cert-card:hover {
-    background: rgba(0, 212, 255, 0.05);
-    border-color: rgba(0, 212, 255, 0.4);
-    transform: translateX(8px);
-}
-
-.cert-icon {
-    color: #00d4ff;
-    font-size: 0.9rem;
+/* Recommended: Target the spans specifically */
+.cert-name {
+    display: block; /* Forces it to its own line */
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #ffffff;
+    width: 100%; /* Ensures it takes full width of the text area */
+    order: 1;    /* Keeps it on top */
 }
 
 .cert-org {
-    display: block;
-    font-size: 0.7rem;
-    font-weight: 800;
-    color: #94a3b8;
+    display: block; /* Forces it to its own line */
+    font-size: 0.75rem;
+    color: #00d4ff; /* Accent color for the institution */
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+    width: 100%;
+    order: 2;    /* Keeps it below */
 }
 
+
+
+
+
+
+/*
+.cert-wrapper-card {
+    padding: 14px;
+  }
+
+  
+
 .cert-name {
-    display: block;
-    font-size: 0.9rem;
-    color: #ffffff;
-    font-weight: 500;
-    margin-top: 2px;
+  display    : block;
+  font-size  : 1.2rem;
+  color      : #ffffff;
+  font-weight: 500;
+  margin-top : 2px;
 }
+
+.cert-org {
+  display       : block;
+  font-size     : 1rem;
+  font-weight   : 800;
+  color         : #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+*/
+
 
 /* Animation for Entrance */
 .edu-part .animate-box {
-    opacity: 0;
-    transition: all 0.6s ease;
+  opacity   : 0;
+  transition: all 0.6s ease;
 }
 
 
