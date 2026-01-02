@@ -1938,178 +1938,162 @@ padding: 0;: This removes all internal spacing within the element.*/
 /********* BLOG CSS *********/
 /*******************************/
 
-.blog-title-box {
-  display: block;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
-  letter-spacing: 4px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  padding-left: 2px;
+
+/* ==========================================================================
+   TECHNICAL ARTICLES (BLOG) SECTION
+   ========================================================================== */
+
+.daviefolio-blog {
+    padding: 100px 0;
 }
 
-/* Blog Card Container */
+/* --- Section Headers --- */
+.blog-title-box {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 50px;
+    letter-spacing: -1px;
+}
+
+/* --- Blog Entry Card --- */
 .blog-entry-card {
-  background: rgba(10, 10, 11, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  overflow: hidden;
-  margin-bottom: 30px;
-  transition: transform 0.3s ease, border-color 0.3s ease;
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px);
+    background: #161e31; /* Matched to Project Cards */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
 }
 
 .blog-entry-card:hover {
-  transform: translateY(-10px);
-  border-color: rgba(0, 212, 255, 0.5);
+    transform: translateY(-10px);
+    border-color: #00d4ff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-.blog-thumb {
-  padding: 4px;
-  border-radius: 12px;
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* Metadata Styling */
-.blog-meta {
-  margin-bottom: 10px;
-  font-size: 14px !important;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.meta-date {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.meta-cat {
-  color: #00d4ff;
-  font-weight: 700;
-  margin-left: 10px;
-}
-
-/* Typography */
-.blog-desc {
-  padding: 15px;
-}
-
-.blog-desc h3 a {
-  color: #fff;
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 1.7rem;
-  transition: 0.3s;
-  margin-bottom: 0.5em;
-}
-
-.blog-desc h3 a:hover {
-  color: #00d4ff;
-}
-
-.blog-desc p {
-  font-family: "Quicksand", Arial, sans-serif;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
-  line-height: 1.6;
-  text-align: left;
-}
-
-/* Call to Action */
-.read-more {
-  color: #00d4ff;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 12px;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.read-more i {
-  margin-left: 5px;
-  transition: 0.3s;
-}
-
-.read-more:hover i {
-  transform: translateX(5px);
-}
-
-/* Small screens: phones & small tablets */
-@media (max-width: 768px) {
-  .blog-entry-card {
-    margin-bottom: 20px;
-    border-radius: 10px;
-    transform: none;
-    /* disable hover transform */
-  }
-
-  .blog-entry-card:hover {
-    transform: none;
-    border-color: rgba(0, 212, 255, 0.3);
-  }
-
-  /* Blog image */
-  .blog-thumb {
-    padding: 4px;
-    border-radius: 10px;
-  }
-
-  /* Metadata */
-  .blog-meta {
-    font-size: 12px !important;
-    margin-bottom: 5px;
-  }
-
-  .meta-cat {
-    margin-left: 6px;
-  }
-
-  /* Blog description */
-  .blog-desc {
-    padding: 10px;
-  }
-
-  .blog-desc h3 a {
-    font-size: 1.3rem;
-  }
-
-  .blog-desc p {
-    font-size: 13px;
+/* --- Typography & Content --- */
+.blog-entry-card .card-title {
+    color: #00d4ff;
+    font-size: 1.5rem;
     line-height: 1.4;
-  }
-
-  /* Read more */
-  .read-more {
-    font-size: 11px;
-  }
-
-  .read-more i {
-    margin-left: 3px;
-  }
+    margin-bottom: 15px !important;
+    font-weight: 700 !important;
 }
 
-/* Extra small screens (phones < 480px) */
-@media (max-width: 480px) {
-  .blog-title-box {
-    font-size: 11px;
-    letter-spacing: 1.5px;
-    margin-bottom: 10px;
-  }
+.meta-info {
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    display: flex;
+    gap: 20px;
+}
 
-  .blog-desc h3 a {
+.meta-info i {
+    color: #00d4ff;
+    margin-right: 5px;
+}
+
+.blog-entry-card p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.heading-spacing {
+    color: #ffffff;
     font-size: 1.1rem;
-  }
-
-  .blog-desc p {
-    font-size: 12px;
-  }
-
-  .read-more {
-    font-size: 10px;
-  }
+    margin: 25px 0 10px 0 !important;
+    font-weight: 600 !important;
 }
+
+/* --- Technical Accents (Code Blocks) --- */
+.code-block {
+    font-family: 'Courier New', Courier, monospace;
+    background: rgba(0, 212, 255, 0.1);
+    color: #00d4ff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+/* --- Highlight Box (Quotes/Insights) --- */
+.highlight-box {
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid #00d4ff;
+    padding: 15px 20px;
+    margin: 25px 0;
+    font-style: italic;
+}
+
+.highlight-box p {
+    margin-bottom: 0 !important;
+    color: #ffffff;
+}
+
+/* --- Workflow/Stack Card --- */
+.workflow-card {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: auto; /* Pushes stack to bottom of card */
+}
+
+.text-accent {
+    color: #00d4ff;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px !important;
+}
+
+.tool-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    color: #94a3b8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* --- CTA Link --- */
+.view-link {
+    display: inline-block;
+    margin-top: 25px;
+    color: #00d4ff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.view-link:hover {
+    color: #ffffff;
+    text-decoration: underline !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*******************************/
 /********* CONTACT CSS *********/
