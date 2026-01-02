@@ -56,6 +56,9 @@
         href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Playfair+Display:wght@400;400i;700&display=swap"
         rel="stylesheet" />
 
+    <!-- Font Awesome (Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/animate.css" />
@@ -922,7 +925,7 @@
                             <div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInRight">
                                 <article class="blog-entry-card">
                                     <div class="blog-grid">
-                                        <h3 class="card-title">Data Contracts: Architecting Reliability in Distributed
+                                        <h3 class="card-title">Architecting Reliability in Distributed
                                             Systems</h3>
                                         <div class="meta-info">
                                             <span><i class="far fa-user"></i> David Owino</span>
@@ -930,32 +933,35 @@
                                         </div>
 
                                         <p>
-                                            The biggest point of failure in modern data pipelines isn't the code—it's
-                                            the
-                                            <strong>upstream schema change</strong>. Data Contracts act as a formal
-                                            agreement between software engineers (producers) and data engineers
-                                            (consumers)
-                                            to ensure pipeline stability.
-                                        </p>
-
-                                        <h4 class="heading-spacing">The End of "Silent Failures"</h4>
-                                        <p>
-                                            By implementing a contract layer using <span
-                                                class="code-block">Protobuf</span>
-                                            or <span class="code-block">JSON Schema</span>, we prevent breaking changes
-                                            from
-                                            ever reaching the Data Lake. If a software service attempts to drop a
-                                            column,
-                                            the CI/CD pipeline fails immediately at the source.
+                                            The most common point of failure in modern data pipelines is not application
+                                            code, but unannounced <strong>upstream schema changes</strong>. Data
+                                            contracts establish a
+                                            formal agreement between data producers (software engineers) and data
+                                            consumers (data engineers), ensuring consistency, compatibility, and
+                                            pipeline stability.
                                         </p>
 
                                         <div class="highlight-box">
-                                            <p><strong>Engineering Core:</strong> "Data Contracts shift data quality
-                                                'Left'—moving it from a post-mortem cleanup task to a pre-deployment
-                                                requirement."</p>
+                                            <p><strong>Engineering principle:</strong> data Contracts shift data quality
+                                                left, transforming it
+                                                from a reactive cleanup task into a proactive, pre-deployment
+                                                requirement.
+                                            </p>
                                         </div>
 
-                                        <div class="workflow-card">
+                                        <h4 class="heading-spacing">The End of Silent Failures</h4>
+                                        <p>
+                                            By introducing a contract layer—using technologies such as <span
+                                                class="code-block">Protobuf</span>
+                                            or <span class="code-block">JSON Schema</span>—breaking changes are detected
+                                            before they reach the data lake. Any
+                                            attempt to remove or alter a field fails fast within the CI/CD pipeline,
+                                            preventing downstream disruptions.
+                                        </p>
+
+
+
+                                        <!--<div class="workflow-card">
                                             <h5 class="text-accent">Infrastructure & Stack</h5>
                                             <ul class="tool-list">
                                                 <li class="list-item"><strong>Infrastructure:</strong> <span
@@ -967,7 +973,7 @@
                                                 <li class="list-item"><strong>Validation:</strong> <span
                                                         class="code-block">Great Expectations</span></li>
                                             </ul>
-                                        </div>
+                                        </div>-->
                                     </div>
                                     <a href="highlights/blog-ml.html" class="view-link">Read Full Article →</a>
                                 </article>
@@ -983,34 +989,39 @@
                                         </div>
 
                                         <p>
-                                            While most beginners focus on model selection, senior practitioners know
-                                            <strong>Feature Engineering</strong> is the true differentiator. A simple
-                                            Linear Regression with high-quality features often outperforms a complex
-                                            Neural Network with "noisy" data.
-                                        </p>
-
-                                        <h4 class="heading-spacing">The Signal in the Noise</h4>
-                                        <p>
-                                            Machine Learning is about feeding <em>meaningful</em> data. This involves
-                                            transforming raw inputs into technical "signals" that algorithms can
-                                            interpret. Algorithms are just engines; your data is the fuel.
+                                            <strong>Feature engineering</strong>—<em>not model complexity</em>—drives
+                                            machine learning
+                                            performance, enabling simple models to outperform complex ones when data
+                                            quality is high.
                                         </p>
 
                                         <div class="highlight-box">
-                                            <p><strong>Perspective:</strong> "In production, model explainability (XAI)
-                                                is often more valuable than a 1% increase in accuracy."</p>
+                                            <p><strong>Perspective:</strong> In production, transforming raw data into
+                                                <em>meaningful signals</em> and prioritizing model explainability (XAI)
+                                                often
+                                                delivers more business value than marginal gains in accuracy.
+                                            </p>
                                         </div>
 
                                         <div class="workflow-card">
-                                            <h5 class="text-accent">ML Lifecycle</h5>
-                                            <ul class="tool-list">
-                                                <li class="list-item">Feature Extraction <span
-                                                        class="code-block">Scikit-Learn</span></li>
-                                                <li class="list-item">Model Selection <span
-                                                        class="code-block">XGBoost</span></li>
-                                                <li class="list-item">Explainability <span class="code-block">SHAP /
-                                                        LIME</span></li>
-                                                <li class="list-item">Hyperparameter Tuning & CV</li>
+                                            <h5 class="text-accent">ML Lifecycle Workflow</h5>
+                                            <ul class="tool-list workflow-list-horizontal">
+                                                <li class="list-item">
+                                                    <span class="step-name">Feature Extraction</span>
+                                                    <span class="code-block">Scikit-Learn</span>
+                                                </li>
+                                                <li class="list-item">
+                                                    <span class="step-name">Model Selection</span>
+                                                    <span class="code-block">XGBoost</span>
+                                                </li>
+                                                <li class="list-item">
+                                                    <span class="step-name">Explainability</span>
+                                                    <span class="code-block">SHAP / LIME</span>
+                                                </li>
+                                                <li class="list-item">
+                                                    <span>Hyperparameter Tuning & CV</span>
+                                                    <span class="code-block">Optuna</span>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
