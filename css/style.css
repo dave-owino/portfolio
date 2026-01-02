@@ -1834,11 +1834,12 @@ padding: 0;: This removes all internal spacing within the element.*/
   background: #00d4ff;
 }
 
-/* Individual Cert Item 
+/* Individual Cert Item */
 .cert-card {
   display              : grid;
-  grid-template-columns: 30px 1fr;
+  grid-template-columns: 100px 1fr;
   align-items          : center;
+ 
   padding              : 15px;
   margin-bottom        : 12px;
   background           : rgba(255, 255, 255, 0.02);
@@ -1847,7 +1848,7 @@ padding: 0;: This removes all internal spacing within the element.*/
   text-decoration      : none !important;
   transition           : all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   gap                  : 12px;
-}*/
+}
 
 .cert-card:hover {
   background  : rgba(0, 212, 255, 0.05);
@@ -1858,10 +1859,10 @@ padding: 0;: This removes all internal spacing within the element.*/
 
 
 
-/* Ensure the card layout handles the icon and text group */
+/* Ensure the card layout handles the icon and text group 
 .cert-card {
     display: flex;
-    align-items: center; /* Vertically centers the icon with the text block */
+    align-items: center; 
     gap: 15px;
     padding: 15px;
     text-decoration: none !important;
@@ -1870,7 +1871,7 @@ padding: 0;: This removes all internal spacing within the element.*/
     border-radius: 10px;
     transition: all 0.3s ease;
 }
-
+*/
 /* Recommended: Target the spans specifically */
 .cert-name {
     display: block; /* Forces it to its own line */
