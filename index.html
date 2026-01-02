@@ -645,7 +645,7 @@
                                                     loading="lazy">
                                             </a>
                                         </div>
-                                      
+
                                         <div class="project-info">
                                             <!-- 3. Title -->
                                             <h3 class="card-title">Sprocket Central: Growth Strategy</h3>
@@ -900,63 +900,134 @@
                 <!-- End: Education Section -->
 
                 <!-- Start: Blog Section -->
+
                 <section id="blog" class="daviefolio-blog" data-section="blog">
                     <div class="daviefolio-narrow-content">
                         <div class="row">
                             <div class="col-md-6 mx-auto animate-box" data-animate-effect="fadeInLeft">
                                 <div class="folio-title-box">
                                     <div class="folio-title-line-mf" aria-hidden="true"></div>
-                                    <span class="daviefolio-heading-meta"><strong>Blog</strong></span>
+                                    <span class="daviefolio-heading-meta"><strong>Technical Articles</strong></span>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-                                <span class="blog-title-box">Latest Articles</span>
+                                <span class="blog-title-box">Latest Thinking</span>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInRight">
                                 <article class="blog-entry-card">
-                                    <img src="img/blog/blog1-thumb.webp" class="img-responsive blog-thumb"
-                                        alt="Bivariate chart" loading="lazy" decoding="async" />
-                                    <div class="blog-desc">
-                                        <div class="blog-meta">
-                                            <span class="meta-date">Oct 6, 2024</span>
-                                            <span class="meta-cat">Data Analysis</span>
+                                    <div class="blog-grid">
+                                        <div class="meta-info">
+                                            <span><i class="far fa-user"></i> David Owino</span>
+                                            <span><i class="far fa-calendar-alt"></i> Dec 28, 2025</span>
                                         </div>
-                                        <h3><a href="highlights/blog.html">Unlocking Insights with Bivariate
-                                                Visualization</a></h3>
-                                        <p>Explore the power of paired insights and lay the groundwork for deeper
-                                            analysis.</p>
-                                        <a href="highlights/blog.html" class="read-more">Read Article <i
-                                                class="fas fa-arrow-right" aria-hidden="true"></i></a>
+
+                                        <h3 class="card-title">Data Contracts: Architecting Reliability in Distributed
+                                            Systems</h3>
+
+                                        <p>
+                                            The biggest point of failure in modern data pipelines isn't the code—it's
+                                            the
+                                            <strong>upstream schema change</strong>. Data Contracts act as a formal
+                                            agreement between software engineers (producers) and data engineers
+                                            (consumers)
+                                            to ensure pipeline stability.
+                                        </p>
+
+                                        <h4 class="heading-spacing">The End of "Silent Failures"</h4>
+                                        <p>
+                                            By implementing a contract layer using <span
+                                                class="code-block">Protobuf</span>
+                                            or <span class="code-block">JSON Schema</span>, we prevent breaking changes
+                                            from
+                                            ever reaching the Data Lake. If a software service attempts to drop a
+                                            column,
+                                            the CI/CD pipeline fails immediately at the source.
+                                        </p>
+
+                                        <div class="highlight-box">
+                                            <p><strong>Engineering Core:</strong> "Data Contracts shift data quality
+                                                'Left'—moving it from a post-mortem cleanup task to a pre-deployment
+                                                requirement."</p>
+                                        </div>
+
+                                        <div class="workflow-card">
+                                            <h5 class="text-accent">Infrastructure & Stack</h5>
+                                            <ul class="tool-list">
+                                                <li class="list-item"><strong>Infrastructure:</strong> <span
+                                                        class="code-block">Terraform</span></li>
+                                                <li class="list-item"><strong>Orchestration:</strong> <span
+                                                        class="code-block">Dagster / Airflow</span></li>
+                                                <li class="list-item"><strong>Storage:</strong> <span
+                                                        class="code-block">Delta Lake / Iceberg</span></li>
+                                                <li class="list-item"><strong>Validation:</strong> <span
+                                                        class="code-block">Great Expectations</span></li>
+                                            </ul>
+                                        </div>
                                     </div>
+                                     <a href="highlights/blog-ml.html" class="view-link">Read Full Article →</a>
                                 </article>
                             </div>
 
                             <div class="col-md-6 col-sm-6 animate-box" data-animate-effect="fadeInRight">
                                 <article class="blog-entry-card">
-                                    <img src="img/blog/blog3-thumb.webp" class="img-responsive blog-thumb"
-                                        alt="Multivariate chart" loading="lazy" decoding="async" />
-                                    <div class="blog-desc">
-                                        <div class="blog-meta">
-                                            <span class="meta-date">Oct 6, 2024</span>
-                                            <span class="meta-cat">Data Analysis</span>
+                                    <div class="blog-grid">
+                                        <div class="meta-info">
+                                            <span><i class="far fa-user"></i> David Owino</span>
+                                            <span><i class="far fa-calendar-alt"></i> Dec 28, 2025</span>
                                         </div>
-                                        <h3><a href="blog.html">Exploring the Depth of Multivariate Charts</a></h3>
-                                        <p>Dive into a gateway to uncovering complex relationships and patterns in data.
+
+                                        <h3 class="card-title">Beyond the Black Box: The Art of Feature Engineering</h3>
+
+                                        <p>
+                                            While most beginners focus on model selection, senior practitioners know
+                                            <strong>Feature Engineering</strong> is the true differentiator. A simple
+                                            Linear Regression with high-quality features often outperforms a complex
+                                            Neural Network with "noisy" data.
                                         </p>
-                                        <a href="blog.html" class="read-more">Read Article <i class="fas fa-arrow-right"
-                                                aria-hidden="true"></i></a>
+
+                                        <h4 class="heading-spacing">The Signal in the Noise</h4>
+                                        <p>
+                                            Machine Learning is about feeding <em>meaningful</em> data. This involves
+                                            transforming raw inputs into technical "signals" that algorithms can
+                                            interpret. Algorithms are just engines; your data is the fuel.
+                                        </p>
+
+                                        <div class="highlight-box">
+                                            <p><strong>Perspective:</strong> "In production, model explainability (XAI)
+                                                is often more valuable than a 1% increase in accuracy."</p>
+                                        </div>
+
+                                        <div class="workflow-card">
+                                            <h5 class="text-accent">ML Lifecycle</h5>
+                                            <ul class="tool-list">
+                                                <li class="list-item">Feature Extraction <span
+                                                        class="code-block">Scikit-Learn</span></li>
+                                                <li class="list-item">Model Selection <span
+                                                        class="code-block">XGBoost</span></li>
+                                                <li class="list-item">Explainability <span class="code-block">SHAP /
+                                                        LIME</span></li>
+                                                <li class="list-item">Hyperparameter Tuning & CV</li>
+                                            </ul>
+                                        </div>
                                     </div>
+                                     <a href="highlights/blog-ml.html" class="view-link">Read Full Article →</a>
                                 </article>
+
+                                <!--<div class="read-more-container">
+                                    <a href="highlights/blog-ml.html" class="read-more">Read Full Case Study <i
+                                            class="fas fa-arrow-right"></i></a>
+                                </div>-->
                             </div>
                         </div>
                     </div>
                 </section>
+
                 <!-- End: Blog Section -->
 
                 <!-- Start: Contact Section -->
