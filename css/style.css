@@ -2128,7 +2128,7 @@ padding: 0;: This removes all internal spacing within the element.*/
 /* --- General Layout --- */
 .daviefolio-contact {
   background-color: #0f172a;
-  padding         : 50px 0 30px 0 !important;
+  /*padding         : 50px 0 30px 0 !important;*/
   font-family     : "Inter", sans-serif;
   /* Use a clean tech font */
 }
@@ -2137,7 +2137,6 @@ padding: 0;: This removes all internal spacing within the element.*/
   display    : flex;
   flex-wrap  : wrap;
   align-items: stretch;
-  /* This stretches the columns to match heights */
 }
 
 /* --- Left Card --- */
@@ -2146,10 +2145,8 @@ padding: 0;: This removes all internal spacing within the element.*/
   padding      : 40px;
   height       : 100%;
   border-radius: 8px 0 0 8px;
-  /* Rounded corners only on left */
   box-shadow   : 5px 5px 20px rgba(0, 0, 0, 0.1);
   border-right : none;
-  /* Merge visual with right card */
 }
 
 /* --- Right Card --- */
@@ -2184,10 +2181,20 @@ padding: 0;: This removes all internal spacing within the element.*/
 
 /* --- Mobile Responsiveness --- */
 @media screen and (max-width: 768px) {
+  .contact-row-flex {
+  display    : flex;
+  flex-wrap  : wrap;
+  align-items: stretch;
+  flex-direction: column;
+  }
+
   .contact-form-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0; 
     border-radius: 8px 8px 0 0;
-    /* Rounded top only */
     border-bottom: none;
+    padding: 25px;
   }
 
   .contact-info-card {
