@@ -1847,6 +1847,28 @@ padding: 0;: This removes all internal spacing within the element.*/
   border               : 1px solid rgba(255, 255, 255, 0.05);
   border-radius        : 10px;
   transition           : all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.cert-card::after {
+  content: attr(data-tooltip); /* use data-tooltip instead of title */
+  position: absolute;
+  bottom: 80%; /* above the card */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0f172a;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.cert-card:hover::after {
+  opacity: 1;
 }
 
 .cert-card:hover {
