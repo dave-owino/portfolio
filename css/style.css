@@ -1855,19 +1855,19 @@ padding: 0;: This removes all internal spacing within the element.*/
   transform   : translateX(8px);
 }
 
-.cert-org {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.3rem;
-  font-weight: 500;
-  color: #a5b4fc;
-  display: block;
-}
-
 .cert-name {
   display: block;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #cbd5e1;
   margin-top: 4px;
+}
+
+.cert-org {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #a5b4fc;
+  display: block;
 }
 
 /* Animation for Entrance */
